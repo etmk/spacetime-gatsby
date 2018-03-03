@@ -1,6 +1,8 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
+import config from '../../data/site-config'
 import PostListing from '../components/PostListing/'
 
 class BlogPage extends React.Component {
@@ -8,6 +10,7 @@ class BlogPage extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <div>
+        <Helmet title={`Blog | ${config.siteTitle}`} />
         <h1>Blog</h1>
         <PostListing postEdges={postEdges} />
       </div>

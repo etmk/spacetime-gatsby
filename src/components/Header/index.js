@@ -27,9 +27,9 @@ const Header = () => (
 
         <Link
           to="portfolio"
-          title="Work"
+          title="Portfolio"
           className="link dim white dib mr3">
-          Work
+          Portfolio
         </Link>
 
         <Link
