@@ -47,6 +47,13 @@ const Header = () => (
         </Link>
 
         <Link
+          to="blog"
+          title="Blog"
+          className="link dim white dib mr3">
+          Blog
+        </Link>
+
+        <Link
           to="contact"
           title="Contact"
           className="link dim white dib mr3">

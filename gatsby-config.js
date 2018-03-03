@@ -1,8 +1,11 @@
 const config = require("./data/site-config");
 
+const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby LUT`,
+    title: config.siteTitle,
+    siteUrl: config.siteUrl + pathPrefix,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
