@@ -1,0 +1,66 @@
+html {
+  text-rendering: auto; //keep as default auto for speed
+  -webkit-overflow-scrolling: touch; // not momentum unless we add overflow-x: hidden, and then that breaks scrolltop
+  -webkit-font-smoothing: antialiased;
+  // apply a natural box layout model to all elements, but allowing components to change
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $sans-serif;
+  background-color: $white;
+  line-height: 1; //keep this at 1, rarely should you ever use code that affects every element on a site
+}
+
+// Custom text-selection colors (remove any text shadows)
+::-moz-selection {
+  background: rgba($orange, .5);
+  color: $black;
+  text-shadow: none;
+}
+::selection {
+  background: rgba($orange, .5);
+  color: $black;
+  text-shadow: none;
+}
+
+// Responsive images and other embedded objects
+// if you don't have full control over `img` tags
+// (if you have to overcome attributes), consider adding height: auto
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+object,
+embed { height: 100%; }
+img { -ms-interpolation-mode: bicubic; }
+
+#map_canvas,
+.map_canvas {
+  img,
+  embed,
+  object { max-width: none !important;
+  }
+}
+
+// Get rid of gap under images by making them display: inline-block; by default
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+//
+// Global resets for forms
+//
+
+// Make sure textarea takes on height automatically
+textarea { height: auto; min-height: 50px; }
+
+// Make select elements 100% width by default
+select { width: 100%; }
