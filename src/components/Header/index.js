@@ -1,68 +1,60 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import logo from '../../assets/images/logos/logo-06.svg'
+
 const Header = () => (
-  <div>
-    <nav className="db dt-l w-100 border-box pa3 ph5-l bg-black-90">
+  <header>
+    <nav className="flex justify-between-ns ph5-l bg-black-90">
 
       <Link
         to="/"
         title="Home"
-        className="db dtc-l v-mid mid-gray dim link w-100 w-25-l tc tl-l mb2 mb0-l">
-        <img
-          src="http://tachyons.io/img/logo.jpg"
-          className="dib w2 h2 br-100 mr3"
-          alt="Spacetime"/>
-        <span className="link white dib mr3">Spacetime</span>
+        className="self-center dim">
+        <img src={logo} alt="Spacetime" />
+        <span className="clip link white dib mr3">Spacetime</span>
       </Link>
 
-      <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-
-        <Link
-          to="/"
-          title="Home"
-          className="link dim white dib mr3">
-          Home
-        </Link>
-
+      <div>
         <Link
           to="portfolio"
           title="Portfolio"
-          className="link dim white dib mr3">
+          className="link dim white dib b ttu f7 pa3 tracked">
           Portfolio
         </Link>
 
         <Link
           to="services"
           title="Services"
-          className="link dim white dib mr3">
+          className="link dim white dib b ttu f7 pa3 tracked">
           Services
         </Link>
 
         <Link
           to="team"
           title="Team"
-          className="link dim white dib mr3">
+          className="link dim white dib b ttu f7 pa3 tracked">
           Team
         </Link>
+      </div>
 
+      <div>
         <Link
           to="blog"
           title="Blog"
-          className="link dim white dib mr3">
+          className="link dim white dib b ttu f7 pa3 tracked">
           Blog
         </Link>
 
         <Link
           to="contact"
           title="Contact"
-          className="link dim white dib mr3">
+          className="link dim white dib b ttu f7 pa3 tracked">
           Contact
         </Link>
-
       </div>
     </nav>
-  </div>
+  </header>
 )
 
 export default Header

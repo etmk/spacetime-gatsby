@@ -4,6 +4,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
   const {createPage} = boundActionCreators;
 
   const blogPostTemplate = path.resolve('src/templates/blog-post.js');
+  // const servicePostTemplate = path.resolve('src/templates/service-post.js');
 
   return graphql(`{
     allMarkdownRemark(
