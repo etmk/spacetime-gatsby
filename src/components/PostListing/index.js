@@ -6,6 +6,7 @@ class PostListing extends React.Component {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
       postList.push({
+        type: postEdge.node.frontmatter.type,
         path: postEdge.node.frontmatter.path,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.frontmatter.date,
@@ -25,7 +26,7 @@ class PostListing extends React.Component {
           <li key={post.title}>
             <Link to={post.path}>
               <h1>{post.title}</h1>
-              <small>Posted on {post.date}</small>
+              <small>Posted on {post.date} | Post type {post.type}</small>
               <p>{post.excerpt}</p>
             </Link>
           </li>

@@ -1,4 +1,5 @@
 ---
+type: 'service'
 path: '/wordpress'
 title: 'WordPress'
 date: '2018-02-28'

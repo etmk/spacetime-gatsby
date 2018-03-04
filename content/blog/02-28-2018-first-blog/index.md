@@ -1,4 +1,5 @@
 ---
+type: 'blog'
 path: '/first-post'
 title: 'First Blog Post'
 date: '2018-02-28'

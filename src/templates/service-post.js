@@ -16,6 +16,7 @@ export default function Template({data}) {
         title="Back to Services">
         Back to Services
       </Link>
+      <p>this is the service post template</p>
       <h1>{service.frontmatter.title}</h1>
       <h5>Created on {service.frontmatter.date}</h5>
       <div dangerouslySetInnerHTML={{__html: service.html}} />

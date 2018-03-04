@@ -7,18 +7,18 @@ exports.createPages = ({boundActionCreators, graphql}) => {
   // const servicePostTemplate = path.resolve('src/templates/service-post.js');
 
   return graphql(`{
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 10
-    ) {
+    allMarkdownRemark {
       edges {
         node {
           excerpt(pruneLength: 250)
           html
           id
           frontmatter {
+            type
             path
             title
+            date
+            published
           }
         }
       }

@@ -32,6 +32,7 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           id
           frontmatter {
+            type
             path
             title
             date(formatString: "MMMM DD, YYYY")

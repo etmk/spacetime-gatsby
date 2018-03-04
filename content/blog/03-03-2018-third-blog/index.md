@@ -1,4 +1,5 @@
 ---
+type: 'blog'
 path: '/third-post'
 title: 'Third Blog Post'
 date: '2018-03-03'

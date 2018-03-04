@@ -16,8 +16,9 @@ export default function Template({data}) {
         title="Back to Blog">
         Back to Blog
       </Link>
+      <p>this is the blog post template</p>
       <h1>{post.frontmatter.title}</h1>
-      <h5>Posted on {post.frontmatter.date}</h5>
+      <h5>Posted on {post.frontmatter.date} | Post type {post.frontmatter.type}</h5>
       <div dangerouslySetInnerHTML={{__html: post.html}} />
     </div>
   )
@@ -28,6 +29,7 @@ export const postQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path} }) {
       html
       frontmatter {
+        type
         path
         title
         date(formatString: "MMMM DD, YYYY")
