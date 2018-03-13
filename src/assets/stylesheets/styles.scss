@@ -41,7 +41,7 @@
 
  //  Modules
  @import 'scss/base';
- @import 'scss/box-sizing';
+ // @import 'scss/box-sizing';
  @import 'scss/aspect-ratios';
  @import 'scss/images';
  @import 'scss/background-size';
@@ -63,6 +63,7 @@
  @import 'scss/font-style';
  @import 'scss/font-weight';
  @import 'scss/forms';
+ @import 'scss/gradients';
  @import 'scss/heights';
  @import 'scss/letter-spacing';
  @import 'scss/line-height';
@@ -92,3 +93,5 @@
  @import 'scss/z-index';
  @import 'scss/nested';
  @import 'scss/styles';
+
+ @import 'components/content-page';

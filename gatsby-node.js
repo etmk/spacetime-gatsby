@@ -29,8 +29,28 @@ exports.createPages = ({boundActionCreators, graphql}) => {
       return Promise.reject(result.errors);
     }
 
-    result.data.allMarkdownRemark.edges
-      .forEach(({node}) => {
+    //create empty arrays for our post types
+    // const blogSet = new Set();
+    // const serviceSet = new Set();
+
+    //find all markdown data
+    result.data.allMarkdownRemark.edges.forEach(({node}) => {
+
+      //if blog type, add to blog set
+      // if (node.frontmatter.type === 'blog') {
+      //   blogSet.add(node);
+      // }
+      //
+      // const blogList = Array.from(blogSet);
+      // blogList.forEach(blog => {
+      //   createPage({
+      //     path: node.frontmatter.path,
+      //     component: blogPostTemplate,
+      //     context: {}
+      //   });
+      // });
+
+
         createPage({
           path: node.frontmatter.path,
           component: blogPostTemplate,

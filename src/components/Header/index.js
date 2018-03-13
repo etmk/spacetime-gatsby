@@ -5,7 +5,7 @@ import logo from '../../assets/images/logos/logo-06.svg'
 
 const Header = () => (
   <header>
-    <nav className="flex justify-between-ns ph5-l bg-black-90">
+    <nav className="flex justify-between-ns ph5-l fixed w-100 bg-black-10">
 
       <Link
         to="/"
@@ -26,14 +26,14 @@ const Header = () => (
         <Link
           to="services"
           title="Services"
-          className="link dim white dib b ttu f7 pa3 tracked">
+          className="link dim white dib b ttu f7 ph3 pv4 tracked">
           Services
         </Link>
 
         <Link
           to="team"
           title="Team"
-          className="link dim white dib b ttu f7 pa3 tracked">
+          className="link dim white dib b ttu f7 ph3 pv4 tracked">
           Team
         </Link>
       </div>
@@ -42,14 +42,14 @@ const Header = () => (
         <Link
           to="blog"
           title="Blog"
-          className="link dim white dib b ttu f7 pa3 tracked">
+          className="link dim white dib b ttu f7 ph3 pv4 tracked">
           Blog
         </Link>
 
         <Link
           to="contact"
           title="Contact"
-          className="link dim white dib b ttu f7 pa3 tracked">
+          className="link dim white dib b ttu f7 ph3 pv4 tracked">
           Contact
         </Link>
       </div>
