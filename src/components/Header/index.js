@@ -19,7 +19,7 @@ const Header = () => (
         <Link
           to="portfolio"
           title="Portfolio"
-          className="link dim white dib b ttu f7 pa3 tracked">
+          className="link dim white dib b ttu f7 ph3 pv4 tracked">
           Portfolio
         </Link>
 

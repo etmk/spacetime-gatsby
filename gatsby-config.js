@@ -27,13 +27,6 @@ module.exports = {
          name: 'posts',
        }
      },
-     {
-       resolve: 'gatsby-source-filesystem',
-       options: {
-         path: `${__dirname}/content/services`,
-         name: 'services',
-       }
-     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     'gatsby-transformer-remark'
