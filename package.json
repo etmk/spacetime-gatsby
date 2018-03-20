@@ -1,5 +1,5 @@
 {
-  "name": "Spacetime v2",
+  "name": "Spacetime-v2",
   "description": "Gatsby default starter",
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
@@ -7,6 +7,7 @@
   "dependencies": {
     "gatsby": "^1.9.218",
     "gatsby-link": "^1.6.37",
+    "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-sass": "^1.0.18",
     "gatsby-source-filesystem": "^1.5.25",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "gatsby-plugin-remove-trailing-slashes": "^1.0.8",
     "prettier": "^1.11.0",
     "tachyons": "^4.9.1"
   }

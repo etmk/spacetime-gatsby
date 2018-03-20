@@ -89,3 +89,9 @@ p {
   line-height: $line-height-copy;
   color: $black-80;
 }
+
+.row {
+  width: 95%;
+  max-width: 80rem;
+  margin: 0 auto;
+}

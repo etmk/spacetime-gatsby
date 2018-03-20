@@ -4,8 +4,8 @@ import Link from 'gatsby-link'
 import logo from '../../assets/images/logos/logo-06.svg'
 
 const Header = () => (
-  <header>
-    <nav className="flex justify-between-ns ph5-l fixed w-100 bg-black-10">
+  <header className="fixed w-100 bg-black-10 z-2">
+    <nav className="flex justify-between-ns ph5-l">
 
       <Link
         to="/"
