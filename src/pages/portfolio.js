@@ -6,8 +6,8 @@ import config from '../../data/site-config'
 import PageHero from '../components/PageHero'
 
 
-const PortfolioPage = () => (
-  <div>
+const PortfolioPage = ({ transition }) => (
+  <div style={transition && transition.style}>
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
     <PageHero
       title={`Portfolio`}

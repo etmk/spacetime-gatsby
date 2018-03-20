@@ -8,7 +8,7 @@ import PageHero from '../components/PageHero'
 class IndexPage extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{opacity: '1', transition: 'opacity 250ms ease-in-out'}}>
         <Helmet title={`Welcome | ${config.siteTitle}`} />
 
         <PageHero
@@ -19,4 +19,4 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage;
+export default IndexPage

@@ -10,7 +10,7 @@ class BlogPage extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div>
+      <div style={{opacity: '1', transition: 'opacity 250ms ease-in-out'}}>
         <Helmet title={`Blog | ${config.siteTitle}`} />
 
         <PageHero

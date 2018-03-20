@@ -5,8 +5,8 @@ import Link from 'gatsby-link'
 import config from '../../data/site-config'
 import PageHero from '../components/PageHero'
 
-const ContactPage = () => (
-  <div>
+const ContactPage = ({ transition }) => (
+  <div style={transition && transition.style}>
     <Helmet title={`Contact | ${config.siteTitle}`} />
 
     <PageHero
