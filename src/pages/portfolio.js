@@ -4,14 +4,40 @@ import Link from 'gatsby-link'
 
 import config from '../../data/site-config'
 import PageHero from '../components/PageHero'
+import PortfolioCard from '../components/PortfolioCard'
 
 
 const PortfolioPage = ({ transition }) => (
   <div style={transition && transition.style}>
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
+
     <PageHero
       title={`Portfolio`}
       description={`Whether you’re building a marketing website, a mobile app or the next Facebook, we’re experienced in the right tool for the xxx.`} />
+
+    <section className="bg-fog-white pa4">
+      <div className="row">
+        <h2>This is our portfolio. Nice.</h2>
+      </div>
+    </section>
+    <section>
+      <PortfolioCard
+        title={`Dude Perfect`}
+        description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        bgColor={`#00FFDE`}/>
+      <PortfolioCard
+        title={`Keyzie`}
+        description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        bgColor={`#F78657`}/>
+      <PortfolioCard
+        title={`StudioHop`}
+        description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        bgColor={`#00C2F2`}/>
+      <PortfolioCard
+        title={`Bell`}
+        description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        bgColor={`#000`}/>
+    </section>
   </div>
 )
 
