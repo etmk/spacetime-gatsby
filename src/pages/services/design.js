@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
 
-const ServicesPage = () => (
+const DesignServicesPage = () => (
   <div>
     <Helmet title={`Services | ${config.siteTitle}`} />
 
@@ -16,4 +16,4 @@ const ServicesPage = () => (
   </div>
 )
 
-export default ServicesPage
+export default DesignServicesPage

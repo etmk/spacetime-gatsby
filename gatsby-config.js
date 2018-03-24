@@ -23,8 +23,22 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/content/blog/`,
         name: 'posts',
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/assets/images/`,
+        name: 'img',
       }
     },
     {
@@ -46,8 +60,10 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-remove-trailing-slashes`
+    `gatsby-transformer-sharp`
   ],
 }

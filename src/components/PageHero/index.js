@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
@@ -18,4 +19,4 @@ class PageHero extends React.Component {
   }
 }
 
-export default PageHero;
+export default PageHero

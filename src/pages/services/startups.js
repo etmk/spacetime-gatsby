@@ -4,8 +4,8 @@ import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
 
-const ServicesPage = () => (
-  <div className="service-page content-page">
+const StartupServicesPage = ({ transition }) => (
+  <div style={transition && transition.style} className="service-page content-page">
     <Helmet title={`Services | ${config.siteTitle}`} />
 
     <section className="ph5-l pt6 pb5 bg-dark-red tc">
@@ -100,4 +100,4 @@ const ServicesPage = () => (
   </div>
 )
 
-export default ServicesPage
+export default StartupServicesPage
