@@ -5,55 +5,57 @@ import logo from '../../assets/images/logos/logo-06.svg'
 
 const Header = () => (
   <header className="fixed w-100 bg-black-10 z-2">
-    <nav className="flex justify-between-ns ph5-l">
-
-      <Link
-        to="/"
-        title="Home"
-        className="self-center dim">
-        <img src={logo} alt="Spacetime" />
-        <span className="clip link white dib mr3">Spacetime</span>
-      </Link>
-
-      <div>
-        <Link
-          to="portfolio"
-          title="Portfolio"
-          className="link dim white dib b ttu f7 ph3 pv4 tracked">
-          Portfolio
-        </Link>
+    <div className="row">
+      <nav className="flex justify-between-ns ph5-l">
 
         <Link
-          to="services"
-          title="Services"
-          className="link dim white dib b ttu f7 ph3 pv4 tracked">
-          Services
+          to="/"
+          title="Home"
+          className="self-center dim">
+          <img src={logo} alt="Spacetime" />
+          <span className="clip link white dib mr3">Spacetime</span>
         </Link>
 
-        <Link
-          to="team"
-          title="Team"
-          className="link dim white dib b ttu f7 ph3 pv4 tracked">
-          Team
-        </Link>
-      </div>
+        <div>
+          <Link
+            to="portfolio"
+            title="Portfolio"
+            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            Portfolio
+          </Link>
 
-      <div>
-        <Link
-          to="blog"
-          title="Blog"
-          className="link dim white dib b ttu f7 ph3 pv4 tracked">
-          Blog
-        </Link>
+          <Link
+            to="services"
+            title="Services"
+            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            Services
+          </Link>
 
-        <Link
-          to="contact"
-          title="Contact"
-          className="link dim white dib b ttu f7 ph3 pv4 tracked">
-          Contact
-        </Link>
-      </div>
-    </nav>
+          <Link
+            to="team"
+            title="Team"
+            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            Team
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="blog"
+            title="Blog"
+            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            Blog
+          </Link>
+
+          <Link
+            to="contact"
+            title="Contact"
+            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            Contact
+          </Link>
+        </div>
+      </nav>
+    </div>
   </header>
 )
 
