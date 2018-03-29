@@ -6,9 +6,9 @@ class PortfolioCard extends React.Component {
 
   render() {
     return (
-      <div style={{backgroundColor: `${this.props.bgColor}`}} className="pa5 bw3 b--solid b--white relative overflow-hidden">
+      <div style={{backgroundColor: `${this.props.bgColor}`}} className="flex-auto-ns pa3 pa5-ns bw3 b--solid b--white relative overflow-hidden">
         <div className="row relative z-1">
-          <img src={'client-logos/' + this.props.name + '-logo.png'} alt={this.props.name} className="" />
+          <img src={this.props.logoPath} alt={this.props.name} className="" />
           <h3 className="f1 mv3">{this.props.title}</h3>
           <p className="sans-serif fw6 black-60 measure-narrow">{this.props.description}</p>
           <Link to={"/portfolio/" + this.props.name}

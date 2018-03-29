@@ -24,7 +24,7 @@ const DudePerfectPage = () => (
       bgColor={`#202625`}
       buttonText={`Go to Dude Perfect →`}
       buttonColor={`#00FFDE`}
-      label1={`Expertisesss`}
+      label1={`Expertises`}
       text1={`Design, UX, Code`}
       label2={`Platform`}
       text2={`WordPress`}
@@ -36,7 +36,7 @@ const DudePerfectPage = () => (
 
         <div className="ph4 ph5-m ph6-l">
           <div className="pv5 f4 f2-ns measure center">
-            <p className="db lh-copy black-70 serif fw1 mv0 f4 f3-m f2-l measure">
+            <p className="tc sans-serif lh-solid fw5 mv0 f4 f3-m f2-l measure black-90">
               A short description of your project. Maybe a few notes concerning your constraints and process. Standard lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etc. al dolore magna aliqua. Ut enim ad.
             </p>
           </div>

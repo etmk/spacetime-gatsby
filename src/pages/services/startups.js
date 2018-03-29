@@ -21,7 +21,7 @@ const StartupServicesPage = ({ transition }) => (
       <div className="flex nl5-ns nr5-ns">
         <a href="#" className="w-50 w-25-ns mr2 bg-washed-yellow ba b--black-10 black-80 fw6 dib pa3 tc no-underline br1">Concept Exploration</a>
         <a href="#" className="w-50 w-25-ns mr2 bg-washed-yellow ba b--black-10 black-80 fw6 dib pa3 tc no-underline br1">Minimum Viable Product</a>
-        <a href="#" className="w-50 w-25-ns mr2 bg-washed-yellow ba b--black-10 black-80 fw6 dib pa3 tc no-underline br1">Resusitation</a>
+        <a href="#" className="w-50 w-25-ns mr2 bg-washed-yellow ba b--black-10 black-80 fw6 dib pa3 tc no-underline br1">Resuscitation</a>
         <a href="#" className="w-50 w-25-ns bg-washed-yellow ba b--black-10 black-80 fw6 dib pa3 tc no-underline br1">Choose Your Own Adventure</a>
       </div>
 

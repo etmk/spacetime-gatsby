@@ -112,8 +112,8 @@ const ServicesPage = ({ transition }) => (
           <div className="dt-ns dt--fixed-ns w-100">
             <div className="pa3 pa4-ns dtc-ns v-mid">
               <div>
-                <h2 className="fw4 blue mt0 mb3">
-                  This is a promo title
+                <h2 className="fw4 mt0 mb3">
+                  Not sure what you need?
                 </h2>
                 <p className="black-70 measure lh-copy mv0">
                   This is suporting copy for the wonderful promo catchphrase that is going to be used.

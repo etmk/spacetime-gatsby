@@ -3,7 +3,7 @@ type: 'blog'
 path: '/second-post'
 title: 'Second Blog Post'
 date: '2018-03-02'
-published: false
+published: true
 ---
 
 Welcome to the month of March!!!
