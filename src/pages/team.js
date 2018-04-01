@@ -43,6 +43,7 @@ const TeamPage = ({ transition }) => (
     <section className="pv5">
       <div className="row">
         <h2 className="tc red f3">Spacefriends</h2>
+        <p>Spacetime is a bit different than other agencies. Instead of </p>
         <hr className="mw2 mt4 mb5 black-10 bw2" />
         <div className="flex flex-wrap justify-center mw7 center">
           <div className="tc mh3 mb4">

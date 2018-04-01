@@ -6,7 +6,7 @@ import logo from '../../assets/images/logos/logo-06.svg'
 const Header = () => (
   <header className="absolute w-100 z-2">
     <div className="row">
-      <nav className="flex justify-between-ns ph5-l">
+      <nav className="flex justify-between-ns">
 
         <Link
           to="/"

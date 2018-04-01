@@ -6,17 +6,32 @@ class PortfolioCard extends React.Component {
 
   render() {
     return (
-      <div style={{backgroundColor: `${this.props.bgColor}`}} className="flex-auto-ns pa3 pa5-ns bw3 b--solid b--white relative overflow-hidden">
+      <div style={{backgroundColor: `${this.props.bgColor}`}} className="flex-auto-ns pa3 pa5-l bw3 b--solid b--white relative overflow-hidden">
         <div className="row relative z-1">
-          <img src={this.props.logoPath} alt={this.props.name} className="" />
-          <h3 className="f1 mv3">{this.props.title}</h3>
-          <p className="sans-serif fw6 black-60 measure-narrow">{this.props.description}</p>
-          <Link to={"/portfolio/" + this.props.name}
-            className="f5 fw5 link br2 ph4 pv3 mb2 dib white bg-dark-purple dim">
-            Read the case study →
-          </Link>
+          <img src={this.props.logoPath} alt={this.props.title} className="" />
+
+          {this.props.textColor === 'white' ? (
+            <div>
+              <h3 className="f3 f2-ns mv3 white-90">{this.props.title}</h3>
+              <p className="sans-serif fw5 white-70 measure-narrow mb3 mb5-ns">{this.props.description}</p>
+              <Link to={"/portfolio/" + this.props.name}
+                className="f5 fw5 link br2 ph4 pv3 mb2 dib black-80 bg-white dim">
+                Read the case study →
+              </Link>
+            </div>
+          ) :
+            <div>
+              <h3 className="f3 f2-ns mv3 black-80">{this.props.title}</h3>
+              <p className="sans-serif fw5 black-60 measure-narrow mb3 mb5-ns">{this.props.description}</p>
+              <Link to={"/portfolio/" + this.props.name}
+                className="f5 fw5 link br2 ph4 pv3 mb2 dib white bg-dark-purple dim">
+                Read the case study →
+              </Link>
+            </div>
+          }
+
         </div>
-        <img src={'client-bgs/' + this.props.name + '-card-bg.jpg'} alt="" className="absolute top-0 right-0 z-0" />
+        <img src={'client-bgs/' + this.props.name + '-card-bg.jpg'} alt="" className="absolute top-0 right-0 z-0 h-100 w-auto mw-none w-auto-l mw-100-l" />
       </div>
     );
   }
