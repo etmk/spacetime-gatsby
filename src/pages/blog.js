@@ -10,12 +10,21 @@ class BlogPage extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div style={{opacity: '1', transition: 'opacity 250ms ease-in-out'}}>
+      <div>
         <Helmet title={`Blog | ${config.siteTitle}`} />
 
         <PageHero
           title={`Blog`}
           description={`Whether you’re building a marketing website, a mobile app or the next Facebook, we’re experienced in the right tool for the xxx.`} />
+
+        <section className="bg-red pv5 white relative overflow-hidden" style={{opacity: '1', transition: 'opacity 250ms ease-in-out'}}>
+          <div className="row mw8 relative z-1">
+            <h2>Blog</h2>
+            <hr className="mw2 mh0 mv4" />
+            <h3 className="f2 fw5 lh-title measure-narrow">xxx</h3>
+          </div>
+          <img src="/bgs/saturn-bg.jpg" className="w-100 absolute top-0 right-0 z-0" alt="Spacetime background image" />
+        </section>
 
         <PostListing postEdges={postEdges} />
       </div>

@@ -7,14 +7,14 @@ import PageHero from '../components/PageHero'
 import ServiceCard from '../components/ServiceCard'
 
 const ServicesPage = ({ transition }) => (
-  <div style={transition && transition.style}>
+  <div>
     <Helmet title={`Services | ${config.siteTitle}`} />
 
     <PageHero
       title={"Services"}
-      description={"Whether you’re building a marketing website, a mobile app or the next Facebook, we’re experienced in the right tool for the xxx."} />
+      description={"Whether you’re building a marketing website, a mobile app or the next Face."} />
 
-    <section className="pv5 cf bg-fog-white">
+    <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
       <div className="row">
         <div className="fl w-50-ns">
           <h2 className="f1 serif red">Our team provides the expertise and skill you need to drive your project forward to success.</h2>

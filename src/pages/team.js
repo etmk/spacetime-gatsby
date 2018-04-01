@@ -6,14 +6,14 @@ import config from '../../data/site-config'
 import PageHero from '../components/PageHero'
 
 const TeamPage = ({ transition }) => (
-  <div style={transition && transition.style}>
+  <div>
     <Helmet title={`Team | ${config.siteTitle}`} />
 
     <PageHero
       title={"Team"}
-      description={"Two heads are better than one. Three heads are better than two. n<sup>x</sup> heads, well that's best."} />
+      description={"Two heads are better than one. Three heads are better than two. n<sup>x</sup> heads, well that's best of all."} />
 
-    <section className="bg-red pv5 white relative overflow-hidden">
+    <section className="bg-red pv5 white relative overflow-hidden" style={transition && transition.style}>
       <div className="row mw8 relative z-1">
         <h2>Teamwork with Purpose</h2>
         <hr className="mw2 mh0 mv4" />
@@ -57,7 +57,7 @@ const TeamPage = ({ transition }) => (
             <p className="f7 black-70 ma0">Developer</p>
           </div>
           <div className="tc mh3 mb4">
-            <img src="/avatars/travis-petticrew-avatar.jpg" className="br-100 mw4 ma2" alt="Daniel Dixon" />
+            <img src="/avatars/daniel-dixon-avatar.jpg" className="br-100 mw4 ma2" alt="Daniel Dixon" />
             <h3 className="f5 fw7 mv1">Daniel Dixon</h3>
             <p className="f7 black-70 ma0">Developer</p>
           </div>

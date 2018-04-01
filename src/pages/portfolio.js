@@ -8,14 +8,14 @@ import PortfolioCard from '../components/PortfolioCard'
 
 
 const PortfolioPage = ({ transition }) => (
-  <div style={transition && transition.style}>
+  <div>
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
 
     <PageHero
       title={`Portfolio`}
       description={`Good looking work isn’t good enough. Good work delivers great results beyond the imagination`} />
 
-    <section className="pv5 cf bg-fog-white">
+    <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
       <div className="row">
         <div className="fl w-50-ns">
           <h2 className="f1 serif red">Our team provides the expertise and skill you need to drive your project forward to success.</h2>
@@ -46,6 +46,7 @@ const PortfolioPage = ({ transition }) => (
         name={`dude-perfect`}
         title={`Dude Perfect`}
         description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        urlLink={`http://dudeperfect.com/`}
         bgColor={`#00FFDE`}
         textColor={`black`}
         logoPath={`client-logos/dude-perfect-icon.svg`}
@@ -56,14 +57,17 @@ const PortfolioPage = ({ transition }) => (
           name={`keyzie`}
           title={`Keyzie`}
           description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+          urlLink={`https://www.keyzie.com/`}
           bgColor={`#F78657`}
           textColor={`black`}
           logoPath={`client-logos/keyzie-logo.svg`}
           bgYAxis={`top`} />
+
         <PortfolioCard
           name={`studiohop`}
           title={`StudioHop`}
           description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+          urlLink={`https://www.studiohopfitness.com/`}
           bgColor={`#00C2F2`}
           textColor={`black`}
           logoPath={`client-logos/studiohop-icon.svg`}
@@ -74,6 +78,7 @@ const PortfolioPage = ({ transition }) => (
         name={`bell`}
         title={`Bell`}
         description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        urlLink={`http://www.bellflight.com/`}
         bgColor={`#000`}
         textColor={`white`}
         logoPath={`client-logos/bell-logo.svg`}
@@ -84,6 +89,7 @@ const PortfolioPage = ({ transition }) => (
           name={`steadkey`}
           title={`Steadkey`}
           description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+          urlLink={`https://www.steadkey.com/`}
           bgColor={`#F64A53`}
           textColor={`black`}
           logoPath={`client-logos/steadkey-logo.svg`}
@@ -93,6 +99,7 @@ const PortfolioPage = ({ transition }) => (
           name={`vault-aviation`}
           title={`Vault Aviation`}
           description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+          urlLink={`https://vaultjet.com/`}
           bgColor={`#232825`}
           textColor={`white`}
           logoPath={`client-logos/vault-aviation-logo.svg`}
@@ -103,6 +110,7 @@ const PortfolioPage = ({ transition }) => (
         name={`neue-build`}
         title={`Neue Build`}
         description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        urlLink={`https://neuebuild.com/`}
         bgColor={`#00BAFE`}
         textColor={`black`}
         logoPath={`client-logos/neue-build-logo.svg`}
