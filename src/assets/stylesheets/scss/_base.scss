@@ -95,7 +95,11 @@ hr {
 }
 
 .row {
-  width: 95%;
+  width: 90%;
   max-width: 80rem;
   margin: 0 auto;
+
+  @media #{$breakpoint-not-small} {
+    width: 85%;
+  }
 }

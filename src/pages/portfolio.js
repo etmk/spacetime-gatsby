@@ -20,7 +20,7 @@ const PortfolioPage = ({ transition }) => (
     <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
       <div className="row">
         <div className="fl w-50-ns">
-          <h2 className="f1 serif red">Our team provides the expertise and skill you need to drive your project forward to success.</h2>
+          <h2 className="f2 serif red mt0">Our team provides the expertise and skill you need to drive your project forward to success.</h2>
           <p className="sans-serif black-50 fw5 measure">Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans on a per client basis, because your problem is unique and deserves a strategy to drive results and lead to success.</p>
           <div className="flex">
             <ul className="lh-copy f6 mv4">
@@ -122,7 +122,17 @@ const PortfolioPage = ({ transition }) => (
 
     <section className="pv5 cf bg-deep-purple white">
       <div className="row">
-        <div className="fl w-50-ns">
+        <div className="fr-l w-40-l mb5">
+          <h2 className="f2 serif dark-red mt0 mt3-ns">We want to work with you</h2>
+          <p className="white-80 sans-serif measure-narrow">We’ve worked on a variety of projects with a wide range of clients, each with a unique problem set and perspective.</p>
+          <p className="white-80 sans-serif measure-narrow">We continually improve our process and do our best work in strong partnerships with our clients.</p>
+          <Link
+            to="contact"
+            className="f6 fw5 link br1 ph3 pv3 mt4 dib white bg-dark-red dim">
+              Let's make something great together →
+          </Link>
+        </div>
+        <div className="fl-l w-50-l bt bw1 b--white-10 pt4 pa0-l bw0-l">
           <ClientList />
         </div>
       </div>
