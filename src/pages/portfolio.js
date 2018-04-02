@@ -5,6 +5,8 @@ import Link from 'gatsby-link'
 import config from '../../data/site-config'
 import PageHero from '../components/PageHero'
 import PortfolioCard from '../components/PortfolioCard'
+import ClientList from '../components/ClientList'
+
 
 
 const PortfolioPage = ({ transition }) => (
@@ -56,7 +58,7 @@ const PortfolioPage = ({ transition }) => (
         <PortfolioCard
           name={`keyzie`}
           title={`Keyzie`}
-          description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+          description={`The future of real estate is personal. Keyzie changes the nature of buying and selling property by cutting out the expensive fees; keeping cash in your pocket.`}
           urlLink={`https://www.keyzie.com/`}
           bgColor={`#F78657`}
           textColor={`black`}
@@ -66,7 +68,7 @@ const PortfolioPage = ({ transition }) => (
         <PortfolioCard
           name={`studiohop`}
           title={`StudioHop`}
-          description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+          description={`We rebuilt StudioHop's platform and website in a way to prepare for continued growth and scale in the years to come.`}
           urlLink={`https://www.studiohopfitness.com/`}
           bgColor={`#00C2F2`}
           textColor={`black`}
@@ -77,7 +79,7 @@ const PortfolioPage = ({ transition }) => (
       <PortfolioCard
         name={`bell`}
         title={`Bell`}
-        description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        description={`New brand. New logo. New vision. New mission. We partnered with Bell to tackle the future of the Bell web experience.`}
         urlLink={`http://www.bellflight.com/`}
         bgColor={`#000`}
         textColor={`white`}
@@ -88,7 +90,7 @@ const PortfolioPage = ({ transition }) => (
         <PortfolioCard
           name={`steadkey`}
           title={`Steadkey`}
-          description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+          description={`We took Steadkey from zero to MVP, building the app, website, and onboarding the first round of users.`}
           urlLink={`https://www.steadkey.com/`}
           bgColor={`#F64A53`}
           textColor={`black`}
@@ -98,7 +100,7 @@ const PortfolioPage = ({ transition }) => (
         <PortfolioCard
           name={`vault-aviation`}
           title={`Vault Aviation`}
-          description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+          description={`We leveled up the Vault Aviation web design and experience to reflect the elite status the brand deserves.`}
           urlLink={`https://vaultjet.com/`}
           bgColor={`#232825`}
           textColor={`white`}
@@ -109,13 +111,21 @@ const PortfolioPage = ({ transition }) => (
       <PortfolioCard
         name={`neue-build`}
         title={`Neue Build`}
-        description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
+        description={`New build. New home. Move in ready. We launched the Neue Build startup to focus on the Texas new construction home market.`}
         urlLink={`https://neuebuild.com/`}
         bgColor={`#00BAFE`}
         textColor={`black`}
         logoPath={`client-logos/neue-build-logo.svg`}
         bgYAxis={`top`} />
 
+    </section>
+
+    <section className="pv5 cf bg-deep-purple white">
+      <div className="row">
+        <div className="fl w-50-ns">
+          <ClientList />
+        </div>
+      </div>
     </section>
   </div>
 )

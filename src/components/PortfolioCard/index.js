@@ -15,7 +15,7 @@ class PortfolioCard extends React.Component {
               <h3 className="f3 f2-ns mv3 white-90">{this.props.title}</h3>
               <p className="sans-serif fw5 white-70 measure-narrow mb3 mb5-ns">{this.props.description}</p>
               <a href={this.props.urlLink}
-                target="_blank"
+                target="_blank" rel="nofollow"
                 className="f5 fw5 link br2 ph4 pv3 mb2 dib black-80 bg-white dim">
                 Visit {this.props.title} →
               </a>
@@ -25,7 +25,7 @@ class PortfolioCard extends React.Component {
               <h3 className="f3 f2-ns mv3 black-80">{this.props.title}</h3>
               <p className="sans-serif fw5 black-60 measure-narrow mb3 mb5-ns">{this.props.description}</p>
               <a href={this.props.urlLink}
-                target="_blank"
+                target="_blank" rel="nofollow"
                 className="f5 fw5 link br2 ph4 pv3 mb2 dib white bg-dark-purple dim">
                 Visit {this.props.title} →
               </a>
@@ -40,6 +40,3 @@ class PortfolioCard extends React.Component {
 }
 
 export default PortfolioCard;
-
-
- // h-100 w-auto mw-none w-auto-l mw-100-l

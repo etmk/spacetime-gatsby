@@ -1,0 +1,67 @@
+// Components/Header
+
+.site-header {
+  background-color: $black;
+  transition: $global-transition;
+
+  @media #{$breakpoint-not-small} {
+    background-color: $transparent;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    &:hover {
+      background-color: $black-10;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    text-align: center;
+
+    @media screen and (max-width: 30em) {
+      display: block;
+      padding: .5rem;
+      border-bottom: 1px solid rgba($white, .2);
+    }
+  }
+
+  .site-nav {
+    text-align: center;
+
+    @media #{$breakpoint-not-small} {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .nav-group {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      color: rgba($white, .9);
+      text-decoration: none;
+      border-bottom: 0px solid $orange;
+      padding: 1rem .5rem;
+      display: inline-block;
+      transition: $global-transition;
+
+      @media #{$breakpoint-not-small} {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .75rem;
+        letter-spacing: .08em;
+        padding: 1.5rem 1rem;;
+      }
+
+      &:hover {
+        // border-width: 4px;
+        color: $orange;
+      }
+    }
+  }
+}

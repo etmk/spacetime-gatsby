@@ -4,56 +4,57 @@ import Link from 'gatsby-link'
 import logo from '../../assets/images/logos/logo-06.svg'
 
 const Header = () => (
-  <header className="absolute w-100 z-2">
+  <header className="site-header">
     <div className="row">
-      <nav className="flex justify-between-ns">
+      <nav className="site-nav">
 
         <Link
           to="/"
           title="Home"
-          className="self-center dim">
+          className="site-header__logo">
           <img src={logo} alt="Spacetime" />
-          <span className="clip link white dib mr3">Spacetime</span>
+          <span className="clip">Spacetime</span>
         </Link>
 
-        <div>
+        <div className="nav-group">
           <Link
             to="portfolio"
             title="Portfolio"
-            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            className="nav-group__item">
             Portfolio
           </Link>
 
           <Link
             to="services"
             title="Services"
-            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            className="nav-group__item">
             Services
           </Link>
 
           <Link
             to="team"
             title="Team"
-            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            className="nav-group__item">
             Team
           </Link>
         </div>
 
-        <div>
+        <div className="nav-group">
           <Link
             to="blog"
             title="Blog"
-            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            className="nav-group__item">
             Blog
           </Link>
 
           <Link
             to="contact"
             title="Contact"
-            className="link dim white dib b ttu f7 ph3 pv4 tracked">
+            className="nav-group__item">
             Contact
           </Link>
         </div>
+
       </nav>
     </div>
   </header>

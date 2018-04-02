@@ -107,12 +107,13 @@ $white-0125: rgba(255,255,255,.0125) !default;
 $dark-red: #f03f47 !default;
 $red: #ff4136 !default;
 $light-red: #ff725c !default;
-$orange: #ff6300 !default;
+$orange: #F6931C !default;
 $gold: #ffb700 !default;
 $yellow: #ffd700 !default;
 $light-yellow: #fbf1a9 !default;
 $purple: #5e2ca5 !default;
 $dark-purple: #3A333D !default;
+$deep-purple: #221E24 !default;
 $light-purple: #a463f2 !default;
 $dark-pink: #d5008f !default;
 $hot-pink: #ff41b4 !default;
@@ -137,8 +138,11 @@ $wordpress-blue: #21759b;
 
 // Custom Media Query Variables
 
-$breakpoint-not-small: 'screen and (min-width: 30em)' !default;
-$breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default;
+$screen-small: 30em;
+$screen-medium: 60em;
+
+$breakpoint-not-small: 'screen and (min-width: 30em)' !default; //480px
+$breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default; //480-960px
 $breakpoint-large: 'screen and (min-width: 60em)' !default;
 
 /*
@@ -146,3 +150,5 @@ $breakpoint-large: 'screen and (min-width: 60em)' !default;
     VARIABLES
 
 */
+
+$global-transition: .2s all linear;

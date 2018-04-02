@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 import config from '../../../data/site-config'
 
 const StartupServicesPage = ({ transition }) => (
-  <div style={transition && transition.style} className="service-page content-page">
+  <div className="service-page content-page">
     <Helmet title={`Services | ${config.siteTitle}`} />
 
     <section className="ph5-l pt6 pb5 bg-dark-red tc">
@@ -14,7 +14,7 @@ const StartupServicesPage = ({ transition }) => (
       <p className="f4 tc white-80 ml-auto mr-auto mb0 measure-narrow">Startups need special attention and a healthy dose of ingenuity to grow toward success.</p>
     </section>
 
-    <section className="ph3 ph5-m ph7-l pv4">
+    <section className="ph3 ph5-m ph7-l pv4"  style={transition && transition.style} >
 
       <p>Roadmapping is paid discovery (which is a fancy way of saying it’s a way to get you and your soon-to-be client on the same wavelength about their project, goals, risks, and so on.)</p>
 
