@@ -19,8 +19,8 @@ const PortfolioPage = ({ transition }) => (
 
     <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
       <div className="row">
-        <div className="fl w-50-ns">
-          <h2 className="f2 serif red mt0">Our team provides the expertise and skill you need to drive your project forward to success.</h2>
+        <div className="fl-l w-60-l">
+          <h2 className="f2 f1-ns serif red mt0">Our team provides the expertise and skill you need to drive your project forward to success.</h2>
           <p className="sans-serif black-50 fw5 measure">Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans on a per client basis, because your problem is unique and deserves a strategy to drive results and lead to success.</p>
           <div className="flex">
             <ul className="lh-copy f6 mv4">
@@ -37,8 +37,8 @@ const PortfolioPage = ({ transition }) => (
             </ul>
           </div>
         </div>
-        <div>
-          <img src="illustrations/services-illustration.png" alt="" className="fr" />
+        <div className="fr-l w-30-l">
+          <img src="illustrations/services-illustration.png" alt="" className="fr-l dn db-l" />
         </div>
       </div>
     </section>
