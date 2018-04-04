@@ -1,6 +1,7 @@
 [build]
   publish = "public"
   command = "npm run build"
+  NODE_ENV = "production"
 [build.environment]
   NODE_VERSION = "8"
   YARN_VERSION = "1.5.1"
