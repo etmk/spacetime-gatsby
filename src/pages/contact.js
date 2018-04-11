@@ -31,6 +31,12 @@ const ContactPage = ({ transition }) => (
         data-netlify-honeypot="bot-field"
         className="pa4 black-80">
 
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" />
+          </label>
+        </p>
+
         <div className="mv4">
           <label className="f6 b db mb2">Name
             <input id="name" className="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc" placeholder="Your name" />
