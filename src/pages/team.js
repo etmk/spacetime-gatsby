@@ -40,10 +40,10 @@ const TeamPage = ({ transition }) => (
       </div>
     </section>
 
-    <section className="pv5">
+    <section className="pt5 pb5">
       <div className="row">
         <h2 className="tc red f3">Spacefriends</h2>
-        <p>Spacetime is a bit different than other agencies. Instead of </p>
+        <p className="tc">Spacetime is a bit different than other agencies. Instead of </p>
         <hr className="mw2 mt4 mb5 black-10 bw2" />
         <div className="flex flex-wrap justify-center mw7 center">
           <div className="tc mh3 mb4">
@@ -77,84 +77,53 @@ const TeamPage = ({ transition }) => (
             <p className="f7 black-70 ma0">Full-stack Developer</p>
           </div>
         </div>
+
+        <div className="tc mv5">
+          <Link to="/contact" className="f6 link dim ba ph3 pv2 dib black">Want to become a Spacefriend?</Link>
+        </div>
       </div>
     </section>
 
-    <section className="bg-white pv5">
-      <ul className="list f1 fw6 lh-title">
-        <li className="mv4">Love what you do, do what you love</li>
-        <li className="mv4">Prototypes are practical</li>
-        <li className="mv4">Something is better than nothing</li>
-        <li className="mv4">Software is never finished</li>
-        <li className="mv4">Design is essential</li>
-        <li className="mv4">Process makes perfect</li>
-      </ul>
+    <section className="bg-washed-green red">
+
       <ul className="list pl0">
-        <li className="pa3 pa4-ns bb b--black-10">
-        <b className="db f3 mb1">
-        alignment
-        </b>
-        <span className="f5 db lh-copy measure">
-        The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.
-        </span>
+        <li className="pv5 bb bt">
+          <div className="row">
+            <h3 className="db f2 mt0 mb4">Love what you do, do what you love</h3>
+            <span className="f5 db lh-copy measure">What other reason is there?</span>
+          </div>
         </li>
-        <li className="pa3 pa4-ns bb b--black-10">
-        <b className="db f3 mb1">
-        ascender
-        </b>
-        <span className="f5 db lh-copy measure">
-        The part of lowercase letters (such as k, b, and d) that ascends above the x-height of the other lowercase letters in a face.
-        </span>
+        <li className="pv5 bb">
+          <div className="row">
+            <h3 className="db f2 mt0 mb4">Prototypes are practical</h3>
+            <span className="f5 db lh-copy measure">Websites and apps are not pretty pictures made in Photoshop. They are living, fluid interactive experiences. Static design is needed for direction but is not the end goal. Prototypes provide a more accurate view into how a product should feel and function.</span>
+          </div>
         </li>
-        <li className="pa3 pa4-ns bb b--black-10">
-        <b className="db f3 mb1">
-        baseline
-        </b>
-        <span className="f5 db lh-copy measure">
-        The imaginary line on which the majority of the characters in a typeface rest.
-        </span>
+        <li className="pv5 bb">
+          <div className="row">
+            <h3 className="db f2 mt0 mb4">Something is better than nothing</h3>
+            <span className="f5 db lh-copy measure">Something can be used. Something can be tested. Something can provide value. Waiting for the "right" moment, or for your product to be "perfect" is never going to happen. Get something in front of your customers, then start iterating.</span>
+          </div>
         </li>
-        <li className="pa3 pa4-ns bb b--black-10">
-        <b className="db f3 mb1">
-        body text
-        </b>
-        <span className="f5 db lh-copy measure">
-        The paragraphs in a document that make up the bulk of its content. The body text should be set in an appropriate and easy-to-read face, typically at 10- or 12-point size.
-        </span>
+        <li className="pv5 bb">
+          <div className="row">
+            <h3 className="db f2 mt0 mb4">Software is never finished</h3>
+            <span className="f5 db lh-copy measure">Software development never ends, there is never a ship date with a launch where you never have to touch it again, just watch the machine print money. That's not going to happen. Software requires constand input, updates, testing, and refinement to succ</span>
+          </div>
         </li>
-        <li className="pa3 pa4-ns bb b--black-10">
-        <b className="db f3 mb1">
-        boldface
-        </b>
-        <span className="f5 db lh-copy measure">
-        A typeface that has been enhanced by rendering it in darker, thicker strokes so that it will stand out on the page. Headlines that need emphasis should be boldface. Italics are preferable for emphasis in body text.
-        </span>
+        <li className="pv5 bb">
+          <div className="row">
+            <h3 className="db f2 mt0 mb4">Design is essential</h3>
+            <span className="f5 db lh-copy measure">Everything has been designed. The question is whether it is designed well or by lack of implicite focus designed poorly. Good design goes beyond the visual, into the functional and emotional response.</span>
+          </div>
         </li>
-        <li className="pa3 pa4-ns bb b--black-10">
-        <b className="db f3 mb1">
-        bullet
-        </b>
-        <span className="f5 db lh-copy measure">
-        A dot or other special character placed at the left of items in a list to show that they are individual, but related, points.
-        </span>
+        <li className="pv5 bb">
+          <div className="row">
+            <h3 className="db f2 mt0 mb4">Process makes perfect</h3>
+            <span className="f5 db lh-copy measure">Good products don't happen by accident. Discipline and planning are necessary for success. Products are not made by magic, but by thoughtful, time-tested processes.</span>
+          </div>
         </li>
-        <li className="pa3 pa4-ns bb b--black-10">
-        <b className="db f3 mb1">
-        cap height
-        </b>
-        <span className="f5 db lh-copy measure">
-        The height from the baseline to the top of the uppercase letters in a font. This may or may not be the same as the height of ascenders. Cap height is used in some systems to measure the type size.
-        </span>
-        </li>
-        <li className="pa3 pa4-ns">
-        <b className="db f3 mb1">
-        centered
-        </b>
-        <span className="f5 db lh-copy measure">
-        Text placed at an equal distance from the left and right margins. Headlines are often centered. It is generally not good to mix centered text with flush left or flush right text.
-        </span>
-        </li>
-        </ul>
+      </ul>
     </section>
 
   </div>

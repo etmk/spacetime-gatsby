@@ -23,31 +23,26 @@ const ContactPage = ({ transition }) => (
     </section>
 
     <section>
-      <form className="pa4 black-80">
-        <div className="measure">
-        <label
-          for="name"
-          className="f6 b db mb2"
-        >
-        Name
-        <span className="normal black-60">
-        (optional)
-        </span>
-        </label>
-        <input
-          id="name"
-          className="input-reset ba b--black-20 pa2 mb2 db w-100"
-          type="text"
-          aria-describedby="name-desc"
-        />
-        <small
-          id="name-desc"
-          className="f6 black-60 db mb2"
-        >
-        Helper text for the form control.
-        </small>
+
+      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className="pa4 black-80">
+        <div className="mv4">
+          <label for="name" className="f6 b db mb2">Name</label>
+          <input id="name" className="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc" />
+          <small id="name-desc" className="f6 black-60 db mb2">Helper text for the form control.</small>
+        </div>
+        <div className="mv4">
+          <label for="email" className="f6 b db mb2">Email address</label>
+          <input id="email" className="input-reset ba b--black-20 pa2 mb2 db w-100" type="email" aria-describedby="email-field" />
+        </div>
+        <div className="mv4">
+          <label for="message" className="f6 b db mb2">Message</label>
+          <textarea id="message" className="input-reset ba b--black-20 pa2 mb2 db w-100" />
+        </div>
+        <div className="mv4">
+          <button type="submit">Send</button>
         </div>
       </form>
+
     </section>
   </div>
 )
