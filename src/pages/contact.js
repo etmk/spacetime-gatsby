@@ -32,7 +32,7 @@ const ContactPage = ({ transition }) => (
 
         <div className="mv4">
           <label className="f6 b db mb2">Name
-            <input id="name" className="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" placeholder="Your name" />
+            <input id="name" name="name" className="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" placeholder="Your name" />
           </label>
         </div>
         <div className="mv4">
