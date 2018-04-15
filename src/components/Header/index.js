@@ -1,10 +1,13 @@
 import React from 'react'
+import Headroom from 'react-headroom'
 import Link from 'gatsby-link'
 
 import logo from '../../assets/images/logos/logo-06.svg'
 
 const Header = () => (
-  <header className="site-header">
+  <Headroom
+    className="site-header"
+    disableInlineStyles={true}>
     <div className="row">
       <nav className="site-nav">
 
@@ -57,7 +60,7 @@ const Header = () => (
 
       </nav>
     </div>
-  </header>
+  </Headroom>
 )
 
 export default Header

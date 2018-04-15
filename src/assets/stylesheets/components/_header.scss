@@ -1,20 +1,61 @@
 // Components/Header
 
+.headroom--pinned {
+  background-color: rgba($deep-purple, .5);
+  transition: $global-transition;
+
+  &:hover {
+    background-color: rgba($deep-purple, .75);
+  }
+
+  .nav-group__item {
+    padding: 0 1rem !important;
+  }
+}
+.headroom--unpinned {
+  background-color: rgba($black, .1);
+  transition: $global-transition;
+}
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+
+
 .site-header {
-  background-color: $black;
+  background-color: $deep-purple;
   transition: $global-transition;
 
   @media #{$breakpoint-not-small} {
-    background-color: $transparent;
+    background-color: rgba($deep-purple, 0);
 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
 
     &:hover {
-      background-color: $black-10;
+      background-color: rgba($deep-purple, .2);
     }
   }
 
@@ -41,6 +82,7 @@
   .nav-group {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &__item {
       color: rgba($white, .9);
