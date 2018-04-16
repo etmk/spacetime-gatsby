@@ -15,7 +15,7 @@ const PortfolioPage = ({ transition }) => (
 
     <PageHero
       title={`Portfolio`}
-      description={`Good looking work isn’t good enough. Good work delivers great results beyond the imagination`} />
+      description={`Good looking work isn’t good enough. Good work delivers great results beyond the imagination.`} />
 
     <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
       <div className="row">

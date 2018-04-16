@@ -12,7 +12,7 @@ const ServicesPage = ({ transition }) => (
 
     <PageHero
       title={"Services"}
-      description={"Whether you’re building a marketing website, a mobile app or the next Face."} />
+      description={"We help influential companies craft outstanding&nbsp;digital experiences."} />
 
     <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
       <div className="row">
@@ -35,7 +35,7 @@ const ServicesPage = ({ transition }) => (
           </div>
         </div>
         <div>
-          <img src="illustrations/services-illustration.png" alt="" className="" />
+          <img src="illustrations/services-illustration.png" alt="" className="relative nt6-l nb6-l dn dib-ns" />
         </div>
       </div>
     </section>
@@ -96,38 +96,43 @@ const ServicesPage = ({ transition }) => (
             iconPath={``}
             bgColor={`#5A62FF`}/>
 
-            <ServiceCard
-              name={`teardowns`}
-              title={`Teardowns`}
-              description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
-              icon={`🔮`}
-              iconPath={``}
-              bgColor={`#ECAC1D`}/>
+          <ServiceCard
+            name={`teardowns`}
+            title={`Teardowns`}
+            description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+            icon={`🔮`}
+            iconPath={``}
+            bgColor={`#ECAC1D`}/>
+
+          <ServiceCard
+            name={`coffee-time`}
+            title={`Coffee Time`}
+            description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+            icon={`☕️`}
+            iconPath={``}
+            bgColor={`#3D3B33`}/>
       </div>
     </section>
 
-    <section className="pv4">
+    <section className=" pv5 mt5 bg-clip-up">
       <div className="row">
-        <div className="br2 ba b--light-blue bg-lightest-blue">
-          <div className="dt-ns dt--fixed-ns w-100">
-            <div className="pa3 pa4-ns dtc-ns v-mid">
-              <div>
-                <h2 className="fw4 mt0 mb3">
-                  Not sure what you need?
-                </h2>
-                <p className="black-70 measure lh-copy mv0">
-                  This is suporting copy for the wonderful promo catchphrase that is going to be used.
-                </p>
-              </div>
+        <div className="bg-white deep-shadow pa4 ph5-l flex-l justify-between-l">
+          <div className="w-80-m w-70-l mw6">
+            <div>
+              <h2 className="f4 fw5 mb3">
+                Not sure what you need?
+              </h2>
+              <p className="f3 f2-ns fw6 mt3-l mb3-l serif red measure-narrow lh-solid">
+                No problem, let’s schedule a time to talk about the problem you need solved
+              </p>
             </div>
-            <div className="pa3 pa4-ns dtc-ns v-mid">
-              <a
-                href="#"
-                className="no-underline f6 tc db w-100 pv3 bg-animate bg-blue hover-bg-dark-blue white br2"
-                >
-                  Sign up for free
-                </a>
-              </div>
+          </div>
+          <div className="flex items-center">
+            <a
+              href="#"
+              className="no-underline f6 fw6 tc dib pa3 bg-deep-purple dim white-90">
+                Get in touch for a free consultation →
+            </a>
           </div>
         </div>
       </div>
