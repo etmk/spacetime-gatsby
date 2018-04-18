@@ -102,6 +102,10 @@ hr {
   @media #{$breakpoint-not-small} {
     width: 85%;
   }
+
+  &.narrow {
+    max-width: 40rem;
+  }
 }
 
 a {
