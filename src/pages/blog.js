@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 import config from '../../data/site-config'
+import MainWrapper from '../layouts/MainWrapper/MainWrapper'
 import PageHero from '../components/PageHero'
 import PostListing from '../components/PostListing/'
 
@@ -15,18 +16,22 @@ class BlogPage extends React.Component {
 
         <PageHero
           title={`Blog`}
-          description={`Whether you’re building a marketing website, a mobile app or the next Facebook, we’re experienced in the right tool for the xxx.`} />
+          description={`Whether you’re building a marketing website, a mobile app or the next`} />
 
-        <section className="bg-red pv5 white relative overflow-hidden" style={{opacity: '1', transition: 'opacity 250ms ease-in-out'}}>
-          <div className="row mw8 relative z-1">
-            <h2>Blog</h2>
-            <hr className="mw2 mh0 mv4" />
-            <h3 className="f2 fw5 lh-title measure-narrow">xxx</h3>
-          </div>
-          <img src="/bgs/saturn-bg.jpg" className="w-100 absolute top-0 right-0 z-0" alt="Spacetime background image" />
-        </section>
+        <MainWrapper>
 
-        <PostListing postEdges={postEdges} />
+          <section className="bg-red pv5 white relative overflow-hidden" style={{opacity: '1', transition: 'opacity 250ms ease-in-out'}}>
+            <div className="row mw8 relative z-1">
+              <h2>Blog</h2>
+              <hr className="mw2 mh0 mv4" />
+              <h3 className="f2 fw5 lh-title measure-narrow">xxx</h3>
+            </div>
+            <img src="/bgs/saturn-bg.jpg" className="w-100 absolute top-0 right-0 z-0" alt="Spacetime background image" />
+          </section>
+
+          <PostListing postEdges={postEdges} />
+
+        </MainWrapper>
       </div>
     );
   }

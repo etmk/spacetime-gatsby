@@ -17,8 +17,9 @@
 
 */
 
-.tracked       { letter-spacing:  $letter-spacing-1; }
 .tracked-tight { letter-spacing: $letter-spacing-tight; }
+.tracked-light { letter-spacing: $letter-spacing-light; }
+.tracked       { letter-spacing:  $letter-spacing-1; }
 .tracked-mega  { letter-spacing:  $letter-spacing-2; }
 
 @media #{$breakpoint-not-small} {

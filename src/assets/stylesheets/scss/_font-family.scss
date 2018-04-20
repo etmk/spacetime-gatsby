@@ -17,12 +17,16 @@
   font-family: $sans-serif;
 }
 
+// .sans-default {
+//   font-family: $sans-default;
+// }
+
 .serif {
   font-family: $serif;
 }
 
-.system-sans-serif {
-  font-family: sans-serif;
+.system-sans {
+  font-family: $system-sans;
 }
 
 .system-serif {
@@ -96,4 +100,3 @@ code, .code {
   font-family: baskerville,
                serif;
 }
-

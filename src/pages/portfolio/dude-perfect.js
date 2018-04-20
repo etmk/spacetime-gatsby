@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
+import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import PortfolioHero from '../../components/PortfolioHero'
 import PortfolioMeta from '../../components/PortfolioMeta'
 import PortfolioPagination from '../../components/PortfolioPagination'
@@ -31,7 +32,7 @@ const DudePerfectPage = () => (
       label3={`Easter Egg`}
       text3={`404 Page →`}/>
 
-    <main>
+    <MainWrapper>
       <article className="bg-white">
 
         <div className="ph4 ph5-m ph6-l">
@@ -68,7 +69,7 @@ const DudePerfectPage = () => (
           </div>
         </div>
       </article>
-    </main>
+    </MainWrapper>
 
     <PortfolioPagination />
   </div>

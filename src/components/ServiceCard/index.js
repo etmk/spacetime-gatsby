@@ -9,10 +9,10 @@ class ServiceCard extends React.Component {
         <Link
           to={"services/" + this.props.name}
           title={this.props.title}
-          className="tc bg-black br2 db no-underline aspect-ratio aspect-ratio--5x7 grow overflow-hidden"
+          className={`${this.props.textColor} tc bg-black br2 db no-underline aspect-ratio-ns aspect-ratio--5x7-ns grow overflow-hidden-ns`}
           style={{backgroundColor: `${this.props.bgColor}`}}
         >
-          <div className="aspect-ratio--object ph4 pv5">
+          <div className="pa4 aspect-ratio--object-ns flex-ns flex-column-ns justify-around-ns">
 
             {this.props.icon.length > 0 ? (
               <span className="dib f1">{this.props.icon}</span>
@@ -20,9 +20,9 @@ class ServiceCard extends React.Component {
               <img src={this.props.iconPath} alt="" className="" />
             }
 
-            <h2 className="f3 black-80">{this.props.title}</h2>
-            <p className="sans-serif f6 black-60 ml-auto mr-auto mb0 measure lh-title">{this.props.description}</p>
-            <span className="black-60 ttu f7 fw6 tracked mt5 dib">Read more →</span>
+            <h2 className="f3 o-90">{this.props.title}</h2>
+            <p className="sans-serif f6 fw5 o-70 color-inherit ml-auto mr-auto mb0 measure lh-title">{this.props.description}</p>
+            <span className="o-60 ttu f7 fw6 tracked mt4 dib">Read more →</span>
           </div>
 
         </Link>

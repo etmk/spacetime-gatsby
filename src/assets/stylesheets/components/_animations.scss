@@ -1,0 +1,38 @@
+@mixin scaleThis() {
+    -webkit-animation-name: scaleThis;
+    -webkit-animation-duration: 120s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes scaleThis {
+    0% { -webkit-transform:scale(1); }
+    //50% { -webkit-transform:scale(1); }
+    100% {-webkit-transform:scale(1.7); }
+}
+
+.scaleThis {
+  @include scaleThis;
+}
+
+
+// ScaleIn
+@mixin scaleIn() {
+    -webkit-animation-name: scaleIn;
+    -webkit-animation-duration: .65s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+}
+@-webkit-keyframes scaleIn {
+  0% {
+    -webkit-transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scaleIn {
+  @include scaleIn;
+}

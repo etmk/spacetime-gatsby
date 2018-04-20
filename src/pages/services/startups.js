@@ -1,8 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import ServiceRecommendation from '../../components/ServiceRecommendation'
 
 import config from '../../../data/site-config'
+import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page">
@@ -14,7 +16,7 @@ const StartupServicesPage = ({ transition }) => (
       <p className="f4 tc white-80 ml-auto mr-auto mb0 measure-narrow">Startups require a special, diverse set of skills to progress from idea to marketable business</p>
     </section>
 
-    <main style={transition && transition.style} >
+    <MainWrapper>
 
       <section id="table-of-content" className="pv4">
         <div className="row narrow">
@@ -57,7 +59,7 @@ const StartupServicesPage = ({ transition }) => (
           <p>Whatever your need, we always treat your project like our own. We only succeed when you succeed.</p>
           <p>Our specialized team will take you through our battle-hardened process. Provide strategy and insight into business building, customer acquisition, product development, pricing, and much more.</p>
 
-          <blockquote className="ba b--green tc mh0 mv4 ph2 pv4 br2">
+          <blockquote className="ba b--green tc mh0 mv4 ph2 pv4 br1">
             <p className="black f3 mt0 mb3">“Where there is no vision, there is no hope”</p>
             <footer>
               <cite>
@@ -73,50 +75,55 @@ const StartupServicesPage = ({ transition }) => (
 
       <section id="concept-exploration" className="pv5 gradient-light-blue">
         <div className="row narrow">
+
           <span className="numeral db ml-auto mr-auto">1</span>
-          <h3 className="f1 fw7 dark-red tracked-tight tc">Concept Exploration</h3>
+          <h3 className="f1 fw7 dark-red tracked-light tc">Concept Exploration</h3>
+
           <p>Our concept exploration startup tier is perfect for exploring and validating ideas. We find clients typically need concept exploration for two types of challenges.</p>
+
           <h3 className="f3 mb1"><small className="mr2 f5 serif">I.</small>A Brand New Startup Idea</h3>
+
           <p className="mt1">If you have a brand new startup idea but have not validated the idea or audience this could be what you need. We use a series of research, design, prototyping, and user testing to explore a concept with a goal in mind. Sometimes that goal is to create a visual concept, or build a prototype to test on potential customers, or even in preparation to raise venture capital.</p>
 
-          <div className="ba b--blue mh0 mt4 mb5 pa4 br1 nl3 nr3">
-            <h5 className="fw7 mt0 ttu tracked blue">Client Spotlight</h5>
-            <p className="sans-serif blue mb0">We worked with <strong>DropIn</strong> to design a concept the team could use to seek venture capital. We created visual branding and app interface flows to demonstrate the user experience and value proposition. We also developed a live app scaffold reflecting our findings in the design. The app wasn't full functioning, but provided real data and an MVP experience.</p>
+          <div className="ba b--blue mh0 mt4 mb5 pa4 br1">
+            <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight 🔦</h5>
+            <p className="f6 sans-serif blue mb0">We worked with <strong>DropIn</strong> to design a concept the team could use to seek venture capital. We created visual branding and app interface flows to demonstrate the user experience and value proposition. We also developed a live app scaffold reflecting our findings in the design. The app wasn't full functioning, but provided real data and an MVP experience.</p>
           </div>
 
           <h3 className="f3"><small className="mr2 f5 serif">II.</small>A Big Problem Existing in Your Current Startup</h3>
           <p>If you have an existing startup but and want to explore a problem we can do that too. Maybe you want to explore a visual redesign of your app. Or, you need to explore why customers are dropping out of your eCommerce checkout cycle. Or, you want to pitch a skunk-works type idea to your internal leadership.</p>
 
-          <hr className="black-10" />
-
-          <div className="flex justify-between">
+          <div className="flex justify-between bt b--black-20 pv3 mv5">
             <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">⭐️ Best for</h5>
-              <ul className="black-70 lh-copy">
-                <li>Exploring a business problem</li>
-                <li>Raising venture capital</li>
-                <li>Validating a target market</li>
-                <li>Getting started without building an MVP</li>
+              <h5 className="ttu f6 fw7 tracked">Best for ⭐️</h5>
+              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+                <li className="mv1">Exploring a business problem</li>
+                <li className="mv1">Raising venture capital</li>
+                <li className="mv1">Validating a target market</li>
+                <li className="mv1">Getting started without building an MVP</li>
               </ul>
             </div>
             <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">🚫 Not for</h5>
-              <ul className="black-70 lh-copy">
-                <li>Accelerated growth</li>
-                <li>Calculatable ROI scenarios</li>
-                <li>Long-term engagements</li>
+              <h5 className="ttu f6 fw7 tracked">Not for 🚫</h5>
+              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+                <li className="mv1">Accelerated growth</li>
+                <li className="mv1">Calculatable ROI scenarios</li>
+                <li className="mv1">Long-term engagements</li>
               </ul>
             </div>
           </div>
+
         </div>
       </section>
 
-      <section id="minimum-viable-product" className="pv4 gradient-light-blue">
+      <section id="minimum-viable-product" className="pv5 gradient-light-blue">
         <div className="row narrow">
-          <h3 className="f1 fw7 bb bw2 dib dark-red tracked-tight relative mb3"><span className="no-underline absolute left--4 left--2-m left--4-l black-20 f4 top-1 tracked">2</span>Minimum Viable Product</h3>
+          <span className="numeral db ml-auto mr-auto">2</span>
+          <h3 className="f1 fw7 dark-red tracked-light tc">Minimum Viable Product</h3>
+
           <p>The <abbr title="Minimum Viable Product">MVP</abbr> is a common concept in the startup world. The term comes from Eric Reis' book <em>The Lean Startup</em> where Eric writes about his personal startup experience and subsequent consulting and advisory positions with startups.</p>
 
-          <div className="bb bt  b--black-10 flex-ns justify-around tc mh0 mv4 ph2 pv4 nl5 nr5">
+          <div className="bb bt  b--black-10 flex-ns justify-around tc mh0 mv4 ph2 pv2 nl5 nr5">
             <div>
               <h5 className="ttu tracked f7 fw7 blue">Minimum</h5>
               <p className="black-70">The smallest version of&hellip;</p>
@@ -133,121 +140,126 @@ const StartupServicesPage = ({ transition }) => (
 
           <p>The purpose of an MVP is to take your concept or idea, whittle it down to the most essential and useful aspects, build it, and put it in front of customers as quickly as possible. So, to find our MVP we need to answer a few questions:</p>
 
-          <ol className="lh-copy black-60 fw5 mv4">
-            <li>What is the most important core concept of the product?</li>
-            <li>Is there a prospective audience that wants your product? And will they pay for it?</li>
-            <li>How can we test our product hypothesis on our audience as quickly and cheaply as possible?</li>
+          <ol className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+            <li className="mv2">What is the most important core concept of the product?</li>
+            <li className="mv2">Is there a prospective audience that wants your product? And will they pay for it?</li>
+            <li className="mv2">How can we test our product hypothesis on our audience as quickly and cheaply as possible?</li>
           </ol>
 
-          <div className="ba b--blue mh0 mt4 mb5 pa4 br1 nl3 nr3">
-            <h5 className="fw7 mt0 ttu tracked blue">Client Spotlight</h5>
-            <p className="sans-serif blue mb0">We began work with <strong>Steadkey</strong> in January 2016. Steadkey's founder, Jerry Williams, had begun Steadkey several years earlier, based on his extensive experience in the mortgage industry, but had little success. He'd worked with 3 independent developers and 2 professional agencies, yet 4 years later still did not have the solution promissed. The first thing we did with Jerry in January 2016 was strip away all the cruft and excess features and ideas muddying up the success of Steadkey. Starting from scratch, we executed on the key value propositions customers sought. We rebuilt the application from nothing, and in less than 3 months launched the new and improved Steadkey app and gained immediate traction with new customers. Consider that for a moment, 3 months versus the previous 4 years… yeah, that's awesome.</p>
+          <div className="ba b--blue mh0 mt4 mb5 pa4 br1">
+            <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight</h5>
+            <p className="f6 sans-serif blue mb0">We began work with <a className="blue hover-dark-blue b" href="https://www.steadkey.com/" target="_blank" rel="nofollow">Steadkey</a> in January 2016. Steadkey's founder, Jerry Williams, had begun Steadkey several years earlier, based on his extensive experience in the mortgage industry, but had little success. He'd worked with 3 independent developers and 2 professional agencies, yet 4 years later still did not have the solution promissed. The first thing we did with Jerry in January 2016 was strip away all the cruft and excess features and ideas muddying up the success of Steadkey. Starting from scratch, we executed on the key value propositions customers sought. We rebuilt the application from nothing, and in less than 3 months launched the new and improved Steadkey app and gained immediate traction with new customers. Consider that for a moment, 3 months versus the previous 4 years… yeah, that's awesome.</p>
           </div>
 
-          <hr className="black-10" />
-          <div className="flex justify-between">
+          <div className="flex justify-between bt b--black-20 pv3 mv5">
             <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">⭐️ Best for</h5>
-              <ul className="black-70 lh-copy">
-                <li>The idea and audience are already validated</li>
-                <li>Creating a product based on your own experience</li>
-                <li>
+              <h5 className="ttu f6 fw7 tracked">Best for ⭐️</h5>
+              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+                <li className="mv1">The idea and audience are already validated</li>
+                <li className="mv1">Creating a product based on your own experience</li>
+                <li className="mv1">
                   Solving old problems in new ways
                   <ul>
                     <li>Like building software to replace spreadsheet tasks; or applying on-demand services with consumer needs</li>
                   </ul>
                 </li>
-                <li>Tackling a problem within a budget</li>
+                <li className="mv1">Tackling a problem within a budget</li>
               </ul>
             </div>
             <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">🚫 Not for</h5>
-              <ul className="black-70 lh-copy">
-                <li>Projects that take longer than 3 months and millions of dollars</li>
-                <li>Businesses producing physical consumer goods (clothing, food products, etc)</li>
-                <li>Persnickety founders that are unwilling to compromise</li>
+              <h5 className="ttu f6 fw7 tracked">Not for 🚫</h5>
+              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+                <li className="mv1">Projects that take longer than 3 months and millions of dollars</li>
+                <li className="mv1">Businesses producing physical consumer goods (clothing, food products, etc)</li>
+                <li className="mv1">Persnickety founders that are unwilling to compromise</li>
               </ul>
             </div>
           </div>
+
         </div>
       </section>
 
-      <section id="startup-resuscitation" className="pv4 gradient-light-blue">
+      <section id="startup-resuscitation" className="pv5 gradient-light-blue">
         <div className="row narrow">
-          <h3 className="f1 fw7 bb bw2 dib dark-red tracked-tight relative mb3"><span className="no-underline absolute left--4 left--2-m left--4-l black-20 f4 top-1 tracked">3</span>Startup Resuscitation</h3>
+          <span className="numeral db ml-auto mr-auto">3</span>
+          <h3 className="f1 fw7 dark-red tracked-light tc">Startup Resuscitation</h3>
+
           <p>Startup resuscitation refers to revitalizing products that have lingered for months or years without traction. Sometimes that's because the startup began as a founder's side project, or product-market fit was never acheived, or maybe the technology behind the product is inherintly broken.</p>
           <p>Whatever the reason, if the concept is solid and an audience exists you can succeed.</p>
           <p>At Spacetime, we seem to attract distressed startups suffering from years of neglect, poor implementation, or lamentable previous agencies. We are different than other agencies in that we do not want to drag out your project as long as possible and squeeze as much money from you as we can. In fact, we will probably try to convince you to reduce the full scope of your project if possible.</p>
           <p>We will work with you to build a project plan and find traction:</p>
-          <ol className="lh-copy black-60 fw5 mv4">
-            <li>Determine the startups value proposition</li>
-            <li>Determine the target audience</li>
-            <li>What are low effort, big wins to focus on</li>
-            <li>How can we gain initial traction</li>
-            <li>What needs to happen to turn the startup into a sustainable, scaleable businesstraction</li>
+
+          <ol className="system-sans o-70 lh-copy dark-purple f6 fw5 mv3">
+            <li className="mv2">Determine the startups value proposition</li>
+            <li className="mv2">Determine the target audience</li>
+            <li className="mv2">What are low effort, big wins to focus on</li>
+            <li className="mv2">How can we gain initial traction</li>
+            <li className="mv2">What needs to happen to turn the startup into a sustainable, scaleable business traction</li>
           </ol>
+
           <p>The purpose of an MVP is to take your concept or idea, whittle it down to the most essential and useful aspects, build it, and put it in front of customers as quickly as possible. So, to find our MVP we need to answer a few questions:</p>
-          <ol className="lh-copy black-60 fw5 mv4">
-            <li>What is the most important core concept of the product?</li>
-            <li>Is there a prospective audience that wants your product? And will they pay for it?</li>
-            <li>How can we test our product hypothesis on our audience as quickly and cheaply as possible?</li>
+
+          <ol className="system-sans o-70 lh-copy dark-purple f6 fw5 mv3">
+            <li className="mv2">What is the most important core concept of the product?</li>
+            <li className="mv2">Is there a prospective audience that wants your product? And will they pay for it?</li>
+            <li className="mv2">How can we test our product hypothesis on our audience as quickly and cheaply as possible?</li>
           </ol>
 
-          <div className="ba b--blue mh0 mt4 mb5 pa4 br1 nl3 nr3">
-            <h5 className="fw7 mt0 ttu tracked blue">Client Spotlight</h5>
-            <p className="sans-serif blue mb0">StudioHop Fitness is one of our best examples of Startup Resuscitation. When we partnered with StudioHop in December 2015, the company was doing okay, but being crushed by previously poor vendor directions and a crumbling technology stack. At that time StudioHop had around 150 monthly customers generating $15k MRR. Sounds like good numbers, right? Sort of. The mild success StudioHop had acheived was also killing them. The business was operating at a loss, customers were leaving, and the web application barely functioned and required a lot of manual intervention. There was no way the business could grow or handle more customers even if they could attract new customers.</p>
-            <p className="sans-serif blue mb0">The first thing Spacetime did was replatform the StudioHop application from a previous vendors "proprietary" PHP framework to Ruby on Rails (Note: ask a lot of questions if an agency recommends using their own "propriety" anything; usually they are trying to lock you into only working with them). Ruby on Rails offers great features and abilities to get a product up and running fast, for less cost than other tech options, and in this case StudioHop would be able to easily find and hire developers or vendors that know and love Ruby on Rails.</p>
+          <div className="ba b--blue mh0 mt4 mb5 pa4 br1">
+            <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight</h5>
+            <p className="f6 sans-serif blue mb0"><a className="blue hover-dark-blue b" href="https://www.studiohopfitness.com/" target="_blank" rel="nofollow">StudioHop Fitness</a> is one of our best examples of Startup Resuscitation. When we partnered with StudioHop in December 2015, the company was doing okay, but being crushed by previously poor vendor directions and a crumbling technology stack. At that time StudioHop had around 150 monthly customers generating $15k MRR. Sounds like good numbers, right? Sort of. The mild success StudioHop had acheived was also killing them. The business was operating at a loss, customers were leaving, and the web application barely functioned and required a lot of manual intervention. There was no way the business could grow or handle more customers even if they could attract new customers.</p>
+            <p className="f6 sans-serif blue mb0">The first thing Spacetime did was replatform the StudioHop application from a previous vendors "proprietary" PHP framework to Ruby on Rails (Note: ask a lot of questions if an agency recommends using their own "propriety" anything; usually they are trying to lock you into only working with them). Ruby on Rails offers great features and abilities to get a product up and running fast, for less cost than other tech options, and in this case StudioHop would be able to easily find and hire developers or vendors that know and love Ruby on Rails.</p>
           </div>
 
-          <hr className="black-10" />
-          <div className="flex justify-between">
+          <div className="flex justify-between bt b--black-20 pv3 mv5">
             <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">⭐️ Best for</h5>
-              <ul className="black-70 lh-copy">
-                <li>Startups with little traction</li>
-                <li>Startups with a single crushing weakness (like technology)</li>
-                <li>Startups going through a dramatic pivot</li>
+              <h5 className="ttu f6 fw7 tracked">Best for ⭐️</h5>
+              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+                <li className="mv1">Startups with little traction</li>
+                <li className="mv1">Startups with a single crushing weakness (like technology)</li>
+                <li className="mv1">Startups going through a dramatic pivot</li>
               </ul>
             </div>
             <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">🚫 Not for</h5>
-              <ul className="black-70 lh-copy">
-                <li>Startups in the Growth phase</li>
-                <li>Validating ideas</li>
+              <h5 className="ttu f6 fw7 tracked">Not for 🚫</h5>
+              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+                <li className="mv1">Startups in the Growth phase</li>
+                <li className="mv1">Validating ideas</li>
               </ul>
             </div>
           </div>
+
         </div>
       </section>
 
-      <section id="choose-your-own-adventure" className="pv4 gradient-light-blue">
+      <section id="choose-your-own-adventure" className="pv5 gradient-light-blue">
         <div className="row narrow">
-          <h3 className="f1 fw7 bb bw2 dib dark-red tracked-tight relative mb3"><span className="no-underline absolute left--4 left--2-m left--4-l black-20 f4 top-1 tracked">4</span>Choose Your Own Adventure</h3>
+          <span className="numeral db ml-auto mr-auto">4</span>
+          <h3 className="f1 fw7 dark-red tracked-light tc">Choose Your Own Adventure</h3>
+
           <p>Maybe you have a startup that doesn't clearly fit into the categories above. That's okay, we can still help! You probably have a challenge to tackle or business aspect to take on. Let's chat and figure out how we can partner together!</p>
 
-          <hr className="black-10" />
-
-          <div className="flex justify-between">
+          <div className="flex justify-between bt b--black-20 pv3 mv5">
             <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">⭐️ Best for</h5>
-              <ul className="black-70 lh-copy">
-                <li>You have a specific problem to solve</li>
-                <li>Established startups</li>
-                <li>You don't know what to do next and need help</li>
+              <h5 className="ttu f6 fw7 tracked">Best for ⭐️</h5>
+              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+                <li className="mv1">You have a specific problem to solve</li>
+                <li className="mv1">Established startups</li>
+                <li className="mv1">You don't know what to do next and need help</li>
               </ul>
             </div>
             <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">🚫 Not for</h5>
-              <ul className="black-70 lh-copy">
-                <li>Brand new ideas</li>
+              <h5 className="ttu f6 fw7 tracked">Not for 🚫</h5>
+              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+                <li className="mv1">Brand new ideas</li>
               </ul>
             </div>
           </div>
+
         </div>
       </section>
 
-    </main>
-
+    </MainWrapper>
   </div>
 )
 

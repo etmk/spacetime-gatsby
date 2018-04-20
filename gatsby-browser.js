@@ -98,7 +98,7 @@ exports.replaceComponentRenderer = ({ props, loader }) => {
 
 
 exports.onClientEntry = () => {
-  console.log("We've started!")
+  console.log("Here we go!")
 }
 
 exports.onInitialClientRender = () => {
@@ -106,5 +106,5 @@ exports.onInitialClientRender = () => {
 }
 
 exports.onRouteUpdate = ({ location }) => {
-  console.log('new pathname', location.pathname)
+  console.log('On page', location.pathname)
 }

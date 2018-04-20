@@ -2,7 +2,8 @@
 // Converted Variables
 
 $sans-serif: 'avenir next', avenir, -apple-system, BlinkMacSystemFont, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif !default;
-$serif: palatino, georgia, serif !default;
+$system-sans: -apple-system, BlinkMacSystemFont, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif !default;
+$serif: palatino, athelas, symbol, 'times new roman', georgia, serif !default;
 $code: consolas, monaco, monospace !default;
 $font-size-headline: 6rem !default;
 $font-size-subheadline: 5rem !default;
@@ -13,6 +14,7 @@ $font-size-4: 1.25rem !default;
 $font-size-5: 1rem !default;
 $font-size-6: .875rem !default;
 $font-size-7: .75rem !default;
+$letter-spacing-light: -.02em !default;
 $letter-spacing-tight: -.05em !default;
 $letter-spacing-1: .1em !default;
 $letter-spacing-2: .25em !default;
