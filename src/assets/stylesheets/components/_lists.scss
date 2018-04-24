@@ -1,0 +1,9 @@
+.custom-unordered-list {
+  list-style: none;
+
+  li:before {
+    content: '•';
+    margin-right: 1rem;
+    color: $red;
+  }
+}
