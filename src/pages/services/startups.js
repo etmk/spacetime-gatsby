@@ -8,7 +8,7 @@ import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page">
-    <Helmet title={`Services | ${config.siteTitle}`} />
+    <Helmet title={`Startups | ${config.siteTitle}`} />
 
     <section className="ph5-l pt6 pb5 bg-dark-red tc">
       <span className="f1 dib">🚀</span>

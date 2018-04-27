@@ -1,0 +1,13 @@
+.site-footer {
+  background-color: black;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+body {
+  padding-bottom: 24em;
+}

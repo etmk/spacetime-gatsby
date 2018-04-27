@@ -20,22 +20,25 @@
   .lh-solid { line-height: $line-height-solid; }
   .lh-title { line-height: $line-height-title; }
   .lh-copy  { line-height: $line-height-copy; }
+  .lh-tight { line-height: .9; }
 
 @media #{$breakpoint-not-small} {
   .lh-solid-ns { line-height: $line-height-solid; }
   .lh-title-ns { line-height: $line-height-title; }
   .lh-copy-ns  { line-height: $line-height-copy; }
+  .lh-tight-ns { line-height: .9; }
 }
 
 @media #{$breakpoint-medium} {
   .lh-solid-m { line-height: $line-height-solid; }
   .lh-title-m { line-height: $line-height-title; }
   .lh-copy-m  { line-height: $line-height-copy; }
+  .lh-tight-m { line-height: .9; }
 }
 
 @media #{$breakpoint-large} {
   .lh-solid-l { line-height: $line-height-solid; }
   .lh-title-l { line-height: $line-height-title; }
   .lh-copy-l  { line-height: $line-height-copy; }
+  .lh-tight-l { line-height: .9; }
 }
-

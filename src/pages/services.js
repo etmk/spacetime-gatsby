@@ -82,20 +82,12 @@ const ServicesPage = ({ transition }) => (
               textColor={`black`} />
 
             <ServiceCard
-              name={`research`}
-              title={`Research`}
+              name={`cto`}
+              title={`CTO As A Service`}
               description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
-              icon={`🔍`}
+              icon={`💎`}
               iconPath={``}
               bgColor={`#EA5500`}
-              textColor={`black`} />
-
-            <ServiceCard
-              name={`consulting`}
-              title={`Consulting`}
-              description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
-              icon={`📣`}
-              bgColor={`#80CBC4`}
               textColor={`black`} />
 
             <ServiceCard
@@ -105,16 +97,7 @@ const ServicesPage = ({ transition }) => (
               icon={`🎯`}
               iconPath={``}
               bgColor={`#5A62FF`}
-              textColor={`black`} />
-
-            <ServiceCard
-              name={`teardowns`}
-              title={`Teardowns`}
-              description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
-              icon={`🔮`}
-              iconPath={``}
-              bgColor={`#ECAC1D`}
-              textColor={`black`} />
+              textColor={`white`} />
 
             <ServiceCard
               name={`coffee-time`}

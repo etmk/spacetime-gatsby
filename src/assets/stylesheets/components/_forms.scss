@@ -1,3 +1,8 @@
+// wrap each input or collection in the .field-group class
+.field {
+  margin: 0 0 .5rem 0;
+}
+
 label,
 .label {
   font-family: $sans-serif;
@@ -5,10 +10,87 @@ label,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: $letter-spacing-1;
+  display: inline-block;
+  margin: 0 0 .5rem;
+}
+
+.label-help {
+  color: $black-50;
+  font-size: 0.7em;
+  margin-bottom: 0.3em;
 }
 
 input,
 textarea {
   display: block;
   width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+// all input types
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  font-family: $sans-serif;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid $black-50;
+  margin: 0 0 1rem;
+  font-family: inherit;
+  font-weight: 300;
+  color: $black;
+  background-color: $white;
+  border-radius: 0;
+  appearance: none;
+  transition: .15s all linear;
+
+  &:hover {
+    border-color: $black;
+    box-shadow: 0 0 5px rgba($black, .2);
+  }
+
+  &:focus {
+    border: 1px solid $blue;
+    outline: none;
+    box-shadow: 0 0 5px rgba($blue, .2);
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  }
+
+  &:read-only {
+    background-color: rgba($green, .1);
+    border-color: rgba($green, .15);
+    resize: none;
+    box-shadow: none !important;
+  }
+
+  &:disabled {
+    color: rgba($black, .5);
+    background-color: rgba($black, .05);
+    border-color: rgba($black, .1);
+    cursor: not-allowed;
+    resize: none;
+    box-shadow: none !important;
+  }
+
+  &.invalid, &.error { border-color: rgba($yellow, 0.6);}
+  &.warning { border-color: $red;}
+  &.success { border-color: $green;}
+  &.auto-width { width: auto; }
 }

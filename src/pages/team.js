@@ -28,19 +28,11 @@ const TeamPage = ({ transition }) => (
         <img src="/bgs/saturn-bg.jpg" className="w-100 absolute top-0 right-0 z-0" alt="Spacetime background image" />
       </section>
 
-      <section className="bg-fog-white pv5">
-        <div className="row">
-          <TeamPrinciples />
-        </div>
-      </section>
-
       <section className="pt5 pb5">
         <div className="row">
           <TeamMembers />
         </div>
       </section>
-
-
 
       <section>
         <div className="row">

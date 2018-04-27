@@ -42,7 +42,7 @@ class ContactPage extends React.Component {
 
         <PageHero
           title={"Contact"}
-          description={"We eagerly await to hear from you, seriously."} />
+          description={"Go ahead, get in touch. We eagerly await to<br>hear from you, seriously."} />
 
         <MainWrapper>
 
@@ -50,7 +50,7 @@ class ContactPage extends React.Component {
             <div className="row">
               <div className="fl w-50-ns">
                 <h2 className="f1 serif red">Not a fan of filling out forms?</h2>
-                <p className="sans-serif black-50 fw5 measure">Not into filling out forms? Find us on the Twitter machine: <a href="https://twitter.com/heyspacetime" target="_blank" className="red dim">@heyspacetime</a></p>
+                <p className="sans-serif black-50 fw5 measure">Not into filling out forms? Find us on the Twitter-net: <a href="https://twitter.com/heyspacetime" target="_blank" className="red dim">@heyspacetime</a></p>
               </div>
               <div className="fr-ns">
                 <img src="demo/demo-bird.png" alt="" className="relative nt6-l nb6-l dn dib-ns" />
@@ -69,31 +69,31 @@ class ContactPage extends React.Component {
                   data-netlify-honeypot="bot-field"
                   onSubmit={this.handleSubmit}
                 >
-                  <p hidden>
+                  <div hidden>
                     <label>
                       Don’t fill this out: <input name="bot-field" />
                     </label>
-                  </p>
-                  <p>
+                  </div>
+                  <div>
                     <label htmlFor="name">Your name</label>
-                    <input type="text" name="name" onChange={this.handleChange}/>
-                  </p>
-                  <p>
+                    <input type="text" name="name" placeholder="Elon Musk" onChange={this.handleChange}/>
+                  </div>
+                  <div>
                     <label htmlFor="email">Your email</label>
-                    <input type="email" name="email" onChange={this.handleChange}/>
-                  </p>
-                  <p>
+                    <input type="email" name="email" placeholder="elon.musk@email.com" onChange={this.handleChange}/>
+                  </div>
+                  <div>
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" onChange={this.handleChange}/>
-                  </p>
-                  <p>
-                    <button type="submit">Send</button>
-                  </p>
+                    <textarea name="message" placeholder="Say what you need to say..." onChange={this.handleChange}/>
+                  </div>
+                  <div>
+                    <button type="submit" className="bn sans-serif fw6 ph3 pv3 input-reset bg-black-80 hover-bg-blue bg-animate white pointer f5">Send Your Message</button>
+                  </div>
                 </form>
               </div>
-              <div className="w-33-ns fr-ns">
-                <ul className="list pa0 mv4 mv6-l">
-                  <li className="pv4 flex bb b--black-10">
+              <div className="w-33-ns fr-ns mv4 mv6-l">
+                <ul className="list pa0 ma0">
+                  <li className="pt2 pb4 flex bb b--black-10">
                     <span className="f3 mr3">☎️</span>
                     <div>
                       <h4 className="ttu black f7 fw7 tracked mt0">Give us a call</h4>
@@ -120,7 +120,7 @@ class ContactPage extends React.Component {
           </section>
 
           <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.8166872128445!2d-96.82354404913771!3d33.087606980785644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27686616db64c7e5!2sCommon+Desk+-+Granite+Park!5e0!3m2!1sen!2sus!4v1523849228706" allowFullScreen></iframe>
+            <iframe className="map_canvas w-100 bn h5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.8166872128445!2d-96.82354404913771!3d33.087606980785644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27686616db64c7e5!2sCommon+Desk+-+Granite+Park!5e0!3m2!1sen!2sus!4v1523849228706" allowFullScreen></iframe>
           </section>
 
         </MainWrapper>

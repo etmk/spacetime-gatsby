@@ -28,7 +28,7 @@ class TeamMantra extends React.Component {
     return (
 
       <div>
-        <h1 className="f1">Mantras &amp; Maxims</h1>
+        <h1 className="f1 f-headline-l lh-tight tracked-tight">Mantras &amp; <br />Maxims</h1>
 
         <ul className="list pl0">
           {mantras.map(mantra => (

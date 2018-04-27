@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import logo from '../../assets/images/logos/logo-06.svg'
 
 const Footer = () => (
-  <footer className="pv6 white-70 bg-black">
+  <footer className="site-footer bg-black pv6 white-70">
     <div className="row">
       <a href="mailto:hey@heyspacetime.com" className="link b f3 f2-ns dim white lh-solid">hey@heyspacetime.com</a>
       <p className="f6 db lh-solid white-50">&copy; {new Date().getFullYear()} Spacetime, LLC</p>

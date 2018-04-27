@@ -1,9 +1,12 @@
 .custom-unordered-list {
   list-style: none;
+  position: relative;
 
   li:before {
     content: '•';
-    margin-right: 1rem;
+    // margin-right: 1rem;
     color: $red;
+    position: absolute;
+    left: -1rem;
   }
 }

@@ -8,13 +8,13 @@ import bg from '../../assets/images/backgrounds/spacetime-background.jpg'
 class PageHero extends React.Component {
   render() {
     return (
-      <section id="PageHero" className="page-hero ph5-l pt6 pb5 bg-deep-purple relative overflow-hidden parallax bg1">
+      <section id="PageHero" className="page-hero">
 
-        <div className="relative z-1">
+        <div className="page-hero__content">
           <h1 className="f1-ns white tc mt0">{this.props.title}</h1>
           <p className="f5 white-70 tc ml-auto mr-auto mb0 measure-narrow" dangerouslySetInnerHTML={{__html: this.props.description}} />
         </div>
-        <img src={bg} className="w-100 absolute top-0 left-0 z-0 scaleIn" alt="Spacetime background image" />
+        <img src={bg} className="page-hero__image scaleIn" alt="Spacetime background image" />
 
       </section>
     );

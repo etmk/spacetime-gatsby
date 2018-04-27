@@ -74,7 +74,7 @@ class TeamMembers extends React.Component {
 
         <h2 className="f1 black-80 mb2-m">Spacefriends</h2>
         <div className="cf">
-          <p className="fl-l w-50-l">Funsize has partnered with over 80 companies and has worked on hundreds of secret projects spanning mobile applications, web-based, software, connected devices, and beyond. We offer collaborative, full-service design solutions that meet the needs of modern product&nbsp;teams.</p>
+          <p className="fl-l w-50-l">At Spacetime, we partner with clients to strategize & execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI. At Spacetime, we partner with clients to strategize & execute their&nbsp;vision.</p>
 
           <ul className="fr-l w-40-l custom-unordered-list mv4 mv3-l pa0 pl2-ns  black-80 f6 lh-copy">
             <li>Industry specialists</li>
@@ -87,20 +87,20 @@ class TeamMembers extends React.Component {
 
         <ul className="list pa0 flex flex-wrap justify-evenly justify-start-l mv5 mw8">
           {team.map(member => (
-            <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb5" key={member.name}>
+            <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={member.name}>
               <img src={member.avatar} className="br-100 mw4 ma2" alt={member.name} />
               <h3 className="f5 fw7 mv1">{member.name}</h3>
-              <p className="f7 black-50 ma0">{member.role}</p>
+              <p className="f7 black-50 mt0">{member.role}</p>
             </li>
           ))}
         </ul>
 
         <ul className="list pa0 flex flex-wrap justify-between justify-start-l mv5 mw8">
           {studios.map(studio => (
-            <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb5" key={studio.name}>
+            <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={studio.name}>
               <img src={studio.avatar} className="br-100 mw4 ma2" alt={studio.name} />
               <h3 className="f5 fw7 mv1">{studio.name}</h3>
-              <p className="f7 black-50 ma0">{studio.role}</p>
+              <p className="f7 black-50 mt0">{studio.role}</p>
             </li>
           ))}
         </ul>
