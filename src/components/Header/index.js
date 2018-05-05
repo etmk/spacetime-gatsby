@@ -22,21 +22,21 @@ const Header = () => (
 
         <div className="nav-group">
           <Link
-            to="portfolio"
+            to="/portfolio/"
             title="Portfolio"
             className="nav-group__link">
             Portfolio
           </Link>
 
           <Link
-            to="services"
+            to="/services/"
             title="Services"
             className="nav-group__link">
             Services
           </Link>
 
           <Link
-            to="team"
+            to="/team/"
             title="Team"
             className="nav-group__link">
             Team
@@ -52,7 +52,7 @@ const Header = () => (
           </Link> */}
 
           <Link
-            to="contact"
+            to="/contact/"
             title="Contact"
             className="nav-group__link">
             Contact

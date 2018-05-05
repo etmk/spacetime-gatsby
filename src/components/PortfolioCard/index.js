@@ -35,7 +35,7 @@ class PortfolioCard extends React.Component {
 
           </div>
         </div>
-        <img src={'client-bgs/' + this.props.name + '-card-bg.jpg'} alt="" className="absolute top-0 right-0 w-100 z-0" />
+        <img src={'/client-bgs/' + this.props.name + '-card-bg.jpg'} alt="" className="absolute top-0 right-0 w-100 z-0" />
       </div>
     );
   }

@@ -7,7 +7,7 @@ class ServiceCard extends React.Component {
     return (
       <div className="fl w-100 w-50-m w-25-l pa2">
         <Link
-          to={"services/" + this.props.name}
+          to={this.props.name}
           title={this.props.title}
           className={`${this.props.textColor} tc bg-black br2 db no-underline aspect-ratio-ns aspect-ratio--5x7-ns grow overflow-hidden-ns`}
           style={{backgroundColor: `${this.props.bgColor}`}}

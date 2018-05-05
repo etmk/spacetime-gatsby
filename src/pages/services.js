@@ -38,7 +38,7 @@ const ServicesPage = ({ transition }) => (
             </div>
           </div>
           <div>
-            <img src="illustrations/services-illustration.png" alt="" className="relative nt6-l nb6-l dn dib-ns" />
+            <img src="/illustrations/services-illustration.png" alt="" className="relative nt6-l nb6-l dn dib-ns" />
           </div>
         </div>
       </section>
@@ -68,7 +68,7 @@ const ServicesPage = ({ transition }) => (
             title={`WordPress Hosting`}
             description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
             icon={``}
-            iconPath={`icons/wordpress-logo.svg`}
+            iconPath={`/icons/wordpress-logo.svg`}
             bgColor={`#21759B`}
             textColor={`white`} />
 

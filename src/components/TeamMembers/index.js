@@ -109,7 +109,7 @@ class TeamMembers extends React.Component {
 
         <div className="mt4 mb5">
           <p className="measure-narrow black-50">We're always looking for cool people to work with. Want to work with us?</p>
-          <Link to="/contact" className="f6 link dim ba ph3 pv2 dib black">Become a Spacefriend →</Link>
+          <Link to="/contact/" className="f6 link dim ba ph3 pv2 dib black">Become a Spacefriend →</Link>
         </div>
 
       </div>

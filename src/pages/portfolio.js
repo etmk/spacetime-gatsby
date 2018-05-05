@@ -37,7 +37,7 @@ const PortfolioPage = ({ transition }) => (
           urlLink={`http://dudeperfect.com/`}
           bgColor={`#00FFDE`}
           textColor={`black`}
-          logoPath={`client-logos/dude-perfect-icon.svg`}
+          logoPath={`/client-logos/dude-perfect-icon.svg`}
           bgYAxis={`top`} />
 
         <div className="flex-ns">
@@ -48,7 +48,7 @@ const PortfolioPage = ({ transition }) => (
             urlLink={`https://www.keyzie.com/`}
             bgColor={`#F78657`}
             textColor={`black`}
-            logoPath={`client-logos/keyzie-logo.svg`}
+            logoPath={`/client-logos/keyzie-logo.svg`}
             bgYAxis={`top`} />
 
           <PortfolioCard
@@ -58,7 +58,7 @@ const PortfolioPage = ({ transition }) => (
             urlLink={`https://www.studiohopfitness.com/`}
             bgColor={`#00C2F2`}
             textColor={`black`}
-            logoPath={`client-logos/studiohop-icon.svg`}
+            logoPath={`/client-logos/studiohop-icon.svg`}
             bgYAxis={`top`} />
         </div>
 
@@ -69,7 +69,7 @@ const PortfolioPage = ({ transition }) => (
           urlLink={`http://www.bellflight.com/`}
           bgColor={`#000`}
           textColor={`white`}
-          logoPath={`client-logos/bell-logo.svg`}
+          logoPath={`/client-logos/bell-logo.svg`}
           bgYAxis={`top`} />
 
         <div className="flex-ns">
@@ -80,7 +80,7 @@ const PortfolioPage = ({ transition }) => (
             urlLink={`https://www.steadkey.com/`}
             bgColor={`#F64A53`}
             textColor={`black`}
-            logoPath={`client-logos/steadkey-logo.svg`}
+            logoPath={`/client-logos/steadkey-logo.svg`}
             bgYAxis={`bottom`} />
 
           <PortfolioCard
@@ -90,7 +90,7 @@ const PortfolioPage = ({ transition }) => (
             urlLink={`https://vaultjet.com/`}
             bgColor={`#232825`}
             textColor={`white`}
-            logoPath={`client-logos/vault-aviation-logo.svg`}
+            logoPath={`/client-logos/vault-aviation-logo.svg`}
             bgYAxis={`top`} />
         </div>
 
@@ -101,7 +101,7 @@ const PortfolioPage = ({ transition }) => (
           urlLink={`https://neuebuild.com/`}
           bgColor={`#00BAFE`}
           textColor={`black`}
-          logoPath={`client-logos/neue-build-logo.svg`}
+          logoPath={`/client-logos/neue-build-logo.svg`}
           bgYAxis={`top`} />
 
       </section>
@@ -113,7 +113,7 @@ const PortfolioPage = ({ transition }) => (
             <p className="white-80 sans-serif measure-narrow">We’ve worked on a variety of projects with a wide range of clients, each with a unique problem set and perspective.</p>
             <p className="white-80 sans-serif measure-narrow">We continually improve our process and do our best work in strong partnerships with our clients.</p>
             <Link
-              to="contact"
+              to="/contact/"
               className="f6 fw5 link br1 ph3 pv3 mt4 dib white bg-dark-red dim">
                 Let's make something great together →
             </Link>

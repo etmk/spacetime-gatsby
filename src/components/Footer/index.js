@@ -28,7 +28,7 @@ const Footer = () => (
             </li>
             <li>
               <Link
-                to="portfolio"
+                to="/portfolio/"
                 title="Portfolio"
                 className="f3 fw7 white hover-red mb3 dib">
                 Portfolio
@@ -36,7 +36,7 @@ const Footer = () => (
             </li>
             <li>
               <Link
-                to="services"
+                to="/services/"
                 title="Services"
                 className="f3 fw7 white hover-red mb3 dib">
                 Services
@@ -44,7 +44,7 @@ const Footer = () => (
             </li>
             <li>
               <Link
-                to="team"
+                to="/team/"
                 title="Team"
                 className="f3 fw7 white hover-red mb3 dib">
                 Team
@@ -52,7 +52,7 @@ const Footer = () => (
             </li>
             <li>
               <Link
-                to="contact"
+                to="/contact/"
                 title="Contact"
                 className="f3 fw7 white hover-red mb3 dib">
                 Contact
