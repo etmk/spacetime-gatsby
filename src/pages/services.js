@@ -125,7 +125,7 @@ const ServicesPage = ({ transition }) => (
             </div>
             <div className="flex items-center">
               <a
-                href="#"
+                href="/contact"
                 className="no-underline f6 fw6 tc dib pa3 bg-deep-purple dim white-90">
                   Get in touch for a free consultation →
               </a>
