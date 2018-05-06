@@ -4,8 +4,10 @@ import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
 import config from '../../data/site-config'
+import bg from '../assets/images/backgrounds/spacetime-background.jpg'
 import MainWrapper from '../layouts/MainWrapper/MainWrapper'
-import PageHero from '../components/PageHero'
+import StartupDream from '../components/HomeFeatures/StartupDream'
+import HomeWelcome from '../components/HomeFeatures/HomeWelcome'
 
 class IndexPage extends React.Component {
   render() {
@@ -13,19 +15,21 @@ class IndexPage extends React.Component {
       <div>
         <Helmet title={`Welcome | ${config.siteTitle}`} />
 
-        <PageHero
-          title={"Home"}
-          description={"Whether you’re building a marketing website, a mobile app or the next Facebook"} />
+        <section id="PageHero" className="page-hero">
+
+          <div className="page-hero__content row">
+            <h1 className="f1-ns white mt0">Simple things should be simple, complex things should be possible.</h1>
+            <p className="f5 green mb0">—Alan Kay</p>
+          </div>
+          <img src={bg} className="page-hero__image scaleIn" alt="Spacetime background image" />
+
+        </section>
 
         <MainWrapper>
 
-          <section className="bg-white pv5 black relative overflow-hidden" >
-            <div className="row mw8 relative z-1">
-              <h1>The home page</h1>
-              <hr className="mw2 mh0 mv4" />
-              <h3 className="f2 fw5 lh-title measure-narrow">At Spacetime, we partner with clients to strategize & execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI.</h3>
-            </div>
-          </section>
+          <HomeWelcome />
+
+          <StartupDream />
 
         </MainWrapper>
       </div>
