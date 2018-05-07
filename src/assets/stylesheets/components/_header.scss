@@ -1,7 +1,7 @@
 // Components/Header
 
-$link-padding: 1.3rem 1rem;
-$sticky-link-padding: .7rem 1rem;
+$nav-height: 3rem;
+$nav-height-sticky: 2.3rem;
 
 $header-sm-breakpoint: 25em;
 $header-md-breakpoint: 37em;
@@ -29,7 +29,12 @@ $header-md-breakpoint: 37em;
   // Site-Header__Logo
   &__logo {
     display: flex;
+    align-items: center;
     text-align: center;
+
+    img {
+      max-width: 2.3rem;
+    }
 
     span {
       color: rgba($white, .7);
@@ -37,7 +42,7 @@ $header-md-breakpoint: 37em;
       font-weight: 700;
       font-size: .75rem;
       letter-spacing: .08em;
-      padding: $link-padding;
+      padding: 0 1rem;
       display: inline-block;
       transition: $global-transition;
       position: relative;
@@ -53,7 +58,7 @@ $header-md-breakpoint: 37em;
 
     @media screen and (max-width: 30em) {
       display: block;
-      padding: .5rem;
+      padding: 1rem;
       border-bottom: 1px solid rgba($white, .2);
     }
   }
@@ -73,6 +78,10 @@ $header-md-breakpoint: 37em;
       position: relative;
 
       &:hover {
+        color: rgba($white, 1);
+      }
+
+      &.active {
         color: rgba($white, 1);
       }
     }
@@ -106,6 +115,12 @@ $header-md-breakpoint: 37em;
 
     &__logo {
       text-decoration: none;
+
+      img {
+        height: 50%;
+        max-width: none;
+        width: auto;
+      }
     }
 
     .nav-group {
@@ -118,9 +133,11 @@ $header-md-breakpoint: 37em;
         font-weight: 700;
         font-size: .75rem;
         letter-spacing: .08em;
-        padding: $link-padding;
+        padding: 0 .5rem;
+        margin: 0 .25rem;
+        line-height: $nav-height;
 
-        &:after {
+        &::after {
           content: '';
           position: absolute;
           bottom: 0;
@@ -131,9 +148,15 @@ $header-md-breakpoint: 37em;
           transition: .1s all linear;
         }
 
-        &:hover:after {
+        &:hover::after,
+        &:focus::after {
           height: 4px;
         }
+
+        &.active::after {
+          height: 2px;
+        }
+
       }
     }
   }
@@ -167,7 +190,7 @@ $header-md-breakpoint: 37em;
 
       .site-header__logo span,
       .nav-group__link {
-        padding: $sticky-link-padding !important;
+        line-height: $nav-height-sticky !important;
       }
     }
     &--unpinned {

@@ -15,7 +15,8 @@ const Header = () => (
         <Link
           to="/"
           title="Home"
-          className="site-header__logo">
+          className="site-header__logo"
+          activeClassName="active">
           <img src={logo} alt="Spacetime" />
           <span className="">Spacetime</span>
         </Link>
@@ -24,21 +25,24 @@ const Header = () => (
           <Link
             to="/portfolio/"
             title="Portfolio"
-            className="nav-group__link">
+            className="nav-group__link"
+            activeClassName="active">
             Portfolio
           </Link>
 
           <Link
             to="/services/"
             title="Services"
-            className="nav-group__link">
+            className="nav-group__link"
+            activeClassName="active">
             Services
           </Link>
 
           <Link
             to="/team/"
             title="Team"
-            className="nav-group__link">
+            className="nav-group__link"
+            activeClassName="active">
             Team
           </Link>
         </div>
@@ -54,7 +58,8 @@ const Header = () => (
           <Link
             to="/contact/"
             title="Contact"
-            className="nav-group__link">
+            className="nav-group__link"
+            activeClassName="active">
             Contact
           </Link>
         </div>

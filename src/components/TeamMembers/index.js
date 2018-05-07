@@ -41,7 +41,7 @@ const team = [
   }, {
     avatar: '/avatars/jesse-hahm-avatar.jpg',
     name: 'Jesse Hahm',
-    role: 'Fixer'
+    role: 'Marteking, PMP'
   }
 ];
 

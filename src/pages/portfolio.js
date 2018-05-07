@@ -22,10 +22,7 @@ const PortfolioPage = ({ transition }) => (
 
       <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
         <div className="row">
-          <h2 className="black-80">The Pursuit of Passion</h2>
-          <hr className="black-80 mw2 mh0 mv4" />
-          <h3 className="black-80 f2 fw5 lh-title measure-narrow">Some say we’re obsessed. Obessed with innovation, viable business, expressive design.</h3>
-          <h3 className="red f2 fw5 lh-title measure-narrow">We call it dedication.</h3>
+          <h3 className="black-80 f2 fw7 lh-title measure">Some say we’re obsessed. Obessed with innovation, viable business, expressive design. <span className="red">We call it dedication.</span></h3>
         </div>
       </section>
 

@@ -17,8 +17,8 @@ class IndexPage extends React.Component {
 
         <section id="PageHero" className="page-hero">
 
-          <div className="page-hero__content row">
-            <h1 className="f1-ns white mt0">Simple things should be simple, complex things should be possible.</h1>
+          <div className="page-hero__content mt6-ns row">
+            <h1 className="f1-ns white mt0 mw7 pr6-l">Simple things should be simple, complex things should be possible.</h1>
             <p className="f5 green mb0">—Alan Kay</p>
           </div>
           <img src={bg} className="page-hero__image scaleIn" alt="Spacetime background image" />
