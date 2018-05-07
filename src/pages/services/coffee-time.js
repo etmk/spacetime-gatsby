@@ -98,9 +98,9 @@ const StartupServicesPage = ({ transition }) => (
           <h3 className="f3 mb1">What People Are Saying</h3>
 
           <blockquote className="bw1 b--green b--solid br2 mv5 mw7 center tc">
-            <img src="/avatars/coby-cotton-avatar.jpg" className="br-100 h3 w3 dib nt4" alt="Coby Cotton" />
-            <p className="f4 fw1 ma0 mv3 measure-narrow center lh-title">
-              &ldquo;I found our meeting very useful. I was impressed with how quickly Caleb assessed my situation and was able to offer quick feedback and sound advice. He even convinced me not to spend thousands of dollars yet on the project because I needed to spend more time evaluating my desired outcome and needs for the project.&rdquo;
+            <img src="/avatars/bart-breunig-avatar.jpg" className="br-100 h3 w3 dib nt4" alt="Coby Cotton" />
+            <p className="f4 fw1 ma0 mv3 measure center lh-title">
+              &ldquo;I found our meeting very useful. I was impressed with how quickly Caleb assessed my situation and was able to offer quick feedback and sound advice. He even convinced me not to spend thousands of dollars yet on the project because I needed to spend more time evaluating my desired outcome and needs for&nbsp;the&nbsp;project.&rdquo;
             </p>
             <p className="f7 fw6 tracked green ttu sans-serif mb4">
               —Bart B.
