@@ -2,11 +2,11 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
-import config from '../../data/site-config'
-import MainWrapper from '../layouts/MainWrapper/MainWrapper'
-import PageHero from '../components/PageHero'
-import PortfolioCard from '../components/PortfolioCard'
-import ClientList from '../components/ClientList'
+import config from '../../../data/site-config'
+import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+import PageHero from '../../components/PageHero'
+import PortfolioCard from '../../components/PortfolioCard'
+import ClientList from '../../components/ClientList'
 
 
 
