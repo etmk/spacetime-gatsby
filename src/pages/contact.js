@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 import config from '../../data/site-config'
 import MainWrapper from '../layouts/MainWrapper/MainWrapper'
 import PageHero from '../components/PageHero'
+import HeadquartersMap from '../components/HeadquartersMap'
 
 function encode(data) {
   return Object.keys(data)
@@ -119,9 +120,7 @@ class ContactPage extends React.Component {
             </div>
           </section>
 
-          <section>
-            <iframe className="map_canvas w-100 bn h5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.8166872128445!2d-96.82354404913771!3d33.087606980785644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27686616db64c7e5!2sCommon+Desk+-+Granite+Park!5e0!3m2!1sen!2sus!4v1523849228706" allowFullScreen></iframe>
-          </section>
+          <HeadquartersMap />
 
         </MainWrapper>
       </div>
