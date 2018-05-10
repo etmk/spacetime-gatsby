@@ -8,6 +8,7 @@ import bg from '../assets/images/backgrounds/spacetime-background.jpg'
 import MainWrapper from '../layouts/MainWrapper/MainWrapper'
 import StartupDream from '../components/HomeFeatures/StartupDream'
 import HomeWelcome from '../components/HomeFeatures/HomeWelcome'
+import HomeTestimonials from '../components/HomeFeatures/HomeTestimonials'
 
 class IndexPage extends React.Component {
   render() {
@@ -30,6 +31,8 @@ class IndexPage extends React.Component {
           <HomeWelcome />
 
           <StartupDream />
+
+          <HomeTestimonials />
 
         </MainWrapper>
       </div>

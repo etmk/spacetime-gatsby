@@ -22,11 +22,12 @@ const PortfolioPage = ({ transition }) => (
 
       <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
         <div className="row">
-          <h3 className="black-80 f2 fw7 lh-title measure">Some say we’re obsessed. Obessed with innovation, viable business, expressive design. <span className="red">We call it dedication.</span></h3>
+
+          <h3 className="black-90 f2 fw7 lh-title measure">Some say we’re obsessed. Obessed with innovation, viable business, expressive design. <span className="red">We call it dedication.</span></h3>
         </div>
       </section>
 
-      <section>
+      <section className="bw3 b--solid b--white">
         <PortfolioCard
           name={`dude-perfect`}
           title={`Dude Perfect`}

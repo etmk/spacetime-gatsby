@@ -21,9 +21,7 @@ const TeamPage = ({ transition }) => (
 
       <section className="bg-red pv5 white relative overflow-hidden" style={transition && transition.style}>
         <div className="row mw8 relative z-1">
-          <h2>Teamwork with Purpose</h2>
-          <hr className="mw2 mh0 mv4" />
-          <h3 className="f2 fw5 lh-title measure-narrow">At Spacetime, we partner with clients to strategize & execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI.</h3>
+          <h3 className="f2 fw7 lh-title measure-narrow">At Spacetime, we partner with clients to strategize & execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI.</h3>
         </div>
         <img src="/bgs/saturn-bg.jpg" className="w-100 absolute top-0 right-0 z-0" alt="Spacetime background image" />
       </section>

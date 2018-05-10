@@ -30,15 +30,14 @@ class TeamMantra extends React.Component {
       <div>
         <h1 className="f1 f-headline-l lh-tight tracked-tight">Mantras &amp; <br />Maxims</h1>
 
-        <ul className="list pl0">
+        <ol className="list pl0">
           {mantras.map(mantra => (
             <li className="bt pv5" key={mantra.title}>
-              <span>1</span>
               <h3 className="db f1 mt0 mb4 tracked-light">{mantra.title}</h3>
               <p className="black-90 system-sans f3 db">{mantra.text}</p>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
 
     );
