@@ -8,7 +8,7 @@ import PageHero from '../../components/PageHero'
 import ServiceCard from '../../components/ServiceCard'
 
 const ServicesPage = ({ transition }) => (
-  <div>
+  <div className="">
     <Helmet title={`Services | ${config.siteTitle}`} />
 
     <PageHero
@@ -110,7 +110,7 @@ const ServicesPage = ({ transition }) => (
         </div>
       </section>
 
-      <section className=" pv5 mt5 bg-clip-up">
+      <section className="pv5 mt5 bg-clip-up">
         <div className="row">
           <div className="bg-white deep-shadow pa4 ph5-l flex-l justify-between-l">
             <div className="w-80-m w-70-l mw6">

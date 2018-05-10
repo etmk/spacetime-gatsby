@@ -11,7 +11,7 @@ import ClientList from '../../components/ClientList'
 
 
 const PortfolioPage = ({ transition }) => (
-  <div>
+  <div className="bg-fog-white">
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
 
     <PageHero

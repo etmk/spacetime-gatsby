@@ -10,7 +10,7 @@ import TeamMembers from '../components/TeamMembers'
 import TeamMantra from '../components/TeamMantra'
 
 const TeamPage = ({ transition }) => (
-  <div>
+  <div className="bg-red">
     <Helmet title={`Team | ${config.siteTitle}`} />
 
     <PageHero
@@ -19,26 +19,29 @@ const TeamPage = ({ transition }) => (
 
     <MainWrapper>
 
-      <section className="bg-red pv5 white relative overflow-hidden" style={transition && transition.style}>
+      <section className="pv5 white relative overflow-hidden" style={transition && transition.style}>
         <div className="row mw8 relative z-1">
           <h3 className="f2 fw7 lh-title measure-narrow">At Spacetime, we partner with clients to strategize & execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI.</h3>
         </div>
+
         <img src="/bgs/saturn-bg.jpg" className="w-100 absolute top-0 right-0 z-0" alt="Spacetime background image" />
+
       </section>
 
-      <section className="pt5 pb5">
+      <section className="pv5 bg-white">
         <div className="row">
           <TeamMembers />
         </div>
       </section>
 
-      <section>
+      <section className="pv5 bg-fog-white">
         <div className="row">
           <TeamMantra />
         </div>
       </section>
 
     </MainWrapper>
+
   </div>
 )
 
