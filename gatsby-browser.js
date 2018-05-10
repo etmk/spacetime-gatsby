@@ -98,7 +98,7 @@ exports.replaceComponentRenderer = ({ props, loader }) => {
 
 
 exports.onClientEntry = () => {
-  console.log("Here we go!")
+  console.log("On client entry")
 }
 
 exports.onInitialClientRender = () => {
