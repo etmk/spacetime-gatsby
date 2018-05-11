@@ -4,16 +4,21 @@ import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+import ContactForm from '../../components/ContactForm'
+import ServicePageHero from '../../components/ServicePageHero'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page">
     <Helmet title={`Coffee Time | ${config.siteTitle}`} />
 
-    <section className="ph5-l pt6 pb5 bg-black tc" style={{backgroundColor: '#3D3B33'}}>
-      <span className="f1 dib">☕️</span>
-      <h1 className="f2-ns white tc mt0">Coffee Time</h1>
-      <p className="f4 tc white-80 ml-auto mr-auto mb0 measure-narrow">Startups require a special, diverse set of skills to progress from idea to marketable business</p>
-    </section>
+    <ServicePageHero
+      name={`coffee-time`}
+      title={`Coffee Time`}
+      description={`Get answers to all your burning questions over a hot cup of joe`}
+      icon={`☕️`}
+      iconPath={``}
+      bgColor={`#3D3B33`}
+      textColor={`white`} />
 
     <MainWrapper>
 
@@ -62,12 +67,12 @@ const StartupServicesPage = ({ transition }) => (
 
           <div className="">
             <div className="overflow-auto">
-              <table className="f6 w-100" cellSpacing="1">
+              <table className="f6 fw6 w-100" cellSpacing="1">
                 <thead>
                   <tr className="stripe-dark">
-                    <th className="fw6 tl pa3 bg-white"></th>
-                    <th className="fw6 tl pa3 bg-white">Coffee Time</th>
-                    <th className="fw6 tl pa3 bg-white">Starting on Your Own</th>
+                    <th className="tl pa3 bg-white"></th>
+                    <th className="tl pa3 bg-white">Coffee Time</th>
+                    <th className="tl pa3 bg-white">Starting on Your Own</th>
                   </tr>
                 </thead>
                 <tbody className="">
@@ -95,8 +100,6 @@ const StartupServicesPage = ({ transition }) => (
 
       <section className="pv5 gradient-light-blue">
         <div className="row narrow">
-          <h3 className="f3 mb1">What People Are Saying</h3>
-
           <blockquote className="bw1 b--green b--solid br2 mv5 mw7 center tc">
             <img src="/avatars/bart-breunig-avatar.jpg" className="br-100 h3 w3 dib nt4" alt="Coby Cotton" />
             <p className="f4 fw1 ma0 mv3 measure center lh-title">
@@ -111,19 +114,29 @@ const StartupServicesPage = ({ transition }) => (
 
       <section className="pv5 gradient-light-blue">
         <div className="row narrow">
-          <h3 className="f3 mb1">Guaranteed, or Your Money Back</h3>
+          <h3 className="f3 fw7 mb1">Guaranteed, or Your Money&nbsp;Back</h3>
 
           <p>We guarantee you will walk away from Coffee Time with answers to your questions and new questions to answer. In fact, we're so certain you will find Coffee Time incredibly insightful and valuable we offer a money back guarantee. If after our time together, you decide the conversation provided zero value we will refund you&nbsp;in&nbsp;full.</p>
-        </div>
-      </section>
-
-      <section className="pv4 bg-washed-yellow">
-        <div className="row narrow">
-          <h2 className="f2 mb1">Schedule a Coffee Time</h2>
 
           <p>Ready to sit down to talk?</p>
 
-          <p>$500</p>
+          <table className="f6 w-100 w-50-ns" cellSpacing="1">
+            <tbody>
+              <tr className="stripe-dark">
+                <td className="pa3 b">Coffee Time Cost</td>
+                <td className="pa3">$500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="pv5 bg-washed-yellow">
+        <div className="row narrow">
+          <h2 className="f1 serif red mt0 mb4 lh-solid">Schedule Coffee Time</h2>
+
+          <ContactForm />
+
         </div>
       </section>
     </MainWrapper>

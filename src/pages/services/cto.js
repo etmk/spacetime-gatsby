@@ -7,17 +7,17 @@ import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/ServicePageHero'
 
-const DesignServicesPage = () => (
+const CtoPage = () => (
   <div className="service-page content-page">
     <Helmet title={`Design Services | ${config.siteTitle}`} />
 
     <ServicePageHero
-      name={`design`}
-      title={`Design Services`}
+      name={`cto`}
+      title={`CTO As A Service`}
       description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
-      icon={`🎨`}
+      icon={`💎`}
       iconPath={``}
-      bgColor={`#f7f7f6`}
+      bgColor={`#EA5500`}
       textColor={`black`} />
 
     <MainWrapper>
@@ -40,4 +40,4 @@ const DesignServicesPage = () => (
   </div>
 )
 
-export default DesignServicesPage
+export default CtoPage

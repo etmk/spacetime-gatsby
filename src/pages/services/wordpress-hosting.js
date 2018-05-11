@@ -7,18 +7,18 @@ import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/ServicePageHero'
 
-const DesignServicesPage = () => (
+const WordPressHostingPage = () => (
   <div className="service-page content-page">
     <Helmet title={`Design Services | ${config.siteTitle}`} />
 
     <ServicePageHero
-      name={`design`}
-      title={`Design Services`}
+      name={`wordpress-hosting`}
+      title={`WordPress Hosting`}
       description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
-      icon={`🎨`}
-      iconPath={``}
-      bgColor={`#f7f7f6`}
-      textColor={`black`} />
+      icon={``}
+      iconPath={`/icons/wordpress-logo.svg`}
+      bgColor={`#21759B`}
+      textColor={`white`} />
 
     <MainWrapper>
       <section id="table-of-content" className="pv4">
@@ -40,4 +40,4 @@ const DesignServicesPage = () => (
   </div>
 )
 
-export default DesignServicesPage
+export default WordPressHostingPage

@@ -1,20 +1,25 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import ServiceRecommendation from '../../components/ServiceRecommendation'
 
 import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+import ServiceRecommendation from '../../components/ServiceRecommendation'
+import ContactForm from '../../components/ContactForm'
+import ServicePageHero from '../../components/ServicePageHero'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page">
     <Helmet title={`Startups | ${config.siteTitle}`} />
 
-    <section className="ph5-l pt6 pb5 bg-dark-red tc">
-      <span className="f1 dib">🚀</span>
-      <h1 className="f2-ns white tc mt0">Startups</h1>
-      <p className="f4 tc white-80 ml-auto mr-auto mb0 measure-narrow">Startups require a special, diverse set of skills to progress from idea to marketable business</p>
-    </section>
+    <ServicePageHero
+      name={`startups`}
+      title={`Startups`}
+      description={`Startups require a special, diverse set of skills to progress from idea to marketable business`}
+      icon={`🚀`}
+      iconPath={``}
+      bgColor={`#F03F47`}
+      textColor={`white`} />
 
     <MainWrapper>
 
@@ -255,6 +260,15 @@ const StartupServicesPage = ({ transition }) => (
               </ul>
             </div>
           </div>
+
+        </div>
+      </section>
+
+      <section className="pv5 bg-washed-yellow">
+        <div className="row narrow">
+          <h2 className="f1 serif red mb4 lh-solid">Let's Talk About Your&nbsp;Startup</h2>
+
+          <ContactForm />
 
         </div>
       </section>

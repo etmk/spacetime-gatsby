@@ -57,7 +57,7 @@ const ServicesPage = ({ transition }) => (
           <ServiceCard
             name={`startups`}
             title={`Startups`}
-            description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+            description={`Startups require a special, diverse set of skills to progress from idea to marketable business`}
             icon={`🚀`}
             iconPath={``}
             bgColor={`#F03F47`}
@@ -102,7 +102,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`coffee-time`}
               title={`Coffee Time`}
-              description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+              description={`Get answers to all your burning questions over a hot cup of joe`}
               icon={`☕️`}
               iconPath={``}
               bgColor={`#3D3B33`}
