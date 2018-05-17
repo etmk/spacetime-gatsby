@@ -14,7 +14,7 @@ const StartupServicesPage = ({ transition }) => (
     <ServicePageHero
       name={`coffee-time`}
       title={`Coffee Time`}
-      description={`Get answers to all your burning questions over a hot cup of joe`}
+      description={`Get answers to all your burning hot questions over a cup of joe`}
       icon={`☕️`}
       iconPath={``}
       bgColor={`#3D3B33`}

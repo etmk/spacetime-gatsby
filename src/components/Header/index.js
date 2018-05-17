@@ -21,7 +21,7 @@ const Header = () => (
           <span className="">Spacetime</span>
         </Link>
 
-        <div className="nav-group">
+        <div className="nav-group nav-group__center">
           <Link
             to="/portfolio/"
             title="Portfolio"
@@ -47,7 +47,7 @@ const Header = () => (
           </Link>
         </div>
 
-        <div className="nav-group">
+        <div className="nav-group nav-group__right">
           {/* <Link
             to="blog"
             title="Blog"

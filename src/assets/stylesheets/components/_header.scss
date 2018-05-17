@@ -167,6 +167,15 @@ $header-md-breakpoint: 37em;
   .site-header .site-nav {
     justify-content: space-between;
   }
+
+  .site-header__logo,
+  .nav-group__right {
+    width: 20%;
+  }
+
+  .nav-group.nav-group__right {
+    justify-content: flex-end;
+  }
 }
 
 // Headroom.js
