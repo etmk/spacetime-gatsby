@@ -5,13 +5,13 @@ html {
   // apply a natural box layout model to all elements, but allowing components to change
   box-sizing: border-box;
 
-  font-size: 87.5%;
+  font-size: 100%;
 
   @media #{$breakpoint-not-small} {
-    font-size: 95%;
+    font-size: 103%;
   }
   @media #{$breakpoint-medium} {
-    font-size: 100%;
+    font-size: 107%;
   }
   @media #{$breakpoint-large} {
     font-size: 110%;
