@@ -98,25 +98,20 @@ const StartupServicesPage = ({ transition }) => (
           <h3 className="f3"><small className="mr2 f5 serif">II.</small>A Big Problem Existing in Your Current Startup</h3>
           <p>If you have an existing startup but and want to explore a problem we can do that too. Maybe you want to explore a visual redesign of your app. Or, you need to explore why customers are dropping out of your eCommerce checkout cycle. Or, you want to pitch a skunk-works type idea to your internal leadership.</p>
 
-          <div className="flex justify-between bt b--black-20 pv3 mv5">
-            <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">Best for ⭐️</h5>
-              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-                <li className="mv1">Exploring a business problem</li>
-                <li className="mv1">Raising venture capital</li>
-                <li className="mv1">Validating a target market</li>
-                <li className="mv1">Getting started without building an MVP</li>
-              </ul>
-            </div>
-            <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">Not for 🚫</h5>
-              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-                <li className="mv1">Accelerated growth</li>
-                <li className="mv1">Calculatable ROI scenarios</li>
-                <li className="mv1">Long-term engagements</li>
-              </ul>
-            </div>
-          </div>
+          <ServiceRecommendation
+            forColumn={[
+              'Exploring a business problem',
+              'Raising venture capital',
+              'Validating a target market',
+              'Getting started without building an MVP'
+            ]}
+
+            notForColumn={[
+              'Accelerated growth',
+              'Calculatable ROI scenarios',
+              'Long-term engagements'
+            ]}
+            />
 
         </div>
       </section>
@@ -156,31 +151,26 @@ const StartupServicesPage = ({ transition }) => (
             <p className="f6 sans-serif blue mb0">We began work with <a className="blue hover-dark-blue b" href="https://www.steadkey.com/" target="_blank" rel="nofollow">Steadkey</a> in January 2016. Steadkey's founder, Jerry Williams, had begun Steadkey several years earlier, based on his extensive experience in the mortgage industry, but had little success. He'd worked with 3 independent developers and 2 professional agencies, yet 4 years later still did not have the solution promissed. The first thing we did with Jerry in January 2016 was strip away all the cruft and excess features and ideas muddying up the success of Steadkey. Starting from scratch, we executed on the key value propositions customers sought. We rebuilt the application from nothing, and in less than 3 months launched the new and improved Steadkey app and gained immediate traction with new customers. Consider that for a moment, 3 months versus the previous 4 years… yeah, that's awesome.</p>
           </div>
 
-          <div className="flex justify-between bt b--black-20 pv3 mv5">
-            <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">Best for ⭐️</h5>
-              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-                <li className="mv1">The idea and audience are already validated</li>
-                <li className="mv1">Creating a product based on your own experience</li>
-                <li className="mv1">
-                  Solving old problems in new ways
-                  <ul>
-                    <li>Like building software to replace spreadsheet tasks; or applying on-demand services with consumer needs</li>
-                  </ul>
-                </li>
-                <li className="mv1">Tackling a problem within a budget</li>
-              </ul>
-            </div>
-            <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">Not for 🚫</h5>
-              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-                <li className="mv1">Projects that take longer than 3 months and millions of dollars</li>
-                <li className="mv1">Businesses producing physical consumer goods (clothing, food products, etc)</li>
-                <li className="mv1">Persnickety founders that are unwilling to compromise</li>
-              </ul>
-            </div>
-          </div>
-
+          <ServiceRecommendation
+            forColumn={[
+              'The idea and audience are already validated',
+              'Creating a product based on your own experience',
+              // this next item actually turns into a react component before it
+              // is handed to the properties of ServiceRecommendation
+              <div>
+                Solving old problems in new ways
+                <ul>
+                  <li>Like building software to replace spreadsheet tasks; or applying on-demand services with consumer needs</li>
+                </ul>
+              </div>,
+              'Tackling a problem within a budget'
+            ]}
+            notForColumn={[
+              'Projects that take longer than 3 months and millions of dollars',
+              'Businesses producing physical consumer goods (clothing, food products, etc)',
+              'Persnickety founders that are unwilling to compromise'
+            ]}
+            />
         </div>
       </section>
 
@@ -216,23 +206,17 @@ const StartupServicesPage = ({ transition }) => (
             <p className="f6 sans-serif blue mb0">The first thing Spacetime did was replatform the StudioHop application from a previous vendors "proprietary" PHP framework to Ruby on Rails (Note: ask a lot of questions if an agency recommends using their own "propriety" anything; usually they are trying to lock you into only working with them). Ruby on Rails offers great features and abilities to get a product up and running fast, for less cost than other tech options, and in this case StudioHop would be able to easily find and hire developers or vendors that know and love Ruby on Rails.</p>
           </div>
 
-          <div className="flex justify-between bt b--black-20 pv3 mv5">
-            <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">Best for ⭐️</h5>
-              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-                <li className="mv1">Startups with little traction</li>
-                <li className="mv1">Startups with a single crushing weakness (like technology)</li>
-                <li className="mv1">Startups going through a dramatic pivot</li>
-              </ul>
-            </div>
-            <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">Not for 🚫</h5>
-              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-                <li className="mv1">Startups in the Growth phase</li>
-                <li className="mv1">Validating ideas</li>
-              </ul>
-            </div>
-          </div>
+          <ServiceRecommendation
+            forColumn={[
+              'Startups with little traction',
+              'Startups with a single crushing weakness (like technology)',
+              'Startups going through a dramatic pivot'
+            ]}
+            notForColumn={[
+              'Startups in the Growth phase',
+              'Validating ideas'
+            ]}
+            />
 
         </div>
       </section>
@@ -244,23 +228,16 @@ const StartupServicesPage = ({ transition }) => (
 
           <p>Maybe you have a startup that doesn't clearly fit into the categories above. That's okay, we can still help! You probably have a challenge to tackle or business aspect to take on. Let's chat and figure out how we can partner together!</p>
 
-          <div className="flex justify-between bt b--black-20 pv3 mv5">
-            <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">Best for ⭐️</h5>
-              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-                <li className="mv1">You have a specific problem to solve</li>
-                <li className="mv1">Established startups</li>
-                <li className="mv1">You don't know what to do next and need help</li>
-              </ul>
-            </div>
-            <div className="w-50">
-              <h5 className="ttu f6 fw7 tracked">Not for 🚫</h5>
-              <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-                <li className="mv1">Brand new ideas</li>
-              </ul>
-            </div>
-          </div>
-
+          <ServiceRecommendation
+            forColumn={[
+              'You have a specific problem to solve',
+              'Established startups',
+              "You don't know what to do next and need help"
+            ]}
+            notForColumn={[
+              'Brand new ideas'
+            ]}
+            />
         </div>
       </section>
 
