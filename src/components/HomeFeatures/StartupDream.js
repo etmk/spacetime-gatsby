@@ -48,6 +48,7 @@ class StartupDream extends React.Component {
                 <a
                   href={e.url}
                   target="_blank"
+                  rel="noopener"
                   className="dib dim"
                   style={{color: `${e.color}`}}>
                     <span className="f3 f2-m f1-l fw7 ma0 color-inherit dib">{e.title}</span>

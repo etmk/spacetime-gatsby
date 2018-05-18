@@ -82,7 +82,7 @@ const Footer = () => (
       </div>
       <div className="mb5 w-25-ns">
         <h2 className="f3 fw7 white mt0 mb4">Stop by the office</h2>
-        <a href="https://goo.gl/maps/mLQwMaQhnao" target="_blank" className="f4 fw4 white-50 hover-red lh-title">5830 Granite Parkway<br />#100-243<br />Plano, Texas 75024</a>
+        <a href="https://goo.gl/maps/mLQwMaQhnao" target="_blank" rel="noopener" className="f4 fw4 white-50 hover-red lh-title">5830 Granite Parkway<br />#100-243<br />Plano, Texas 75024</a>
       </div>
 
     </div>
