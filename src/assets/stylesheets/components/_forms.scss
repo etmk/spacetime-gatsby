@@ -1,23 +1,23 @@
 // wrap each input or collection in the .field-group class
 .field {
-  margin: 0 0 .5rem 0;
+  margin: 0 0 .5rem;
 }
 
 label,
 .label {
+  display: inline-block;
+  margin: 0 0 .5rem;
   font-family: $sans-serif;
   font-size: $font-size-7;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: $letter-spacing-1;
-  display: inline-block;
-  margin: 0 0 .5rem;
+  text-transform: uppercase;
 }
 
 .label-help {
+  margin-bottom: 0.3em;
   color: $black-50;
   font-size: 0.7em;
-  margin-bottom: 0.3em;
 }
 
 input,
@@ -27,8 +27,8 @@ textarea {
 }
 
 textarea {
-  resize: vertical;
   min-height: 7rem;
+  resize: vertical;
 }
 
 // all input types
@@ -47,18 +47,18 @@ textarea {
 [type='url'],
 [type='color'],
 textarea {
-  font-family: $sans-serif;
+  appearance: none;
   display: block;
   width: 100%;
+  margin: 0 0 1rem;
   padding: 1rem;
   border: 1px solid $black-50;
-  margin: 0 0 1rem;
+  border-radius: 0;
+  background-color: $white;
+  color: $black;
+  font-family: $sans-serif;
   font-family: inherit;
   font-weight: 300;
-  color: $black;
-  background-color: $white;
-  border-radius: 0;
-  appearance: none;
   transition: .15s all linear;
 
   &:hover {
@@ -74,19 +74,19 @@ textarea {
   }
 
   &:read-only {
-    background-color: rgba($green, .1);
     border-color: rgba($green, .15);
-    resize: none;
+    background-color: rgba($green, .1);
     box-shadow: none !important;
+    resize: none;
   }
 
   &:disabled {
-    color: rgba($black, .5);
-    background-color: rgba($black, .05);
     border-color: rgba($black, .1);
+    background-color: rgba($black, .05);
+    box-shadow: none !important;
+    color: rgba($black, .5);
     cursor: not-allowed;
     resize: none;
-    box-shadow: none !important;
   }
 
   &.invalid, &.error { border-color: rgba($yellow, 0.6);}

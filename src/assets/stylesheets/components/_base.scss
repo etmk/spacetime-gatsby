@@ -1,11 +1,11 @@
 html {
-  text-rendering: auto; //keep as default auto for speed
   -webkit-overflow-scrolling: touch; // not momentum unless we add overflow-x: hidden, and then that breaks scrolltop
   -webkit-font-smoothing: antialiased;
   // apply a natural box layout model to all elements, but allowing components to change
   box-sizing: border-box;
 
   font-size: 100%;
+  text-rendering: auto; //keep as default auto for speed
 
   @media #{$breakpoint-not-small} {
     font-size: 103%;
@@ -17,13 +17,14 @@ html {
     font-size: 110%;
   }
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: $sans-serif;
   background-color: $white;
+  font-family: $sans-serif;
   line-height: 1; //keep this at 1, rarely should you ever use code that affects every element on a site
 }
 
@@ -85,9 +86,9 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
+  color: $black-80;
   font-family: $serif;
   line-height: $line-height-copy;
-  color: $black-80;
 }
 
 hr {
@@ -115,4 +116,9 @@ hr {
 a {
   text-decoration: none;
   transition: all .2s linear;
+}
+
+button,
+.button {
+  border: none;
 }

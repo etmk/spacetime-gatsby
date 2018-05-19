@@ -111,7 +111,7 @@ const StartupServicesPage = ({ transition }) => (
               'Calculatable ROI scenarios',
               'Long-term engagements'
             ]}
-            />
+          />
 
         </div>
       </section>
