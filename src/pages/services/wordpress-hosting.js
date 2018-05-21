@@ -10,7 +10,7 @@ import PricingTable from '../../components/PricingTable'
 
 const WordPressHostingPage = () => (
   <div className="service-page content-page">
-    <Helmet title={`Design Services | ${config.siteTitle}`} />
+    <Helmet title={`WordPress Hosting | ${config.siteTitle}`} />
 
     <ServicePageHero
       name={`wordpress-hosting`}
@@ -38,8 +38,8 @@ const WordPressHostingPage = () => (
             columnWidth={'w-30'}
             price={'$50/month'}
             items={[
-              'Cool thing one',
-              'Cool thing number two',
+              'Website hosting',
+              'WordPress Optimized Servers',
               'Cool thing three',
               'Cool stuff four'
             ]}
@@ -51,16 +51,14 @@ const WordPressHostingPage = () => (
             columnWidth={'w-30'}
             price={'$100/month'}
             items={[
-              'Cool thing one',
-              'Cool thing number two',
-              'Cool thing three',
-              'Cool stuff four',
-              'Cool thing one',
-              'Cool thing number two',
-              'Cool thing three',
-              'Cool thing one',
-              'Cool thing number two',
-              'Cool thing three',
+              'Website hosting',
+              'WordPress Optimized Servers',
+              'Daily Snapshot Backup',
+              'Weekly Full Backup',
+              'CDN Assets (Content Delivery Network)',
+              'WordPress Core Updates',
+              'WordPress Theme & Plugin Updates',
+              'Security Updates'
             ]}
           />
 
@@ -70,10 +68,17 @@ const WordPressHostingPage = () => (
             columnWidth={'w-30'}
             price={'$250/month'}
             items={[
-              'Cool thing one',
-              'Cool thing number two',
-              'Cool thing three',
-              'Cool stuff four'
+              'Website hosting',
+              'WordPress Optimized Servers',
+              'Daily Snapshot Backup',
+              'Weekly Full Backup',
+              'CDN Assets (Content Delivery Network)',
+              'WordPress Core Updates',
+              'WordPress Theme & Plugin Updates',
+              'Security Updates',
+              'Uptime Monitoring',
+              'Breach Monitoring',
+              'Support from Our Team'
             ]}
           />
 

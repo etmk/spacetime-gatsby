@@ -9,7 +9,7 @@ import ServicePageHero from '../../components/ServicePageHero'
 
 const StrategyRetainerPage = () => (
   <div className="service-page content-page">
-    <Helmet title={`Design Services | ${config.siteTitle}`} />
+    <Helmet title={`🎯 Strategy Retainer | ${config.siteTitle}`} />
 
     <ServicePageHero
       name={`strategy-retainer`}

@@ -10,7 +10,7 @@ import ServicePageHero from '../../components/ServicePageHero'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page">
-    <Helmet title={`Startups | ${config.siteTitle}`} />
+    <Helmet title={`🚀 Startups | ${config.siteTitle}`} />
 
     <ServicePageHero
       name={`startups`}
