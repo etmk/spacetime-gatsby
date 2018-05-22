@@ -38,7 +38,7 @@ const ServicesPage = ({ transition }) => (
             </div>
           </div>
           <div>
-            <img src="/illustrations/services-illustration.png" alt="" className="relative nt6-l nb6-l dn dib-ns" />
+            {/* <img src="/illustrations/services-illustration.png" alt="" className="relative nt6-l nb6-l dn dib-ns" /> */}
           </div>
         </div>
       </section>

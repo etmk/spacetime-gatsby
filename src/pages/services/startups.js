@@ -82,7 +82,7 @@ const StartupServicesPage = ({ transition }) => (
         <div className="row narrow">
 
           <span className="numeral db ml-auto mr-auto">1</span>
-          <h3 className="f1 fw7 dark-red tracked-light tc">Concept Exploration</h3>
+          <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Concept Exploration</h3>
 
           <p>Our concept exploration startup tier is perfect for exploring and validating ideas. We find clients typically need concept exploration for two types of challenges.</p>
 
@@ -119,7 +119,7 @@ const StartupServicesPage = ({ transition }) => (
       <section id="minimum-viable-product" className="pv5 gradient-light-blue">
         <div className="row narrow">
           <span className="numeral db ml-auto mr-auto">2</span>
-          <h3 className="f1 fw7 dark-red tracked-light tc">Minimum Viable Product</h3>
+          <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Minimum Viable Product</h3>
 
           <p>The <abbr title="Minimum Viable Product">MVP</abbr> is a common concept in the startup world. The term comes from Eric Reis' book <em>The Lean Startup</em> where Eric writes about his personal startup experience and subsequent consulting and advisory positions with startups.</p>
 
@@ -177,7 +177,7 @@ const StartupServicesPage = ({ transition }) => (
       <section id="startup-resuscitation" className="pv5 gradient-light-blue">
         <div className="row narrow">
           <span className="numeral db ml-auto mr-auto">3</span>
-          <h3 className="f1 fw7 dark-red tracked-light tc">Startup Resuscitation</h3>
+          <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Startup Resuscitation</h3>
 
           <p>Startup resuscitation refers to revitalizing products that have lingered for months or years without traction. Sometimes that's because the startup began as a founder's side project, or product-market fit was never acheived, or maybe the technology behind the product is inherintly broken.</p>
           <p>Whatever the reason, if the concept is solid and an audience exists you can succeed.</p>
@@ -224,7 +224,7 @@ const StartupServicesPage = ({ transition }) => (
       <section id="choose-your-own-adventure" className="pv5 gradient-light-blue">
         <div className="row narrow">
           <span className="numeral db ml-auto mr-auto">4</span>
-          <h3 className="f1 fw7 dark-red tracked-light tc">Choose Your Own Adventure</h3>
+          <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Choose Your Own Adventure</h3>
 
           <p>Maybe you have a startup that doesn't clearly fit into the categories above. That's okay, we can still help! You probably have a challenge to tackle or business aspect to take on. Let's chat and figure out how we can partner together!</p>
 
