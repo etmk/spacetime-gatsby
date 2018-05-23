@@ -84,7 +84,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`cto`}
               title={`CTO As A Service`}
-              description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+              description={`Gain the technical leadership your team needs to succeed in the digital world`}
               icon={`💎`}
               iconPath={``}
               bgColor={`#EA5500`}
