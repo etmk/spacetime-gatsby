@@ -29,7 +29,7 @@ class ContactPage extends React.Component {
                 <p className="sans-serif black-50 fw5 measure">Not into filling out forms? Find us on the Twitter-net: <a href="https://twitter.com/heyspacetime" target="_blank" className="red dim">@heyspacetime</a></p>
               </div>
               <div className="fr-ns">
-                
+
               </div>
             </div>
           </section>

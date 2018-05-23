@@ -107,13 +107,13 @@ const PortfolioPage = ({ transition }) => (
       <section className="pv5 cf bg-deep-purple white">
         <div className="row">
           <div className="fr-l w-40-l mb5">
-            <h2 className="f2 serif dark-red mt0 mt3-ns">We want to work with you</h2>
-            <p className="white-80 sans-serif measure-narrow">We’ve worked on a variety of projects with a wide range of clients, each with a unique problem set and perspective.</p>
-            <p className="white-80 sans-serif measure-narrow">We continually improve our process and do our best work in strong partnerships with our clients.</p>
+            <h2 className="f2 serif dark-red mt0 mt3-ns">Can we work with you?</h2>
+            <p className="white-80 sans-serif measure-narrow">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any challenge.</p>
+            <p className="white-80 sans-serif measure-narrow">What can we work on together?</p>
             <Link
               to="/contact/"
               className="f6 fw5 link br1 ph3 pv3 mt4 dib white bg-dark-red dim">
-                Let's make something great together →
+                Let's talk about your project →
             </Link>
           </div>
           <div className="fl-l w-50-l bt bw1 b--white-10 pt4 pa0-l bw0-l">

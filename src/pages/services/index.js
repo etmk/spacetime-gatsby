@@ -48,7 +48,7 @@ const ServicesPage = ({ transition }) => (
           <ServiceCard
             name={`design`}
             title={`Design Services`}
-            description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+            description={`UX, UI, design, and branding – we do it all`}
             icon={`🎨`}
             iconPath={``}
             bgColor={`#f7f7f6`}
@@ -66,7 +66,7 @@ const ServicesPage = ({ transition }) => (
           <ServiceCard
             name={`wordpress-hosting`}
             title={`WordPress Hosting`}
-            description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+            description={`We offer top-tier WordPress hosting`}
             icon={``}
             iconPath={`/icons/wordpress-logo.svg`}
             bgColor={`#21759B`}
@@ -75,7 +75,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`websites`}
               title={`Websites`}
-              description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+              description={`Websites big and small, we do them all`}
               icon={`🕸`}
               iconPath={``}
               bgColor={`#1DE9B6`}
@@ -93,7 +93,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`strategy-retainer`}
               title={`Strategy Retainer`}
-              description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+              description={`Retain our team and expertise to gain an edge to get ahead`}
               icon={`🎯`}
               iconPath={``}
               bgColor={`#5A62FF`}
