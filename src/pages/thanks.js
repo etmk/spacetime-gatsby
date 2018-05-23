@@ -13,27 +13,49 @@ const ThanksPage = ({ transition }) => (
 
     <PageHero
       title={`Thanks`}
-      description={`Good looking work isn’t good enough. Good work delivers great results beyond the imagination`} />
+      description={`We've received your message and will get back to you in one hot minute!`} />
 
     <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
       <div className="row">
         <div className="fl-l w-60-l">
-          <h2 className="f2 f1-ns serif red mt0">Thanks</h2>
-          <p className="sans-serif black-50 fw5 measure">Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans on a per client basis, because your problem is unique and deserves a strategy to drive results and lead to success.</p>
-          <div className="flex">
-            <ul className="lh-copy f6 mv4">
-              <li>UI & UX Design</li>
-              <li>Wireframing</li>
-              <li>Prototyping</li>
-              <li>Front-end Development</li>
-            </ul>
-            <ul className="lh-copy f6 mv4">
-              <li>Product Strategy</li>
-              <li>Technology Consultation</li>
-              <li>Startup Incubation</li>
-              <li>Specially Tailored Retainers</li>
-            </ul>
-          </div>
+          <h2 className="f2 f1-ns serif red mt0">Until then&hellip;</h2>
+          <p className="sans-serif black-50 fw5 measure">Check out the rest of our site. Sure, it's not as exciting as talking to a real live human being, but apparently the humans are away and only the robots are tending the station.</p>
+
+          <ul className="lh-copy mv4">
+            <li>
+              <Link
+              to="/"
+              title="Home"
+              className="dib fw6 blue">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/portfolio/"
+                title="Portfolio"
+                className="dib fw6 blue">
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services/"
+                title="Services"
+                className="dib fw6 blue">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/team/"
+                title="Team"
+                className="dib fw6 blue">
+                Team
+              </Link>
+            </li>
+          </ul>
+
         </div>
       </div>
     </section>
