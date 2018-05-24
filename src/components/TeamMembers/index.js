@@ -32,7 +32,7 @@ const team = [
     role: 'Design Director'
   }, {
     avatar: '/avatars/haley-frautschi-avatar.jpg',
-    name: 'Haley Frautschi',
+    name: 'Haley Sylvest',
     role: 'Designer'
   }, {
     avatar: '/avatars/jeff-smith-avatar.jpg',
