@@ -2,6 +2,7 @@ import React from 'react'
 import Headroom from 'react-headroom'
 import Link from 'gatsby-link'
 
+import config from '../../../data/site-config'
 import logo from '../../assets/images/logos/spacetime-icon.svg'
 
 const Header = () => (
@@ -17,8 +18,8 @@ const Header = () => (
           title="Home"
           className="site-header__logo"
           activeClassName="active">
-          <img src={logo} alt="Spacetime" />
-          <span className="">Spacetime</span>
+          <img src={logo} alt={config.siteTitle} />
+          <span className="">{config.siteTitle}</span>
         </Link>
 
         <div className="nav-group nav-group__center">

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import config from '../../../data/site-config'
 import logo from '../../assets/images/logos/spacetime-icon.svg'
 
 const Footer = () => (
@@ -8,10 +9,10 @@ const Footer = () => (
     <div className="row pv5">
       <Link
         to="/"
-        title="Spacetime"
+        title={config.siteTitle}
         className="dib">
-        <img src={logo} alt="Spacetime" className="h2 dim" />
-        <span className="clip">Spacetime</span>
+        <img src={logo} alt={config.siteTitle} className="h2 dim" />
+        <span className="clip">{config.siteTitle}</span>
       </Link>
     </div>
     <div className="row pv3 flex-ns justify-between-ns">
@@ -61,33 +62,51 @@ const Footer = () => (
           </ul>
         </nav>
       </div>
+
       <div className="mb5 w-25-ns">
         <h2 className="f3 fw7 white mt0 mb4">Get in touch</h2>
+
         <div className="mb4">
           <h5 className="f4 fw4 white-50 mt0 mb2">Give us a call</h5>
-          <a href="tel:469-270-1500" className="white hover-red fw5 f3">(469) 270-1500</a>
+          <a href={`tel:${config.contactPhone}`} className="white hover-red fw5 f3">{config.contactPhone}</a>
         </div>
+
         <div className="mb4">
           <h5 className="f4 fw4 white-50 mt0 mb2">By electronic mail</h5>
-          <a href="mailto:hey@heyspacetime.com" className="white hover-red fw5 f3">hey@heyspacetime.com</a>
+          <a href={`mailto:${config.contactEmail}`} className="white hover-red fw5 f3">{config.contactEmail}</a>
         </div>
+
         <div className="mb4">
           <h5 className="f4 fw4 white-50 mt0 mb2">Socialize</h5>
-          <a href="" target="_blank" className="white hover-dark-blue fw5 f3 mr2 mb2 dib">Facebook</a>
-          <a href="" target="_blank" className="white hover-blue fw5 f3 mr2 mb2 dib">Twitter</a>
-          <a href="" target="_blank" className="white hover-green fw5 f3 mr2 mb2 dib">Github</a><br />
-          <a href="" target="_blank" className="white hover-light-blue fw5 f3 mr2 mb2 dib">LinkedIn</a>
-          <a href="" target="_blank" className="white hover-pink fw5 f3 mr2 mb2 dib">Dribbble</a>
+
+          {config.socialLinks.map(e => (
+            <a
+              key={e.label}
+              href={e.url}
+              target="_blank"
+              rel="noopener"
+              className={`white fw5 f3 mr2 mb2 dib hover-${e.label}`}>
+              {e.label}
+            </a>
+          ))}
+
         </div>
       </div>
+
       <div className="mb5 w-25-ns">
         <h2 className="f3 fw7 white mt0 mb4">Stop by the office</h2>
-        <a href="https://goo.gl/maps/mLQwMaQhnao" target="_blank" rel="noopener" className="f4 fw4 white-50 hover-red lh-title">5830 Granite Parkway<br />#100-243<br />Plano, Texas 75024</a>
+        <a
+          href={config.contactAddressMap}
+          target="_blank"
+          rel="noopener"
+          className="f4 fw4 white-50 hover-red lh-title"
+          dangerouslySetInnerHTML={{ __html: config.contactAddress }}
+        />
       </div>
 
     </div>
     <div className="row pv3">
-      <small className="f6 db lh-solid white-50">&copy; {new Date().getFullYear()} Spacetime, LLC</small>
+      <small className="f6 db lh-solid white-50">Copyright &copy; {new Date().getFullYear()}. {config.copyright}</small>
     </div>
   </footer>
 )

@@ -49,21 +49,26 @@ class ContactPage extends React.Component {
                     <span className="f3 mr3">☎️</span>
                     <div>
                       <h4 className="ttu black f7 fw7 tracked mt0">Give us a call</h4>
-                      <a href="tel:469-270-1500" className="red dim fw6 f3">(469) 270-1500</a>
+                      <a href={`tel:${config.contactPhone}`} className="red dim fw6 f3">{config.contactPhone}</a>
                     </div>
                   </li>
                   <li className="pv4 flex bb b--black-10">
                     <span className="f3 mr3">📬</span>
                     <div>
                       <h4 className="ttu black f7 fw7 tracked mt0">By electronic mail</h4>
-                      <a href="mailto:hey@heyspacetime.com" className="red dim fw6 f3">hey@heyspacetime.com</a>
+                      <a href={`mailto:${config.contactEmail}`} className="red dim fw6 f3">{config.contactEmail}</a>
                     </div>
                   </li>
                   <li className="pv4 flex">
                     <span className="f3 mr3">🗺</span>
                     <div>
                       <h4 className="ttu black f7 fw7 tracked mt0">Stop by the office</h4>
-                      <a href="https://goo.gl/maps/mLQwMaQhnao" target="_blank" className="red dim fw6 f3">5830 Granite Parkway<br />#100-243<br />Plano, Texas 75024</a>
+                      <a
+                        href={config.contactAddressMap}
+                        target="_blank"
+                        className="red dim fw6 f3"
+                        dangerouslySetInnerHTML={{ __html: config.contactAddress }}
+                      />
                     </div>
                   </li>
                 </ul>

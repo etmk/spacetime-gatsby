@@ -1,69 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const team = [
-  {
-    avatar: '/avatars/caleb-sylvest-avatar.jpg',
-    name: 'Caleb Sylvest',
-    role: 'Experience Designer'
-  }, {
-    avatar: '/avatars/chase-hilbert-avatar.jpg',
-    name: 'Chase Hilbert',
-    role: 'Business Development'
-  }, {
-    avatar: '/avatars/john-tornow-avatar.jpg',
-    name: 'John Tornow',
-    role: 'Software Developer'
-  }, {
-    avatar: '/avatars/travis-petticrew-avatar.jpg',
-    name: 'Travis Petticrew',
-    role: 'Product Developer'
-  }, {
-    avatar: '/avatars/daniel-dixon-avatar.jpg',
-    name: 'Daniel Dixon',
-    role: 'Product Developer'
-  }, {
-    avatar: '/avatars/chris-kim-avatar.jpg',
-    name: 'Chris Kim',
-    role: 'Project Manager'
-  }, {
-    avatar: '/avatars/ronnie-johnson-avatar.jpg',
-    name: 'Ronnie Johnson',
-    role: 'Design Director'
-  }, {
-    avatar: '/avatars/haley-frautschi-avatar.jpg',
-    name: 'Haley Sylvest',
-    role: 'Designer'
-  }, {
-    avatar: '/avatars/jeff-smith-avatar.jpg',
-    name: 'Jeff Smith',
-    role: 'Brand Designer'
-  }, {
-    avatar: '/avatars/jesse-hahm-avatar.jpg',
-    name: 'Jesse Hahm',
-    role: 'Marteking, PMP'
-  }
-];
-
-const studios = [
-  {
-    avatar: '/avatars/full-swing-studio-avatar.jpg',
-    name: 'Full Swing Studio',
-    role: 'Brand Identity'
-  }, {
-    avatar: '/avatars/ellym-avatar.jpg',
-    name: 'Ellym',
-    role: 'Application Development'
-  }, {
-    avatar: '/avatars/belief-studio-avatar.jpg',
-    name: 'Belief Studio',
-    role: 'Strategic Design'
-  }, {
-    avatar: '/avatars/t-co-avatar.jpg',
-    name: 'T&Co',
-    role: 'Software Consulting'
-  }
-];
+import team from '../../../data/team-data.json'
 
 class TeamMembers extends React.Component {
 
@@ -84,9 +22,8 @@ class TeamMembers extends React.Component {
           </ul>
         </div>
 
-
         <ul className="list pa0 flex flex-wrap justify-evenly justify-start-l mv5 mw8">
-          {team.map(member => (
+          {team.people.map(member => (
             <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={member.name}>
               <img src={member.avatar} className="br-100 mw4 ma2" alt={member.name} />
               <h3 className="f5 fw7 mv1">{member.name}</h3>
@@ -96,7 +33,7 @@ class TeamMembers extends React.Component {
         </ul>
 
         <ul className="list pa0 flex flex-wrap justify-between justify-start-l mv5 mw8">
-          {studios.map(studio => (
+          {team.studios.map(studio => (
             <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={studio.name}>
               <img src={studio.avatar} className="br-100 mw4 ma2" alt={studio.name} />
               <h3 className="f5 fw7 mv1">{studio.name}</h3>
