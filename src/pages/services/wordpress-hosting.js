@@ -15,7 +15,7 @@ const WordPressHostingPage = () => (
     <ServicePageHero
       name={`wordpress-hosting`}
       title={`WordPress Hosting`}
-      description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+      description={`WordPress hosting for people serious about their online business`}
       icon={``}
       iconPath={`/icons/wordpress-logo.svg`}
       bgColor={`#21759B`}
@@ -24,12 +24,21 @@ const WordPressHostingPage = () => (
     <MainWrapper>
       <section className="pv4">
         <div className="row narrow">
-          <p>Whatever your need, we always treat your project like our own. We only succeed when you succeed.</p>
-          <p>Our specialized team will take you through our battle-hardened process. Provide strategy and insight into business building, customer acquisition, product development, pricing, and much more.</p>
+          <p>We offer premium WordPress hosting without the excessive expense.</p>
+
+          <p>Let's be real, <em>you</em> are a business owner. Not a technology guru or website developer. You should use your valuable time in the most beneficial way to grow your business with skill and expertise.</p>
+
+          <p>Don't waste your time with hosting plans, cloud platforms, security, plugins, updates, thingy-doodads, and what-nots.</p>
+
+          <p>Let us handle the boring stuff so you can focus on what matters most.</p>
+
+          <p>The only decision you need to make is how involved you want <em>us</em> to be. We offer three plan tiers to choose from based on your need and desired involvement by our team.</p>
+
+          <p>Get in touch and let's discuss!</p>
         </div>
       </section>
 
-      <section className="pv4">
+      <section className="pv5 gradient-light-blue">
         <div className="row flex justify-around">
 
           <PricingTable
@@ -39,13 +48,12 @@ const WordPressHostingPage = () => (
             price={'$50/month'}
             items={[
               'Website hosting',
-              'WordPress Optimized Servers',
-              'Cool thing three',
-              'Cool stuff four'
+              'WordPress Optimized Servers'
             ]}
           />
 
           <PricingTable
+            featured={true}
             icon={'🏆⚔️'}
             title={'Premium Hosting'}
             columnWidth={'w-30'}
@@ -55,7 +63,7 @@ const WordPressHostingPage = () => (
               'WordPress Optimized Servers',
               'Daily Snapshot Backup',
               'Weekly Full Backup',
-              'CDN Assets (Content Delivery Network)',
+              '<abbr title="Content Delivery Network">CDN</abbr> Assets',
               'WordPress Core Updates',
               'WordPress Theme & Plugin Updates',
               'Security Updates'
@@ -72,13 +80,13 @@ const WordPressHostingPage = () => (
               'WordPress Optimized Servers',
               'Daily Snapshot Backup',
               'Weekly Full Backup',
-              'CDN Assets (Content Delivery Network)',
+              '<abbr title="Content Delivery Network">CDN</abbr> Assets',
               'WordPress Core Updates',
               'WordPress Theme & Plugin Updates',
               'Security Updates',
-              'Uptime Monitoring',
-              'Breach Monitoring',
-              'Support from Our Team'
+              '<u>Uptime Monitoring</u>',
+              '<u>Breach Monitoring</u>',
+              '<u>Support from Our Team</u>'
             ]}
           />
 
@@ -87,7 +95,7 @@ const WordPressHostingPage = () => (
 
       <section className="pv5 bg-washed-yellow">
         <div className="row narrow">
-          <h2 className="f1 serif red mt0 mb4 lh-solid">Let's Talk About Your&nbsp;Startup</h2>
+          <h2 className="f1 serif red mt0 mb4 lh-solid">Let's Talk About WordPress&nbsp;Hosting</h2>
 
           <ContactForm />
 
