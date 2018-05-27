@@ -12,7 +12,10 @@ class PageHero extends React.Component {
 
         <div className="page-hero__content">
           <h1 className="f1-ns white tc mt0">{this.props.title}</h1>
-          <p className="f5 white-70 tc ml-auto mr-auto mb0 measure-narrow" dangerouslySetInnerHTML={{__html: this.props.description}} />
+          <p
+            className="f5 white-70 tc ml-auto mr-auto mb0 measure-narrow"
+            dangerouslySetInnerHTML={{__html: this.props.description}}
+          />
         </div>
         <img src={bg} className="page-hero__image scaleIn" alt="Spacetime background image" />
 

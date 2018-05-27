@@ -14,7 +14,7 @@ const StartupServicesPage = ({ transition }) => (
     <ServicePageHero
       name={`coffee-time`}
       title={`Coffee Time`}
-      description={`Get answers to all your burning hot questions over a cup of joe`}
+      description={`Drink a hot cup of joe while receiving 6 months of strategy and insight in two hours`}
       icon={`☕️`}
       iconPath={``}
       bgColor={`#3D3B33`}
@@ -116,18 +116,12 @@ const StartupServicesPage = ({ transition }) => (
         <div className="row narrow">
           <h3 className="f3 fw7 mb1">Guaranteed, or Your Money&nbsp;Back</h3>
 
-          <p>We guarantee you will walk away from Coffee Time with answers to your questions and new questions to answer. In fact, we're so certain you will find Coffee Time incredibly insightful and valuable we offer a money back guarantee. If after our time together, you decide the conversation provided zero value we will refund you&nbsp;in&nbsp;full.</p>
+          <p>The fee for Coffee Time is $500, and we'll buy the coffee 😉</p>
 
-          <p>Ready to sit down to talk?</p>
+          <p>We guarantee you will walk away from Coffee Time with answers to your questions and new questions to answer. In fact, we're so certain you will find Coffee Time incredibly insightful and valuable we offer a money back guarantee. If after our time together you decide the conversation provided zero value we will refund you&nbsp;in&nbsp;full.</p>
 
-          <table className="f6 w-100 w-50-ns" cellSpacing="1">
-            <tbody>
-              <tr className="stripe-dark">
-                <td className="pa3 b">Coffee Time Cost</td>
-                <td className="pa3">$500</td>
-              </tr>
-            </tbody>
-          </table>
+          <p>Ready to get a coffee?</p>
+
         </div>
       </section>
 

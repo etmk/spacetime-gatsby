@@ -48,11 +48,11 @@ const ServicesPage = ({ transition }) => (
           <ServiceCard
             name={`design`}
             title={`Design Services`}
-            description={`UX, UI, design, and branding – we do it all`}
+            description={`Design is the communication of the business, brand, identity, and&nbsp;product`}
             icon={`🎨`}
             iconPath={``}
-            bgColor={`#f7f7f6`}
-            textColor={`black`} />
+            bgColor={`#3A333D`}
+            textColor={`white`} />
 
           <ServiceCard
             name={`startups`}
@@ -66,7 +66,7 @@ const ServicesPage = ({ transition }) => (
           <ServiceCard
             name={`wordpress-hosting`}
             title={`WordPress Hosting`}
-            description={`We offer top-tier WordPress hosting`}
+            description={`WordPress hosting for people serious about their online business`}
             icon={``}
             iconPath={`/icons/wordpress-logo.svg`}
             bgColor={`#21759B`}
@@ -84,7 +84,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`cto`}
               title={`CTO As A Service`}
-              description={`Gain the technical leadership your team needs to succeed in the digital world`}
+              description={`Gain the technical leadership you need as your team and business&nbsp;grow`}
               icon={`💎`}
               iconPath={``}
               bgColor={`#EA5500`}
@@ -93,7 +93,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`strategy-retainer`}
               title={`Strategy Retainer`}
-              description={`Retain our team and expertise to gain an edge to get ahead`}
+              description={`We provide the strategic and tactical expertise you need to catalyze your&nbsp;business`}
               icon={`🎯`}
               iconPath={``}
               bgColor={`#5A62FF`}
@@ -102,7 +102,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`coffee-time`}
               title={`Coffee Time`}
-              description={`Get answers to all your burning questions over a hot cup of joe`}
+              description={`Drink a hot cup of joe while receiving 6 months of strategy and insight in two hours`}
               icon={`☕️`}
               iconPath={``}
               bgColor={`#3D3B33`}
