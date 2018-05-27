@@ -14,7 +14,7 @@ const WebsitesPage = () => (
     <ServicePageHero
       name={`websites`}
       title={`Websites`}
-      description={`Startups need special attention and a healthy dose of ingenuity to grow toward success.`}
+      description={`Websites provide a first touch opportunity and prolonged relationship with your customer`}
       icon={`🕸`}
       iconPath={``}
       bgColor={`#1DE9B6`}

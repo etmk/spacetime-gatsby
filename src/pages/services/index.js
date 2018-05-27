@@ -75,7 +75,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`websites`}
               title={`Websites`}
-              description={`Websites big and small, we do them all`}
+              description={`Websites provide a first touch opportunity and prolonged relationship with your customer`}
               icon={`🕸`}
               iconPath={``}
               bgColor={`#1DE9B6`}
