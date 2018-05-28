@@ -44,9 +44,6 @@ class ContactForm extends React.Component {
             Don’t fill this out: <input name="bot-field" />
           </label>
         </div>
-        <div className="">
-          <input type="hidden" name="page" value={location.pathname} />
-        </div>
         <div>
           <label htmlFor="name">Your name</label>
           <input type="text" name="name" placeholder="Elon Musk" onChange={this.handleChange}/>
