@@ -82,11 +82,22 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/blog/**", "/404"],
+        // exclude: ["/blog/**", "/404"],
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: config.siteUrl,
+        sitemap: config.siteUrl + "/sitemap.xml",
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/thanks", "/404"]
+      }
     },
     `gatsby-plugin-offline`, //make sure this comes after gatsby-plugin-manifest
     `gatsby-plugin-react-helmet`,

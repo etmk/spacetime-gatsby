@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: "Spacetime",
   siteTitleAlt: "Spacetime Design Agency",
   siteLogo: "./src/assets/images/favicon/favicon.png",
-  siteUrl: "https://heyspacetime.com",
+  siteUrl: "https://www.heyspacetime.com",
   pathPrefix: "/",
   siteDescription: "A Design Experience Agency",
   contactPhone: "(469) 270-1500",
