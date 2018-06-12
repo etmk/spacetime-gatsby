@@ -134,7 +134,8 @@
       "name": "SundanceTV",
       "url": "https://www.sundancetv.com/",
       "logo": "/client-logos/sundance-tv-logo.png"
-    }, {      "name": "WEtv",
+    }, {
+      "name": "WEtv",
       "url": "http://www.wetv.com/",
       "logo": "/client-logos/we-tv-logo.png"
     }
