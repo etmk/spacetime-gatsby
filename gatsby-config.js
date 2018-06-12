@@ -85,7 +85,7 @@ module.exports = {
         exclude: ["/blog/**", "/404"],
       },
     },
-    // `gatsby-plugin-offline`, //make sure this comes after gatsby-plugin-manifest
+    `gatsby-plugin-offline`, //make sure this comes after gatsby-plugin-manifest
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
