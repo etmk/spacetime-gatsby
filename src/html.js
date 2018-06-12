@@ -1,4 +1,5 @@
 import React from "react"
+import config from '../data/site-config'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -29,6 +30,7 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <meta name="google-site-verification" content={config.googleSearchConsole} />
           {this.props.headComponents}
           {css}
         </head>

@@ -43,6 +43,7 @@ module.exports = {
     }
   ],
   googleAnalyticsID: "UA-118963683-1",
+  googleSearchConsole: "uZI_T83u7puGo4WeT62WIYI83Sr3P4I8kGhD6DGDbto",
   copyright: "Spacetime, LLC", // "Copyright © {currentYear}. {config.copyright}"
   themeColor: "#f15541", // Used for setting manifest and progress theme colors.
   backgroundColor: "#ffffff" // Used for setting manifest background color.
