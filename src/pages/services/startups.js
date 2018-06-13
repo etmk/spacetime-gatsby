@@ -11,7 +11,14 @@ import ServicePageHero from '../../components/ServicePageHero'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page">
-    <Helmet title={`🚀 Startups | ${config.siteTitle}`} />
+
+    <Helmet
+      title={`🚀 Startups | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Spacetime helps Founders build their Startup from concept to completion in less than 3 months. Start from zero, grow a Million dollar business.' },
+        { name: 'keywords', content: `${config.siteKeywords}` },
+      ]}
+    />
 
     <ServicePageHero
       name={`startups`}
