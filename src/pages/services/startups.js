@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
@@ -67,12 +68,7 @@ const StartupServicesPage = ({ transition }) => (
           <blockquote className="ba b--green tc mh0 mv4 ph2 pv4 br1">
             <p className="black f3 mt0 mb3">“Where there is no vision, there is no hope”</p>
             <footer>
-              <cite>
-                <a className="green ttu no-underline fs-normal fw6 f6 tracked"
-                   href="https://www.brainyquote.com/quotes/george_washington_carver_158551"
-                   target="_blank"
-                   rel="noopener">—George Washington Carver</a>
-              </cite>
+              <cite className="green ttu no-underline fs-normal fw6 f6 tracked">—George Washington Carver</cite>
             </footer>
           </blockquote>
         </div>
@@ -148,7 +144,7 @@ const StartupServicesPage = ({ transition }) => (
 
           <div className="ba b--blue mh0 mt4 mb5 pa4 br1">
             <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight</h5>
-            <p className="f6 sans-serif blue mb0">We began work with <a className="blue hover-dark-blue b" href="https://www.steadkey.com/" target="_blank" rel="nofollow">Steadkey</a> in January 2016. Steadkey's founder, Jerry Williams, had begun Steadkey several years earlier, based on his extensive experience in the mortgage industry, but had little success. He'd worked with 3 independent developers and 2 professional agencies, yet 4 years later still did not have the solution promissed. The first thing we did with Jerry in January 2016 was strip away all the cruft and excess features and ideas muddying up the success of Steadkey. Starting from scratch, we executed on the key value propositions customers sought. We rebuilt the application from nothing, and in less than 3 months launched the new and improved Steadkey app and gained immediate traction with new customers. Consider that for a moment, 3 months versus the previous 4 years… yeah, that's awesome.</p>
+            <p className="f6 sans-serif blue mb0">We began work with <OutboundLink className="blue hover-dark-blue b" href="https://www.steadkey.com/" target="_blank" rel="nofollow">Steadkey</OutboundLink> in January 2016. Steadkey's founder, Jerry Williams, had begun Steadkey several years earlier, based on his extensive experience in the mortgage industry, but had little success. He'd worked with 3 independent developers and 2 professional agencies, yet 4 years later still did not have the solution promissed. The first thing we did with Jerry in January 2016 was strip away all the cruft and excess features and ideas muddying up the success of Steadkey. Starting from scratch, we executed on the key value propositions customers sought. We rebuilt the application from nothing, and in less than 3 months launched the new and improved Steadkey app and gained immediate traction with new customers. Consider that for a moment, 3 months versus the previous 4 years… yeah, that's awesome.</p>
           </div>
 
           <ServiceRecommendation
@@ -202,7 +198,7 @@ const StartupServicesPage = ({ transition }) => (
 
           <div className="ba b--blue mh0 mt4 mb5 pa4 br1">
             <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight</h5>
-            <p className="f6 sans-serif blue mb0"><a className="blue hover-dark-blue b" href="https://www.studiohopfitness.com/" target="_blank" rel="nofollow">StudioHop Fitness</a> is one of our best examples of Startup Resuscitation. When we partnered with StudioHop in December 2015, the company was doing okay, but being crushed by previously poor vendor directions and a crumbling technology stack. At that time StudioHop had around 150 monthly customers generating $15k MRR. Sounds like good numbers, right? Sort of. The mild success StudioHop had acheived was also killing them. The business was operating at a loss, customers were leaving, and the web application barely functioned and required a lot of manual intervention. There was no way the business could grow or handle more customers even if they could attract new customers.</p>
+            <p className="f6 sans-serif blue mb0"><OutboundLink className="blue hover-dark-blue b" href="https://www.studiohopfitness.com/" target="_blank" rel="nofollow">StudioHop Fitness</OutboundLink> is one of our best examples of Startup Resuscitation. When we partnered with StudioHop in December 2015, the company was doing okay, but being crushed by previously poor vendor directions and a crumbling technology stack. At that time StudioHop had around 150 monthly customers generating $15k MRR. Sounds like good numbers, right? Sort of. The mild success StudioHop had acheived was also killing them. The business was operating at a loss, customers were leaving, and the web application barely functioned and required a lot of manual intervention. There was no way the business could grow or handle more customers even if they could attract new customers.</p>
             <p className="f6 sans-serif blue mb0">The first thing Spacetime did was replatform the StudioHop application from a previous vendors "proprietary" PHP framework to Ruby on Rails (Note: ask a lot of questions if an agency recommends using their own "propriety" anything; usually they are trying to lock you into only working with them). Ruby on Rails offers great features and abilities to get a product up and running fast, for less cost than other tech options, and in this case StudioHop would be able to easily find and hire developers or vendors that know and love Ruby on Rails.</p>
           </div>
 

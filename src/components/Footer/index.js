@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import config from '../../../data/site-config'
 import logo from '../../assets/images/logos/spacetime-icon.svg'
@@ -80,14 +81,14 @@ const Footer = () => (
           <h5 className="f4 fw4 white-50 mt0 mb2">Socialize</h5>
 
           {config.socialLinks.map(e => (
-            <a
+            <OutboundLink
               key={e.label}
               href={e.url}
               target="_blank"
               rel="noopener"
               className={`white fw5 f3 mr2 mb2 dib hover-${e.label}`}>
               {e.label}
-            </a>
+            </OutboundLink>
           ))}
 
         </div>
@@ -95,7 +96,7 @@ const Footer = () => (
 
       <div className="mb5 w-25-ns">
         <h2 className="f3 fw7 white mt0 mb4">Stop by the office</h2>
-        <a
+        <OutboundLink
           href={config.contactAddressMap}
           target="_blank"
           rel="noopener"
