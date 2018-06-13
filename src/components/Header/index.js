@@ -19,7 +19,7 @@ const Header = () => (
           className="site-header__logo"
           activeClassName="active">
           <img src={logo} alt={config.siteTitle} />
-          <span className="">{config.siteTitle}</span>
+          <span className="">Spacetime</span>
         </Link>
 
         <div className="nav-group nav-group__center">

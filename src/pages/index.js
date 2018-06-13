@@ -14,7 +14,6 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title={`Welcome | ${config.siteTitle}`} />
 
         <section id="PageHero" className="page-hero">
 

@@ -67,7 +67,7 @@ module.exports = {
         start_url: config.siteUrl,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: "minimal-ui",
+        display: "standalone",
         icon: config.siteLogo, // This path is relative to the root of the site.
       },
     },
