@@ -6,7 +6,16 @@ class PortfolioCard extends React.Component {
 
   render() {
     return (
-      <div style={{backgroundColor: `${this.props.bgColor}`}} className="flex-auto-ns pa3 pa5-l bw3 b--solid b--white relative overflow-hidden">
+      <div
+        style={{
+          backgroundColor: `${this.props.bgColor}`,
+          backgroundSize: `cover`,
+          backgroundImage: `url('/client-bgs/${this.props.name}-card-bg.jpg')`,
+          backgroundPosition: `top right`,
+          backgroundRepeat: `no-repeat`
+        }}
+        className="flex-auto-ns pa3 pa5-l bw3 b--solid b--white relative overflow-hidden"
+      >
         <div className="mw-row ml-auto mr-auto">
           <div className="relative z-1">
             <img src={this.props.logoPath} alt={this.props.title} className="" />
@@ -35,7 +44,6 @@ class PortfolioCard extends React.Component {
 
           </div>
         </div>
-        <img src={'/client-bgs/' + this.props.name + '-card-bg.jpg'} alt="" className="absolute top-0 right-0 w-100 z-0" />
       </div>
     );
   }
