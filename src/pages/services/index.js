@@ -20,7 +20,7 @@ const ServicesPage = ({ transition }) => (
       <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
         <div className="row">
           <div className="fl w-50-ns">
-            <h2 className="f1 serif red">Our team provides the expertise and skill you need to drive your project forward to success.</h2>
+            <h2 className="f1 system-sans red">Our team provides the expertise and skill you need to drive your project forward to success.</h2>
             <p className="sans-serif black-50 fw5 measure">Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans on a per client basis, because your problem is unique and deserves a strategy to drive results and lead to success.</p>
             <div className="flex">
               <ul className="lh-copy f6 mv4">
@@ -118,7 +118,7 @@ const ServicesPage = ({ transition }) => (
                 <h2 className="f4 fw5 mb3">
                   Not sure what you need?
                 </h2>
-                <p className="f3 f2-ns fw6 mt3-l mb3-l serif red measure-narrow lh-solid">
+                <p className="f3 f2-ns fw6 mt3-l mb3-l sans-serif red measure-narrow lh-solid">
                   No problem, let’s schedule a time to talk about the problem you need solved
                 </p>
               </div>

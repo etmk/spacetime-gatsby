@@ -23,7 +23,7 @@ const PortfolioPage = ({ transition }) => (
       <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
         <div className="row">
 
-          <h3 className="black-90 f2 fw7 lh-title measure">Some say we’re obsessed. Obessed with innovation, viable business, expressive design. <span className="red">We call it dedication.</span></h3>
+          <h3 className="black-80 f1 fw4">Some say we’re obsessed. Obessed with innovation, viable business, expressive design. <span className="red">We call it dedication.</span></h3>
         </div>
       </section>
 
@@ -107,8 +107,8 @@ const PortfolioPage = ({ transition }) => (
       <section className="pv5 cf bg-deep-purple white">
         <div className="row">
           <div className="fr-l w-40-l mb5">
-            <h2 className="f2 serif dark-red mt0 mt3-ns">Can we work with you?</h2>
-            <p className="white-80 sans-serif measure-narrow">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any challenge.</p>
+            <h2 className="f2 sans-serif dark-red mt0 mt3-ns">Can we work with you?</h2>
+            <p className="white-80 measure-narrow">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any challenge.</p>
             <p className="white-80 sans-serif measure-narrow">What can we work on together?</p>
             <Link
               to="/contact/"

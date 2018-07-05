@@ -25,8 +25,8 @@ class ContactPage extends React.Component {
           <section className="pv5 cf bg-fog-white">
             <div className="row">
               <div className="fl w-50-ns">
-                <h2 className="f1 serif red">Not a fan of filling out forms?</h2>
-                <p className="sans-serif black-50 fw5 measure">Not into filling out forms? Find us on the Twitter-net: <a href="https://twitter.com/heyspacetime" target="_blank" className="red dim">@heyspacetime</a></p>
+                <h2 className="f1 sans-serif red">Not a fan of filling out forms?</h2>
+                <p className="black-50 fw5 measure">Not into filling out forms? Find us on the Twitter-net: <a href="https://twitter.com/heyspacetime" target="_blank" className="red dim">@heyspacetime</a></p>
               </div>
               <div className="fr-ns">
 

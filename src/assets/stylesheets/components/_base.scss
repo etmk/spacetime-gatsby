@@ -24,7 +24,7 @@ html {
 
 body {
   background-color: $white;
-  font-family: $sans-serif;
+  font-family: $system-sans; //$sans-serif;
   line-height: 1; //keep this at 1, rarely should you ever use code that affects every element on a site
 }
 
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5 {
 
 p {
   color: $black-80;
-  font-family: $serif;
+  // font-family: $serif;
   line-height: $line-height-copy;
 
   a {

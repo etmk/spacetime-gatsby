@@ -95,7 +95,7 @@ const WordPressHostingPage = () => (
 
       <section className="pv5 bg-washed-yellow">
         <div className="row narrow">
-          <h2 className="f1 serif red mt0 mb4 lh-solid">Let's Talk About WordPress&nbsp;Hosting</h2>
+          <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk About WordPress&nbsp;Hosting</h2>
 
           <ContactForm />
 

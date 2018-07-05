@@ -41,7 +41,7 @@ class StartupDream extends React.Component {
 
       <section className="pv5">
         <div className="row">
-          <h2 className="f3 f2-ns fw7 lh-tight tc mw6 center">What if you built<br />the&nbsp;next&hellip;</h2>
+          <h2 className="f3 f2-ns lh-tight tc mw6 center">What if you built<br />the&nbsp;next&hellip;</h2>
           <ul className="list pa0 mv5 cf mw8 center">
             {startups.map(e => (
               <li className="fl w-50 w-33-l tc mv3" key={e.title}>
@@ -51,8 +51,8 @@ class StartupDream extends React.Component {
                   rel="noopener"
                   className="dib dim"
                   style={{color: `${e.color}`}}>
-                    <span className="f3 f2-m f1-l fw7 ma0 color-inherit dib">{e.title}</span>
-                    <span className="f7 fw5 tr-l db">{e.text}</span>
+                    <span className="sans-serif f3 f2-m f1-l fw7 ma0 color-inherit dib">{e.title}</span>
+                    <span className="f7 tr-l db">{e.text}</span>
                 </a>
               </li>
             ))}
