@@ -14,9 +14,16 @@ const PortfolioPage = ({ transition }) => (
   <div className="bg-fog-white">
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
 
-    <PageHero
-      title={`Portfolio`}
-      description={`Good looking work isn’t good enough. Good work delivers great results beyond the imagination.`} />
+    <section id="PageHero" className="page-hero">
+
+      <div className="page-hero__content row">
+        <h1 className="page-hero__headline">Good looking work isn’t good enough</h1>
+        <p className="page-hero__text">
+          Good work delivers great results beyond the imagination. Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans on a per client basis.
+        </p>
+      </div>
+
+    </section>
 
     <MainWrapper>
 

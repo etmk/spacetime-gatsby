@@ -100,11 +100,11 @@ $header-md-breakpoint: 37em;
       z-index: 10;
 
     &__content {
-      background-color: rgba($deep-purple, 0);
+      background-color: rgba($deep-purple, 1); //0);
       transition: $global-transition;
 
       &:hover {
-        background-color: rgba($deep-purple, .2);
+        background-color: rgba($deep-purple, 1); //.2);
       }
     }
 
@@ -189,12 +189,12 @@ $header-md-breakpoint: 37em;
     &--pinned {
 
       .site-header__content {
-        background-color: rgba($deep-purple, .5);
+        background-color: rgba($deep-purple, 1); //.5);
         transition: $global-transition;
       }
 
       &:hover .site-header__content {
-        background-color: rgba($deep-purple, .75);
+        background-color: rgba($deep-purple, 1); //.75);
       }
 
       .site-header__logo span,
