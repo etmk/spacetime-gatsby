@@ -44,11 +44,11 @@ const StartupServicesPage = ({ transition }) => (
             <p className="relative"><span className="absolute top-0 left--3 f2">👇</span>Here are a few real scenarios to learn from, names have been changed to protect the innocent:</p>
 
             <div className="mv4 mv3-l pa0 f5">
-              <p className="blue system-sans mv4 ph3 pb4 bb b--black-10">Mickey has a great app idea. He hires a big name agency to help take his app to market. Mickey has complete trust the agency has the best of intentions (and they probably do). Mickey works with the agency for the next 10 months and pays $150,000 before the agency lands on rough times and regretfully discontinues working with Mickey. Mickey walks away with good ideas and good intentions scribbled on papers and pretty designs. But he is out $150k and has nothing of value to show for it. Ouch!</p>
+              <p className="blue system-sans mv4 ph3 pb4 bb b--black-10">Mickey has a great app idea. He hires a big name agency to help take his app to market. Mickey has complete trust the agency has the best of intentions (and they probably do). Mickey works with the agency for the next 10 months and pays $150,000 before the agency lands on rough times and regretfully discontinues working with Mickey. Mickey walks away with good ideas and good intentions scribbled on papers and pretty designs. But he is out $150k and does not have a product to take to market. Ouch!</p>
 
-              <p className="dark-blue o-70 system-sans mv4 ph3 pb4 bb b--black-10">Suzanna hires a young development agency to build her startup because they were more than half the cost of other agencies. Comparatively, Suzanna doesn't spend near as much money as Mickey did, only $30,000. But the project drags on... and on... and on... One year later, the project is almost done. Then, out of the blue, Suzanna's contact at the agency stops answering her phone, stops responding to emails, and just disappears.</p>
+              <p className="dark-blue o-70 system-sans mv4 ph3 pb4 bb b--black-10">Suzanna hires a young development agency to build her startup because they were half the cost of another agency. Comparatively, Suzanna doesn't spend near as much money as Mickey did, only $30,000. But the project drags on... and on... and on... One year later, the project is almost done. Then, out of the blue, Suzanna's contact at the agency stops answering her phone, stops responding to emails, and just disappears.</p>
 
-              <p className="blue system-sans mv3 ph3">Last one, and there is an upside to this one. Bryan has already been burned with his project and he's wary. He tried the overseas labor route. Yuck! He tried working with a local agency. And got... something! But dadgum if it isn't a hairball of a mess and full of bugs. Bryan continues on with his duct taped together startup, but hits a wall when he can't reliably grow the business anymore. The software can't handle the limited success of the business and comes to a screeching halt.</p>
+              <p className="blue system-sans mv3 ph3">Last one, and there is an upside to this one. Bryan has already been burned with his project and he's wary. He tried the overseas labor route. Yuck! He tried working with a local agency. And got... something! But dadgum if it isn't a hairball of a mess and full of bugs. Bryan continues on with his duct taped together startup, but hits a wall when he can't reliably grow the business anymore. The software can't handle the minimal success of the business and comes to a screeching halt.</p>
             </div>
           </div>
         </section>
@@ -57,9 +57,9 @@ const StartupServicesPage = ({ transition }) => (
           <div className="row narrow">
             <h3 className="f3 mb1">What To Expect</h3>
 
-            <p>A Coffee Time session typically will last up to 2 hours. Our highly caffienated team will meet with you in-person (or by video online if you live outside of Dallas) to discuss your dream, idea, business, or concept. You have questions on your mind that we can answer. And we have questions for you to consider that you never thought of. We will discuss your immediate, short-term, and long-term goals and talk about the best path for you to follow.</p>
+            <p>A Coffee Time session typically will last up to 2 hours. Our highly caffienated team will meet with you in-person (or by online video if you live outside of Dallas) to discuss your dream, idea, business, or concept. You have questions on your mind that we can answer. And we have questions for you to consider that you never thought of. We will discuss your immediate, short-term, and long-term goals and talk about the best path for you to follow.</p>
 
-            <p>Sometimes that results in conceptual business advice, sometimes we help you determine the technology to use behind your business, sometimes we help you determine the best agency or freelancer to work with, sometimes we convince you *not* to do anything at all.</p>
+            <p>Sometimes that results in conceptual business advice, sometimes we help you determine the technology to use behind your business, sometimes we help you determine the best agency or freelancer to work with, sometimes we convince you <em>not</em> to do anything at all.</p>
 
             <p>Wait, what?</p>
 
@@ -104,7 +104,7 @@ const StartupServicesPage = ({ transition }) => (
           <div className="row narrow">
             <blockquote className="bw1 b--green b--solid br2 mv5 mw7 center tc">
               <img src="/avatars/bart-breunig-avatar.jpg" className="br-100 h3 w3 dib nt4" alt="Coby Cotton" />
-              <p className="f4 fw1 ma0 mv3 measure center lh-title">
+              <p className="f4 ma0 mv3 measure center lh-title">
                 &ldquo;I found our meeting very useful. I was impressed with how quickly Caleb assessed my situation and was able to offer quick feedback and sound advice. He even convinced me not to spend thousands of dollars yet on the project because I needed to spend more time evaluating my desired outcome and needs for&nbsp;the&nbsp;project.&rdquo;
               </p>
               <p className="f7 fw6 tracked green ttu sans-serif mb4">
@@ -122,7 +122,7 @@ const StartupServicesPage = ({ transition }) => (
 
             <p>We guarantee you will walk away from Coffee Time with answers to your questions and new questions to answer. In fact, we're so certain you will find Coffee Time incredibly insightful and valuable we offer a money back guarantee. If after our time together you decide the conversation provided zero value we will refund you&nbsp;in&nbsp;full.</p>
 
-            <p>Ready to get a coffee?</p>
+            <p>So, would you like a latte or cappuccino?</p>
 
           </div>
         </section>

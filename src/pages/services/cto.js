@@ -50,7 +50,7 @@ const CtoPage = ({ transition }) => (
 
             <p>You could hire a C-level executive to your team. But that brings a whole new set of challenges to your business, including a hefty salary. The median <a href="https://www1.salary.com/Chief-Technology-Officer-Salary.html" target="_blank" rel="nofollow">CTO salary in the United States is $233,705</a>. Whew, that's a lot of dough to shell out for an early stage business. Money that you probably should spend elsewhere, like on programmers, services, and infrastructure.</p>
 
-            <p>Let's do a simple math comparisons:</p>
+            <p>Let's do a simple math comparison:</p>
 
             <div className="bb bt b--black-10 mh0 mv4 ph2 pv4 nl5 nr5">
               <div className="overflow-auto flex items-center">

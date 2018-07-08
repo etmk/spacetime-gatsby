@@ -12,19 +12,21 @@ const TeamPage = ({ transition }) => (
   <div>
     <Helmet title={`Team | ${config.siteTitle}`} />
 
-    <section id="PageHero" className="page-hero" style={transition && transition.style}>
+    <section id="PageHero" className="page-hero pb7-l" style={transition && transition.style}>
 
       <div className="page-hero__content row">
-        <h1 className="page-hero__headline">An all hands on deck attitude</h1>
-        <p className="page-hero__text">
-          At Spacetime, we partner with clients to strategize & execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI.
-        </p>
-        <Link to="/contact" className="f6 link dim ba ph3 pv2 dib black">Contact us</Link>
-
-        <div className="w-50-l">
-          <img src="/photos/spacetime-workspace.jpg" className="mv3 absolute-l top-2-l right--2-l z-0" alt="" />
-          <img src="/photos/spacetime-conference.jpg" className="mv3 absolute-l right-2-l bottom-2-l z-1" alt="" />
+        <div className="fl-l w-60-l">
+          <h1 className="page-hero__headline">An all hands on deck attitude</h1>
+          <p className="page-hero__text">
+            Spacetime operates as a collaborative of specialized makers and entrepreneurs. When a client approached us with a project, we build a specialized team for the task at hand so you get only the best. Hey, we're kind of like Ocean's Eleven, in that way!
+          </p>
+          <Link to="/contact" className="f6 link dim ba ph3 pv2 dib black">Contact us</Link>
         </div>
+      </div>
+
+      <div className="dn dib-l w-50-l absolute-l" style={{ top: "0", left: "60%"}}>
+        <img src="/photos/spacetime-workspace.jpg" className="absolute-l top-0-l left-0-l mv5" alt="" />
+        <img src="/photos/spacetime-conference.jpg" className="deep-shadow absolute" alt="" style={{ left: "4rem", top: "20rem" }} />
       </div>
 
     </section>
@@ -32,8 +34,8 @@ const TeamPage = ({ transition }) => (
     <MainWrapper>
 
       <section className="pv5 bg-fog-white">
-        <div className="row mw8 relative z-1">
-          <h3 className="black-80 f3 f2-m f1-l fw4 lh-title">At Spacetime, we partner with clients to strategize &amp; execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI.</h3>
+        <div className="row relative z-1">
+          <h3 className="black-80 f3 f2-m f1-l fw4 lh-title">At Spacetime, we partner with clients to strategize &amp; execute their vision. We approach problems with a business-centric focus with a goal of sustainability and&nbsp;ROI.</h3>
         </div>
       </section>
 

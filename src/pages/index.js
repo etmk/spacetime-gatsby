@@ -16,11 +16,11 @@ class IndexPage extends React.Component {
     return (
       <div className="bg-dark-purple">
 
-        <section id="PageHero" className="page-hero">
+        <section id="PageHero" className="page-hero bg-deep-purple">
 
           <div className="page-hero__content row" style={transition && transition.style}>
             <h1 className="page-hero__headline white">We're in the business of design</h1>
-            <p className="page-hero__text white">Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans on a per client basis.</p>
+            <p className="page-hero__text white-80">&hellip;and the design of business. We help clients build effective brands and businesses through design, technology, and customer experience.</p>
           </div>
           <img src={bg} className="page-hero__image scaleIn" alt="Spacetime background image" />
 

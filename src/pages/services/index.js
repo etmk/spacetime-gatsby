@@ -19,7 +19,7 @@ const ServicesPage = ({ transition }) => (
         <div className="">
           <div className="fl-ns w-50-ns">
             <p className="page-hero__text">
-              Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans on a per client basis, because your problem is unique and deserves a strategy to drive results and lead to success.
+              Maybe you know what it is, maybe you don't. Whatever your circumstance, we can help you investigate, diagnose, and creatively plan how to tackle your problem to accomplish business&nbsp;goals.
             </p>
             <h2 className="f2 f1-ns fw7">We like big problems</h2>
           </div>

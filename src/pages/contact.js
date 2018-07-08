@@ -23,7 +23,7 @@ class ContactPage extends React.Component {
             <div className="page-hero__content row">
               <h1 className="page-hero__headline">Howdy!</h1>
               <p className="page-hero__text">
-                At Spacetime, we partner with clients to strategize & execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI.
+                Get in touch, tell us what you want to talk about&mdash;business, projects, jobs, movies, kids&mdash;whatever.
               </p>
             </div>
           </section>
