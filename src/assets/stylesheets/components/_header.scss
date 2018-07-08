@@ -16,7 +16,7 @@ $header-md-breakpoint: 37em;
   }
 
   &__content {
-    background-color: $deep-purple;
+    background-color: $black; //$deep-purple;
     transition: $global-transition;
   }
 
@@ -37,7 +37,7 @@ $header-md-breakpoint: 37em;
     }
 
     span {
-      color: rgba($white, .7);
+      color: rgba($white, .9);
       text-transform: uppercase;
       font-weight: 700;
       font-size: .75rem;
@@ -70,7 +70,7 @@ $header-md-breakpoint: 37em;
 
     // Nav-Group__Link
     &__link {
-      color: rgba($white, .7);
+      color: rgba($white, .9);
       text-decoration: none;
       padding: 1rem .5rem;
       display: inline-block;
@@ -82,7 +82,8 @@ $header-md-breakpoint: 37em;
       }
 
       &.active {
-        color: rgba($white, 1);
+        // color: rgba($white, 1);
+        color: $red;
       }
     }
   }
@@ -93,18 +94,19 @@ $header-md-breakpoint: 37em;
 @media screen and (min-width: $screen-small) {
 
   .site-header {
-    position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    position: relative;
+    z-index: 10;
 
     &__content {
-      background-color: rgba($deep-purple, 0);
+      background-color: $black; //rgba($deep-purple, 0);
       transition: $global-transition;
 
       &:hover {
-        background-color: rgba($deep-purple, .2);
+        background-color: rgba($deep-purple, 1); //.2);
       }
     }
 
@@ -136,25 +138,32 @@ $header-md-breakpoint: 37em;
         padding: 0 .5rem;
         margin: 0 .25rem;
         line-height: $nav-height;
+        position: relative;
 
-        &::after {
+        &::before {
           content: '';
           position: absolute;
-          bottom: 0;
+          top: 50%;
           left: 0;
           right: 0;
-          background-color: $orange;
+          background-color: rgba($dark-red, .4);
           height: 0;
-          transition: .1s all linear;
+          transition: .2s all linear;
         }
 
-        &:hover::after,
-        &:focus::after {
-          height: 4px;
+        &:hover,
+        &:focus,
+        .active {
+          color: $dark-red;
         }
 
-        &.active::after {
-          height: 2px;
+        &:hover::before,
+        &:focus::before {
+          height: 8px;
+        }
+
+        &.active::before {
+          height: 1px;
         }
 
       }
@@ -189,12 +198,12 @@ $header-md-breakpoint: 37em;
     &--pinned {
 
       .site-header__content {
-        background-color: rgba($deep-purple, .5);
+        background-color: rgba($black, 1); //rgba($deep-purple, 1); //.5);
         transition: $global-transition;
       }
 
       &:hover .site-header__content {
-        background-color: rgba($deep-purple, .75);
+        background-color: rgba($deep-purple, 1); //.75);
       }
 
       .site-header__logo span,

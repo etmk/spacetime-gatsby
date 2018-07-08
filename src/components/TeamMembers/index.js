@@ -12,7 +12,7 @@ class TeamMembers extends React.Component {
 
         <h2 className="f1 black-80 mb2-m">Spacefriends</h2>
         <div className="cf">
-          <p className="fl-l w-50-l">At Spacetime, we partner with clients to strategize & execute their vision. We approach problems with a business-centric focus with a goal of sustainability and ROI. At Spacetime, we partner with clients to strategize & execute their&nbsp;vision.</p>
+          <p className="f4 fl-l w-50-l">"Find a group of people who challenge and inspire you, spend a lot of time with them, and it will change your life forever."<br /><span className="green">&mdash;Amy Poehler</span></p>
 
           <ul className="fr-l w-40-l custom-unordered-list mv4 mv3-l pa0 pl2-ns  black-80 f6 lh-copy">
             <li>Industry specialists</li>
@@ -45,7 +45,7 @@ class TeamMembers extends React.Component {
         <hr className="mw2 mh0 mv0 black-80 bw1" />
 
         <div className="mt4 mb5">
-          <p className="measure-narrow black-50">We're always looking for cool people to work with. Want to work with us?</p>
+          <p className="measure-narrow black-50">We're always looking for cool people to join our team. Think you have what it takes?</p>
           <Link to="/contact/" className="f6 link dim ba ph3 pv2 dib black">Become a Spacefriend →</Link>
         </div>
 

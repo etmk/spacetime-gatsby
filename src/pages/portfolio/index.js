@@ -11,19 +11,28 @@ import ClientList from '../../components/ClientList'
 
 
 const PortfolioPage = ({ transition }) => (
-  <div className="bg-fog-white">
+  <div className="">
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
 
-    <PageHero
-      title={`Portfolio`}
-      description={`Good looking work isn’t good enough. Good work delivers great results beyond the imagination.`} />
+    <section id="PageHero" className="page-hero white-grid" style={transition && transition.style}>
+
+      <div className="page-hero__content row">
+        <h1 className="page-hero__headline">Good looking work isn’t good enough</h1>
+        <p className="page-hero__text">
+          Good work delivers great results beyond the imagination. Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans to ensure you accomplish your business&nbsp;goals.
+        </p>
+      </div>
+
+    </section>
 
     <MainWrapper>
 
       <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
         <div className="row">
 
-          <h3 className="black-80 f1 fw4">Some say we’re obsessed. Obessed with innovation, viable business, expressive design. <span className="red">We call it dedication.</span></h3>
+          <h3 className="black-80 f3 f1-ns fw4 lh-title mw7">Some say we’re obsessed. Obessed with innovation, viable business, expressive design.</h3>
+
+          <h3 className="red f3 f1-ns fw4 lh-title mw7">We call it dedication.</h3>
         </div>
       </section>
 

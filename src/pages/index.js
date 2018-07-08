@@ -12,14 +12,15 @@ import HomeTestimonials from '../components/HomeFeatures/HomeTestimonials'
 
 class IndexPage extends React.Component {
   render() {
+    const { transition } = this.props;
     return (
-      <div>
+      <div className="bg-dark-purple">
 
-        <section id="PageHero" className="page-hero">
+        <section id="PageHero" className="page-hero bg-deep-purple">
 
-          <div className="page-hero__content mt6-ns row">
-            <h1 className="sans-serif f1-ns white mt0 mw7 pr6-l">Simple things should be simple, complex things should be possible.</h1>
-            <p className="f5 green mb0">—Alan Kay</p>
+          <div className="page-hero__content row" style={transition && transition.style}>
+            <h1 className="page-hero__headline white">We're in the business of design</h1>
+            <p className="page-hero__text white-80">&hellip;and the design of business. We help clients build effective brands and businesses through design, technology, and customer experience.</p>
           </div>
           <img src={bg} className="page-hero__image scaleIn" alt="Spacetime background image" />
 

@@ -8,22 +8,24 @@ import PageHero from '../../components/PageHero'
 import ServiceCard from '../../components/ServiceCard'
 
 const ServicesPage = ({ transition }) => (
-  <div className="">
+  <div className="bg-yellow">
     <Helmet title={`Services | ${config.siteTitle}`} />
 
-    <PageHero
-      title={"Services"}
-      description={"We help influential companies craft outstanding&nbsp;digital experiences."} />
+    <section id="PageHero" className="page-hero bg-yellow" style={transition && transition.style}>
 
-    <MainWrapper>
+      <div className="page-hero__content row">
+        <h1 className="page-hero__headline">You have a really big problem</h1>
 
-      <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
-        <div className="row">
-          <div className="fl w-50-ns">
-            <h2 className="f1 system-sans red">Our team provides the expertise and skill you need to drive your project forward to success.</h2>
-            <p className="sans-serif black-50 fw5 measure">Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans on a per client basis, because your problem is unique and deserves a strategy to drive results and lead to success.</p>
-            <div className="flex">
-              <ul className="lh-copy f6 mv4">
+        <div className="">
+          <div className="fl-ns w-50-ns">
+            <p className="page-hero__text">
+              Maybe you know what it is, maybe you don't. Whatever your circumstance, we can help you investigate, diagnose, and creatively plan how to tackle your problem to accomplish business&nbsp;goals.
+            </p>
+            <h2 className="f2 f1-ns fw7">We like big problems</h2>
+          </div>
+          <div className="fr-ns w-40-ns w-30-l">
+            <div className="">
+              <ul className="lh-copy f6 mb4">
                 <li>UI & UX Design</li>
                 <li>Wireframing</li>
                 <li>Prototyping</li>
@@ -37,13 +39,14 @@ const ServicesPage = ({ transition }) => (
               </ul>
             </div>
           </div>
-          <div>
-            {/* <img src="/illustrations/services-illustration.png" alt="" className="relative nt6-l nb6-l dn dib-ns" /> */}
-          </div>
         </div>
-      </section>
+      </div>
 
-      <section className="pv4">
+    </section>
+
+    <MainWrapper>
+
+      <section className="pv5">
         <div className="ph3 mw9 ml-auto mr-auto cf">
           <ServiceCard
             name={`design`}
