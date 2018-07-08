@@ -41,6 +41,16 @@
 
  //  Modules
  @import 'components/base';
+ @import 'components/content-page';
+ @import 'components/header';
+ @import 'components/box-shadow';
+ @import 'components/clip';
+ @import 'components/forms';
+ @import 'components/global';
+ @import 'components/animations';
+ @import 'components/lists';
+ @import 'components/page-hero';
+ 
  // @import 'scss/box-sizing';
  @import 'scss/aspect-ratios';
  @import 'scss/images';
@@ -93,13 +103,3 @@
  @import 'scss/z-index';
  @import 'scss/nested';
  @import 'scss/styles';
-
- @import 'components/content-page';
- @import 'components/header';
- @import 'components/box-shadow';
- @import 'components/clip';
- @import 'components/forms';
- @import 'components/global';
- @import 'components/animations';
- @import 'components/lists';
- @import 'components/page-hero';

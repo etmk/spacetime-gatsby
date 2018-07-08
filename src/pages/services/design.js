@@ -7,53 +7,56 @@ import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/ServicePageHero'
 
-const DesignServicesPage = () => (
-  <div className="service-page content-page">
+const DesignServicesPage = ({ transition }) => (
+  <div className="service-page content-page" style={{backgroundColor: '#3A333D'}}>
     <Helmet title={`🎨 Design Services | ${config.siteTitle}`} />
 
-    <ServicePageHero
-      name={`design`}
-      title={`Design Services`}
-      description={`Design is the communication of the business, brand, identity, and product`}
-      icon={`🎨`}
-      iconPath={``}
-      bgColor={`#3A333D`}
-      textColor={`white`} />
+    <div style={transition && transition.style}>
 
-    <MainWrapper>
-      <section id="table-of-content" className="pv4">
-        <div className="row narrow">
-          <p>Design embodies the core spirit of your brand's personality. It's often the first thing someone will notice about your brand, and yes, people do judge a book by its cover.</p>
-          <p>We specialize in thoughtful and evocative design backed by practical business goals. We don't "make pretty pictures" or "push pixels", so if that's what you are looking for then we are probably not the right fit.</p>
-          <p>What we do offer, and guarantee, is unique and thoughtful experience design that will transform your brand from <em>meh</em> to <em>WOW!</em> in no time flat.</p>
-          <h5 className="">What do you need?</h5>
-          <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
-            <li className="mv1">Branding &amp; logo</li>
-            <li className="mv1">Wireframing</li>
-            <li className="mv1">Interactive Prototypes</li>
-            <li className="mv1">User Experience Design (UX)</li>
-            <li className="mv1">User Interface Design (UI)</li>
-            <li className="mv1">Web design</li>
-            <li className="mv1">App design</li>
-            <li className="mv1">Native mobile design</li>
-            <li className="mv1">Responsive web design</li>
-            <li className="mv1">Design System</li>
-            <li className="mv1">Pattern Library</li>
-            <li className="mv1">Design Concepts</li>
-            <li className="mv1">Train your internal design team</li>
-          </ul>
-        </div>
-      </section>
+      <ServicePageHero
+        name={`design`}
+        title={`Design Services`}
+        description={`Design is the communication of the business, brand, identity, and product`}
+        icon={`🎨`}
+        iconPath={``}
+        bgColor={`#3A333D`}
+        textColor={`white`} />
 
-      <section className="pv5 bg-washed-yellow">
-        <div className="row narrow">
-          <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk About Your Design Needs</h2>
+      <MainWrapper>
+        <section id="table-of-content" className="pv4">
+          <div className="row narrow">
+            <p>Design embodies the core spirit of your brand's personality. It's often the first thing someone will notice about your brand, and yes, people do judge a book by its cover.</p>
+            <p>We specialize in thoughtful and evocative design backed by practical business goals. We don't "make pretty pictures" or "push pixels", so if that's what you are looking for then we are probably not the right fit.</p>
+            <p>What we do offer, and guarantee, is unique and thoughtful experience design that will transform your brand from <em>meh</em> to <em>WOW!</em> in no time flat.</p>
+            <h5 className="">What do you need?</h5>
+            <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
+              <li className="mv1">Branding &amp; logo</li>
+              <li className="mv1">Wireframing</li>
+              <li className="mv1">Interactive Prototypes</li>
+              <li className="mv1">User Experience Design (UX)</li>
+              <li className="mv1">User Interface Design (UI)</li>
+              <li className="mv1">Web design</li>
+              <li className="mv1">App design</li>
+              <li className="mv1">Native mobile design</li>
+              <li className="mv1">Responsive web design</li>
+              <li className="mv1">Design System</li>
+              <li className="mv1">Pattern Library</li>
+              <li className="mv1">Design Concepts</li>
+              <li className="mv1">Train your internal design team</li>
+            </ul>
+          </div>
+        </section>
 
-          <ContactForm />
+        <section className="pv5 bg-washed-yellow">
+          <div className="row narrow">
+            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk About Your Design Needs</h2>
 
-        </div>
-      </section>
-    </MainWrapper>
+            <ContactForm />
+
+          </div>
+        </section>
+      </MainWrapper>
+    </div>
   </div>
 )
 

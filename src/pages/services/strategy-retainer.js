@@ -7,58 +7,61 @@ import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/ServicePageHero'
 
-const StrategyRetainerPage = () => (
-  <div className="service-page content-page">
+const StrategyRetainerPage = ({ transition }) => (
+  <div className="service-page content-page" style={{backgroundColor: '#5A62FF'}}>
     <Helmet title={`🎯 Strategy Retainer | ${config.siteTitle}`} />
 
-    <ServicePageHero
-      name={`strategy-retainer`}
-      title={`Strategy Retainer`}
-      description={`We provide the strategic and tactical expertise you need to catalyze your business`}
-      icon={`🎯`}
-      iconPath={``}
-      bgColor={`#5A62FF`}
-      textColor={`white`} />
+    <div style={transition && transition.style}>
 
-    <MainWrapper>
-      <section id="table-of-content" className="pv4">
-        <div className="row narrow">
+      <ServicePageHero
+        name={`strategy-retainer`}
+        title={`Strategy Retainer`}
+        description={`We provide the strategic and tactical expertise you need to catalyze your business`}
+        icon={`🎯`}
+        iconPath={``}
+        bgColor={`#5A62FF`}
+        textColor={`white`} />
 
-          <p>Our consulting engagement will give you access to the strategic and tactical expertise you need, when you need it.</p>
+      <MainWrapper>
+        <section id="table-of-content" className="pv4">
+          <div className="row narrow">
 
-          <h3>How does it work?</h3>
+            <p>Our consulting engagement will give you access to the strategic and tactical expertise you need, when you need it.</p>
 
-          <p>Our agreement entitles you to unlimited 24/7 access to our team via phone, email, and IM. All messages will be returned no later than the next business day, although in practice response time is much quicker.</p>
+            <h3>How does it work?</h3>
 
-          <p>Meetings are scheduled in advance, typically take place over the phone, and are sometimes supplemented with online meeting and/or screen sharing software (e.g. Hangouts, Skype, Slack).</p>
+            <p>Our agreement entitles you to unlimited 24/7 access to our team via phone, email, and IM. All messages will be returned no later than the next business day, although in practice response time is much quicker.</p>
 
-          <p>There are 7 possible areas of involvement:</p>
+            <p>Meetings are scheduled in advance, typically take place over the phone, and are sometimes supplemented with online meeting and/or screen sharing software (e.g. Hangouts, Skype, Slack).</p>
 
-          <ol className="lh-copy">
-            <li className="mv2">Participation in an initial in-depth, in-person meeting to define long-term business goals, existing legacy system architecture, design systems, product definition, and organizational challenges.</li>
-            <li className="mv2">Regular meetings with the primary contact to discuss strategy, longer-term issues, and business goals.</li>
-            <li className="mv2">Strategic and tactical liason between you and contract workers and agencies. We can also act as a sounding board to ensure proper technical and strategic execution.</li>
-            <li className="mv2">Technical review of APIs, IDEs, source code, documentation, interviews, and the like. Note: authoring production code, designs, or documentation is not included in this agreement.</li>
-            <li className="mv2">Creative review of design concepts, user flows, wireframes, prototypes, design systems, interviews and the like.</li>
-            <li className="mv2">Periodic competitive analysis and market insight and strategic response.</li>
-            <li className="mv2">Situational responsiveness to needs that arise that you deem require our expertise and intervention.</li>
-          </ol>
+            <p>There are 7 possible areas of involvement:</p>
 
-          <p>The fee is $8,500 USD per month, all inclusive (i.e. we pay for any necessary travel, administrative expenses, etc). Professional courtesy discounts are available for quarterly and annual arrangements. Participation is limited. You can elect to be added to the waiting list if spots are not available.</p>
+            <ol className="lh-copy">
+              <li className="mv2">Participation in an initial in-depth, in-person meeting to define long-term business goals, existing legacy system architecture, design systems, product definition, and organizational challenges.</li>
+              <li className="mv2">Regular meetings with the primary contact to discuss strategy, longer-term issues, and business goals.</li>
+              <li className="mv2">Strategic and tactical liason between you and contract workers and agencies. We can also act as a sounding board to ensure proper technical and strategic execution.</li>
+              <li className="mv2">Technical review of APIs, IDEs, source code, documentation, interviews, and the like. Note: authoring production code, designs, or documentation is not included in this agreement.</li>
+              <li className="mv2">Creative review of design concepts, user flows, wireframes, prototypes, design systems, interviews and the like.</li>
+              <li className="mv2">Periodic competitive analysis and market insight and strategic response.</li>
+              <li className="mv2">Situational responsiveness to needs that arise that you deem require our expertise and intervention.</li>
+            </ol>
 
-          <p>Please contact for more information.</p>
-        </div>
-      </section>
+            <p>The fee is $8,500 USD per month, all inclusive (i.e. we pay for any necessary travel, administrative expenses, etc). Professional courtesy discounts are available for quarterly and annual arrangements. Participation is limited. You can elect to be added to the waiting list if spots are not available.</p>
 
-      <section className="pv5 bg-washed-yellow">
-        <div className="row narrow">
-          <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk Strategy</h2>
+            <p>Please contact for more information.</p>
+          </div>
+        </section>
 
-          <ContactForm />
+        <section className="pv5 bg-washed-yellow">
+          <div className="row narrow">
+            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk Strategy</h2>
 
-        </div>
-      </section>
-    </MainWrapper>
+            <ContactForm />
+
+          </div>
+        </section>
+      </MainWrapper>
+    </div>
   </div>
 )
 

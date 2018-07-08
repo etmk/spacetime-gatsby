@@ -11,10 +11,10 @@ import ClientList from '../../components/ClientList'
 
 
 const PortfolioPage = ({ transition }) => (
-  <div className="bg-fog-white">
+  <div className="">
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
 
-    <section id="PageHero" className="page-hero">
+    <section id="PageHero" className="page-hero white-grid" style={transition && transition.style}>
 
       <div className="page-hero__content row">
         <h1 className="page-hero__headline">Good looking work isn’t good enough</h1>
@@ -30,7 +30,9 @@ const PortfolioPage = ({ transition }) => (
       <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
         <div className="row">
 
-          <h3 className="black-80 f1 fw4">Some say we’re obsessed. Obessed with innovation, viable business, expressive design. <span className="red">We call it dedication.</span></h3>
+          <h3 className="black-80 f3 f1-ns fw4 lh-title mw7">Some say we’re obsessed. Obessed with innovation, viable business, expressive design.</h3>
+
+          <h3 className="red f3 f1-ns fw4 lh-title mw7">We call it dedication.</h3>
         </div>
       </section>
 
