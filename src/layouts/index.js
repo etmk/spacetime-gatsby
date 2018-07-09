@@ -16,6 +16,14 @@ class TemplateWrapper extends React.Component {
           meta={[
             { name: 'description', content: `${config.siteDescription}` },
             { name: 'keywords', content: `${config.siteKeywords}` },
+            { name: 'twitter:card', content: 'summary' },
+            { name: 'twitter:site', content: '@heyspacetime' },
+            { name: 'twitter:creator', content: '@heyspacetime' },
+            { name: 'twitter:url', content: `${config.siteUrl}` },
+            { name: 'twitter:title', content: `${config.siteTitle}` },
+            { name: 'twitter:description', content: `${config.siteDescription}` },
+            { name: 'twitter:image', content: `${config.siteUrl}/social/twitter-card.png` },
+            { name: 'twitter:image:alt', content: 'The image alt text' },
           ]}
         />
         <Header />
