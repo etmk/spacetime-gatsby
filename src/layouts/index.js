@@ -23,7 +23,6 @@ class TemplateWrapper extends React.Component {
             { name: 'twitter:title', content: `${config.siteTitle}` },
             { name: 'twitter:description', content: `${config.siteDescription}` },
             { name: 'twitter:image', content: `${config.siteUrl}/social/twitter-card.png` },
-            { name: 'twitter:image:alt', content: 'The image alt text' },
           ]}
         />
         <Header />
