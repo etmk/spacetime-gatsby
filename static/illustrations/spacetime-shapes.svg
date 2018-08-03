@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="275px" height="360px" viewBox="0 0 275 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>spacetime-shapes</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="135.513687%" y1="54.7865993%" x2="31.3220388%" y2="70.1581096%" id="linearGradient-1">
+            <stop stop-color="#1A2980" offset="0%"></stop>
+            <stop stop-color="#26D0CE" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="376.881919 0 376.881919 316.514549 0 316.514549"></polygon>
+    </defs>
+    <g id="2018" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(0.000000, -871.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1600" height="10292"></rect>
+            <g id="#-Hero" transform="translate(-239.000000, 233.000000)">
+                <g id="spacetime-shapes" transform="translate(0.000000, 638.000000)">
+                    <g id="Mask">
+                        <use fill="#97BBBF" xlink:href="#path-2"></use>
+                        <use fill-opacity="0.100000001" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    </g>
+                    <polygon id="Polygon" fill="#FD664E" points="421.128906 84 513.350278 84 513.350278 146.323219 341 359.441406 341 120.3125"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

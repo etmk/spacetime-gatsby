@@ -30,7 +30,7 @@ const PortfolioPage = ({ transition }) => (
       <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
         <div className="row">
 
-          <h3 className="black-80 f3 f1-ns fw4 lh-title mw7">Some say we’re obsessed. Obessed with innovation, viable business, expressive design.</h3>
+          <h3 className="black-80 f3 f1-ns fw4 lh-title mw7">Some say we’re obsessed. Obsessed with innovation, viable business, expressive design.</h3>
 
           <h3 className="red f3 f1-ns fw4 lh-title mw7">We call it dedication.</h3>
         </div>
