@@ -16,7 +16,7 @@ const WordPressHostingPage = ({ transition }) => (
       <ServicePageHero
         name={`wordpress-hosting`}
         title={`WordPress Hosting`}
-        description={`WordPress hosting for people serious about their online business`}
+        description={`WordPress hosting for people serious about their online&nbsp;business`}
         icon={``}
         iconPath={`/icons/wordpress-logo.svg`}
         bgColor={`#21759B`}
@@ -94,14 +94,16 @@ const WordPressHostingPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 bg-washed-yellow">
-          <div className="row narrow">
-            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk About WordPress&nbsp;Hosting</h2>
-
-            <ContactForm />
-
+        <section className="pv5 pv6-ns bg-washed-yellow">
+          <div className="row">
+            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">Because you deserve the <span className="blue">Best</span>.</h2>
+            <p>Get in touch to schedule a friendly chat.</p>
+            <div className="mw6 mt5">
+              <ContactForm />
+            </div>
           </div>
         </section>
+
       </MainWrapper>
     </div>
   </div>

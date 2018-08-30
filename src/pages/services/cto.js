@@ -17,7 +17,7 @@ const CtoPage = ({ transition }) => (
       <ServicePageHero
         name={`cto`}
         title={`CTO As A Service`}
-        description={`Gain the technical leadership your team needs to succeed in the digital world`}
+        description={`Gain the technical leadership your team needs to succeed in the digital&nbsp;world`}
         icon={`💎`}
         iconPath={``}
         bgColor={`#EA5500`}
@@ -91,14 +91,17 @@ const CtoPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 bg-washed-yellow">
-          <div className="row narrow">
-            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Get in touch, and let us be your CTO</h2>
-
-            <ContactForm />
-
+        <section className="pv5 pv6-ns bg-washed-yellow">
+          <div className="row">
+            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">Your technnical <span className="dark-red
+              ">Leadership</span> team.</h2>
+            <p>Get in touch to schedule a friendly chat.</p>
+            <div className="mw6 mt5">
+              <ContactForm />
+            </div>
           </div>
         </section>
+
       </MainWrapper>
     </div>
   </div>

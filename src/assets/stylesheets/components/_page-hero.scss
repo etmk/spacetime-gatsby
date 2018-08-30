@@ -1,6 +1,6 @@
 .white-grid {
   background-image:
-    linear-gradient(to bottom right, rgba($white, 1) 30%, rgba($white, .95) 100%),
+    linear-gradient(to bottom right, rgba(map-get($colors, white), 1) 30%, rgba(map-get($colors, white), .95) 100%),
     url('/bgs/diamond-graphic.svg');
   background-repeat: no-repeat, repeat;
   background-size: auto, 2.5rem;
@@ -14,7 +14,7 @@
 .page-hero {
   position: relative;
   overflow: hidden;
-  background-color: $white; //$deep-purple;
+  background-color: map-get($colors, white);
   padding: 5rem 0 5rem;
 
   @media screen and (min-width: 33em) {
@@ -42,12 +42,12 @@
     font-family: $sans-serif;
     font-size: 11vw;
     font-weight: bold;
-    color: $black-90;
+    color: map-get($colors, black-90);
     letter-spacing: -.03em;
     margin-top: 0;
 
     @media screen and (min-width: $screen-medium) {
-      font-size: 5.25rem;
+      font-size: $font-size-headline; //5.25rem;
       max-width: 8em;
     }
   }

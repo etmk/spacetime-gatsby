@@ -1,7 +1,6 @@
 .numeral {
-  background-color: white;
+  background-color: map-get($colors, white);
   width: 2rem;
-  // display: inline-block;
   text-align: center;
   height: 2rem;
   line-height: 2.2rem;
@@ -18,4 +17,8 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+}
+
+.underline-text {
+  
 }

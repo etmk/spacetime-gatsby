@@ -14,7 +14,7 @@ class PortfolioCard extends React.Component {
           backgroundPosition: `top right`,
           backgroundRepeat: `no-repeat`
         }}
-        className="flex-auto-ns pa3 pa5-l bw3 b--solid b--white relative overflow-hidden"
+        className={`flex-auto-ns pa3 pa5-l relative overflow-hidden ${this.props.uniqueClass}`}
       >
         <div className="mw-row ml-auto mr-auto">
           <div className="relative z-1">

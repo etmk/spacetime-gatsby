@@ -16,7 +16,7 @@ const StrategyRetainerPage = ({ transition }) => (
       <ServicePageHero
         name={`strategy-retainer`}
         title={`Strategy Retainer`}
-        description={`We provide the strategic and tactical expertise you need to catalyze your business`}
+        description={`We provide the strategic and tactical expertise you need to catalyze your&nbsp;business`}
         icon={`🎯`}
         iconPath={``}
         bgColor={`#5A62FF`}
@@ -52,12 +52,13 @@ const StrategyRetainerPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 bg-washed-yellow">
-          <div className="row narrow">
-            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk Strategy</h2>
-
-            <ContactForm />
-
+        <section className="pv5 pv6-ns bg-washed-yellow">
+          <div className="row">
+            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">Strategic expertise, guaranteed <span className="yellow">Confidence</span>.</h2>
+            <p>Get in touch to schedule a friendly chat.</p>
+            <div className="mw6 mt5">
+              <ContactForm />
+            </div>
           </div>
         </section>
       </MainWrapper>

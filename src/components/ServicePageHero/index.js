@@ -4,16 +4,25 @@ class ServicePageHero extends React.Component {
   render() {
     return (
 
-      <section className={`${this.props.textColor} ph5-l pt6 pb5 tc`} style={{backgroundColor: `${this.props.bgColor}`}}>
+      <section className={`${this.props.textColor} pt7 pb5`} style={{backgroundColor: `${this.props.bgColor}`}}>
 
-        {this.props.icon.length > 0 ? (
-          <span className="dib f1">{this.props.icon}</span>
-        ) :
-          <img src={this.props.iconPath} alt="" className="" />
-        }
+        <div className="row">
 
-        <h1 className="f2-ns tc mt0">{this.props.title}</h1>
-        <p className="f4 tc color-inherit o-80 ml-auto mr-auto mb0 measure-narrow">{this.props.description}</p>
+          <h1 className="f-headline dib mv0">
+            {this.props.title}
+            {this.props.icon.length > 0 ? (
+              <span className="dib f1 ml3">{this.props.icon}</span>
+            ) :
+              <img src={this.props.iconPath} alt="" className="ml3" />
+            }
+          </h1>
+
+          <p
+            className="f3 color-inherit o-80 measure-narrow"
+            dangerouslySetInnerHTML={{__html: this.props.description}}
+          />
+
+        </div>
       </section>
 
     );

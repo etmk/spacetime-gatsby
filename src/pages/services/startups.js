@@ -25,22 +25,28 @@ const StartupServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`startups`}
         title={`Startups`}
-        description={`Startups require a special, diverse set of skills to progress from idea to marketable business`}
+        description={`Startups require a special, diverse set of skills to progress from idea to marketable&nbsp;business`}
         icon={`🚀`}
         iconPath={``}
         bgColor={`#F03F47`}
-        textColor={`white`} />
+        textColor={`black`} />
 
       <MainWrapper>
 
-        <section id="table-of-content" className="pv4">
+        <section className="pv6 bg-near-white">
+          <div className="row">
+            <h2 className="f1 fw4 system-sans lh-title">We Help Founders Develop Their Startup From Back-of-the-Napkin Idea to $1 Million</h2>
+          </div>
+        </section>
+
+        <section id="table-of-content" className="pv6">
           <div className="row narrow">
 
             <p>Whether you are bootstraping or raising venture capital, building a startup is a challenge unlike other business types. At Spacetime, we've worked with a variety of startups and developed select service categories for startups that speak to the stage of your business and goal direction.</p>
 
             <p>We see 4 primary types of startup needs:</p>
 
-            <ol className="list pa0 mv4 nl4-ns nr4-ns">
+            <ol className="list pa0 mv6 nl4-ns nr4-ns">
               <li>
                 <a href="#concept-exploration" className="no-underline db bg-washed-yellow hover-bg-washed-blue pv4 ph4 ph5-l br1 ba b--black-05 relative mv2 shadow-hover hover-up">
                   <span className="numeral cool">1</span>
@@ -74,7 +80,7 @@ const StartupServicesPage = ({ transition }) => (
             <p>Whatever your need, we always treat your project like our own. We only succeed when you succeed.</p>
             <p>Our specialized team will take you through our battle-hardened process. Provide strategy and insight into business building, customer acquisition, product development, pricing, and much more.</p>
 
-            <blockquote className="ba b--green tc mh0 mv4 ph2 pv4 br1">
+            <blockquote className="ba b--green tc mh0 mv5 ph2 pv4 br1">
               <p className="black f3 mt0 mb3">“Where there is no vision, there is no hope”</p>
               <footer>
                 <cite className="green ttu no-underline fs-normal fw6 f6 tracked">—George Washington Carver</cite>
@@ -83,7 +89,7 @@ const StartupServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section id="concept-exploration" className="pv5 gradient-light-blue">
+        <section id="concept-exploration" className="pv6 gradient-light-blue">
           <div className="row narrow">
 
             <span className="numeral db ml-auto mr-auto">1</span>
@@ -121,7 +127,7 @@ const StartupServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section id="minimum-viable-product" className="pv5 gradient-light-blue">
+        <section id="minimum-viable-product" className="pv6 gradient-light-blue">
           <div className="row narrow">
             <span className="numeral db ml-auto mr-auto">2</span>
             <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Minimum Viable Product</h3>
@@ -179,7 +185,7 @@ const StartupServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section id="startup-resuscitation" className="pv5 gradient-light-blue">
+        <section id="startup-resuscitation" className="pv6 gradient-light-blue">
           <div className="row narrow">
             <span className="numeral db ml-auto mr-auto">3</span>
             <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Startup Resuscitation</h3>
@@ -226,7 +232,7 @@ const StartupServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section id="choose-your-own-adventure" className="pv5 gradient-light-blue">
+        <section id="choose-your-own-adventure" className="pv4 pv6-ns gradient-light-blue">
           <div className="row narrow">
             <span className="numeral db ml-auto mr-auto">4</span>
             <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Choose Your Own Adventure</h3>
@@ -246,10 +252,13 @@ const StartupServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 bg-washed-yellow">
-          <div className="row narrow">
-            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk About Your&nbsp;Startup</h2>
-            <ContactForm />
+        <section className="pv5 pv6-ns bg-washed-yellow">
+          <div className="row">
+            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">Your startup could be worth <span className="green">Millions</span>.</h2>
+            <p>Get in touch to schedule a friendly chat.</p>
+            <div className="mw6 mt5">
+              <ContactForm />
+            </div>
           </div>
         </section>
 

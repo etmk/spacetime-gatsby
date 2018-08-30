@@ -113,26 +113,19 @@ const ServicesPage = ({ transition }) => (
         </div>
       </section>
 
-      <section className="pv5 mt5 bg-clip-up">
+      <section className="pv5 mt5 bg-coconut-white">
         <div className="row">
-          <div className="bg-white deep-shadow pa4 ph5-l flex-l justify-between-l">
-            <div className="w-80-m w-70-l mw6">
-              <div>
-                <h2 className="f4 fw5 mb3">
-                  Not sure what you need?
-                </h2>
-                <p className="f3 f2-ns fw6 mt3-l mb3-l sans-serif red measure-narrow lh-solid">
-                  No problem, let’s schedule a time to talk about the problem you need solved
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center">
-              <a
-                href="/contact"
-                className="no-underline f6 fw6 tc dib pa3 bg-deep-purple dim white-90">
-                  Get in touch for a free consultation →
-              </a>
-            </div>
+          <div className="">
+            <h2 className="black-80 fw4 mt0">Not sure what you need?</h2>
+            <p className="f3 f1-ns f-subheadline-l fw6 sans-serif salmon lh-solid mt0">
+              No problem, let’s schedule a time to talk about the problem you need solved
+            </p>
+
+            <a
+              href="/contact"
+              className="no-underline f6 fw6 tc dib pa3 bg-deep-purple dim white-90">
+                Schedule a free consultation →
+            </a>
           </div>
         </div>
       </section>

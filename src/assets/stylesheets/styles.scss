@@ -50,7 +50,7 @@
  @import 'components/animations';
  @import 'components/lists';
  @import 'components/page-hero';
- 
+
  // @import 'scss/box-sizing';
  @import 'scss/aspect-ratios';
  @import 'scss/images';
@@ -58,7 +58,6 @@
  @import 'scss/background-position';
  @import 'scss/outlines';
  @import 'scss/borders';
- @import 'scss/border-colors';
  @import 'scss/border-radius';
  @import 'scss/border-style';
  @import 'scss/border-widths';
@@ -85,8 +84,6 @@
  @import 'scss/position';
  @import 'scss/opacity';
  @import 'scss/rotations';
- @import 'scss/skins';
- @import 'scss/skins-pseudo';
  @import 'scss/spacing';
  @import 'scss/negative-margins';
  @import 'scss/tables';
@@ -103,3 +100,5 @@
  @import 'scss/z-index';
  @import 'scss/nested';
  @import 'scss/styles';
+
+@import 'scss/skins';

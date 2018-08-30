@@ -14,11 +14,11 @@ const PortfolioPage = ({ transition }) => (
   <div className="">
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
 
-    <section id="PageHero" className="page-hero white-grid" style={transition && transition.style}>
+    <section id="PageHero" className="page-hero bg-near-black white" style={transition && transition.style}>
 
       <div className="page-hero__content row">
-        <h1 className="page-hero__headline">Good looking work isn’t good enough</h1>
-        <p className="page-hero__text">
+        <h1 className="page-hero__headline white">Good looking work isn’t good enough</h1>
+        <p className="page-hero__text white">
           Good work delivers great results beyond the imagination. Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans to ensure you accomplish your business&nbsp;goals.
         </p>
       </div>
@@ -27,16 +27,7 @@ const PortfolioPage = ({ transition }) => (
 
     <MainWrapper>
 
-      <section className="pv5 cf bg-fog-white" style={transition && transition.style}>
-        <div className="row">
-
-          <h3 className="black-80 f3 f1-ns fw4 lh-title mw7">Some say we’re obsessed. Obsessed with innovation, viable business, expressive design.</h3>
-
-          <h3 className="red f3 f1-ns fw4 lh-title mw7">We call it dedication.</h3>
-        </div>
-      </section>
-
-      <section className="bw3 b--solid b--white">
+      <section className="">
         <PortfolioCard
           name={`dude-perfect`}
           title={`Dude Perfect`}
@@ -47,7 +38,7 @@ const PortfolioPage = ({ transition }) => (
           logoPath={`/client-logos/dude-perfect-icon.svg`}
           bgYAxis={`top`} />
 
-        <div className="flex-ns">
+        <div className="flex-ns bt-ns bb-ns bw3-ns b--white">
           <PortfolioCard
             name={`keyzie`}
             title={`Keyzie`}
@@ -56,7 +47,8 @@ const PortfolioPage = ({ transition }) => (
             bgColor={`#F78657`}
             textColor={`black`}
             logoPath={`/client-logos/keyzie-logo.svg`}
-            bgYAxis={`top`} />
+            bgYAxis={`top`}
+            uniqueClass={`br-ns bw3 b--white`} />
 
           <PortfolioCard
             name={`studiohop`}
@@ -79,7 +71,7 @@ const PortfolioPage = ({ transition }) => (
           logoPath={`/client-logos/bell-logo.svg`}
           bgYAxis={`top`} />
 
-        <div className="flex-ns">
+        <div className="flex-ns bt-ns bb-ns bw3-ns b--white">
           <PortfolioCard
             name={`steadkey`}
             title={`Steadkey`}
@@ -88,7 +80,8 @@ const PortfolioPage = ({ transition }) => (
             bgColor={`#F64A53`}
             textColor={`black`}
             logoPath={`/client-logos/steadkey-logo.svg`}
-            bgYAxis={`bottom`} />
+            bgYAxis={`bottom`}
+            uniqueClass={`br-ns bw3 b--white`} />
 
           <PortfolioCard
             name={`vault-aviation`}

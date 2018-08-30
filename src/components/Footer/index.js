@@ -86,7 +86,7 @@ const Footer = () => (
               href={e.url}
               target="_blank"
               rel="noopener"
-              className={`white fw5 f3 mr2 mb2 dib hover-${e.label}`}>
+              className={`white fw5 f3 mr2 mb2 dib hover-red`}>
               {e.label}
             </OutboundLink>
           ))}

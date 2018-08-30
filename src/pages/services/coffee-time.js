@@ -16,7 +16,7 @@ const StartupServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`coffee-time`}
         title={`Coffee Time`}
-        description={`Drink a hot cup of joe while receiving 6 months of strategy and insight in two hours`}
+        description={`Drink a hot cup of joe while receiving 6 months of strategy and insight in two&nbsp;hours`}
         icon={`☕️`}
         iconPath={``}
         bgColor={`#3D3B33`}
@@ -127,12 +127,13 @@ const StartupServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 bg-washed-yellow">
-          <div className="row narrow">
-            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Schedule Coffee Time</h2>
-
-            <ContactForm />
-
+        <section className="pv5 pv6-ns bg-washed-yellow">
+          <div className="row">
+            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">A healthy dose of condesned <span className="dark-red">Conversation</span>.</h2>
+            <p>Get in touch to schedule a friendly sit-down.</p>
+            <div className="mw6 mt5">
+              <ContactForm />
+            </div>
           </div>
         </section>
       </MainWrapper>

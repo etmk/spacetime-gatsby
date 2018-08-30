@@ -16,7 +16,7 @@ label,
 
 .label-help {
   margin-bottom: 0.3em;
-  color: $black-50;
+  color: map-get($colors, black-50);
   font-size: 0.7em;
 }
 
@@ -52,45 +52,45 @@ textarea {
   width: 100%;
   margin: 0 0 1rem;
   padding: 1rem;
-  border: 1px solid $black-50;
+  border: 1px solid map-get($colors, black-50);
   border-radius: 0;
-  background-color: $white;
-  color: $black;
+  background-color: map-get($colors, white);
+  color: map-get($colors, black);
   font-family: $system-sans; //$sans-serif;
   font-family: inherit;
   font-weight: 300;
   transition: .15s all linear;
 
   &:hover {
-    border-color: $black;
-    box-shadow: 0 0 5px rgba($black, .2);
+    border-color: map-get($colors, black);
+    box-shadow: 0 0 5px rgba(map-get($colors, black), .2);
   }
 
   &:focus {
-    border: 1px solid $blue;
+    border: 1px solid map-get($colors, blue);
     outline: none;
-    box-shadow: 0 0 5px rgba($blue, .2);
+    box-shadow: 0 0 5px rgba(map-get($colors, blue), .2);
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   }
 
   &:read-only {
-    border-color: rgba($green, .15);
-    background-color: rgba($green, .1);
+    border-color: rgba(map-get($colors, green), .15);
+    background-color: rgba(map-get($colors, green), .1);
     box-shadow: none !important;
     resize: none;
   }
 
   &:disabled {
-    border-color: rgba($black, .1);
-    background-color: rgba($black, .05);
+    border-color: rgba(map-get($colors, black), .1);
+    background-color: rgba(map-get($colors, black), .05);
     box-shadow: none !important;
-    color: rgba($black, .5);
+    color: rgba(map-get($colors, black), .5);
     cursor: not-allowed;
     resize: none;
   }
 
-  &.invalid, &.error { border-color: rgba($yellow, 0.6);}
-  &.warning { border-color: $red;}
-  &.success { border-color: $green;}
+  &.invalid, &.error { border-color: rgba(map-get($colors, yellow), 0.6);}
+  &.warning { border-color: map-get($colors, red);}
+  &.success { border-color: map-get($colors, green);}
   &.auto-width { width: auto; }
 }

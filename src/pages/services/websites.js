@@ -15,7 +15,7 @@ const WebsitesPage = ({ transition }) => (
       <ServicePageHero
         name={`websites`}
         title={`Websites`}
-        description={`Websites provide a first touch opportunity and prolonged relationship with your customer`}
+        description={`Websites provide a first touch opportunity and prolonged relationship with your&nbsp;customer`}
         icon={`🕸`}
         iconPath={``}
         bgColor={`#1DE9B6`}
@@ -48,12 +48,13 @@ const WebsitesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 bg-washed-yellow">
-          <div className="row narrow">
-            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk About Your&nbsp;Website</h2>
-
-            <ContactForm />
-
+        <section className="pv5 pv6-ns bg-washed-yellow">
+          <div className="row">
+            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">Make your <span className="green">Website</span> work for you.</h2>
+            <p>Get in touch to schedule a friendly chat.</p>
+            <div className="mw6 mt5">
+              <ContactForm />
+            </div>
           </div>
         </section>
       </MainWrapper>

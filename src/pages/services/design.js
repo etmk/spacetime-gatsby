@@ -16,7 +16,7 @@ const DesignServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`design`}
         title={`Design Services`}
-        description={`Design is the communication of the business, brand, identity, and product`}
+        description={`Design is the communication of the business, brand, identity, and&nbsp;product`}
         icon={`🎨`}
         iconPath={``}
         bgColor={`#3A333D`}
@@ -47,14 +47,16 @@ const DesignServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 bg-washed-yellow">
-          <div className="row narrow">
-            <h2 className="f1 sans-serif red mt0 mb4 lh-solid">Let's Talk About Your Design Needs</h2>
-
-            <ContactForm />
-
+        <section className="pv5 pv6-ns bg-washed-yellow">
+          <div className="row">
+            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">Stand out from the crowd through exceptional <span className="orange">Design</span>.</h2>
+            <p>Get in touch to schedule a friendly chat.</p>
+            <div className="mw6 mt5">
+              <ContactForm />
+            </div>
           </div>
         </section>
+
       </MainWrapper>
     </div>
   </div>

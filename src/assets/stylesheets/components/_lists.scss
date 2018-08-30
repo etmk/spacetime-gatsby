@@ -5,7 +5,7 @@
   li:before {
     content: '•';
     // margin-right: 1rem;
-    color: $red;
+    color: map-get($colors, red);
     position: absolute;
     left: -1rem;
   }
