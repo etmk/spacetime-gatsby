@@ -1,9 +1,15 @@
 ---
 type: 'blog'
-path: '/third-post'
-title: 'Third Blog Post'
+path: '/the-hard-thing-about-hard-things'
+title: 'The Hard Thing About Hard Things'
+subtitle: 'Startups require a special, diverse set of skills to progress from idea to marketable business'
+author: 'Caleb Sylvest'
 date: '2018-03-03'
 published: true
+bgColor: '#322e2f'
+textColor: '#fff'
+titleColor: '#f78657'
+heroImage: 'image.png'
 ---
 
 Third post on a saturday

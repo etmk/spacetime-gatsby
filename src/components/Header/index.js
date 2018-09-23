@@ -49,12 +49,12 @@ const Header = () => (
         </div>
 
         <div className="nav-group nav-group__right">
-          {/* <Link
+          <Link
             to="blog"
             title="Blog"
             className="nav-group__link">
             Blog
-          </Link> */}
+          </Link>
 
           <Link
             to="/contact/"
