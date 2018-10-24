@@ -20,7 +20,7 @@ const startups = [
     title: 'AirBnB',
     text: '$30 billion',
     color: '#ff5360',
-    url: 'https://www.trulia.com/'
+    url: 'https://www.airbnb.com/'
   }, {
     title: 'Gimlet',
     text: '$30MM valuation',
