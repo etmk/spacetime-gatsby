@@ -47,8 +47,9 @@
     margin-top: 0;
 
     @media screen and (min-width: $screen-medium) {
-      font-size: $font-size-headline; //5.25rem;
+      font-size: $font-size-headline;
       max-width: 8em;
+      line-height: .9;
     }
   }
 
