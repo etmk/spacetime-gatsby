@@ -1,7 +1,7 @@
-import React from 'react'
+import React  from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import Img from 'gatsby-image'
+import Link   from 'gatsby-link'
+import Img    from 'gatsby-image'
 
 import config from '../../data/site-config'
 import bg from '../assets/images/backgrounds/spacetime-background.jpg'
@@ -27,6 +27,12 @@ class IndexPage extends React.Component {
         </section>
 
         <MainWrapper>
+
+          <section className="bg-near-black pv5 relative">
+            <div className="row">
+              <h2 className="f1 fw4 white lh-title">We’ve worked with cool clients like <span className="bb b--white-20">Dude&nbsp;Perfect</span>, <span className="bb b--white-20">Bell&nbsp;Helicopter</span>, <span className="bb b--white-20">Samsung</span>, <span className="bb b--white-20">Watermark</span>, & <Link to="/portfolio/" className="blue dim">more→</Link></h2>
+            </div>
+          </section>
 
           <HomeWelcome />
 
