@@ -10,7 +10,11 @@ import PricingTable from '../../components/PricingTable'
 
 const WordPressHostingPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#21759B'}}>
-    <Helmet title={`WordPress Hosting | ${config.siteTitle}`} />
+
+    <Helmet>
+      <title>{`WordPress Hosting | ${config.siteTitle}`}</title>
+      <body class="light-theme" />
+    </Helmet>
 
     <div style={transition && transition.style}>
       <ServicePageHero

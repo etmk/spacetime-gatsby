@@ -9,7 +9,11 @@ import ServicePageHero from '../../components/ServicePageHero'
 
 const DesignServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#3A333D'}}>
-    <Helmet title={`🎨 Design Services | ${config.siteTitle}`} />
+
+    <Helmet>
+      <title>{`🎨 Design Services | ${config.siteTitle}`}</title>
+      <body class="light-theme" />
+    </Helmet>
 
     <div style={transition && transition.style}>
 

@@ -10,7 +10,10 @@ import TeamMantra from '../components/TeamMantra'
 
 const TeamPage = ({ transition }) => (
   <div>
-    <Helmet title={`Team | ${config.siteTitle}`} />
+    <Helmet>
+      <title>{`Team | ${config.siteTitle}`}</title>
+      <body class="dark-theme" />
+    </Helmet>
 
     <section id="PageHero" className="page-hero pb7-l" style={transition && transition.style}>
 

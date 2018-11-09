@@ -9,7 +9,11 @@ import ServicePageHero from '../../components/ServicePageHero'
 
 const StrategyRetainerPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#5A62FF'}}>
-    <Helmet title={`🎯 Strategy Retainer | ${config.siteTitle}`} />
+
+    <Helmet>
+      <title>{`🎯 Strategy Retainer | ${config.siteTitle}`}</title>
+      <body class="light-theme" />
+    </Helmet>
 
     <div style={transition && transition.style}>
 

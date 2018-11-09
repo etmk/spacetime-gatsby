@@ -13,10 +13,11 @@ $header-md-breakpoint: 37em;
 
   @media screen and (max-width: $screen-small) {
     height: auto !important;
+    color: rgba(map-get($colors, white), .9);
   }
 
   &__content {
-    background-color: map-get($colors, black); //$deep-purple;
+    background-color: map-get($colors, black);
     transition: $global-transition;
   }
 
@@ -31,13 +32,15 @@ $header-md-breakpoint: 37em;
     display: flex;
     align-items: center;
     text-align: center;
+    color: inherit;
 
     img {
       max-width: 2.3rem;
     }
 
     span {
-      color: rgba(map-get($colors, white), .9);
+      // color: inherit;
+      // color: rgba(map-get($colors, white), .9);
       text-transform: uppercase;
       font-weight: 700;
       font-size: .75rem;
@@ -50,10 +53,6 @@ $header-md-breakpoint: 37em;
       @media screen and (min-width: $screen-small) and (max-width: 43em) {
         display: none;
       }
-    }
-
-    &:hover span {
-      color: rgba(map-get($colors, white), 1);
     }
 
     @media screen and (max-width: 30em) {
@@ -70,7 +69,8 @@ $header-md-breakpoint: 37em;
 
     // Nav-Group__Link
     &__link {
-      color: rgba(map-get($colors, white), .9);
+      // color: inherit;
+      opacity: .9;
       text-decoration: none;
       padding: 1rem .5rem;
       display: inline-block;
@@ -78,11 +78,10 @@ $header-md-breakpoint: 37em;
       position: relative;
 
       &:hover {
-        color: rgba(map-get($colors, white), 1);
+        opacity: 1;
       }
 
       &.active {
-        // color: rgba($white, 1);
         color: map-get($colors, red);
       }
     }
@@ -94,19 +93,22 @@ $header-md-breakpoint: 37em;
 @media screen and (min-width: $screen-small) {
 
   .site-header {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 10;
 
+    a {
+      color: map-get($colors, black);
+    }
+
     &__content {
-      background-color: map-get($colors, black); //rgba($deep-purple, 0);
+      background-color: transparent;
       transition: $global-transition;
 
       &:hover {
-        background-color: rgba(map-get($colors, deep-purple), 1); //.2);
+        background-color: rgba(map-get($colors, deep-purple), .08);
       }
     }
 
@@ -119,9 +121,14 @@ $header-md-breakpoint: 37em;
       text-decoration: none;
 
       img {
-        height: 50%;
+        // height: 50%;
         max-width: none;
-        width: auto;
+        // width: auto;
+        width: 1.75rem;
+
+        &.white-logo {
+          display: none;
+        }
       }
     }
 
@@ -170,8 +177,9 @@ $header-md-breakpoint: 37em;
     }
   }
 
-}//@media
+}//@media - not mobile
 
+// layout not mobile
 @media screen and (min-width: 700px) {
   .site-header .site-nav {
     justify-content: space-between;
@@ -198,17 +206,29 @@ $header-md-breakpoint: 37em;
     &--pinned {
 
       .site-header__content {
+        color: rgba(map-get($colors, white), .9);
         background-color: rgba(map-get($colors, black), 1);
         transition: $global-transition;
+
+        a {
+          color: inherit;
+        }
       }
 
       &:hover .site-header__content {
-        background-color: rgba(map-get($colors, deep-purple), 1); //.75);
+        background-color: rgba(map-get($colors, deep-purple), 1);
       }
 
       .site-header__logo span,
       .nav-group__link {
         line-height: $nav-height-sticky !important;
+      }
+
+      .white-logo {
+        display: inline-block !important;
+      }
+      .black-logo {
+        display: none;
       }
     }
     &--unpinned {
@@ -233,5 +253,27 @@ $header-md-breakpoint: 37em;
       position: fixed;
       transform: translateY(0%);
     }
+  }
+}
+
+// Nav Theme
+.dark-theme {
+
+  a {
+    color: map-get($colors, black);
+  }
+}
+
+.light-theme {
+
+  a {
+    color: rgba(map-get($colors, white), .9);
+  }
+
+  .white-logo {
+    display: inline-block !important;
+  }
+  .black-logo {
+    display: none;
   }
 }

@@ -9,7 +9,11 @@ import ServicePageHero from '../../components/ServicePageHero'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#3D3B33'}}>
-    <Helmet title={`☕️ Coffee Time | ${config.siteTitle}`} />
+
+    <Helmet>
+      <title>{`☕️ Coffee Time | ${config.siteTitle}`}</title>
+      <body class="light-theme" />
+    </Helmet>
 
     <div style={transition && transition.style}>
 
