@@ -211,7 +211,7 @@ $header-md-breakpoint: 37em;
         transition: $global-transition;
 
         a {
-          color: inherit;
+          color: rgba(map-get($colors, white), .9);
         }
       }
 
@@ -257,14 +257,14 @@ $header-md-breakpoint: 37em;
 }
 
 // Nav Theme
-.dark-theme {
+.dark-theme .site-header {
 
   a {
-    color: map-get($colors, black);
+    // color: map-get($colors, black);
   }
 }
 
-.light-theme {
+.light-theme .site-header {
 
   a {
     color: rgba(map-get($colors, white), .9);
