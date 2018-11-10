@@ -3,7 +3,8 @@ import Headroom from 'react-headroom'
 import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
-import logo from '../../assets/images/logos/spacetime-icon.svg'
+import black_logo from '../../assets/images/logos/spacetime-icon-black.svg'
+import white_logo from '../../assets/images/logos/spacetime-icon-white.svg'
 
 const Header = () => (
   <Headroom
@@ -13,14 +14,17 @@ const Header = () => (
     <div className="row">
       <nav className="site-nav">
 
-        <Link
-          to="/"
-          title="Home"
-          className="site-header__logo"
-          activeClassName="active">
-          <img src={logo} alt={config.siteTitle} />
-          <span className="">Spacetime</span>
-        </Link>
+        <div className="site-header__logo">
+          <Link
+            to="/"
+            title="Home"
+            className=""
+            activeClassName="active">
+            <img src={black_logo} alt={config.siteTitle} className="black-logo" />
+            <img src={white_logo} alt={config.siteTitle} className="white-logo" />
+            <span className="">Spacetime</span>
+          </Link>
+        </div>
 
         <div className="nav-group nav-group__center">
           <Link

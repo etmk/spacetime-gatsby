@@ -16,6 +16,11 @@ class IndexPage extends React.Component {
     return (
       <div className="bg-dark-purple">
 
+        <Helmet>
+          <title>{`Home | ${config.siteTitle}`}</title>
+          <body class="light-theme" />
+        </Helmet>
+
         <section id="PageHero" className="page-hero bg-deep-purple">
 
           <div className="page-hero__content row" style={transition && transition.style}>
