@@ -10,7 +10,9 @@ class PortfolioCard extends React.Component {
         style={{
           backgroundColor: `${this.props.bgColor}`,
           backgroundSize: `cover`,
-          backgroundImage: `url('/client-bgs/${this.props.name}-card-bg.jpg')`,
+          backgroundImage: this.props.bgPath ?
+          `url('${this.props.bgPath}')` :
+          `url('/client-bgs/${this.props.name}-card-bg.jpg')`,
           backgroundPosition: `top right`,
           backgroundRepeat: `no-repeat`
         }}

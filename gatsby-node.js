@@ -50,12 +50,13 @@ exports.createPages = ({boundActionCreators, graphql}) => {
       //   });
       // });
 
-
+      if (node.frontmatter.type == 'blog') {
         createPage({
           path: node.frontmatter.path,
           component: blogPostTemplate,
           context: {}
         });
+      }
     });
 
   });
