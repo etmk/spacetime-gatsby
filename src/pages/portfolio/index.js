@@ -111,7 +111,7 @@ const PortfolioPage = ({ data, transition }) => {
               </Link>
             </div>
             <div className="fl-l w-50-l bt bw1 b--white-10 pt4 pa0-l bw0-l">
-              <ClientList />
+              <ClientList clients={page.otherClients} />
             </div>
           </div>
         </section>
@@ -155,6 +155,11 @@ export const portfolioQuery = graphql`
           name
           width
           border
+        }
+        otherClients {
+          name
+          url
+          logo
         }
       }
     }
