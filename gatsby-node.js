@@ -4,6 +4,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
   const {createPage} = boundActionCreators;
 
   const blogPostTemplate = path.resolve('src/templates/blog-post.js');
+  const portfolioPageTemplate = path.resolve('src/templates/portfolio-page.js')
   // const servicePostTemplate = path.resolve('src/templates/service-post.js');
 
   return graphql(`{
@@ -14,8 +15,10 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           html
           id
           frontmatter {
+            hasPage
             type
             path
+            name
             title
             date
             published
@@ -56,8 +59,25 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           component: blogPostTemplate,
           context: {}
         });
+      } else if (node.frontmatter.type == 'portfolio' && node.frontmatter.hasPage) {
+        createPage({
+          path: `/portfolio/${node.frontmatter.name}`,
+          component: portfolioPageTemplate,
+          // this lets you use frontmatter fields in the query, like `name: { eq: $name }`
+          context: stripReservedFields(Object.assign({}, node.frontmatter))
+        })
       }
     });
 
   });
+}
+
+function stripReservedFields(frontmatter) {
+  delete frontmatter.path
+  delete frontmatter.matchPath
+  delete frontmatter.component
+  delete frontmatter.componentChunkName
+  delete frontmatter.pluginCreator___NODE
+  delete frontmatter.pluginCreatorName
+  return frontmatter
 }
