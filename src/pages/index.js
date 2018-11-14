@@ -25,7 +25,13 @@ class IndexPage extends React.Component {
 
           <div className="page-hero__content row" style={transition && transition.style}>
             <h1 className="page-hero__headline white">We're in the business of design</h1>
-            <p className="page-hero__text white-80">&hellip;and the design of business. We help clients build effective brands and businesses through design, technology, and customer experience.</p>
+            <Link to="/contact/" className="relative white dim">
+              Available for Hire
+              <div className="pulse" data-status="running">
+                <div className="status">
+                </div>
+              </div>
+            </Link>
           </div>
           <img src={bg} className="page-hero__image scaleIn" alt="Spacetime background image" />
 
