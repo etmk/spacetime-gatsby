@@ -23,7 +23,7 @@ const TeamPage = ({ transition }) => (
           <p className="page-hero__text">
             Spacetime operates as a collaborative of specialized makers and entrepreneurs. When a client approached us with a project, we build a specialized team for the task at hand so you get only the best. Hey, we're kind of like Ocean's Eleven, in that way!
           </p>
-          <Link to="/contact" className="f6 link dim ba ph3 pv2 dib black">Contact us</Link>
+          <Link to="/contact/" className="f6 link dim ba ph3 pv2 dib black">Contact us</Link>
         </div>
       </div>
 

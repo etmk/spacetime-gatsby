@@ -9,7 +9,7 @@ class ServiceCard extends React.Component {
         {/* <div className={`${this.props.textColor} tc bg-black br2 db no-underline aspect-ratio-ns aspect-ratio--5x7-ns grow overflow-hidden-ns`}
         style={{backgroundColor: `${this.props.bgColor}`}}> */}
         <Link
-          to={this.props.name}
+          to={`${this.props.name}/`}
           title={this.props.title}
           className={`${this.props.textColor} tc bg-black br2 db no-underline aspect-ratio-ns aspect-ratio--5x7-ns grow overflow-hidden-ns`}
           style={{backgroundColor: `${this.props.bgColor}`}}
