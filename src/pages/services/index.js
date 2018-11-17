@@ -17,13 +17,13 @@ const ServicesPage = ({ transition }) => (
         <h1 className="page-hero__headline">You have a really big problem</h1>
 
         <div className="">
-          <div className="fl-ns w-50-ns">
+          <div className="fl-ns w-70-ns">
             <p className="page-hero__text">
               Maybe you know what it is, maybe you don't. Whatever your circumstance, we can help you investigate, diagnose, and creatively plan how to tackle your problem to accomplish business&nbsp;goals.
             </p>
             <h2 className="f2 f1-ns fw7">We like big problems</h2>
           </div>
-          <div className="fr-ns w-40-ns w-30-l">
+          <div className="fr-ns w-30-ns w-20-l">
             <div className="">
               <ul className="lh-copy f6 mb4">
                 <li>UI & UX Design</li>
