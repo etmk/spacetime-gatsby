@@ -21,10 +21,8 @@ class ContactPage extends React.Component {
 
           <section id="PageHero" className="page-hero bg-fog-white">
             <div className="page-hero__content row">
-              <h1 className="page-hero__headline">Howdy!</h1>
-              <p className="page-hero__text">
-                Get in touch, tell us what you want to talk about&mdash;business, projects, jobs, movies, kids&mdash;whatever.
-              </p>
+              <h1 className="page-hero__headline"><em>Howdy!</em></h1>
+              <h1 className="page-hero__headline">Get in touch, tell us what you want to talk about&mdash;<span>business, projects, jobs, movies, kids, whatever</span></h1>
             </div>
           </section>
 

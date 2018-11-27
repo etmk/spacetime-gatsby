@@ -19,11 +19,7 @@ const TeamPage = ({ transition }) => (
 
       <div className="page-hero__content row">
         <div className="fl-l w-60-l">
-          <h1 className="page-hero__headline">An all hands on deck attitude</h1>
-          <p className="page-hero__text">
-            Spacetime operates as a collaborative of specialized makers and entrepreneurs. When a client approached us with a project, we build a specialized team for the task at hand so you get only the best. Hey, we're kind of like Ocean's Eleven, in that way!
-          </p>
-          <Link to="/contact/" className="f6 link dim ba ph3 pv2 dib black">Contact us</Link>
+          <h1 className="page-hero__headline">Mostly ordinary, occassionally extraordinary&mdash;<span>always delightful</span></h1>
         </div>
       </div>
 

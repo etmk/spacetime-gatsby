@@ -24,8 +24,8 @@ class IndexPage extends React.Component {
         <section id="PageHero" className="page-hero bg-deep-purple">
 
           <div className="page-hero__content row" style={transition && transition.style}>
-            <h1 className="page-hero__headline white">We're in the business of design</h1>
-            <Link to="/contact/" className="relative white dim">
+            <h1 className="page-hero__headline white">We're in the business of design&mdash;<span>and the design of extraordinary business</span></h1>
+            <Link to="/contact/" className="relative white dim dib mv3">
               Available for Hire
               <div className="pulse" data-status="running">
                 <div className="status">
