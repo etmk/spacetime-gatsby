@@ -20,7 +20,7 @@ const PortfolioPage = ({ transition }) => (
     <section id="PageHero" className="page-hero bg-near-white" style={transition && transition.style}>
 
       <div className="page-hero__content row">
-        <h1 className="page-hero__headline">Good looking work isn’t good enough&mdash;<span>good work delivers great results beyond the imagination</span></h1>
+        <h1 className="page-hero__headline">Good looking work isn&rsquo;t good enough&mdash;<span>good work delivers great results beyond the imagination</span></h1>
       </div>
 
     </section>
