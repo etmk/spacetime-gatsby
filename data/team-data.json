@@ -7,11 +7,11 @@
     }, {
       "avatar": "/avatars/chase-hilbert-avatar.jpg",
       "name": "Chase Hilbert",
-      "role": "Business Development"
+      "role": "Business Informatics"
     }, {
       "avatar": "/avatars/amanda-fischelli-avatar.jpg",
       "name": "Amanda Fischelli",
-      "role": "UX Apprentice"
+      "role": "UX Designer"
     }, {
       "avatar": "/avatars/john-tornow-avatar.jpg",
       "name": "John Tornow",
@@ -27,7 +27,7 @@
     }, {
       "avatar": "/avatars/chris-kim-avatar.jpg",
       "name": "Chris Kim",
-      "role": "Project Manager"
+      "role": "PM, Drone Videographer"
     }, {
       "avatar": "/avatars/ronnie-johnson-avatar.jpg",
       "name": "Ronnie Johnson",
@@ -43,7 +43,7 @@
     }, {
       "avatar": "/avatars/jesse-hahm-avatar.jpg",
       "name": "Jesse Hahm",
-      "role": "Marteking, PMP"
+      "role": "Marketing, PMP"
     }
   ],
   "studios": [
