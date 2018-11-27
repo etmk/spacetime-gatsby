@@ -24,8 +24,8 @@ class IndexPage extends React.Component {
         <section id="PageHero" className="page-hero bg-deep-purple">
 
           <div className="page-hero__content row" style={transition && transition.style}>
-            <h1 className="page-hero__headline white">We're in the business of design</h1>
-            <Link to="/contact/" className="relative white dim">
+            <h1 className="page-hero__headline white">We&rsquo;re in the business of design&mdash;<span>and the design of extraordinary business</span></h1>
+            <Link to="/contact/" className="relative white dim dib mv3">
               Available for Hire
               <div className="pulse" data-status="running">
                 <div className="status">
@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
 
           <section className="bg-near-black pv5 relative">
             <div className="row">
-              <h2 className="f1 fw4 white lh-title">We’ve worked with cool clients like <span className="bb b--white-20">Dude&nbsp;Perfect</span>, <span className="bb b--white-20">Bell&nbsp;Helicopter</span>, <span className="bb b--white-20">Samsung</span>, <span className="bb b--white-20">Watermark</span>, & <Link to="/portfolio/" className="blue dim">more→</Link></h2>
+              <h2 className="f1 fw4 white lh-title">We&rsquo;ve worked with cool clients like <span className="bb b--white-20">Dude&nbsp;Perfect</span>, <span className="bb b--white-20">Bell&nbsp;Helicopter</span>, <span className="bb b--white-20">Samsung</span>, <span className="bb b--white-20">Watermark</span>, & <Link to="/portfolio/" className="blue dim">more→</Link></h2>
             </div>
           </section>
 

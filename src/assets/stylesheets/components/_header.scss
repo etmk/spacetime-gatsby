@@ -38,9 +38,12 @@ $header-md-breakpoint: 37em;
       max-width: 2.3rem;
     }
 
+    a {
+      color: inherit;
+    }
+
     span {
-      // color: inherit;
-      // color: rgba(map-get($colors, white), .9);
+      color: inherit;
       text-transform: uppercase;
       font-weight: 700;
       font-size: .75rem;
@@ -69,7 +72,7 @@ $header-md-breakpoint: 37em;
 
     // Nav-Group__Link
     &__link {
-      // color: inherit;
+      color: inherit;
       opacity: .9;
       text-decoration: none;
       padding: 1rem .5rem;

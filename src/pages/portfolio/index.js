@@ -14,16 +14,13 @@ const PortfolioPage = ({ transition }) => (
   <div className="">
   <Helmet>
     <title>{`Portfolio | ${config.siteTitle}`}</title>
-    <body class="light-theme" />
+    <body class="" />
   </Helmet>
 
-    <section id="PageHero" className="page-hero bg-near-black white" style={transition && transition.style}>
+    <section id="PageHero" className="page-hero bg-near-white" style={transition && transition.style}>
 
       <div className="page-hero__content row">
-        <h1 className="page-hero__headline white">Good looking work isn’t good enough</h1>
-        <p className="page-hero__text white">
-          Good work delivers great results beyond the imagination. Unlike our competitors who push a one-size-fits-all solution, we opt for specialized project plans to ensure you accomplish your business&nbsp;goals.
-        </p>
+        <h1 className="page-hero__headline">Good looking work isn&rsquo;t good enough&mdash;<span>good work delivers great results beyond the imagination</span></h1>
       </div>
 
     </section>

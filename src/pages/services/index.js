@@ -14,32 +14,7 @@ const ServicesPage = ({ transition }) => (
     <section id="PageHero" className="page-hero bg-yellow" style={transition && transition.style}>
 
       <div className="page-hero__content row">
-        <h1 className="page-hero__headline">You have a really big problem</h1>
-
-        <div className="">
-          <div className="fl-ns w-70-ns">
-            <p className="page-hero__text">
-              Maybe you know what it is, maybe you don't. Whatever your circumstance, we can help you investigate, diagnose, and creatively plan how to tackle your problem to accomplish business&nbsp;goals.
-            </p>
-            <h2 className="f2 f1-ns fw7">We like big problems</h2>
-          </div>
-          <div className="fr-ns w-30-ns w-20-l">
-            <div className="">
-              <ul className="lh-copy f6 mb4">
-                <li>UI & UX Design</li>
-                <li>Wireframing</li>
-                <li>Prototyping</li>
-                <li>Front-end Development</li>
-              </ul>
-              <ul className="lh-copy f6 mv4">
-                <li>Product Strategy</li>
-                <li>Technology Consultation</li>
-                <li>Startup Incubation</li>
-                <li>Specially Tailored Retainers</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <h1 className="page-hero__headline">A very particular set of skills&mdash;<span>acquired over a very long career</span></h1>
       </div>
 
     </section>
