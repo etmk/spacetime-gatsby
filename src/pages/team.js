@@ -24,8 +24,8 @@ const TeamPage = ({ transition }) => (
       </div>
 
       <div className="dn dib-l w-50-l absolute-l" style={{ top: "0", left: "60%"}}>
-        <img src="/photos/spacetime-workspace.jpg" className="absolute-l top-0-l left-0-l mv5" alt="" />
-        <img src="/photos/spacetime-conference.jpg" className="deep-shadow absolute" alt="" style={{ left: "4rem", top: "20rem" }} />
+        <img src="/photos/spacetime-workspace.jpg" className="absolute-l top-0-l left-0-l" alt="" style={{ marginTop: "9.5rem" }} />
+        <img src="/photos/spacetime-conference.jpg" className="deep-shadow absolute" alt="" style={{ left: "4rem", top: "26rem", maxWidth: "12rem" }} />
       </div>
 
     </section>

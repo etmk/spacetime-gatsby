@@ -18,8 +18,7 @@ const Header = () => (
           <Link
             to="/"
             title="Home"
-            className=""
-            activeClassName="active">
+            className="">
             <img src={black_logo} alt={config.siteTitle} className="black-logo" />
             <img src={white_logo} alt={config.siteTitle} className="white-logo" />
             <span className="">Spacetime</span>

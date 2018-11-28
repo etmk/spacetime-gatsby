@@ -8,10 +8,10 @@ class ServicePageHero extends React.Component {
 
         <div className="row">
 
-          <h1 className="f-headline dib mv0">
+          <h1 className="f2 dib mv0">
             {this.props.title}
             {this.props.icon.length > 0 ? (
-              <span className="dib f1 ml3">{this.props.icon}</span>
+              <span className="dib f2 ml3">{this.props.icon}</span>
             ) :
               <img src={this.props.iconPath} alt="" className="ml3" />
             }

@@ -92,7 +92,7 @@ const ServicesPage = ({ transition }) => (
         <div className="row">
           <div className="">
             <h2 className="black-80 fw4 mt0">Not sure what you need?</h2>
-            <p className="f3 f1-ns f-subheadline-l fw6 sans-serif salmon lh-solid mt0">
+            <p className="f3 f2-ns fw6 sans-serif salmon lh-solid mt0 measure-narrow">
               No problem, let’s schedule a time to talk about the problem you need solved
             </p>
 
