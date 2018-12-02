@@ -21,6 +21,35 @@ const ServicesPage = ({ transition }) => (
 
     <MainWrapper>
 
+      <section className="bg-near-white pv5">
+        <div className="f6 f5-ns row flex flex-wrap justify-between-l">
+          <ul className="w-50 w-auto-l ph3 dib lh-copy">
+            <li>User Interface Design (UI)</li>
+            <li>User Experience Design (UX)</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+          </ul>
+          <ul className="w-50 w-auto-l ph3 dib lh-copy">
+            <li>Technology Consultation</li>
+            <li>Ruby on Rails</li>
+            <li>Product Strategy</li>
+            <li>Startup Incubation</li>
+          </ul>
+          <ul className="w-50 w-auto-l ph3 dib lh-copy">
+            <li>WordPress</li>
+            <li>eCommerce</li>
+            <li>Shopify</li>
+            <li>Web Hosting</li>
+          </ul>
+          <ul className="w-50 w-auto-l ph3 dib lh-copy">
+            <li>Kickstarter</li>
+            <li>Front-end Development</li>
+            <li>Technical SEO</li>
+            <li>Product Roadmaps</li>
+          </ul>
+        </div>
+      </section>
+
       <section className="pv5">
         <div className="ph3 mw9 ml-auto mr-auto cf">
           <ServiceCard
