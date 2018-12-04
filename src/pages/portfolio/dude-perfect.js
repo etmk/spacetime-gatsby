@@ -4,9 +4,9 @@ import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
-import PortfolioHero from '../../components/PortfolioHero'
-import PortfolioMeta from '../../components/PortfolioMeta'
-import PortfolioPagination from '../../components/PortfolioPagination'
+import PortfolioHero from '../../components/Portfolio/PortfolioHero'
+import PortfolioMeta from '../../components/Portfolio/PortfolioMeta'
+import PortfolioPagination from '../../components/Portfolio/PortfolioPagination'
 
 import bg from '../../assets/images/backgrounds/spacetime-background.jpg'
 

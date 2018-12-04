@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import PageHero from '../../components/PageHero'
-import ServiceCard from '../../components/ServiceCard'
+import ServiceCard from '../../components/Services/ServiceCard'
 
 const ServicesPage = ({ transition }) => (
   <div className="bg-yellow">

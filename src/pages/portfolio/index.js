@@ -5,13 +5,13 @@ import Link from 'gatsby-link'
 import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import PageHero from '../../components/PageHero'
-import PortfolioCard from '../../components/PortfolioCard'
+import PortfolioCard from '../../components/Portfolio/PortfolioCard'
 import ClientList from '../../components/ClientList'
 
 
 
 const PortfolioPage = ({ transition }) => (
-  <div className="">
+  <div className="bg-near-white">
   <Helmet>
     <title>{`Portfolio | ${config.siteTitle}`}</title>
     <body class="" />

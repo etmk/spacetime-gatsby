@@ -3,11 +3,11 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
-import ServiceRecommendation from '../../components/ServiceRecommendation'
-import ContactForm from '../../components/ContactForm'
-import ServicePageHero from '../../components/ServicePageHero'
+import config                from '../../../data/site-config'
+import MainWrapper           from '../../layouts/MainWrapper/MainWrapper'
+import ServiceRecommendation from '../../components/Services/ServiceRecommendation'
+import ContactForm           from '../../components/ContactForm'
+import ServicePageHero       from '../../components/Services/ServicePageHero'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#F03F47'}}>
