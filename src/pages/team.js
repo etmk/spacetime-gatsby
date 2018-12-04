@@ -5,8 +5,8 @@ import Link from 'gatsby-link'
 import config from '../../data/site-config'
 import MainWrapper from '../layouts/MainWrapper/MainWrapper'
 import PageHero from '../components/PageHero'
-import TeamMembers from '../components/TeamMembers'
-import TeamMantra from '../components/TeamMantra'
+import TeamMembers from '../components/Team/TeamMembers'
+import TeamMantra from '../components/Team/TeamMantra'
 
 const TeamPage = ({ transition }) => (
   <div>

@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
-import ServicePageHero from '../../components/ServicePageHero'
+import ServicePageHero from '../../components/Services/ServicePageHero'
 
 const StrategyRetainerPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#5A62FF'}}>
