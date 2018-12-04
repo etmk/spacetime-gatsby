@@ -5,7 +5,6 @@ import Link from 'gatsby-link'
 import config from '../../data/site-config'
 import MainWrapper from '../layouts/MainWrapper/MainWrapper'
 import PageHero from '../components/PageHero'
-import HeadquartersMap from '../components/HeadquartersMap'
 import ContactForm from '../components/ContactForm'
 
 class ContactPage extends React.Component {
@@ -67,8 +66,6 @@ class ContactPage extends React.Component {
                 </div>
               </div>
             </section>
-
-            <HeadquartersMap />
 
           </MainWrapper>
         </div>
