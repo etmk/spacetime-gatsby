@@ -35,15 +35,11 @@ class ContactForm extends React.Component {
         name="contact"
         method="post"
         action="/thanks/"
-        data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}
+        data-netlify="true"
       >
-        <div hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" />
-          </label>
-        </div>
+        <input type="hidden" name="bot-field" />
         <div>
           <label htmlFor="name">Your name</label>
           <input type="text" name="name" placeholder="Elon Musk" onChange={this.handleChange}/>
@@ -56,6 +52,7 @@ class ContactForm extends React.Component {
           <label htmlFor="message">Message</label>
           <textarea name="message" placeholder="Say what you need to say..." onChange={this.handleChange}/>
         </div>
+        <div data-netlify-recaptcha />
         <div>
           <button type="submit" className="bn sans-serif fw6 ph3 pv3 input-reset bg-black-80 hover-bg-blue bg-animate white pointer f5">Send Your Message</button>
         </div>
