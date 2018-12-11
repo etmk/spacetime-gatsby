@@ -47,8 +47,6 @@ class IndexPage extends React.Component {
 
           <HomeWelcome />
 
-          <StartupDream />
-
           <HomeTestimonials />
 
         </MainWrapper>
