@@ -14,7 +14,13 @@ class ContactPage extends React.Component {
     return (
       <div className="bg-fog-white">
 
-        <Helmet title={`Contact | ${config.siteTitle}`} />
+        <Helmet
+          title={`Contact | ${config.siteTitle}`}
+          meta={[
+            { name: 'description', content: 'Contact Spacetime to discuss business, or just shoot the breeze' },
+            { name: 'keywords', content: 'hey spacetime, spacetime, contact, business, projects, call, email, office, message' },
+          ]}
+        />
 
         <div style={transition && transition.style}>
 

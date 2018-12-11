@@ -8,7 +8,16 @@ import PageHero from '../components/PageHero'
 
 const NotFoundPage = ({transition}) => (
   <div>
-    <Helmet title={`404 | ${config.siteTitle}`} />
+    <Helmet
+      title={`404 | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Oops, something went wrong' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website' },
+      ]}
+      bodyAttributes={{
+        class: 'light-theme'
+      }}
+    />
 
     <MainWrapper>
 

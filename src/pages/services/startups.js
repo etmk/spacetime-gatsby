@@ -35,7 +35,7 @@ const StartupServicesPage = ({ transition }) => (
 
         <section className="pv6 bg-near-white">
           <div className="row">
-            <h2 className="f1 fw4 system-sans lh-title">We Help Founders Develop Their Startup From Back-of-the-Napkin Idea to $1 Million</h2>
+            <h2 className="f3 f1-ns fw4 system-sans lh-title">We Help Founders Develop Their Startup From Back-of-the-Napkin Idea to $1 Million</h2>
           </div>
         </section>
 

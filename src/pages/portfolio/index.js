@@ -14,7 +14,8 @@ const PortfolioPage = ({ transition }) => (
   <div className="bg-near-white">
   <Helmet>
     <title>{`Portfolio | ${config.siteTitle}`}</title>
-    <body class="" />
+    <meta name="description" content="Spacetime Design Experience Agency works with a range of clients like Dude Perfect, Bell Helicopter, Watermark Community Church, and Highland Homes." />
+    <meta name="keywords" content="hey spacetime, spacetime, dude perfect, bell helicopter, studiohop, wordpress development, shopify, ecommerce, startups, design, ux, real estate, fitness" />
   </Helmet>
 
     <section id="PageHero" className="page-hero bg-near-white" style={transition && transition.style}>
