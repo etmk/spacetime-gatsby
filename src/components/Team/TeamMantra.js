@@ -8,7 +8,7 @@ class TeamMantra extends React.Component {
     return (
 
       <div>
-        <h1
+        <h3
           className="f1 f-headline-l lh-tight tracked-tight"
           dangerouslySetInnerHTML={{ __html: mantra.title }}
         />

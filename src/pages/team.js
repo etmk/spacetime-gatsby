@@ -13,6 +13,8 @@ const TeamPage = ({ transition }) => (
     <Helmet>
       <title>{`Team | ${config.siteTitle}`}</title>
       <body class="dark-theme" />
+      <meta name="description" content="The incredible, multi-discipline team at Spacetime is based in Dallas, Texas and anywhere with an internet connection" />
+      <meta name="keywords" content="hey spacetime, spacetime, dallas, plano, texas, team, design, agency, business, designer, developer, software, prototypes" />
     </Helmet>
 
     <section id="PageHero" className="page-hero pb7-l" style={transition && transition.style}>
@@ -24,8 +26,8 @@ const TeamPage = ({ transition }) => (
       </div>
 
       <div className="dn dib-l w-50-l absolute-l" style={{ top: "0", left: "60%"}}>
-        <img src="/photos/spacetime-workspace.jpg" className="absolute-l top-0-l left-0-l" alt="" style={{ marginTop: "9.5rem" }} />
-        <img src="/photos/spacetime-conference.jpg" className="deep-shadow absolute" alt="" style={{ left: "4rem", top: "26rem", maxWidth: "12rem" }} />
+        <img src="/photos/spacetime-workspace.jpg" className="absolute-l top-0-l left-0-l" alt="An office space wall with painted text that says Punch Today in the Face." style={{ marginTop: "9.5rem" }} />
+        <img src="/photos/spacetime-conference.jpg" className="deep-shadow absolute" alt="Spacetime co-founder Caleb Sylvest at a conference table with other entrepreneurs at Common Desk Granite Park" style={{ left: "4rem", top: "26rem", maxWidth: "12rem" }} />
       </div>
 
     </section>
@@ -34,7 +36,7 @@ const TeamPage = ({ transition }) => (
 
       <section className="pv5 bg-fog-white">
         <div className="row relative z-1">
-          <h3 className="black-80 f3 f2-m f1-l fw4 lh-title">At Spacetime, we partner with clients to strategize &amp; execute their vision. We approach problems with a business-centric focus with a goal of sustainability and&nbsp;ROI.</h3>
+          <h2 className="black-80 f3 f2-m f1-l fw4 lh-title">At Spacetime, we partner with clients to strategize &amp; execute their vision. We approach problems with a business-centric focus with a goal of sustainability and&nbsp;ROI.</h2>
         </div>
       </section>
 
