@@ -11,10 +11,16 @@ import PricingTable from '../../components/PricingTable'
 const WordPressHostingPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#21759B'}}>
 
-    <Helmet>
-      <title>{`WordPress Hosting | ${config.siteTitle}`}</title>
-      <body class="light-theme" />
-    </Helmet>
+    <Helmet
+      title={`WordPress Hosting | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Spacetime offers extremely fast, highly secure WordPress hosting on WordPress optimized servers and support for any WordPress website.' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, WordPress, hosting, WPengine, developer, hosting plans, plugins, WordPress theme, WordPress core' },
+      ]}
+      bodyAttributes={{
+        class: 'light-theme'
+      }}
+    />
 
     <div style={transition && transition.style}>
       <ServicePageHero

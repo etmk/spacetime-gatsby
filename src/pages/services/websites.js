@@ -9,7 +9,14 @@ import ServicePageHero from '../../components/Services/ServicePageHero'
 
 const WebsitesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#1DE9B6'}}>
-    <Helmet title={`🕸 Websites | ${config.siteTitle}`} />
+
+    <Helmet
+      title={`🕸 Websites | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Spacetime makes the best websites for the coolest clients that have really big problems and need solutions that grow the bottom line.' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, responsive design, conversions' },
+      ]}
+    />
 
     <div style={transition && transition.style}>
       <ServicePageHero

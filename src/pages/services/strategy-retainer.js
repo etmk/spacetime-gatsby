@@ -10,10 +10,16 @@ import ServicePageHero from '../../components/Services/ServicePageHero'
 const StrategyRetainerPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#5A62FF'}}>
 
-    <Helmet>
-      <title>{`🎯 Strategy Retainer | ${config.siteTitle}`}</title>
-      <body class="light-theme" />
-    </Helmet>
+    <Helmet
+      title={`🎯 Strategy Retainer | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Spacetime offers Strategy Retainer to clients; we act as an extension of your team, providing direction, insight, and creativity to your business.' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, strategy, retainer, consulting, business goals, design systems, technical review' },
+      ]}
+      bodyAttributes={{
+        class: 'light-theme'
+      }}
+    />
 
     <div style={transition && transition.style}>
 

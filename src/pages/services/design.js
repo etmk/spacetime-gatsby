@@ -10,10 +10,16 @@ import ServicePageHero from '../../components/Services/ServicePageHero'
 const DesignServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#3A333D'}}>
 
-    <Helmet>
-      <title>{`🎨 Design Services | ${config.siteTitle}`}</title>
-      <body class="light-theme" />
-    </Helmet>
+    <Helmet
+      title={`🎨 Design Services | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Spacetime is a design driven technology agency with a brand inclusive view for web and app design that wows and produces incredible business results.' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, graphic design, website design, web design, brand design, identity design, app design, responsive web design' },
+      ]}
+      bodyAttributes={{
+        class: 'light-theme'
+      }}
+    />
 
     <div style={transition && transition.style}>
 

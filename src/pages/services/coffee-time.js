@@ -10,10 +10,16 @@ import ServicePageHero from '../../components/Services/ServicePageHero'
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#3D3B33'}}>
 
-    <Helmet>
-      <title>{`☕️ Coffee Time | ${config.siteTitle}`}</title>
-      <body class="light-theme" />
-    </Helmet>
+    <Helmet
+      title={`☕️ Coffee Time | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Coffee Time is a low risk way to sit down with Spacetime leadership to discuss ideas and strategy before committing thousands of dollars to a project.' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, developer, contractor, startup, strategy, risk aversion' },
+      ]}
+      bodyAttributes={{
+        class: 'light-theme'
+      }}
+    />
 
     <div style={transition && transition.style}>
 

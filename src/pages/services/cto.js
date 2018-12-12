@@ -10,7 +10,13 @@ import PricingTable from '../../components/PricingTable'
 
 const CtoPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#EA5500'}}>
-    <Helmet title={`💎 CTO As A Service | ${config.siteTitle}`} />
+    <Helmet
+      title={`💎 CTO As A Service | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Spacetime provides clients with a dedicated interim Chief Technology Officer (CTO) to provide technical leadership, direction, and training.' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, website, cto, technology, leadership, technical, non-technical, co-founder, executive, programmers, chief technology officer' },
+      ]}
+    />
 
     <div style={transition && transition.style}>
 
