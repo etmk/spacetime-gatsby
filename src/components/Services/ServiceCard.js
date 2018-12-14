@@ -18,7 +18,7 @@ class ServiceCard extends React.Component {
               {this.props.icon.length > 0 ? (
                 <span className="dib f1">{this.props.icon}</span>
               ) :
-                <img src={this.props.iconPath} alt="" className="" />
+                <img src={this.props.iconPath} alt={`${this.props.title} logo`} className="" />
               }
               <h2 className="f3 o-90">{this.props.title}</h2>
             </div>
