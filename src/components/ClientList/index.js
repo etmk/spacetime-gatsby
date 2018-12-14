@@ -9,7 +9,7 @@ const ClientList = () => (
       <li key={client.name} className="dib w-25-m w-33 pa2">
         <OutboundLink href={client.url} target="_blank" className="dim">
           <span className="clip">{client.name}</span>
-          <img src={`${client.logo}`} alt="" className="" />
+          <img src={`${client.logo}`} alt={`${client.name} logo`} />
         </OutboundLink>
       </li>
     ))}

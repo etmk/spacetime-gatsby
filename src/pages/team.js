@@ -27,7 +27,7 @@ const TeamPage = ({ transition }) => (
 
       <div className="dn dib-l w-50-l absolute-l" style={{ top: "0", left: "60%"}}>
         <img src="/photos/spacetime-workspace.jpg" className="absolute-l top-0-l left-0-l" alt="An office space wall with painted text that says Punch Today in the Face." style={{ marginTop: "9.5rem" }} />
-        <img src="/photos/spacetime-conference.jpg" className="deep-shadow absolute" alt="Spacetime co-founder Caleb Sylvest at a conference table with other entrepreneurs at Common Desk Granite Park" style={{ left: "4rem", top: "26rem", maxWidth: "12rem" }} />
+        <img src="/photos/spacetime-conference.jpg" className="deep-shadow absolute" alt="Spacetime co-founder Caleb Sylvest with other entrepreneurs at Common Desk Granite Park" style={{ left: "4rem", top: "26rem", maxWidth: "12rem" }} />
       </div>
 
     </section>
