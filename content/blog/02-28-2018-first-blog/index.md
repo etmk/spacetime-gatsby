@@ -1,11 +1,17 @@
 ---
 type: 'blog'
-path: '/first-post'
-title: 'First Blog Post'
+path: '/design-machines/'
+title: 'Design Machines'
+subtitle: 'We recently gathered our entire team from around the globe in Whistler for our company summit. Here’s how Freya brought a remote team together to make Summit ’18 our best one yet.'
+author: 'Caleb Sylvest'
 date: '2018-02-28'
 published: true
+bgColor: '#b7258f'
+textColor: '#fff'
+titleColor: '#262a2d'
 ---
 
+A dystopian view of an internet designed by machines, and the mushy, emotional weapons we can use to fight back.
 Hello! This is our first blog post in February
 
 Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.

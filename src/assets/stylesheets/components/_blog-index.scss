@@ -1,0 +1,44 @@
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+
+
+    &__link {
+      display: block;
+      padding: 5rem 0;
+      position: relative;
+
+      > .row {
+        position: relative;
+        z-index: 1;
+      }
+
+      h2 {
+        margin: 0 0 1rem;
+        color: rgba(0, 0, 0, .8);
+      }
+
+      &:hover .blog-list__item__bg {
+        opacity: .2;
+      }
+    }
+
+    &__subtitle {
+      max-width: 32em;
+    }
+
+    &__bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+      opacity: 0;
+      transition: .2s all linear;
+    }
+  }
+}

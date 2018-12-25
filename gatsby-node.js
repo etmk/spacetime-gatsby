@@ -17,8 +17,14 @@ exports.createPages = ({boundActionCreators, graphql}) => {
             type
             path
             title
-            date
+            subtitle
+            author
+            date(formatString: "MMMM DD, YYYY")
             published
+            bgColor
+            textColor
+            titleColor
+            themeStyle
           }
         }
       }
