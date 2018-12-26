@@ -106,7 +106,7 @@ const WordPressHostingPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">Because you deserve the <span className="blue">Best</span>.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">Because you deserve the <span className="blue">Best</span>.</h2>
             <p>Get in touch to schedule a friendly chat.</p>
             <div className="mw6 mt5">
               <ContactForm />

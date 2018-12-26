@@ -1,0 +1,14 @@
+.t-headline {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.36;
+
+  @media screen and (min-width: $screen-medium) {
+    font-size: 2.5rem;
+    max-width: 18em;
+  }
+
+  &__alt {
+    opacity: .4;
+  }
+}

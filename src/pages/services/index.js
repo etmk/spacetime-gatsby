@@ -20,7 +20,7 @@ const ServicesPage = ({ transition }) => (
     <section id="PageHero" className="page-hero bg-yellow" style={transition && transition.style}>
 
       <div className="page-hero__content row">
-        <h1 className="page-hero__headline">A very particular set of skills&mdash;<span>acquired over a very long career</span></h1>
+        <h1 className="t-headline">A very particular set of skills&mdash;<span className="t-headline__alt">acquired over a very long career</span></h1>
       </div>
 
     </section>
@@ -56,25 +56,17 @@ const ServicesPage = ({ transition }) => (
         </div>
       </section>
 
-      <section className="pv5">
-        <div className="ph3 mw9 ml-auto mr-auto cf">
-          <ServiceCard
-            name={`design`}
-            title={`Design Services`}
-            description={`Design is the communication of the business, brand, identity, and&nbsp;product`}
-            icon={`🎨`}
-            iconPath={``}
-            bgColor={`#3A333D`}
-            textColor={`white`} />
+      <section className="pv5 bg-white">
+        <div className="row ServiceCardsGrid">
 
           <ServiceCard
             name={`startups`}
             title={`Startups`}
-            description={`Startups require a special, diverse set of skills to progress from idea to marketable business`}
+            description={`go from a back-of-the-napkin idea to scalable startup`}
             icon={`🚀`}
             iconPath={``}
             bgColor={`#F03F47`}
-            textColor={`white`} />
+            cta={`How to grow your startup`} />
 
           <ServiceCard
             name={`wordpress-hosting`}
@@ -83,43 +75,52 @@ const ServicesPage = ({ transition }) => (
             icon={``}
             iconPath={`/icons/wordpress-logo.svg`}
             bgColor={`#21759B`}
-            textColor={`white`} />
+            cta={`How to grow your startup`} />
+
+          <ServiceCard
+            name={`design`}
+            title={`Design Services`}
+            description={`design is the communication of the business, brand, identity, and&nbsp;product`}
+            icon={`🎨`}
+            iconPath={``}
+            bgColor={`#cd96e5`}
+            cta={`How to succeed on Kickstarter`} />
 
             <ServiceCard
               name={`websites`}
               title={`Websites`}
-              description={`Websites provide a first touch opportunity and prolonged relationship with your customer`}
+              description={`websites provide a first touch opportunity and prolonged relationship with your customer`}
               icon={`🕸`}
               iconPath={``}
               bgColor={`#1DE9B6`}
-              textColor={`black`} />
+              cta={`How to grow your startup`} />
 
             <ServiceCard
               name={`cto`}
               title={`CTO As A Service`}
-              description={`Gain the technical leadership you need as your team and business&nbsp;grow`}
+              description={`gain the technical leadership you need as your team and business&nbsp;grow`}
               icon={`💎`}
               iconPath={``}
               bgColor={`#EA5500`}
-              textColor={`black`} />
+              cta={`How to grow your startup`} />
 
             <ServiceCard
               name={`strategy-retainer`}
               title={`Strategy Retainer`}
-              description={`We provide the strategic and tactical expertise you need to catalyze your&nbsp;business`}
+              description={`we provide the strategic and tactical expertise you need to catalyze your&nbsp;business`}
               icon={`🎯`}
               iconPath={``}
               bgColor={`#5A62FF`}
-              textColor={`white`} />
+              cta={`How to grow your startup`} />
 
             <ServiceCard
               name={`coffee-time`}
               title={`Coffee Time`}
-              description={`Drink a hot cup of joe while receiving 6 months of strategy and insight in two hours`}
+              description={`drink a hot cup of joe while receiving 6 months of strategy and insight in two hours`}
               icon={`☕️`}
               iconPath={``}
-              bgColor={`#3D3B33`}
-              textColor={`white`} />
+              bgColor={`#c0b282`}
+              cta={`How to grow your startup`} />
         </div>
       </section>
 
