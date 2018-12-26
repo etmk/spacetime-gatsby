@@ -8,7 +8,7 @@ import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 
 const StartupServicesPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#3D3B33'}}>
+  <div className="service-page content-page" style={{backgroundColor: '#c0b282'}}>
 
     <Helmet
       title={`☕️ Coffee Time | ${config.siteTitle}`}
@@ -17,7 +17,7 @@ const StartupServicesPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, developer, contractor, startup, strategy, risk aversion' },
       ]}
       bodyAttributes={{
-        class: 'light-theme'
+        class: ''
       }}
     />
 
@@ -29,8 +29,8 @@ const StartupServicesPage = ({ transition }) => (
         description={`Drink a hot cup of joe while receiving 6 months of strategy and insight in two&nbsp;hours`}
         icon={`☕️`}
         iconPath={``}
-        bgColor={`#3D3B33`}
-        textColor={`white`} />
+        bgColor={`#c0b282`}
+        textColor={``} />
 
       <MainWrapper>
 
@@ -139,7 +139,7 @@ const StartupServicesPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">A healthy dose of condesned <span className="dark-red">Conversation</span>.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">A healthy dose of condesned <span className="dark-red">Conversation</span>.</h2>
             <p>Get in touch to schedule a friendly sit-down.</p>
             <div className="mw6 mt5">
               <ContactForm />

@@ -5,30 +5,39 @@ class ServiceCard extends React.Component {
 
   render() {
     return (
-      <div className="fl w-100 w-50-m w-25-l pa2">
+      <div>
         <Link
           to={`${this.props.name}/`}
           title={this.props.title}
-          className={`${this.props.textColor} tc bg-black br2 db no-underline aspect-ratio-ns aspect-ratio--5x7-ns grow overflow-hidden-ns`}
+          className={`ServiceCard grow`}
           style={{backgroundColor: `${this.props.bgColor}`}}
         >
-          <div className="pa4 aspect-ratio--object-ns flex-ns flex-column-ns justify-around-ns">
 
-            <div>
-              {this.props.icon.length > 0 ? (
-                <span className="dib f1">{this.props.icon}</span>
-              ) :
-                <img src={this.props.iconPath} alt={`${this.props.title} logo`} className="" />
-              }
-              <h2 className="f3 o-90">{this.props.title}</h2>
-            </div>
+          <div>
+            {this.props.icon.length > 0 ? (
+              <span className="ServiceCard__icon">
+                {this.props.icon}
+              </span>
+            ) :
+              <img
+                src={this.props.iconPath}
+                alt={`${this.props.title} logo`}
+                style={{maxWidth: `2rem`}} />
+            }
 
-            <p
-              className="sans-serif f6 fw5 o-70 color-inherit ml-auto mr-auto mb0 measure lh-title"
-              dangerouslySetInnerHTML={{__html: this.props.description}}
-            />
-            <span className="o-60 ttu f7 fw6 tracked mt4 dib">Read more →</span>
+            <h2 className="ServiceCard__title">
+              {this.props.title}&mdash;
+              <span
+                className="o-40"
+                dangerouslySetInnerHTML={{__html: this.props.description}}
+              />
+            </h2>
           </div>
+
+          <span className="ServiceCard__cta">
+            {this.props.cta}<br />
+            <span className="arrow-decorator" />
+          </span>
 
         </Link>
       </div>

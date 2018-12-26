@@ -1,0 +1,131 @@
+.ServiceCardsGrid {
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 50em) and (max-width: $screen-medium) {
+
+    > div {
+      width: 50%;
+
+      &:nth-child(odd) {
+        padding-right: .5rem;
+      }
+      &:nth-child(even) {
+        padding-left: .5rem;
+      }
+    }
+
+  }
+
+  @media screen and (min-width: $screen-medium) {
+
+    > div {
+
+      &:nth-child(1) {
+        width: 100%;
+      }
+      &:nth-child(2) {
+        width: 60%;
+        padding-right: .5rem;
+      }
+      &:nth-child(3) {
+        width: 40%;
+        padding-left: .5rem;
+      }
+      &:nth-child(4) {
+        width: 50%;
+        padding-right: .5rem;
+      }
+      &:nth-child(5) {
+        width: 50%;
+        padding-left: .5rem;
+      }
+      &:nth-child(6) {
+        width: 100%;
+      }
+      &:nth-child(7) {
+        width: 40%;
+        padding-right: .5rem;
+      }
+      &:nth-child(8) {
+        width: 60%;
+        padding-left: .5rem;
+      }
+      &:nth-child(9) {
+        width: 100%;
+      }
+      &:nth-child(10) {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+.ServiceCard {
+  background-color: gray;
+  color: black;
+  padding: 1.5rem;
+  margin: 0;
+  height: 100%;
+  min-height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (min-width: $screen-small) {
+    padding: 2rem;
+    min-height: 23em;
+  }
+
+  &:hover .arrow-decorator {
+    width: 7rem;
+  }
+
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 22em;
+
+    @media screen and (min-width: $screen-small) {
+      font-size: 1.36rem;
+    }
+    @media screen and (min-width: $screen-medium) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.arrow-decorator {
+  height: 1px;
+  width: 5rem;
+  background-color: black;
+  display: inline-block;
+  margin: 1.5rem 0 1rem;
+  position: relative;
+  transition: .2s linear all;
+
+  &::before {
+    content: '';
+    height: 8px;
+    width: 8px;
+    border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    display: inline-block;
+    position: absolute;
+    right: -2px;
+    top: 30%;
+    transform: rotate(45deg) translate(-60%);
+  }
+}

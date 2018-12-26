@@ -8,7 +8,7 @@ import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 
 const DesignServicesPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#3A333D'}}>
+  <div className="service-page content-page" style={{backgroundColor: '#cd96e5'}}>
 
     <Helmet
       title={`🎨 Design Services | ${config.siteTitle}`}
@@ -17,7 +17,7 @@ const DesignServicesPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, graphic design, website design, web design, brand design, identity design, app design, responsive web design' },
       ]}
       bodyAttributes={{
-        class: 'light-theme'
+        class: ''
       }}
     />
 
@@ -29,8 +29,8 @@ const DesignServicesPage = ({ transition }) => (
         description={`Design is the communication of the business, brand, identity, and&nbsp;product`}
         icon={`🎨`}
         iconPath={``}
-        bgColor={`#3A333D`}
-        textColor={`white`} />
+        bgColor={`#cd96e5`}
+        textColor={``} />
 
       <MainWrapper>
         <section id="table-of-content" className="pv4">
@@ -59,7 +59,7 @@ const DesignServicesPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="f2 f-subheadline-ns sans-serif mt0 mb4 lh-solid mw7">Stand out from the crowd through exceptional <span className="orange">Design</span>.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">Stand out from the crowd through exceptional <span className="orange">Design</span>.</h2>
             <p>Get in touch to schedule a friendly chat.</p>
             <div className="mw6 mt5">
               <ContactForm />
