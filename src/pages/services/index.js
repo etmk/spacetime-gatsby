@@ -75,7 +75,7 @@ const ServicesPage = ({ transition }) => (
             icon={``}
             iconPath={`/icons/wordpress-logo.svg`}
             bgColor={`#21759B`}
-            cta={`How to grow your startup`} />
+            cta={`The ultimate WordPress hosting`} />
 
           <ServiceCard
             name={`design`}
@@ -84,7 +84,7 @@ const ServicesPage = ({ transition }) => (
             icon={`🎨`}
             iconPath={``}
             bgColor={`#cd96e5`}
-            cta={`How to succeed on Kickstarter`} />
+            cta={`Stand out from the crowd`} />
 
             <ServiceCard
               name={`websites`}
@@ -93,7 +93,7 @@ const ServicesPage = ({ transition }) => (
               icon={`🕸`}
               iconPath={``}
               bgColor={`#1DE9B6`}
-              cta={`How to grow your startup`} />
+              cta={`How to build a website that works for you`} />
 
             <ServiceCard
               name={`cto`}
@@ -102,7 +102,7 @@ const ServicesPage = ({ transition }) => (
               icon={`💎`}
               iconPath={``}
               bgColor={`#EA5500`}
-              cta={`How to grow your startup`} />
+              cta={`Focus on what's important with an interim CTO`} />
 
             <ServiceCard
               name={`strategy-retainer`}
@@ -111,7 +111,7 @@ const ServicesPage = ({ transition }) => (
               icon={`🎯`}
               iconPath={``}
               bgColor={`#5A62FF`}
-              cta={`How to grow your startup`} />
+              cta={`Tap into the brain trust with our strategy department`} />
 
             <ServiceCard
               name={`coffee-time`}
@@ -120,7 +120,7 @@ const ServicesPage = ({ transition }) => (
               icon={`☕️`}
               iconPath={``}
               bgColor={`#c0b282`}
-              cta={`How to grow your startup`} />
+              cta={`Order a shot of insight at coffee time`} />
         </div>
       </section>
 

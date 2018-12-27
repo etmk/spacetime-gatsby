@@ -11,10 +11,10 @@ const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#c0b282'}}>
 
     <Helmet
-      title={`☕️ Coffee Time | ${config.siteTitle}`}
+      title={`🔍 Technical SEO | ${config.siteTitle}`}
       meta={[
-        { name: 'description', content: 'Coffee Time is a low risk way to sit down with Spacetime leadership to discuss ideas and strategy before committing thousands of dollars to a project.' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, developer, contractor, startup, strategy, risk aversion' },
+        { name: 'description', content: 'Website and server optimization for unparalleled search engine optimization and user&nbsp;experience.' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, seo, technical seo, location seo, wordpress seo, mobile' },
       ]}
       bodyAttributes={{
         class: ''
@@ -24,15 +24,21 @@ const StartupServicesPage = ({ transition }) => (
     <div style={transition && transition.style}>
 
       <ServicePageHero
-        name={`coffee-time`}
-        title={`Coffee Time`}
-        description={`Drink a hot cup of joe while receiving 6 months of strategy and insight in two&nbsp;hours`}
-        icon={`☕️`}
+        name={`technical-seo`}
+        title={`Technical SEO`}
+        description={`SEO services for a lean mean search engine optimization machine`}
+        icon={`🔍`}
         iconPath={``}
-        bgColor={`#c0b282`}
+        bgColor={`#86fc9e`}
         textColor={``} />
 
       <MainWrapper>
+
+        <section className="pv6 bg-near-white">
+          <div className="row">
+            <h2 className="f3 f1-ns fw4 system-sans lh-title">Website and server optimization for unparalleled search engine optimization and user&nbsp;experience</h2>
+          </div>
+        </section>
 
         <section className="pv4">
           <div className="row narrow">
@@ -53,13 +59,6 @@ const StartupServicesPage = ({ transition }) => (
 
             <p className="relative"><span className="absolute top-0 left--3 f2">👇</span>Here are a few real scenarios to learn from, names have been changed to protect the innocent:</p>
 
-            <div className="mv4 mv3-l pa0 f5">
-              <p className="blue system-sans mv4 ph3 pb4 bb b--black-10">Mickey has a great app idea. He hires a big name agency to help take his app to market. Mickey has complete trust the agency has the best of intentions (and they probably do). Mickey works with the agency for the next 10 months and pays $150,000 before the agency lands on rough times and regretfully discontinues working with Mickey. Mickey walks away with good ideas and good intentions scribbled on papers and pretty designs. But he is out $150k and does not have a product to take to market. Ouch!</p>
-
-              <p className="dark-blue o-70 system-sans mv4 ph3 pb4 bb b--black-10">Suzanna hires a young development agency to build her startup because they were half the cost of another agency. Comparatively, Suzanna doesn't spend near as much money as Mickey did, only $30,000. But the project drags on... and on... and on... One year later, the project is almost done. Then, out of the blue, Suzanna's contact at the agency stops answering her phone, stops responding to emails, and just disappears.</p>
-
-              <p className="blue system-sans mv3 ph3">Last one, and there is an upside to this one. Bryan has already been burned with his project and he's wary. He tried the overseas labor route. Yuck! He tried working with a local agency. And got... something! But dadgum if it isn't a hairball of a mess and full of bugs. Bryan continues on with his duct taped together startup, but hits a wall when he can't reliably grow the business anymore. The software can't handle the minimal success of the business and comes to a screeching halt.</p>
-            </div>
           </div>
         </section>
 
@@ -113,12 +112,12 @@ const StartupServicesPage = ({ transition }) => (
         <section className="pv5 gradient-light-blue">
           <div className="row narrow">
             <blockquote className="bw1 b--green b--solid br2 mv5 mw7 center tc">
-              <img src="/avatars/bart-breunig-avatar.jpg" className="br-100 h3 w3 dib nt4" alt="Headshot of Bart Breunig" />
+              <img src="/avatars/phil-frost-main-street-roi.jpg" className="br-100 h3 w3 dib nt4" alt="Headshot of Phil Frost of Main Street ROI" />
               <p className="f4 ma0 mv3 measure center lh-title">
-                &ldquo;I found our meeting very useful. I was impressed with how quickly Caleb evaluated my situation and was able to offer quick feedback and sound advice. He even convinced me not to spend thousands of dollars yet on the project because I needed to spend more time evaluating my desired outcome and needs for&nbsp;the&nbsp;project.&rdquo;
+                &ldquo;Successful SEO is not about tricking Google. It’s about PARTNERING with Google to provide the best search results for Google’s users.&rdquo;
               </p>
               <p className="f7 fw6 tracked green ttu sans-serif mb4">
-                —Bart B.
+                &mdash;Phil Frost, Main Street ROI
               </p>
             </blockquote>
           </div>
@@ -139,8 +138,8 @@ const StartupServicesPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">A healthy dose of condensed <span className="dark-red">Conversation</span>.</h2>
-            <p>Get in touch to schedule a friendly sit-down.</p>
+            <h2 className="t-headline mt0 mb4 mw7">Crush the competition with unparalleled <span style={{color: '#86fc9e'}}>Technical&nbsp;SEO</span>.</h2>
+            <p>Get in touch to schedule a friendly chat.</p>
             <div className="mw6 mt5">
               <ContactForm />
             </div>
