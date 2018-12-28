@@ -22,7 +22,7 @@ const WebsitesPage = ({ transition }) => (
       <ServicePageHero
         name={`websites`}
         title={`Websites`}
-        description={`Websites provide a first touch opportunity and prolonged relationship with your&nbsp;customer`}
+        description={`websites provide a first touch opportunity and prolonged relationship with your&nbsp;customer`}
         icon={`🕸`}
         iconPath={``}
         bgColor={`#1DE9B6`}

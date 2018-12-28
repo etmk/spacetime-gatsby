@@ -43,69 +43,36 @@ const StartupServicesPage = ({ transition }) => (
         <section className="pv4">
           <div className="row narrow">
 
-            <p>STOP! Before you hire a developer or agency or contractor or designer or whatever, STOP!</p>
+            <p>Technical SEO provides the longterm technical investment to grow your website and secure your ranking and foot hold in the eyes of your customers and search engines (Google, Bing, Baidu, DuckDuckGo, etc).</p>
 
-            <p>We need to talk.</p>
+            <h2>SEO is not a magic bullet</h2>
 
-            <p>Why?</p>
+            <p>SEO implementation of any kind will not magically make your business explode.</p>
 
-            <p>Because you have an idea. A <em>big</em> idea. A <em>valuable</em> idea. And you know you can turn that idea into a real business.</p>
+            <h2>SEO is nothing without a solid mobile user experience</h2>
 
-            <p>And so you should. But you're also working within real constraints. Time, money, effort, and a thousand other things seeking your time and attention. So you need to allocate your time, energy, money, and effort into the right path and be wary <em>who</em> you give your money to and <em>how</em> you use your time in the coming months.</p>
+            <p>Mobile is huge and only growing. Mobile optimization and experience now account for a considerable amount of website rankings.</p>
 
-            <p>You only have one shot. Do you really want to blow the cash you've worked so hard for and saved so you could start a business? Probably&nbsp;not.</p>
+            <h2 className="f3 mb1">How to implement Technical SEO</h2>
 
-            <p>At this point you may be scratching your head a bit and questioning what I'm saying. What's the worry? Why should I slow down? I need to move fast and have someone build this idea before someone else beats me to it.</p>
+            <ul className="o-70 lh-copy dark-purple f6 fw5 mv4">
+              <li>Internal linking</li>
+              <li>Crawling and indexation</li>
+              <li>HTTP response codes</li>
+              <li>Server side auditing</li>
+              <li>International SEO</li>
+              <li>Web performance</li>
+              <li>Advanced technology for SEO</li>
+              <li>
+                Google suite of tools
+                <ul>
+                  <li>Google Analytics</li>
+                  <li>Google Search Console</li>
+                  <li>Google Tag Manager</li>
+                </ul>
+              </li>
+            </ul>
 
-            <p className="relative"><span className="absolute top-0 left--3 f2">👇</span>Here are a few real scenarios to learn from, names have been changed to protect the innocent:</p>
-
-          </div>
-        </section>
-
-        <section className="pv5 gradient-light-blue">
-          <div className="row narrow">
-            <h3 className="f3 mb1">What To Expect</h3>
-
-            <p>A Coffee Time session typically will last up to 2 hours. Our highly caffienated team will meet with you in-person (or by online video if you live outside of Dallas) to discuss your dream, idea, business, or concept. You have questions on your mind that we can answer. And we have questions for you to consider that you never thought of. We will discuss your immediate, short-term, and long-term goals and talk about the best path for you to follow.</p>
-
-            <p>Sometimes that results in conceptual business advice, sometimes we help you determine the technology to use behind your business, sometimes we help you determine the best agency or freelancer to work with, sometimes we convince you <em>not</em> to do anything at all.</p>
-
-            <p>Wait, what?</p>
-
-            <p>Think of Coffee Time as a Risk Aversion strategy. You can hire an agency to work on your project, but the Risk is High and the Cost is High. Because you don't know what you don't know.</p>
-
-            <p>Or, you can spend 2 hours drinking coffee and talking about your business and receive extremely valuable early business advice basically for free.</p>
-
-            <div className="">
-              <div className="overflow-auto">
-                <table className="f6 fw6 w-100" cellSpacing="1">
-                  <thead>
-                    <tr className="stripe-dark">
-                      <th className="tl pa3 bg-white"></th>
-                      <th className="tl pa3 bg-white">Coffee Time</th>
-                      <th className="tl pa3 bg-white">Starting on Your Own</th>
-                    </tr>
-                  </thead>
-                  <tbody className="">
-                    <tr className="stripe-dark">
-                      <td className="pa3">Risk</td>
-                      <td className="pa3">🐶</td>
-                      <td className="pa3">🦂 🕷 🦖 🦇</td>
-                    </tr>
-                    <tr className="stripe-dark">
-                      <td className="pa3">Cost</td>
-                      <td className="pa3">💵</td>
-                      <td className="pa3">💰 💰 💰 💰 💰</td>
-                    </tr>
-                    <tr className="stripe-dark">
-                      <td className="pa3">Time</td>
-                      <td className="pa3">⏳</td>
-                      <td className="pa3">⏰ ⏰ ⏰ ⏰</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -125,13 +92,15 @@ const StartupServicesPage = ({ transition }) => (
 
         <section className="pv5 gradient-light-blue">
           <div className="row narrow">
-            <h3 className="f3 fw7 mb1">Guaranteed, or Your Money&nbsp;Back</h3>
+            <h3 className="f3 fw7 mb1">Does my website need technical SEO?</h3>
 
-            <p>The fee for Coffee Time is $500, and we'll buy the coffee 😉</p>
+            <p>The short answer is...</p>
 
-            <p>We guarantee you will walk away from Coffee Time with answers to your questions and new questions to answer. In fact, we're so certain you will find Coffee Time incredibly insightful and valuable we offer a money back guarantee. If after our time together you decide the conversation provided zero value we will refund you&nbsp;in&nbsp;full.</p>
+            <p><em>Yes!</em></p>
 
-            <p>So, would you like a latte or cappuccino?</p>
+            <p>Any and all websites can benefit from a thorough and consistent investment in Technical SEO. The question to consider is whether *now* is the right time to invest in Technical SEO optimization.</p>
+
+            <p>Technical SEO is always useful, but may not be top priority for a brand new business or venture.</p>
 
           </div>
         </section>

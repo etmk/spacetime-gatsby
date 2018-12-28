@@ -23,7 +23,7 @@ const CtoPage = ({ transition }) => (
       <ServicePageHero
         name={`cto`}
         title={`CTO As A Service`}
-        description={`Gain the technical leadership your team needs to succeed in the digital&nbsp;world`}
+        description={`gain the technical leadership needed as your team and business&nbsp;grow`}
         icon={`💎`}
         iconPath={``}
         bgColor={`#EA5500`}

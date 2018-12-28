@@ -60,6 +60,15 @@ const ServicesPage = ({ transition }) => (
         <div className="row ServiceCardsGrid">
 
           <ServiceCard
+            name={`technical-seo`}
+            title={`Technical SEO`}
+            description={`SEO services for a lean mean search engine optimization machine`}
+            icon={`🔍`}
+            iconPath={``}
+            bgColor={`#86fc9e`}
+            cta={`Crush the competition with unparalleled Technical SEO`} />
+
+          <ServiceCard
             name={`startups`}
             title={`Startups`}
             description={`go from a back-of-the-napkin idea to scalable startup`}
@@ -98,7 +107,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`cto`}
               title={`CTO As A Service`}
-              description={`gain the technical leadership you need as your team and business&nbsp;grow`}
+              description={`gain the technical leadership needed as your team and business&nbsp;grow`}
               icon={`💎`}
               iconPath={``}
               bgColor={`#EA5500`}

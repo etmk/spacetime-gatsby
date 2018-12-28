@@ -26,7 +26,7 @@ const DesignServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`design`}
         title={`Design Services`}
-        description={`Design is the communication of the business, brand, identity, and&nbsp;product`}
+        description={`design is the communication of the business, brand, identity, and&nbsp;product`}
         icon={`🎨`}
         iconPath={``}
         bgColor={`#cd96e5`}

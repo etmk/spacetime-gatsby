@@ -26,7 +26,7 @@ const StrategyRetainerPage = ({ transition }) => (
       <ServicePageHero
         name={`strategy-retainer`}
         title={`Strategy Retainer`}
-        description={`We provide the strategic and tactical expertise you need to catalyze your&nbsp;business`}
+        description={`we provide the strategic and tactical expertise you need to catalyze your&nbsp;business`}
         icon={`🎯`}
         iconPath={``}
         bgColor={`#5A62FF`}

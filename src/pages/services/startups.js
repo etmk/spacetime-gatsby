@@ -25,7 +25,7 @@ const StartupServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`startups`}
         title={`Startups`}
-        description={`Startups require a special, diverse set of skills to progress from idea to marketable&nbsp;business`}
+        description={`go from a back-of-the-napkin idea to scalable startup`}
         icon={`🚀`}
         iconPath={``}
         bgColor={`#F03F47`}
