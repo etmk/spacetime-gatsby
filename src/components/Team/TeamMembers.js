@@ -10,7 +10,7 @@ class TeamMembers extends React.Component {
 
       <div>
 
-        <h3 className="f1 black-80 mb2-m">Spacefriends</h3>
+        <h3 className="t-headline black-80 mb2-m">Spacefriends</h3>
         <div className="cf">
           <p className="f4 fl-l w-50-l">"Find a group of people who challenge and inspire you, spend a lot of time with them, and it will change your life forever."<br /><span className="green">&mdash;Amy Poehler</span></p>
 
