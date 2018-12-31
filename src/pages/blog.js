@@ -14,9 +14,6 @@ class BlogPage extends React.Component {
       <div>
         <Helmet
           title={`Blog | ${config.siteTitle}`}
-          link={[
-            { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
-          ]}
         />
 
         <PageHero
