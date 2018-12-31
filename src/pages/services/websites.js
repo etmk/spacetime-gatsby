@@ -16,6 +16,9 @@ const WebsitesPage = ({ transition }) => (
         { name: 'description', content: 'Spacetime makes the best websites for the coolest clients that have really big problems and need solutions that grow the bottom line.' },
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, responsive design, conversions' },
       ]}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+      ]}
     />
 
     <div style={transition && transition.style}>

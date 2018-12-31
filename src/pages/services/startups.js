@@ -18,6 +18,9 @@ const StartupServicesPage = ({ transition }) => (
         { name: 'description', content: 'Spacetime helps Founders build their Startup from concept to completion in less than 3 months. Start from zero, grow a Million dollar business.' },
         { name: 'keywords', content: `${config.siteKeywords}` },
       ]}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+      ]}
     />
 
     <div style={transition && transition.style}>

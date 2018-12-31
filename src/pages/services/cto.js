@@ -16,6 +16,9 @@ const CtoPage = ({ transition }) => (
         { name: 'description', content: 'Spacetime provides clients with a dedicated interim Chief Technology Officer (CTO) to provide technical leadership, direction, and training.' },
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, website, cto, technology, leadership, technical, non-technical, co-founder, executive, programmers, chief technology officer' },
       ]}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+      ]}
     />
 
     <div style={transition && transition.style}>

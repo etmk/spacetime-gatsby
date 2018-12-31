@@ -16,9 +16,9 @@ const StartupServicesPage = ({ transition }) => (
         { name: 'description', content: 'Website and server optimization for unparalleled search engine optimization and user&nbsp;experience.' },
         { name: 'keywords', content: 'hey spacetime, spacetime, business, seo, technical seo, location seo, wordpress seo, mobile' },
       ]}
-      bodyAttributes={{
-        class: ''
-      }}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+      ]}
     />
 
     <div style={transition && transition.style}>

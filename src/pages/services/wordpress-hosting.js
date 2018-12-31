@@ -17,6 +17,9 @@ const WordPressHostingPage = ({ transition }) => (
         { name: 'description', content: 'Spacetime offers extremely fast, highly secure WordPress hosting on WordPress optimized servers and support for any WordPress website.' },
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, WordPress, hosting, WPengine, developer, hosting plans, plugins, WordPress theme, WordPress core' },
       ]}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+      ]}
       bodyAttributes={{
         class: 'light-theme'
       }}

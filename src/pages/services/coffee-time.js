@@ -16,9 +16,9 @@ const StartupServicesPage = ({ transition }) => (
         { name: 'description', content: 'Coffee Time is a low risk way to sit down with Spacetime leadership to discuss ideas and strategy before committing thousands of dollars to a project.' },
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, developer, contractor, startup, strategy, risk aversion' },
       ]}
-      bodyAttributes={{
-        class: ''
-      }}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+      ]}
     />
 
     <div style={transition && transition.style}>

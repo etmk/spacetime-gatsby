@@ -15,6 +15,7 @@ const TeamPage = ({ transition }) => (
       <body class="dark-theme" />
       <meta name="description" content="The incredible, multi-discipline team at Spacetime is based in Dallas, Texas and anywhere with an internet connection" />
       <meta name="keywords" content="hey spacetime, spacetime, dallas, plano, texas, team, design, agency, business, designer, developer, software, prototypes" />
+      <link rel="canonical" href={`${config.siteUrl}${location.pathname}`} />
     </Helmet>
 
     <section id="PageHero" className="page-hero pb7-l" style={transition && transition.style}>

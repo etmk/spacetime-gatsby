@@ -12,7 +12,12 @@ class BlogPage extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <div>
-        <Helmet title={`Blog | ${config.siteTitle}`} />
+        <Helmet
+          title={`Blog | ${config.siteTitle}`}
+          link={[
+            { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+          ]}
+        />
 
         <PageHero
           title={`Blog`}

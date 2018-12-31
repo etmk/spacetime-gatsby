@@ -20,6 +20,9 @@ class ContactPage extends React.Component {
             { name: 'description', content: 'Contact Spacetime to discuss business, or just shoot the breeze' },
             { name: 'keywords', content: 'hey spacetime, spacetime, contact, business, projects, call, email, office, message' },
           ]}
+          link={[
+            { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+          ]}
         />
 
         <div style={transition && transition.style}>

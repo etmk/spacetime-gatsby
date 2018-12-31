@@ -9,7 +9,9 @@ import PageHero from '../components/PageHero'
 
 const ThanksPage = ({ transition }) => (
   <div>
-    <Helmet title={`Thanks | ${config.siteTitle}`} />
+    <Helmet
+      title={`Thanks | ${config.siteTitle}`}
+    />
 
     <section id="PageHero" className="page-hero bg-light-blue" style={transition && transition.style}>
 

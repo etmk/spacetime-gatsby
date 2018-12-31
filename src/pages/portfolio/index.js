@@ -16,6 +16,7 @@ const PortfolioPage = ({ transition }) => (
     <title>{`Portfolio | ${config.siteTitle}`}</title>
     <meta name="description" content="Spacetime Design Experience Agency works with a range of clients like Dude Perfect, Bell Helicopter, Watermark Community Church, and Highland Homes." />
     <meta name="keywords" content="hey spacetime, spacetime, dude perfect, bell helicopter, studiohop, wordpress development, shopify, ecommerce, startups, design, ux, real estate, fitness" />
+    <link rel="canonical" href={`${config.siteUrl}${location.pathname}`} />
   </Helmet>
 
     <section id="PageHero" className="page-hero bg-near-white" style={transition && transition.style}>

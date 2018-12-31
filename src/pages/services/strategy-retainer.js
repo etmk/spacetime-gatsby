@@ -16,6 +16,9 @@ const StrategyRetainerPage = ({ transition }) => (
         { name: 'description', content: 'Spacetime offers Strategy Retainer to clients; we act as an extension of your team, providing direction, insight, and creativity to your business.' },
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, strategy, retainer, consulting, business goals, design systems, technical review' },
       ]}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+      ]}
       bodyAttributes={{
         class: 'light-theme'
       }}

@@ -15,6 +15,9 @@ const ServicesPage = ({ transition }) => (
         { name: 'description', content: 'Spacetime provides professional web based services such as design, ux, ui, WordPress development and hosting, seo, ecommerce, Shopify, Kickstarter' },
         { name: 'keywords', content: 'hey spacetime, spacetime, dallas, plano, texas, wordpress, shopify, kickstarter, youtube, ux, ui, web design, ecommerce, startups, seo, websites' },
       ]}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+      ]}
     />
 
     <section id="PageHero" className="page-hero bg-yellow" style={transition && transition.style}>
