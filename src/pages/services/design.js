@@ -17,7 +17,7 @@ const DesignServicesPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, graphic design, website design, web design, brand design, identity design, app design, responsive web design' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+        { rel: 'canonical', href: `${config.siteUrl}/services/design/` }
       ]}
     />
 

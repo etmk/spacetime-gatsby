@@ -17,7 +17,7 @@ const WebsitesPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, responsive design, conversions' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+        { rel: 'canonical', href: `${config.siteUrl}/services/websites/` }
       ]}
     />
 

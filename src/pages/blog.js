@@ -14,6 +14,13 @@ class BlogPage extends React.Component {
       <div>
         <Helmet
           title={`Blog | ${config.siteTitle}`}
+          meta={[
+            { name: 'description', content: 'The Spacetime blog' },
+            { name: 'keywords', content: 'hey spacetime, spacetime, dallas, plano, texas, blog, learn, education, tips' },
+          ]}
+          link={[
+            { rel: 'canonical', href: `${config.siteUrl}/blog/` }
+          ]}
         />
 
         <PageHero

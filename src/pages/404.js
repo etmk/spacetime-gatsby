@@ -12,7 +12,8 @@ const NotFoundPage = ({transition}) => (
       title={`404 | ${config.siteTitle}`}
       meta={[
         { name: 'description', content: 'Oops, something went wrong' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, 404' },
+        { name: 'robots', content: 'noindex'},
       ]}
       bodyAttributes={{
         class: 'light-theme'

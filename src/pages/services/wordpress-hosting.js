@@ -18,7 +18,7 @@ const WordPressHostingPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, WordPress, hosting, WPengine, developer, hosting plans, plugins, WordPress theme, WordPress core' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+        { rel: 'canonical', href: `${config.siteUrl}/services/wordpress-hosting/` }
       ]}
       bodyAttributes={{
         class: 'light-theme'

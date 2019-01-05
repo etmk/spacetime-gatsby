@@ -17,7 +17,7 @@ const StartupServicesPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, developer, contractor, startup, strategy, risk aversion' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+        { rel: 'canonical', href: `${config.siteUrl}/services/coffee-time/` }
       ]}
     />
 

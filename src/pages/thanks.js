@@ -11,6 +11,11 @@ const ThanksPage = ({ transition }) => (
   <div>
     <Helmet
       title={`Thanks | ${config.siteTitle}`}
+      meta={[
+        { name: 'description', content: 'Spacetime provides professional web based services such as design, ux, ui, WordPress development and hosting, seo, ecommerce, Shopify, Kickstarter' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, dallas, plano, texas, wordpress, shopify, kickstarter, youtube, ux, ui, web design, ecommerce, startups, seo, websites' },
+        { name: 'robots', content: 'noindex'},
+      ]}
     />
 
     <section id="PageHero" className="page-hero bg-light-blue" style={transition && transition.style}>

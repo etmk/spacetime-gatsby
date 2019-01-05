@@ -23,7 +23,7 @@ class IndexPage extends React.Component {
             { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, early stage startups, website, design, Dude Perfect, Samsung, Bell Helicopter' },
           ]}
           link={[
-            { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+            { rel: 'canonical', href: `${config.siteUrl}/` }
           ]}
           bodyAttributes={{
             class: 'light-theme'

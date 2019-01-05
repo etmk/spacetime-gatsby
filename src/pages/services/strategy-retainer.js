@@ -17,7 +17,7 @@ const StrategyRetainerPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, strategy, retainer, consulting, business goals, design systems, technical review' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+        { rel: 'canonical', href: `${config.siteUrl}/services/strategy-retainer/` }
       ]}
       bodyAttributes={{
         class: 'light-theme'

@@ -19,7 +19,7 @@ const StartupServicesPage = ({ transition }) => (
         { name: 'keywords', content: `${config.siteKeywords}` },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+        { rel: 'canonical', href: `${config.siteUrl}/services/startups/` }
       ]}
     />
 

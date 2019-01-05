@@ -17,7 +17,7 @@ const StartupServicesPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, seo, technical seo, location seo, wordpress seo, mobile' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+        { rel: 'canonical', href: `${config.siteUrl}/services/technical-seo/` }
       ]}
     />
 

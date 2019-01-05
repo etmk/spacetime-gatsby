@@ -21,7 +21,7 @@ class ContactPage extends React.Component {
             { name: 'keywords', content: 'hey spacetime, spacetime, contact, business, projects, call, email, office, message' },
           ]}
           link={[
-            { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+            { rel: 'canonical', href: `${config.siteUrl}/contact/` }
           ]}
         />
 

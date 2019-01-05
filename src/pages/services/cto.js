@@ -17,7 +17,7 @@ const CtoPage = ({ transition }) => (
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, website, cto, technology, leadership, technical, non-technical, co-founder, executive, programmers, chief technology officer' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}${location.pathname}` }
+        { rel: 'canonical', href: `${config.siteUrl}/services/cto/` }
       ]}
     />
 
