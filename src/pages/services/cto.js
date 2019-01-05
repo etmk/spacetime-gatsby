@@ -10,11 +10,12 @@ import PricingTable from '../../components/PricingTable'
 
 const CtoPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#EA5500'}}>
+
     <Helmet
-      title={`💎 CTO As A Service | ${config.siteTitle}`}
+      title={`CTO as a Service | Hire an interim Chief Technology Officer`}
       meta={[
-        { name: 'description', content: 'Spacetime provides clients with a dedicated interim Chief Technology Officer (CTO) to provide technical leadership, direction, and training.' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, website, cto, technology, leadership, technical, non-technical, co-founder, executive, programmers, chief technology officer' },
+        { name: 'description', content: 'Spacetime provides clients with dedicated Chief Technology Officer (CTO) services to provide technical leadership, direction, and training' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, website, cto, technology, leadership, technical, non-technical, co-founder, executive, programmers, chief technology officer, startup, dallas, texas' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/cto/` }
@@ -39,7 +40,7 @@ const CtoPage = ({ transition }) => (
 
             <p>You run a technology based business.</p>
 
-            <p>You have the vision. You have the goal. You have the focus. Now all you have to do is build the software product, launch it, monetize it, scale it, avoid business killing mistakes, hire the right people, and responsibly spend your money and time.</p>
+            <p>You have the vision. You have the goal. You have the focus. Now all you have to do is build the tech, launch it, monetize it, scale it, avoid business killing mistakes, hire the right people, and responsibly spend your money and time.</p>
 
             <p>Simple right? Unfortunately, no&hellip;</p>
 
@@ -51,13 +52,13 @@ const CtoPage = ({ transition }) => (
 
         <section className="pv5 gradient-light-blue">
           <div className="row narrow">
-            <h2 className="f1 fw7 dark-red tracked-light tc lh-title">Why You Need A CTO,<br />Sort of&hellip;</h2>
+            <h2 className="f1 fw6 dark-red tracked-light lh-title">Why You Need A Chief Technology Officer, Sort of&hellip;</h2>
 
             <p>Making the right technology choices won't necessarily lead to success, but making the wrong choices <em>will kill you</em>. That's why you need an expert on your team to lead the way and help inform the technological decisions in your business.</p>
 
             <p>If you are technical or have a technical co-founder, perfect, you're probably good to go. But if you don't, you should hire a CTO, well, sort&nbsp;of&hellip;</p>
 
-            <p>You could hire a C-level executive to your team. But that brings a whole new set of challenges to your business, including a hefty salary. The median <a href="https://www1.salary.com/Chief-Technology-Officer-Salary.html" target="_blank" rel="nofollow">CTO salary in the United States is $233,705</a>. Whew, that's a lot of dough to shell out for an early stage business. Money that you probably should spend elsewhere, like on programmers, services, and infrastructure.</p>
+            <p>You could hire a C-level executive to your team. But that brings a whole new set of challenges to your business, including a hefty salary. The median <a href="https://www1.salary.com/Chief-Technology-Officer-Salary.html" target="_blank">CTO salary in the United States is $233,705</a>. Whew, that's a lot of dough to shell out for an early stage business. Money that you probably should spend elsewhere, like on programmers, services, and infrastructure.</p>
 
             <p>Let's do a simple math comparison:</p>
 
@@ -70,7 +71,7 @@ const CtoPage = ({ transition }) => (
                 </div>
                 <div className="w-10 ttu fw7 tracked dark-purple o-50">or</div>
                 <div className="w-40">
-                  <ul className="list system-sans o-70 lh-copy dark-purple f5 fw5 ma0">
+                  <ul className="list system-sans lh-copy dark-purple f5 fw5 ma0">
                     <li className="mv2">🧑 4 Employees</li>
                     <li className="mv2">⏳ 7,776 Overseas Dev Hours</li>
                     <li className="mv2">📦 1 Marketable MVP</li>
@@ -84,7 +85,7 @@ const CtoPage = ({ transition }) => (
 
             <p>That's where we come in.</p>
 
-            <p>We're right in-between a fellow co-founder and your best friend. And maybe a little bit of your momma.</p>
+            <p>We provide CTO as a Service, for as long or short a time period as you need. We're right in-between a fellow co-founder and your best friend. And maybe a little bit of your momma.</p>
 
             <h3 className="ttu f6 fw7 tracked mt4">We want you to:</h3>
             <ol className="system-sans o-70 lh-copy dark-purple f5 fw5 mv3">
@@ -93,7 +94,7 @@ const CtoPage = ({ transition }) => (
               <li className="mv2">Be profitable (so you can buy your best friend lunch, occasionally)</li>
             </ol>
 
-            <p>In time, you will need a full-time CTO, because you will keep growing and win, right? But for now, what you need is a dedicated and experienced partner to help make wise choices, cultivate your team, and build your product.</p>
+            <p>In time, an interim CTO service will need to be replaced by a full-time CTO, because you will keep growing and win, right? But for now, what you need is a dedicated and experienced partner to help make wise choices, cultivate your team, and build your product.</p>
 
             <p>We've got your back.</p>
 
@@ -102,9 +103,9 @@ const CtoPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">Your technnical <span className="dark-red
-              ">Leadership</span> team.</h2>
-            <p>Get in touch to schedule a friendly chat.</p>
+            <h2 className="t-headline mt0 mb4 mw7">Make smart decisions with our <span className="dark-red
+              ">CTO as a Service</span> offer.</h2>
+            <p>Get in touch to schedule a friendly chat about your business and technical needs.</p>
             <div className="mw6 mt5">
               <ContactForm />
             </div>
