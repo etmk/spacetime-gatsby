@@ -50,19 +50,23 @@
     {
       "avatar": "/avatars/full-swing-studio-avatar.jpg",
       "name": "Full Swing Studio",
-      "role": "Brand Identity"
+      "role": "Brand Identity",
+      "url": ""
     }, {
       "avatar": "/avatars/ellym-avatar.jpg",
       "name": "Ellym",
-      "role": "Application Development"
+      "role": "Application Development",
+      "url": ""
     }, {
-      "avatar": "/avatars/belief-studio-avatar.jpg",
-      "name": "Belief Studio",
-      "role": "Strategic Design"
+      "avatar": "/avatars/good-folks-studio-avatar.jpg",
+      "name": "Goodfolks",
+      "role": "Strategic Design",
+      "url": "https://goodfolks.com/"
     }, {
       "avatar": "/avatars/t-co-avatar.jpg",
       "name": "T&Co",
-      "role": "Software Consulting"
+      "role": "Software Consulting",
+      "url": ""
     }
   ]
 }

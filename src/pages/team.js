@@ -11,10 +11,9 @@ import TeamMantra from '../components/Team/TeamMantra'
 const TeamPage = ({ transition }) => (
   <div>
     <Helmet>
-      <title>{`Team | ${config.siteTitle}`}</title>
-      <body class="dark-theme" />
-      <meta name="description" content="The incredible, multi-discipline team at Spacetime is based in Dallas, Texas and anywhere with an internet connection" />
-      <meta name="keywords" content="hey spacetime, spacetime, dallas, plano, texas, team, design, agency, business, designer, developer, software, prototypes" />
+      <title>{`Spacetime Team | Dallas Web Design Agency`}</title>
+      <meta name="description" content="The incredible, multi-disciplinary team at Spacetime is based in Dallas, Texas and anywhere with an internet connection" />
+      <meta name="keywords" content="hey spacetime, spacetime, dallas web design, plano web design, texas web design, design agency, dallas web developer" />
       <link rel="canonical" href={`${config.siteUrl}/team/`} />
     </Helmet>
 
@@ -22,7 +21,8 @@ const TeamPage = ({ transition }) => (
 
       <div className="page-hero__content row">
         <div className="fl-l w-60-l">
-          <h1 className="page-hero__headline">Mostly ordinary, occassionally extraordinary&mdash;<span>always delightful</span></h1>
+          <h3 className="t-headline">Mostly ordinary, occassionally extraordinary&mdash;<span className="t-headline__alt">always delightful</span></h3>
+          <h1 className="f6 fw5 lh-copy measure-narrow black-80">Spacetime is a Dallas web design agency building meaningful digital experiences that delight.</h1>
         </div>
       </div>
 
