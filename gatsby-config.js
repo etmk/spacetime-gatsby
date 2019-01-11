@@ -19,13 +19,13 @@ module.exports = {
     * recursively reads in files and adds them to the data
     * tree.
     */
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content/blog/`,
-        name: 'posts',
-      }
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     path: `${__dirname}/content/blog/`,
+    //     name: 'posts',
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
