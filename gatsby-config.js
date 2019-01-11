@@ -96,7 +96,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/thanks", "/404"]
+        exclude: [
+          `/thanks`,
+        ]
       }
     },
     `gatsby-plugin-offline`, //make sure this comes after gatsby-plugin-manifest
