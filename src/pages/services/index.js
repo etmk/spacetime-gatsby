@@ -144,11 +144,12 @@ const ServicesPage = ({ transition }) => (
               No problem, let’s schedule a time to talk about the problem you need solved
             </p>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact/"
               className="no-underline f6 fw6 tc dib pa3 bg-deep-purple dim white-90">
                 Schedule a free consultation →
-            </a>
+            </Link>
+
           </div>
         </div>
       </section>
