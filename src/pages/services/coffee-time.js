@@ -6,6 +6,7 @@ import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
+import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#c0b282'}}>
@@ -26,7 +27,7 @@ const StartupServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`coffee-time`}
         title={`Coffee Time`}
-        description={`drink a hot cup of joe while receiving 6 months of strategy and insight in two hours`}
+        description={`drink a hot cup of joe while receiving 6 months of business strategy and insight in two hours`}
         icon={`☕️`}
         iconPath={``}
         bgColor={`#c0b282`}
@@ -146,6 +147,16 @@ const StartupServicesPage = ({ transition }) => (
             </div>
           </div>
         </section>
+
+        <ServicePagePagination
+          name={`technical-seo`}
+          title={`Technical SEO`}
+          description={`SEO services for a lean mean search engine optimization machine`}
+          icon={`🔍`}
+          iconPath={``}
+          bgColor={`#86fc9e`}
+          cta={`Crush the competition with unparalleled Technical SEO`} />
+
       </MainWrapper>
     </div>
   </div>

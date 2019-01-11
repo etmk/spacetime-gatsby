@@ -6,15 +6,16 @@ import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
+import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const StartupServicesPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#c0b282'}}>
+  <div className="service-page content-page" style={{backgroundColor: '#86fc9e'}}>
 
     <Helmet
-      title={`🔍 Technical SEO | ${config.siteTitle}`}
+      title={`Technical SEO | ${config.siteTitle}`}
       meta={[
         { name: 'description', content: 'Website and server optimization for unparalleled search engine optimization and user&nbsp;experience.' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, seo, technical seo, location seo, wordpress seo, mobile' },
+        { name: 'keywords', content: 'hey spacetime, spacetime, dallas seo, seo, technical seo, location seo, wordpress seo, mobile' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/technical-seo/` }
@@ -129,7 +130,7 @@ const StartupServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 gradient-light-blue">
+        <section className="pv5 bg-washed-blue">
           <div className="row narrow">
             <blockquote className="bw1 b--green b--solid br2 mv5 mw7 center tc">
               <img src="/avatars/phil-frost-main-street-roi.jpg" className="br-100 h3 w3 dib nt4" alt="Headshot of Phil Frost of Main Street ROI" />
@@ -143,7 +144,7 @@ const StartupServicesPage = ({ transition }) => (
           </div>
         </section>
 
-        <section className="pv5 gradient-light-blue">
+        <section className="pv5">
           <div className="row narrow">
 
             <h2>Does my website need Technical SEO?</h2>
@@ -202,6 +203,16 @@ const StartupServicesPage = ({ transition }) => (
             </div>
           </div>
         </section>
+
+        <ServicePagePagination
+          name={`startups`}
+          title={`Startups`}
+          description={`go from a back-of-the-napkin idea to scalable startup`}
+          icon={`🚀`}
+          iconPath={``}
+          bgColor={`#F03F47`}
+          cta={`How to grow your startup`} />
+
       </MainWrapper>
     </div>
   </div>

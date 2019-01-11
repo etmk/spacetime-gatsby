@@ -6,6 +6,7 @@ import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
+import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const StrategyRetainerPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#5A62FF'}}>
@@ -74,6 +75,16 @@ const StrategyRetainerPage = ({ transition }) => (
             </div>
           </div>
         </section>
+
+        <ServicePagePagination
+          name={`coffee-time`}
+          title={`Coffee Time`}
+          description={`drink a hot cup of joe while receiving 6 months of strategy and insight in two hours`}
+          icon={`☕️`}
+          iconPath={``}
+          bgColor={`#c0b282`}
+          cta={`Order a shot of insight at coffee time`} />
+
       </MainWrapper>
     </div>
   </div>

@@ -8,6 +8,7 @@ import MainWrapper           from '../../layouts/MainWrapper/MainWrapper'
 import ServiceRecommendation from '../../components/Services/ServiceRecommendation'
 import ContactForm           from '../../components/ContactForm'
 import ServicePageHero       from '../../components/Services/ServicePageHero'
+import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#F03F47'}}>
@@ -264,6 +265,15 @@ const StartupServicesPage = ({ transition }) => (
             </div>
           </div>
         </section>
+
+        <ServicePagePagination
+          name={`wordpress-hosting`}
+          title={`WordPress Hosting`}
+          description={`WordPress hosting for people serious about their online business`}
+          icon={``}
+          iconPath={`/icons/wordpress-logo.svg`}
+          bgColor={`#21759B`}
+          cta={`The ultimate WordPress hosting`} />
 
       </MainWrapper>
     </div>

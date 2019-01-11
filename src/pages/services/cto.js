@@ -6,7 +6,7 @@ import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
-import PricingTable from '../../components/PricingTable'
+import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const CtoPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#EA5500'}}>
@@ -111,6 +111,15 @@ const CtoPage = ({ transition }) => (
             </div>
           </div>
         </section>
+
+        <ServicePagePagination
+          name={`strategy-retainer`}
+          title={`Strategy Retainer`}
+          description={`we provide the strategic and tactical expertise you need to catalyze your&nbsp;business`}
+          icon={`🎯`}
+          iconPath={``}
+          bgColor={`#5A62FF`}
+          cta={`Tap into the brain trust with our strategy department`} />
 
       </MainWrapper>
     </div>

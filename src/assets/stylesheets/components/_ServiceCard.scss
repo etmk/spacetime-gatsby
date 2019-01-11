@@ -128,4 +128,8 @@
     top: 30%;
     transform: rotate(45deg) translate(-60%);
   }
+
+  &.reverse {
+    transform: rotate(180deg);
+  }
 }

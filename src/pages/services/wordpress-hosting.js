@@ -7,6 +7,7 @@ import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import PricingTable from '../../components/PricingTable'
+import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const WordPressHostingPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#21759B'}}>
@@ -116,6 +117,15 @@ const WordPressHostingPage = ({ transition }) => (
             </div>
           </div>
         </section>
+
+        <ServicePagePagination
+          name={`design`}
+          title={`Design Services`}
+          description={`design is the communication of the business, brand, identity, and&nbsp;product`}
+          icon={`🎨`}
+          iconPath={``}
+          bgColor={`#cd96e5`}
+          cta={`Stand out from the crowd`} />
 
       </MainWrapper>
     </div>

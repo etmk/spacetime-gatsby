@@ -6,6 +6,7 @@ import config from '../../../data/site-config'
 import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
+import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const WebsitesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#1DE9B6'}}>
@@ -67,6 +68,16 @@ const WebsitesPage = ({ transition }) => (
             </div>
           </div>
         </section>
+
+        <ServicePagePagination
+          name={`cto`}
+          title={`CTO As A Service`}
+          description={`gain the technical leadership needed as your team and business&nbsp;grow`}
+          icon={`💎`}
+          iconPath={``}
+          bgColor={`#EA5500`}
+          cta={`Focus on what's important with an interim CTO`} />
+
       </MainWrapper>
     </div>
   </div>
