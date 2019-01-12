@@ -8,8 +8,6 @@ import PageHero from '../../components/PageHero'
 import PortfolioCard from '../../components/Portfolio/PortfolioCard'
 import ClientList from '../../components/ClientList'
 
-
-
 const PortfolioPage = ({ transition }) => (
   <div className="bg-near-white">
 
