@@ -17,7 +17,7 @@ class TeamMantra extends React.Component {
           {mantra.list.map(mantra => (
             <li className="pr4-ns w-50-ns" key={mantra.title}>
               <div className="pv4 bt">
-                <h3 className="measure-narrow db f2 mt0 mb4 pr3-l tracked-light">{mantra.title}</h3>
+                <h4 className="measure-narrow db f2 mt0 mb4 pr3-l tracked-light">{mantra.title}</h4>
                 <p className="black-90 system-sans f5 db">{mantra.text}</p>
               </div>
             </li>

@@ -26,7 +26,7 @@ class TeamMembers extends React.Component {
           {team.people.map(member => (
             <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={member.name}>
               <img src={member.avatar} className="br-100 mw4 ma2" alt={member.name} />
-              <h3 className="f5 fw7 mv1">{member.name}</h3>
+              <h4 className="f5 fw7 mv1">{member.name}</h4>
               <p className="f7 black-50 mt0">{member.role}</p>
             </li>
           ))}
@@ -36,7 +36,7 @@ class TeamMembers extends React.Component {
           {team.studios.map(studio => (
             <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={studio.name}>
               <img src={studio.avatar} className="br-100 mw4 ma2" alt={studio.name} />
-              <h3 className="f5 fw7 mv1">{studio.name}</h3>
+              <h4 className="f5 fw7 mv1">{studio.name}</h4>
               <p className="f7 black-50 mt0">{studio.role}</p>
             </li>
           ))}
@@ -45,7 +45,8 @@ class TeamMembers extends React.Component {
         <hr className="mw2 mh0 mv0 black-80 bw1" />
 
         <div className="mt4 mb5">
-          <p className="measure-narrow black-50">We're always looking for cool people to join our team. Think you have what it takes?</p>
+          <h2 className="f3 fw5 lh-copy measure black-80">We love the Dallas web design industry&hellip;</h2>
+          <p className="measure black-50">But you don't have to be local to work with us. We're always looking for new talent to join the team or consult. Think you have what it takes?</p>
           <Link to="/contact/" className="f6 link dim ba ph3 pv2 dib black">Become a Spacefriend →</Link>
         </div>
 

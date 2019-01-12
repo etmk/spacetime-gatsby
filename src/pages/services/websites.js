@@ -12,10 +12,10 @@ const WebsitesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#1DE9B6'}}>
 
     <Helmet
-      title={`🕸 Websites | ${config.siteTitle}`}
+      title={`Websites 🕸| Responsive and mobile website design | Spacetime`}
       meta={[
-        { name: 'description', content: 'Spacetime makes the best websites for the coolest clients that have really big problems and need solutions that grow the bottom line.' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, responsive design, conversions' },
+        { name: 'description', content: 'Stand out from the crowd with unique, business-centric mobile and responsive website design' },
+        { name: 'keywords', content: 'website design, website design dallas, responsive web design, mobile web design' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/websites/` }
@@ -26,7 +26,7 @@ const WebsitesPage = ({ transition }) => (
       <ServicePageHero
         name={`websites`}
         title={`Websites`}
-        description={`websites provide a first touch opportunity and prolonged relationship with your&nbsp;customer`}
+        description={`stand out from the crowd with stellar website design`}
         icon={`🕸`}
         iconPath={``}
         bgColor={`#1DE9B6`}
@@ -40,7 +40,14 @@ const WebsitesPage = ({ transition }) => (
             <h5 className="">What do you need?</h5>
             <ul className="system-sans o-70 lh-copy dark-purple f6 fw5 mv4">
               <li className="mv1">Increase sales and conversions</li>
-              <li className="mv1">Responsive design for all device sizes (mobile, tablet, desktop)</li>
+              <li className="mv1">
+                Responsive web design
+                <ul>
+                  <li className="mv1">Mobile web design</li>
+                  <li className="mv1">Tablet web design</li>
+                  <li className="mv1">Desktop web design</li>
+                </ul>
+              </li>
               <li className="mv1">Accessibility for impaired visitors</li>
               <li className="mv1">Search Engine Optimization (SEO)</li>
               <li className="mv1">Design worthy of your business</li>
@@ -61,7 +68,7 @@ const WebsitesPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">Make your <span className="green">Website</span> work for you.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">Make your <span className="green">website design</span> work for you.</h2>
             <p>Get in touch to schedule a friendly chat.</p>
             <div className="mw6 mt5">
               <ContactForm />

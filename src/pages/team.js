@@ -12,8 +12,8 @@ const TeamPage = ({ transition }) => (
   <div>
     <Helmet>
       <title>{`Spacetime Team | Dallas Web Design Agency`}</title>
-      <meta name="description" content="The incredible, multi-disciplinary team at Spacetime is based in Dallas, Texas and anywhere with an internet connection" />
-      <meta name="keywords" content="hey spacetime, spacetime, dallas web design, plano web design, texas web design, design agency, dallas web developer" />
+      <meta name="description" content="Spacetime is a Dallas web design agency building meaningful digital experiences to delight and amaze customers" />
+      <meta name="keywords" content="dallas web design, experience designer, us designer, business informatics, brand designer, software developer" />
       <link rel="canonical" href={`${config.siteUrl}/team/`} />
     </Helmet>
 
@@ -22,7 +22,7 @@ const TeamPage = ({ transition }) => (
       <div className="page-hero__content row">
         <div className="fl-l w-60-l">
           <h3 className="t-headline">Mostly ordinary, occassionally extraordinary&mdash;<span className="t-headline__alt">always delightful</span></h3>
-          <h1 className="f6 fw5 lh-copy measure-narrow black-80">Spacetime is a Dallas web design agency building meaningful digital experiences that delight.</h1>
+          <h1 className="f5 fw4 lh-copy black-80">A Dallas web design agency in love with the&nbsp;<em className="hover-green">fantastic</em>.</h1>
         </div>
       </div>
 
@@ -37,7 +37,7 @@ const TeamPage = ({ transition }) => (
 
       <section className="pv5 bg-fog-white">
         <div className="row relative z-1">
-          <h2 className="black-80 f3 f2-m f1-l fw4 lh-title">At Spacetime, we partner with clients to strategize &amp; execute their vision. We approach problems with a business-centric focus with a goal of sustainability and&nbsp;ROI.</h2>
+          <h3 className="black-80 f3 f2-m f1-l fw4 lh-title">At Spacetime, we partner with clients to strategize &amp; execute their vision. We approach problems with a business-centric focus with a goal of sustainability and&nbsp;ROI.</h3>
         </div>
       </section>
 
