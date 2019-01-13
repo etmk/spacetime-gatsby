@@ -13,10 +13,10 @@ const WordPressHostingPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#21759B'}}>
 
     <Helmet
-      title={`WordPress Hosting | ${config.siteTitle}`}
+      title={`WordPress Hosting ⚡️| blazing fast, incredibly secure - Spacetime`}
       meta={[
-        { name: 'description', content: 'Spacetime offers extremely fast, highly secure WordPress hosting on WordPress optimized servers and support for any WordPress website.' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, WordPress, hosting, WPengine, developer, hosting plans, plugins, WordPress theme, WordPress core' },
+        { name: 'description', content: 'Make your investment count with blazing fast, incredibly secure WordPress hosting' },
+        { name: 'keywords', content: 'wordpress hosting, wordpress' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/wordpress-hosting/` }
@@ -30,7 +30,7 @@ const WordPressHostingPage = ({ transition }) => (
       <ServicePageHero
         name={`wordpress-hosting`}
         title={`WordPress Hosting`}
-        description={`WordPress hosting for people serious about their online&nbsp;business`}
+        description={`for people serious about their online&nbsp;business`}
         icon={``}
         iconPath={`/icons/wordpress-logo.svg`}
         bgColor={`#21759B`}
@@ -110,7 +110,7 @@ const WordPressHostingPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">Because you deserve the <span className="blue">Best</span>.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">Because you deserve best-in-class <span style={{color: '#21759B'}}>WordPress&nbsp;hosting</span>.</h2>
             <p>Get in touch to schedule a friendly chat.</p>
             <div className="mw6 mt5">
               <ContactForm />

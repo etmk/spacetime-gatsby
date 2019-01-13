@@ -60,7 +60,7 @@ const DesignServicesPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">Stand out from the crowd through exceptional <span className="orange">Design</span>.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">Stand out from the crowd through exceptional <span style={{color: '#cd96e5'}}>Design</span>.</h2>
             <p>Get in touch to schedule a friendly chat.</p>
             <div className="mw6 mt5">
               <ContactForm />

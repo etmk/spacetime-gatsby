@@ -44,7 +44,7 @@ const StrategyRetainerPage = ({ transition }) => (
 
             <h3>How does it work?</h3>
 
-            <p>Our agreement entitles you to unlimited 24/7 access to our team via phone, email, and IM. All messages will be returned no later than the next business day, although in practice response time is much quicker.</p>
+            <p>Our agreement entitles you to unlimited 24/7 access to <Link to="/team/">our team</Link> via phone, email, and IM. All messages will be returned no later than the next business day, although in practice response time is much quicker.</p>
 
             <p>Meetings are scheduled in advance, typically take place over the phone, and are sometimes supplemented with online meeting and/or screen sharing software (e.g. Hangouts, Skype, Slack).</p>
 

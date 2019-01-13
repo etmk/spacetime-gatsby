@@ -12,10 +12,10 @@ const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#c0b282'}}>
 
     <Helmet
-      title={`☕️ Coffee Time | ${config.siteTitle}`}
+      title={`Coffee Time ☕️| Business Strategy over coffee - Spacetime`}
       meta={[
-        { name: 'description', content: 'Coffee Time is a low risk way to sit down with Spacetime leadership to discuss ideas and strategy before committing thousands of dollars to a project.' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, developer, contractor, startup, strategy, risk aversion' },
+        { name: 'description', content: 'Before committing thousands of dollars toward a project, sit down for a cup of coffee and strong business strategy' },
+        { name: 'keywords', content: 'business strategy' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/coffee-time/` }
@@ -27,7 +27,7 @@ const StartupServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`coffee-time`}
         title={`Coffee Time`}
-        description={`drink a hot cup of joe while receiving 6 months of business strategy and insight in two hours`}
+        description={`business strategy and insight over a cup of coffee`}
         icon={`☕️`}
         iconPath={``}
         bgColor={`#c0b282`}
@@ -68,7 +68,7 @@ const StartupServicesPage = ({ transition }) => (
           <div className="row narrow">
             <h3 className="f3 mb1">What To Expect</h3>
 
-            <p>A Coffee Time session typically will last up to 2 hours. Our highly caffienated team will meet with you in-person (or by online video if you live outside of Dallas) to discuss your dream, idea, business, or concept. You have questions on your mind that we can answer. And we have questions for you to consider that you never thought of. We will discuss your immediate, short-term, and long-term goals and talk about the best path for you to follow.</p>
+            <p>A Coffee Time session typically will last up to 2 hours. <Link to="/team/">Our highly caffienated team</Link> will meet with you in-person (or by online video if you live outside of Dallas) to discuss your dream, idea, business, or concept. You have questions on your mind that we can answer. And we have questions for you to consider that you never thought of. We will discuss your immediate, short-term, and long-term goals and talk about the best path for you to follow.</p>
 
             <p>Sometimes that results in conceptual business advice, sometimes we help you determine the technology to use behind your business, sometimes we help you determine the best agency or freelancer to work with, sometimes we convince you <em>not</em> to do anything at all.</p>
 
@@ -140,7 +140,7 @@ const StartupServicesPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">A healthy dose of condensed <span className="dark-red">Conversation</span>.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">A healthy cup of strong <span style={{color: '#c0b282'}}>business strategy</span>.</h2>
             <p>Get in touch to schedule a friendly sit-down.</p>
             <div className="mw6 mt5">
               <ContactForm />

@@ -14,8 +14,8 @@ const StartupServicesPage = ({ transition }) => (
     <Helmet
       title={`Technical SEO | ${config.siteTitle}`}
       meta={[
-        { name: 'description', content: 'Website and server optimization for unparalleled search engine optimization and user&nbsp;experience.' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, dallas seo, seo, technical seo, location seo, wordpress seo, mobile' },
+        { name: 'description', content: 'Crush the competition and move up in the search engine rankings with unparalleled Technical SEO' },
+        { name: 'keywords', content: 'technical seo, dallas seo' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/technical-seo/` }
@@ -27,7 +27,7 @@ const StartupServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`technical-seo`}
         title={`Technical SEO`}
-        description={`SEO services for a lean mean search engine optimization machine`}
+        description={`for a lean mean search engine optimization machine`}
         icon={`🔍`}
         iconPath={``}
         bgColor={`#86fc9e`}

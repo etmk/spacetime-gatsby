@@ -12,10 +12,10 @@ const CtoPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#EA5500'}}>
 
     <Helmet
-      title={`CTO as a Service | Hire an interim Chief Technology Officer`}
+      title={`CTO as a Service | hire an interim Chief Technology Officer`}
       meta={[
-        { name: 'description', content: 'Spacetime provides clients with dedicated Chief Technology Officer (CTO) services to provide technical leadership, direction, and training' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, website, cto, technology, leadership, technical, non-technical, co-founder, executive, programmers, chief technology officer, startup, dallas, texas' },
+        { name: 'description', content: 'Grow your business and make smart technical decisions by hiring a temporary Chief Technology Officer to lead the way' },
+        { name: 'keywords', content: 'cto, cto service, chief technology officer, cto as a service' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/cto/` }
@@ -27,7 +27,7 @@ const CtoPage = ({ transition }) => (
       <ServicePageHero
         name={`cto`}
         title={`CTO As A Service`}
-        description={`gain the technical leadership needed as your team and business&nbsp;grow`}
+        description={`hire technical leadership to grow your business`}
         icon={`💎`}
         iconPath={``}
         bgColor={`#EA5500`}
@@ -52,7 +52,7 @@ const CtoPage = ({ transition }) => (
 
         <section className="pv5 gradient-light-blue">
           <div className="row narrow">
-            <h2 className="f1 fw6 dark-red tracked-light lh-title">Why You Need A Chief Technology Officer, Sort of&hellip;</h2>
+            <h3 className="f1 fw6 dark-red tracked-light lh-title">Why You Need A Chief Technology Officer, Sort of&hellip;</h3>
 
             <p>Making the right technology choices won't necessarily lead to success, but making the wrong choices <em>will kill you</em>. That's why you need an expert on your team to lead the way and help inform the technological decisions in your business.</p>
 
@@ -94,17 +94,16 @@ const CtoPage = ({ transition }) => (
               <li className="mv2">Be profitable (so you can buy your best friend lunch, occasionally)</li>
             </ol>
 
-            <p>In time, an interim CTO service will need to be replaced by a full-time CTO, because you will keep growing and win, right? But for now, what you need is a dedicated and experienced partner to help make wise choices, cultivate your team, and build your product.</p>
+            <p><em>Eventually</em>, our interim CTO service will need to be replaced by a full-time CTO, because you will keep growing and win, right? But for now, what you need is a dedicated and experienced partner to help make wise choices, cultivate your team, and build your product.</p>
 
-            <p>We've got your back.</p>
+            <p><Link to="/team/">We've got your back.</Link></p>
 
           </div>
         </section>
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">Make smart decisions with our <span className="dark-red
-              ">CTO as a Service</span> offer.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">Make smart decisions with our <span style={{color: '#EA5500'}}>CTO&nbsp;as&nbsp;a&nbsp;Service</span> offering.</h2>
             <p>Get in touch to schedule a friendly chat about your business and technical needs.</p>
             <div className="mw6 mt5">
               <ContactForm />
