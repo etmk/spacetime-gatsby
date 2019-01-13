@@ -57,7 +57,7 @@ class IndexPage extends React.Component {
 
           <section className="pv6 bg-white">
             <div className="row mb5">
-              <h3 className="ttu f7 fw7 tracked blue">Services</h3>
+              <h3 className="ttu f7 fw7 tracked blue">&mdash;Services</h3>
               <h2 className="t-headline">Tell us what you want to achieve,<br />we'll help you get there</h2>
               <p className="measure">We provide a broad range of services&mdash;focusing on smart efforts that act as value multipliers. So, whether you are starting a brand new business or growing to new heights, Spacetime is ready to step-in as a strategic partner for&nbsp;the&nbsp;journey.</p>
               <p>What do you need help with? Pick your poison ☠️</p>

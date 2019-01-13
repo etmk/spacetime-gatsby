@@ -27,14 +27,16 @@ class HomeTestimonials extends React.Component {
   render() {
     return (
 
-      <section className="pv5 bg-deep-purple">
+      <section className="pv6 bg-deep-purple">
         <div className="row">
+          <h3 className="ttu f7 fw7 tracked pink">&mdash;Testimonials</h3>
+          <h3 className="f3 white mb5">Happy <del className="o-30">wife</del> <ins>client</ins>, happy life</h3>
           <ul className="list pa0 ma0 flex-ns justify-between">
             {testimonials.map(e => (
               <li className="white mb4 dib" key={e.name}>
                 <blockquote className="pa0 ma0">
 
-                  <img src={e.logo} className="h3 dib" alt={e.name} />
+                  {/*<img src={e.logo} className="h3 dib" alt={e.name} />*/}
 
                   <p className="f5 white-90 measure-narrow">
                     {e.quote}&rdquo;
