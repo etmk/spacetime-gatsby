@@ -104,6 +104,11 @@
       font-size: 1.5rem;
     }
   }
+
+  &__cta {
+    font-size: .85rem;
+    line-height: 1.2;
+  }
 }
 
 .arrow-decorator {
@@ -124,8 +129,8 @@
     border-bottom: none;
     display: inline-block;
     position: absolute;
-    right: -2px;
-    top: 30%;
+    right: -3px;
+    top: 0;
     transform: rotate(45deg) translate(-60%);
   }
 

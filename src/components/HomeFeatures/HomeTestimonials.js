@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const testimonials = [
   {
@@ -6,12 +8,16 @@ const testimonials = [
     quote: 'Spacetime took our vision and ran with it full steam ahead. They were easy to work with, and most importantly, created a killer end-product that we are proud to share with anyone.',
     name: 'Coby Cotton',
     role: 'Co-Founder',
+    business: 'Dude Perfect',
+    url: 'https://dudeperfect.com/',
     avatar: '/avatars/coby-cotton-avatar.jpg'
   }, {
     logo: '/client-logos/steadkey-logo.png',
     quote: 'After a couple years of little traction with my app, the Spacetime team helped rethink the product and build my business like a startup; focusing on a solid MVP that my target audience loves.',
     name: 'Jerry Williams',
     role: 'CEO & Founder',
+    business: 'Steadkey',
+    url: 'https://dudeperfect.com/',
     avatar: '/avatars/jerry-williams-avatar.jpg'
   }
 ];
@@ -38,7 +44,14 @@ class HomeTestimonials extends React.Component {
                     <img src={e.avatar} className="ba b--white bw3 br-100 h3 w3 dib" alt={e.name} />
                     <h5 className="lh-copy mv0 ml3">
                       <span className="sans-serif ttu tracked">{e.name}</span>
-                      <span className="f7 fw1 db">{e.role}</span>
+                      <span className="f7 fw1 db">
+                        {e.role},&nbsp;
+                        <OutboundLink href={e.url}
+                          target="_blank"
+                          className="color-inherit bb b--white-20">
+                          {e.business}
+                        </OutboundLink>
+                      </span>
                     </h5>
                   </div>
 

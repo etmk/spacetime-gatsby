@@ -5,9 +5,9 @@ class ServiceCard extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={`${this.props.containerClass}`}>
         <Link
-          to={`${this.props.name}/`}
+          to={`/services/${this.props.name}/`}
           title={this.props.title}
           className={`ServiceCard grow`}
           style={{backgroundColor: `${this.props.bgColor}`}}

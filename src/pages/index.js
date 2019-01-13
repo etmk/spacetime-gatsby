@@ -9,6 +9,7 @@ import MainWrapper from '../layouts/MainWrapper/MainWrapper'
 import StartupDream from '../components/HomeFeatures/StartupDream'
 import HomeWelcome from '../components/HomeFeatures/HomeWelcome'
 import HomeTestimonials from '../components/HomeFeatures/HomeTestimonials'
+import ServiceCard from '../components/Services/ServiceCard'
 
 class IndexPage extends React.Component {
   render() {
@@ -54,7 +55,50 @@ class IndexPage extends React.Component {
             </div>
           </section>
 
-          <HomeWelcome />
+          <section className="pv6 bg-white">
+            <div className="row mb5">
+              <h3 className="ttu f7 fw7 tracked blue">Services</h3>
+              <h2 className="t-headline">Tell us what you want to achieve,<br />we'll help you get there</h2>
+              <p className="measure">We provide a broad range of services&mdash;focusing on smart efforts that act as value multipliers. So, whether you are starting a brand new business or growing to new heights, Spacetime is ready to step-in as a strategic partner for&nbsp;the&nbsp;journey.</p>
+              <p>What do you need help with? Pick your poison ☠️</p>
+            </div>
+            <div className="row flex flex-wrap">
+
+              <ServiceCard
+                containerClass={`pb3 w-50-m w-33-l pr2-ns`}
+                name={`technical-seo`}
+                title={`Technical SEO`}
+                description={`SEO services for a lean mean search engine optimization machine`}
+                icon={`🔍`}
+                iconPath={``}
+                bgColor={`#86fc9e`}
+                cta={`Crush the competition with unparalleled Technical SEO`} />
+
+              <ServiceCard
+                containerClass={`pb3 w-50-m pl2-ns w-33-l pr2-l`}
+                name={`startups`}
+                title={`Startups`}
+                description={`go from a back-of-the-napkin idea to scalable startup`}
+                icon={`🚀`}
+                iconPath={``}
+                bgColor={`#F03F47`}
+                cta={`How to grow your startup`} />
+
+              <ServiceCard
+                containerClass={`pb3 w-100-m w-33-l pl2-l`}
+                name={`wordpress-hosting`}
+                title={`WordPress Hosting`}
+                description={`WordPress hosting for people serious about their online business`}
+                icon={``}
+                iconPath={`/icons/wordpress-logo.svg`}
+                bgColor={`#21759B`}
+                cta={`The ultimate WordPress hosting`} />
+
+            </div>
+            <div className="row pv5">
+              <Link to="/services/" className="black dim">All Spacetime Services 👉</Link>
+            </div>
+          </section>
 
           <HomeTestimonials />
 
