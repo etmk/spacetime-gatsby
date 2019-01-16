@@ -12,7 +12,7 @@ const CtoPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#EA5500'}}>
 
     <Helmet
-      title={`CTO as a Service | hire an interim Chief Technology Officer`}
+      title={`CTO as a Service 💎 hire an interim Chief Technology Officer`}
       meta={[
         { name: 'description', content: 'Grow your business and make smart technical decisions by hiring a temporary Chief Technology Officer to lead the way' },
         { name: 'keywords', content: 'cto, cto service, chief technology officer, cto as a service' },

@@ -13,7 +13,7 @@ const WordPressHostingPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#21759B'}}>
 
     <Helmet
-      title={`WordPress Hosting ⚡️| blazing fast, incredibly secure - Spacetime`}
+      title={`WordPress Hosting ⚡️ blazing fast, incredibly secure - Spacetime`}
       meta={[
         { name: 'description', content: 'Make your investment count with blazing fast, incredibly secure WordPress hosting' },
         { name: 'keywords', content: 'wordpress hosting, wordpress' },

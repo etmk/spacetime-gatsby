@@ -2,6 +2,7 @@ module.exports = {
   blogPostDir: "blog",
   siteTitle: "Spacetime, Design Experience Agency",
   siteTitleAlt: "Spacetime | Design, Web, Startups, Apps, WordPress | Dallas, TX",
+  separator: "•",
   siteLogo: "./src/assets/images/favicon/favicon.png",
   siteUrl: "https://www.heyspacetime.com",
   pathPrefix: "/",

@@ -48,11 +48,10 @@ class HomeTestimonials extends React.Component {
                       <span className="sans-serif ttu tracked">{e.name}</span>
                       <span className="f7 fw1 db">
                         {e.role},&nbsp;
-                        <OutboundLink href={e.url}
-                          target="_blank"
+                        <Link to="/portfolio/"
                           className="color-inherit bb b--white-20">
                           {e.business}
-                        </OutboundLink>
+                        </Link>
                       </span>
                     </h5>
                   </div>

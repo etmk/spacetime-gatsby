@@ -12,7 +12,7 @@ const DesignServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#cd96e5'}}>
 
     <Helmet
-      title={`🎨 Design Services | ${config.siteTitle}`}
+      title={`Design Services 🎨 ${config.siteTitle}`}
       meta={[
         { name: 'description', content: 'Spacetime is a design driven technology agency with a brand inclusive view for web and app design that wows and produces incredible business results.' },
         { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, graphic design, website design, web design, brand design, identity design, app design, responsive web design' },

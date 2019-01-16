@@ -15,7 +15,7 @@ class ContactPage extends React.Component {
       <div className="bg-fog-white">
 
         <Helmet
-          title={`Contact | ${config.siteTitle}`}
+          title={`Contact 📪 ${config.siteTitle}`}
           meta={[
             { name: 'description', content: 'Contact Spacetime to discuss business, or just shoot the breeze' },
             { name: 'keywords', content: 'hey spacetime, spacetime, contact, business, projects, call, email, office, message' },

@@ -12,7 +12,7 @@ const WebsitesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#1DE9B6'}}>
 
     <Helmet
-      title={`Websites 🕸| Responsive and mobile website design | Spacetime`}
+      title={`Websites 🕸 responsive and mobile website design ${config.separator} Spacetime`}
       meta={[
         { name: 'description', content: 'Stand out from the crowd with unique, business-centric mobile and responsive website design' },
         { name: 'keywords', content: 'website design, website design dallas, responsive web design, mobile web design' },

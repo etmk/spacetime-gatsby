@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
       <div className="bg-dark-purple">
 
         <Helmet
-          title={`Home | ${config.siteTitle}`}
+          title={`Home 🏡 ${config.siteTitle}`}
           meta={[
             { name: 'description', content: 'Spacetime is a Dallas, Texas based Design Experience Agency providing web-based services to local, national, and international brands.' },
             { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, early stage startups, website, design, Dude Perfect, Samsung, Bell Helicopter' },
@@ -68,7 +68,7 @@ class IndexPage extends React.Component {
                 containerClass={`pb3 w-50-m w-33-l pr2-ns`}
                 name={`technical-seo`}
                 title={`Technical SEO`}
-                description={`SEO services for a lean mean search engine optimization machine`}
+                description={`for a lean mean search engine optimization machine`}
                 icon={`🔍`}
                 iconPath={``}
                 bgColor={`#86fc9e`}
@@ -78,7 +78,7 @@ class IndexPage extends React.Component {
                 containerClass={`pb3 w-50-m pl2-ns w-33-l pr2-l`}
                 name={`startups`}
                 title={`Startups`}
-                description={`go from a back-of-the-napkin idea to scalable startup`}
+                description={`go from a back-of-the-napkin idea to scalable startup MVP`}
                 icon={`🚀`}
                 iconPath={``}
                 bgColor={`#F03F47`}

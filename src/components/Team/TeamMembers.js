@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import team from '../../../data/team-data.json'
 
@@ -35,9 +36,15 @@ class TeamMembers extends React.Component {
         <ul className="list pa0 flex flex-wrap justify-between justify-start-l mv5 mw8">
           {team.studios.map(studio => (
             <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={studio.name}>
+            <OutboundLink href={studio.url}
+              target="_blank"
+              className="dib black-80 hover-red">
               <img src={studio.avatar} className="br-100 mw4 ma2" alt={studio.name} />
-              <h4 className="f5 fw7 mv1">{studio.name}</h4>
+
+                  <h4 className="f5 fw7 mv1">{studio.name}</h4>
+
               <p className="f7 black-50 mt0">{studio.role}</p>
+              </OutboundLink>
             </li>
           ))}
         </ul>

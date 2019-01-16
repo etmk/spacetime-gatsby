@@ -10,7 +10,7 @@ import ServiceCard from '../../components/Services/ServiceCard'
 const ServicesPage = ({ transition }) => (
   <div className="bg-yellow">
     <Helmet
-      title={`Services | ${config.siteTitle}`}
+      title={`Services 🛠 ${config.siteTitle}`}
       meta={[
         { name: 'description', content: 'Spacetime provides professional web based services such as design, ux, ui, WordPress development and hosting, seo, ecommerce, Shopify, Kickstarter' },
         { name: 'keywords', content: 'hey spacetime, spacetime, dallas, plano, texas, wordpress, shopify, kickstarter, youtube, ux, ui, web design, ecommerce, startups, seo, websites' },
@@ -65,7 +65,7 @@ const ServicesPage = ({ transition }) => (
           <ServiceCard
             name={`technical-seo`}
             title={`Technical SEO`}
-            description={`SEO services for a lean mean search engine optimization machine`}
+            description={`for a lean mean search engine optimization machine`}
             icon={`🔍`}
             iconPath={``}
             bgColor={`#86fc9e`}
@@ -83,7 +83,7 @@ const ServicesPage = ({ transition }) => (
           <ServiceCard
             name={`wordpress-hosting`}
             title={`WordPress Hosting`}
-            description={`WordPress hosting for people serious about their online business`}
+            description={`for people serious about their online&nbsp;business`}
             icon={``}
             iconPath={`/icons/wordpress-logo.svg`}
             bgColor={`#21759B`}
@@ -128,7 +128,7 @@ const ServicesPage = ({ transition }) => (
             <ServiceCard
               name={`coffee-time`}
               title={`Coffee Time`}
-              description={`drink a hot cup of joe while receiving 6 months of strategy and insight in two hours`}
+              description={`business strategy and insight over a cup of coffee`}
               icon={`☕️`}
               iconPath={``}
               bgColor={`#c0b282`}

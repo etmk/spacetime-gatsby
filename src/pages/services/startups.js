@@ -14,10 +14,10 @@ const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#F03F47'}}>
 
     <Helmet
-      title={`🚀 Startups | ${config.siteTitle}`}
+      title={`Startups 🚀 from startup mvp to viable business`}
       meta={[
-        { name: 'description', content: 'Spacetime helps Founders build their Startup from concept to completion in less than 3 months. Start from zero, grow a Million dollar business.' },
-        { name: 'keywords', content: `${config.siteKeywords}` },
+        { name: 'description', content: 'Build a Startup MVP from concept to completion in less than 3 months or less' },
+        { name: 'keywords', content: `startup mvp, startup` },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/startups/` }
@@ -29,7 +29,7 @@ const StartupServicesPage = ({ transition }) => (
       <ServicePageHero
         name={`startups`}
         title={`Startups`}
-        description={`go from a back-of-the-napkin idea to scalable startup`}
+        description={`go from a back-of-the-napkin idea to scalable startup MVP`}
         icon={`🚀`}
         iconPath={``}
         bgColor={`#F03F47`}
@@ -39,7 +39,8 @@ const StartupServicesPage = ({ transition }) => (
 
         <section className="pv6 bg-near-white">
           <div className="row">
-            <h2 className="f3 f1-ns fw4 system-sans lh-title">We Help Founders Develop Their Startup From Back-of-the-Napkin Idea to $1 Million</h2>
+            <span className="dark-purple f6 fw8 o-60">TL;DR</span>
+            <h3 className="f3 f1-ns fw4 system-sans lh-title">We Help Founders Develop Their Startup From Back-of-the-Napkin Idea to $1 Million</h3>
           </div>
         </section>
 
@@ -258,7 +259,7 @@ const StartupServicesPage = ({ transition }) => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">Your startup could be worth <span className="green">Millions</span>.</h2>
+            <h2 className="t-headline mt0 mb4 mw7">Start your startup right, with a scalable <span style={{color: '#F03F47'}}>Startup MVP</span>.</h2>
             <p>Get in touch to schedule a friendly chat.</p>
             <div className="mw6 mt5">
               <ContactForm />
@@ -269,7 +270,7 @@ const StartupServicesPage = ({ transition }) => (
         <ServicePagePagination
           name={`wordpress-hosting`}
           title={`WordPress Hosting`}
-          description={`WordPress hosting for people serious about their online business`}
+          description={`for people serious about their online&nbsp;business`}
           icon={``}
           iconPath={`/icons/wordpress-logo.svg`}
           bgColor={`#21759B`}

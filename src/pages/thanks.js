@@ -10,7 +10,7 @@ import PageHero from '../components/PageHero'
 const ThanksPage = ({ transition }) => (
   <div>
     <Helmet
-      title={`Thanks | ${config.siteTitle}`}
+      title={`Thanks 📬 ${config.siteTitle}`}
       meta={[
         { name: 'description', content: 'Spacetime provides professional web based services such as design, ux, ui, WordPress development and hosting, seo, ecommerce, Shopify, Kickstarter' },
         { name: 'keywords', content: 'hey spacetime, spacetime, dallas, plano, texas, wordpress, shopify, kickstarter, youtube, ux, ui, web design, ecommerce, startups, seo, websites' },
@@ -56,14 +56,14 @@ const ThanksPage = ({ transition }) => (
                   to="/team/"
                   title="Team"
                   className="dib fw6 black dim">
-                  👩‍🎤 Team
+                  💪 Team
                 </Link>
                 <br />
                 <Link
                   to="/contact/"
                   title="Contact"
                   className="dib fw6 black dim">
-                  💌 Contact
+                  📪 Contact
                 </Link>
             </div>
 

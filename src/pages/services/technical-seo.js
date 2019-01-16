@@ -12,7 +12,7 @@ const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#86fc9e'}}>
 
     <Helmet
-      title={`Technical SEO | ${config.siteTitle}`}
+      title={`Technical SEO 🔍 search engine optimization for stellar results`}
       meta={[
         { name: 'description', content: 'Crush the competition and move up in the search engine rankings with unparalleled Technical SEO' },
         { name: 'keywords', content: 'technical seo, dallas seo' },
@@ -38,7 +38,7 @@ const StartupServicesPage = ({ transition }) => (
         <section className="pv6 bg-near-white">
           <div className="row">
             <span className="dark-purple f6 fw8 o-60">TL;DR</span>
-            <h2 className="f3 f1-ns fw4 system-sans lh-title">People need to find your website. Search engines recommend your website if they like you. We make search engines like you 😉</h2>
+            <h3 className="f3 f1-ns fw4 system-sans lh-title">People need to find your website. Search engines recommend your website if they like you. We make search engines like you 😉</h3>
           </div>
         </section>
 
@@ -207,7 +207,7 @@ const StartupServicesPage = ({ transition }) => (
         <ServicePagePagination
           name={`startups`}
           title={`Startups`}
-          description={`go from a back-of-the-napkin idea to scalable startup`}
+          description={`go from a back-of-the-napkin idea to scalable startup MVP`}
           icon={`🚀`}
           iconPath={``}
           bgColor={`#F03F47`}

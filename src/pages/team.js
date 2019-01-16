@@ -11,7 +11,7 @@ import TeamMantra from '../components/Team/TeamMantra'
 const TeamPage = ({ transition }) => (
   <div>
     <Helmet>
-      <title>{`Spacetime Team | Dallas Web Design Agency`}</title>
+      <title>{`Spacetime Team 💪 a Dallas web design agency`}</title>
       <meta name="description" content="Spacetime is a Dallas web design agency building meaningful digital experiences to delight and amaze customers" />
       <meta name="keywords" content="dallas web design, experience designer, us designer, business informatics, brand designer, software developer" />
       <link rel="canonical" href={`${config.siteUrl}/team/`} />

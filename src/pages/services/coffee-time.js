@@ -12,7 +12,7 @@ const StartupServicesPage = ({ transition }) => (
   <div className="service-page content-page" style={{backgroundColor: '#c0b282'}}>
 
     <Helmet
-      title={`Coffee Time ☕️| Business Strategy over coffee - Spacetime`}
+      title={`Coffee Time ☕️  business strategy over coffee ${config.separator} Spacetime`}
       meta={[
         { name: 'description', content: 'Before committing thousands of dollars toward a project, sit down for a cup of coffee and strong business strategy' },
         { name: 'keywords', content: 'business strategy' },
@@ -151,7 +151,7 @@ const StartupServicesPage = ({ transition }) => (
         <ServicePagePagination
           name={`technical-seo`}
           title={`Technical SEO`}
-          description={`SEO services for a lean mean search engine optimization machine`}
+          description={`for a lean mean search engine optimization machine`}
           icon={`🔍`}
           iconPath={``}
           bgColor={`#86fc9e`}

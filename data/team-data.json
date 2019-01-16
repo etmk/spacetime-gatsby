@@ -7,7 +7,7 @@
     }, {
       "avatar": "/avatars/chase-hilbert-avatar.jpg",
       "name": "Chase Hilbert",
-      "role": "Business Informatics"
+      "role": "Business Management"
     }, {
       "avatar": "/avatars/amanda-fischelli-avatar.jpg",
       "name": "Amanda Fischelli",
@@ -51,12 +51,12 @@
       "avatar": "/avatars/full-swing-studio-avatar.jpg",
       "name": "Full Swing Studio",
       "role": "Brand Identity",
-      "url": ""
+      "url": "https://www.fullswing.studio/"
     }, {
       "avatar": "/avatars/ellym-avatar.jpg",
       "name": "Ellym",
       "role": "Application Development",
-      "url": ""
+      "url": "http://www.ellym.co/"
     }, {
       "avatar": "/avatars/good-folks-studio-avatar.jpg",
       "name": "Goodfolks",
@@ -66,7 +66,7 @@
       "avatar": "/avatars/t-co-avatar.jpg",
       "name": "T&Co",
       "role": "Software Consulting",
-      "url": ""
+      "url": "https://tornow.co/"
     }
   ]
 }
