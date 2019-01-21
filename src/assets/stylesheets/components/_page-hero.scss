@@ -18,7 +18,13 @@
   padding: 5rem 0 5rem;
 
   @media screen and (min-width: 33em) {
-    padding: 14rem 0 8rem; //8rem 0 8rem;
+    padding: 14rem 0 8rem;
+  }
+
+  &.large-hero {
+    @media screen and (min-width: 33em) {
+      padding: 20rem 0 8rem;
+    }
   }
 
   &.noise::after {

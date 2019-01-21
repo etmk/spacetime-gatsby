@@ -4,7 +4,8 @@ import Link   from 'gatsby-link'
 import Img    from 'gatsby-image'
 
 import config from '../../data/site-config'
-import bg from '../assets/images/backgrounds/spacetime-background.jpg'
+import team   from '../../data/team-data.json'
+
 import MainWrapper from '../layouts/MainWrapper/MainWrapper'
 import StartupDream from '../components/HomeFeatures/StartupDream'
 import HomeWelcome from '../components/HomeFeatures/HomeWelcome'
@@ -31,7 +32,7 @@ class IndexPage extends React.Component {
           }}
         />
 
-        <section id="PageHero" className="page-hero bg-deep-purple">
+        <section id="PageHero" className="page-hero bg-black">
 
           <div className="page-hero__content row" style={transition && transition.style}>
             <h1 className="page-hero__headline white">We&rsquo;re in the business of design&mdash;<span>and the design of extraordinary business</span></h1>
@@ -43,7 +44,6 @@ class IndexPage extends React.Component {
               </div>
             </Link>
           </div>
-          <img src={bg} className="page-hero__image scaleIn" alt="Spacetime background image" />
 
         </section>
 
@@ -57,8 +57,8 @@ class IndexPage extends React.Component {
 
           <section className="pv6 bg-white">
             <div className="row mb5">
-              <h3 className="ttu f7 fw7 tracked blue">&mdash;Services</h3>
-              <h2 className="t-headline">Tell us what you want to achieve,<br />we'll help you get there</h2>
+              <h4 className="ttu f7 fw7 tracked blue mt0">&mdash;Services</h4>
+              <h3 className="t-headline">Tell us what you want to achieve,<br />we'll help you get there</h3>
               <p className="measure">We provide a broad range of services&mdash;focusing on smart efforts that act as value multipliers. So, whether you are starting a brand new business or growing to new heights, Spacetime is ready to step-in as a strategic partner for&nbsp;the&nbsp;journey.</p>
               <p>What do you need help with? Pick your poison ☠️</p>
             </div>
@@ -95,8 +95,35 @@ class IndexPage extends React.Component {
                 cta={`The ultimate WordPress hosting`} />
 
             </div>
-            <div className="row pv5">
+            <div className="row pt5">
               <Link to="/services/" className="black dim">All Spacetime Services 👉</Link>
+            </div>
+          </section>
+
+          <hr className="b--fog-white" />
+
+          <section className="pv6 bg-white">
+            <div className="row mb5 cf">
+
+              <div className="w-30-l fl-l">
+                <h4 className="ttu f7 fw7 tracked blue mt0">&mdash;Team</h4>
+                <h3 className="t-headline">Meet the team that makes the magic happen&nbsp;🔮</h3>
+                <p className="measure">No, we're not superheroes and we're not magicians. We are simply humble purveyors of business and builders of&nbsp;technology.</p>
+                <p><Link to="/team/" className="black dim">Meet the whole team 👉</Link></p>
+              </div>
+
+              <div className="w-60-l fr-l">
+                <ul className="list pa0 flex flex-wrap justify-evenly justify-start-l mv4 mw8">
+                  {team.people.slice(0, 5).map(member => (
+                    <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={member.name}>
+                      <img src={member.avatar} className="br-100 mw4 ma2" alt={member.name} />
+                      <h4 className="f5 fw7 mv1">{member.name}</h4>
+                      <p className="f7 black-50 mt0">{member.role}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
             </div>
           </section>
 

@@ -35,7 +35,7 @@ const StartupServicesPage = ({ transition }) => (
 
       <MainWrapper>
 
-        <section className="pv6 bg-near-white">
+        <section id="jumpTo" className="pv6 bg-near-white">
           <div className="row">
             <span className="dark-purple f6 fw8 o-60">TL;DR</span>
             <h3 className="f3 f1-ns fw4 system-sans lh-title">People need to find your website. Search engines recommend your website if they like you. We make search engines like you 😉</h3>
