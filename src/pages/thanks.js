@@ -8,7 +8,7 @@ import PageHero from '../components/PageHero'
 
 
 const ThanksPage = ({ transition }) => (
-  <div>
+  <div className="bg-light-blue">
     <Helmet
       title={`Thanks 📬 ${config.siteTitle}`}
       meta={[

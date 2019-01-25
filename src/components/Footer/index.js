@@ -60,6 +60,14 @@ const Footer = () => (
                 Contact
               </Link>
             </li>
+            <li>
+              <Link
+                to="/talks/"
+                title="Talks"
+                className="f3 fw7 white hover-red mb3 dib">
+                Talks
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

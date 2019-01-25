@@ -109,7 +109,7 @@ class IndexPage extends React.Component {
                 <h4 className="ttu f7 fw7 tracked blue mt0">&mdash;Team</h4>
                 <h3 className="t-headline">Meet the team that makes the magic happen&nbsp;🔮</h3>
                 <p className="measure">No, we're not superheroes and we're not magicians. We are simply humble purveyors of business and builders of&nbsp;technology.</p>
-                <p><Link to="/team/" className="black dim">Meet the whole team 👉</Link></p>
+                <Link to="/team/" className="black dim">Meet the whole team 👉</Link>
               </div>
 
               <div className="w-60-l fr-l">
