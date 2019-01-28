@@ -20,6 +20,9 @@ const StartupServicesPage = ({ transition }) => (
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/technical-seo/` }
       ]}
+      bodyAttributes={{
+        class: 'dark-theme'
+      }}
     />
 
     <div style={transition && transition.style}>
@@ -31,7 +34,7 @@ const StartupServicesPage = ({ transition }) => (
         icon={`🔍`}
         iconPath={``}
         bgColor={`#86fc9e`}
-        textColor={``} />
+        textColor={`black`} />
 
       <MainWrapper>
 

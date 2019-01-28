@@ -20,6 +20,9 @@ const WebsitesPage = ({ transition }) => (
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/websites/` }
       ]}
+      bodyAttributes={{
+        class: 'dark-theme'
+      }}
     />
 
     <div style={transition && transition.style}>

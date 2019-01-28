@@ -20,13 +20,9 @@ const ServicesPage = ({ transition }) => (
       ]}
     />
 
-    <section id="PageHero" className="page-hero bg-yellow" style={transition && transition.style}>
-
-      <div className="page-hero__content row">
+    <PageHero>
         <h1 className="t-headline">A very particular set of skills&mdash;<span className="t-headline__alt">acquired over a very long career</span></h1>
-      </div>
-
-    </section>
+    </PageHero>
 
     <MainWrapper>
 

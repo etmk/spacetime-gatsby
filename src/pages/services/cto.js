@@ -20,6 +20,9 @@ const CtoPage = ({ transition }) => (
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/cto/` }
       ]}
+      bodyAttributes={{
+        class: 'dark-theme'
+      }}
     />
 
     <div style={transition && transition.style}>

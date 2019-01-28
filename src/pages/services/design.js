@@ -20,6 +20,9 @@ const DesignServicesPage = ({ transition }) => (
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/design/` }
       ]}
+      bodyAttributes={{
+        class: 'dark-theme'
+      }}
     />
 
     <div style={transition && transition.style}>
@@ -31,7 +34,7 @@ const DesignServicesPage = ({ transition }) => (
         icon={`🎨`}
         iconPath={``}
         bgColor={`#cd96e5`}
-        textColor={``} />
+        textColor={`black`} />
 
       <MainWrapper>
         <section id="table-of-content" className="pv4">

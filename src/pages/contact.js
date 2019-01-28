@@ -25,14 +25,12 @@ class ContactPage extends React.Component {
           ]}
         />
 
-        <div style={transition && transition.style}>
+        <div>
 
-          <section id="PageHero" className="page-hero bg-fog-white">
-            <div className="page-hero__content row">
-              <div className="page-hero__headline"><em>Howdy!</em></div>
-              <h1 className="page-hero__headline">Get in touch, tell us what you want to talk about&mdash;<span>business, projects, jobs, movies, kids, whatever</span></h1>
-            </div>
-          </section>
+          <PageHero>
+            <div className="t-headline i">Howdy!</div>
+            <h1 className="t-headline">Get in touch, tell us what you want to talk about&mdash;<span className="t-headline__alt">business, projects, jobs, movies, kids, whatever</span></h1>
+          </PageHero>
 
           <MainWrapper>
 

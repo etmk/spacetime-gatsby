@@ -22,15 +22,12 @@ const PortfolioPage = ({ transition }) => (
     ]}
   />
 
-    <section id="PageHero" className="page-hero bg-near-white" style={transition && transition.style}>
+    <PageHero>
+        <h3 className="t-headline">Good looking work isn&rsquo;t good enough&mdash;<span className="o-40">good work delivers great results beyond the imagination</span></h3>
 
-      <div className="page-hero__content row">
-        <h3 className="t-headline">Good looking work isn&rsquo;t good enough&mdash;<span className="t-headline__alt">good work delivers great results beyond the imagination</span></h3>
+        <h1 className="f5 fw4 lh-copy o-40">We believe a great design portfolio speaks for itself.</h1>
 
-        <h1 className="f5 fw4 lh-copy black-80">We believe a great design portfolio speaks for itself.</h1>
-      </div>
-
-    </section>
+    </PageHero>
 
     <MainWrapper>
 

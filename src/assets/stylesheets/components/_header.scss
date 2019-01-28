@@ -11,10 +11,10 @@ $header-md-breakpoint: 37em;
 // --
 // container
 .site-header {
+  color: rgba(map-get($colors, white), .9);
 
   @media screen and (max-width: $screen-small) {
     height: auto !important;
-    color: rgba(map-get($colors, white), .9);
 
     .black-logo {
       display: none;
@@ -105,10 +105,10 @@ $header-md-breakpoint: 37em;
     left: 0;
     right: 0;
     z-index: 10;
-    color: map-get($colors, black);
+    // color: map-get($colors, black);
 
     a {
-      color: map-get($colors, black);
+      // color: map-get($colors, black);
 
       &:hover {
         color: inherit;
@@ -123,8 +123,8 @@ $header-md-breakpoint: 37em;
     .site-nav {
       display: flex;
       justify-content: center;
-      border-bottom: 1px solid rgba(black, .1);
-      padding: $nav-padding-top 0 0;
+      // border-bottom: 1px solid rgba(black, .1);
+      // padding: $nav-padding-top 0 0;
     }
 
     &__logo {
@@ -134,7 +134,7 @@ $header-md-breakpoint: 37em;
         max-width: none;
         width: 1.75rem;
 
-        &.white-logo {
+        &.black-logo {
           display: none;
         }
       }
@@ -213,12 +213,12 @@ $header-md-breakpoint: 37em;
     &--pinned {
 
       .site-header__content {
-        color: rgba(map-get($colors, white), .9);
+        color: rgba(map-get($colors, white), .9) !important;
         background-color: rgba(map-get($colors, black), 1);
         transition: $global-transition;
 
         a {
-          color: rgba(map-get($colors, white), .9);
+          color: rgba(map-get($colors, white), .9) !important;
 
           &.active,
           &:focus,
@@ -285,7 +285,14 @@ $header-md-breakpoint: 37em;
 .dark-theme .site-header {
 
   a {
-    // color: map-get($colors, black);
+    color: map-get($colors, black);
+  }
+
+  .white-logo {
+    display: none;
+  }
+  .black-logo {
+    display: inline-block !important;
   }
 }
 
@@ -308,6 +315,6 @@ $header-md-breakpoint: 37em;
   }
 
   .site-nav {
-    border-color: rgba(white, .2);
+    // border-color: rgba(white, .2);
   }
 }

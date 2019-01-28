@@ -20,6 +20,9 @@ const StartupServicesPage = ({ transition }) => (
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/coffee-time/` }
       ]}
+      bodyAttributes={{
+        class: 'dark-theme'
+      }}
     />
 
     <div style={transition && transition.style}>
@@ -31,7 +34,7 @@ const StartupServicesPage = ({ transition }) => (
         icon={`☕️`}
         iconPath={``}
         bgColor={`#c0b282`}
-        textColor={``} />
+        textColor={`black`} />
 
       <MainWrapper>
 

@@ -22,6 +22,9 @@ const StartupServicesPage = ({ transition }) => (
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/startups/` }
       ]}
+      bodyAttributes={{
+        class: 'dark-theme'
+      }}
     />
 
     <div style={transition && transition.style}>
