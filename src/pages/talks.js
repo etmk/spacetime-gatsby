@@ -16,16 +16,9 @@ const TalksPage = ({ transition }) => (
       <link rel="canonical" href={`${config.siteUrl}/talks/`} />
     </Helmet>
 
-    <section id="PageHero" className="page-hero pb7-l" style={transition && transition.style}>
-
-      <div className="page-hero__content row">
-        <div className="fl-l w-60-l">
-          <h1 className="t-headline">Speaking Events&mdash;<span className="t-headline__alt">straight from the horses mouth</span></h1>
-          <h3 className="f5 fw4 lh-copy black-80">Various talks and presentation from the Spacetime team</h3>
-        </div>
-      </div>
-
-    </section>
+    <PageHero>
+      <h1 className="t-headline">Speaking Events&mdash;<span className="o-40">straight from the horses mouth</span></h1>
+    </PageHero>
 
     <MainWrapper>
 
