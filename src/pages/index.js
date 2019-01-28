@@ -116,7 +116,6 @@ class IndexPage extends React.Component {
           <HomeTestimonials />
 
         </MainWrapper>
-Module build failed: SyntaxError: Unterminated JSX contents
       </div>
     );
   }
