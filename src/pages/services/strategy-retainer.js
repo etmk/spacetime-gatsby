@@ -1,15 +1,17 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const StrategyRetainerPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#5A62FF'}}>
+  <Layout className="service-page content-page" style={{backgroundColor: '#5A62FF'}}>
 
     <Helmet
       title={`Strategy Retainer 🎯 ${config.siteTitle}`}
@@ -87,7 +89,7 @@ const StrategyRetainerPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default StrategyRetainerPage

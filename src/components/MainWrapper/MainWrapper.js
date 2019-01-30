@@ -1,5 +1,4 @@
 import React from 'react'
-import config from '../../../data/site-config'
 
 class MainWrapper extends React.Component {
   render() {

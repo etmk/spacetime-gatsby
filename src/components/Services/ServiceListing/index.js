@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import { Link } from "gatsby"
 
 class ServiceListing extends React.Component {
   getPostList() {
@@ -36,4 +36,4 @@ class ServiceListing extends React.Component {
   }
 }
 
-export default ServiceListing;
+export default ServiceListing

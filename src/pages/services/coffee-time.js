@@ -1,15 +1,18 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
+import Emoji from 'a11y-react-emoji'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const StartupServicesPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#c0b282'}}>
+  <Layout className="service-page content-page" style={{backgroundColor: '#c0b282'}}>
 
     <Helmet
       title={`Coffee Time ☕️  business strategy over coffee ${config.separator} Spacetime`}
@@ -55,7 +58,7 @@ const StartupServicesPage = ({ transition }) => (
 
             <p>At this point you may be scratching your head a bit and questioning what I'm saying. What's the worry? Why should I slow down? I need to move fast and have someone build this idea before someone else beats me to it.</p>
 
-            <p className="relative"><span className="absolute top-0 left--3 f2">👇</span>Here are a few real scenarios to learn from, names have been changed to protect the innocent:</p>
+            <p className="relative"><span className="absolute top-0 left--3 f2"><Emoji symbol="👇" label="hand pointing down"/></span>Here are a few real scenarios to learn from, names have been changed to protect the innocent:</p>
 
             <div className="mv4 mv3-l pa0 f5">
               <p className="blue system-sans mv4 ph3 pb4 bb b--black-10">Mickey has a great app idea. He hires a big name agency to help take his app to market. Mickey has complete trust the agency has the best of intentions (and they probably do). Mickey works with the agency for the next 10 months and pays $150,000 before the agency lands on rough times and regretfully discontinues working with Mickey. Mickey walks away with good ideas and good intentions scribbled on papers and pretty designs. But he is out $150k and does not have a product to take to market. Ouch!</p>
@@ -94,18 +97,18 @@ const StartupServicesPage = ({ transition }) => (
                   <tbody className="">
                     <tr className="stripe-dark">
                       <td className="pa3">Risk</td>
-                      <td className="pa3">🐶</td>
-                      <td className="pa3">🦂 🕷 🦖 🦇</td>
+                      <td className="pa3"><Emoji symbol="🐶" label="cute puppy"/></td>
+                      <td className="pa3"><Emoji symbol="🦂 🕷 🦖 🦇" label="scary creatures"/></td>
                     </tr>
                     <tr className="stripe-dark">
                       <td className="pa3">Cost</td>
-                      <td className="pa3">💵</td>
-                      <td className="pa3">💰 💰 💰 💰 💰</td>
+                      <td className="pa3"><Emoji symbol="💵" label="small amount of money"/></td>
+                      <td className="pa3"><Emoji symbol="💰 💰 💰 💰 💰" label="multiple bags of money"/></td>
                     </tr>
                     <tr className="stripe-dark">
                       <td className="pa3">Time</td>
-                      <td className="pa3">⏳</td>
-                      <td className="pa3">⏰ ⏰ ⏰ ⏰</td>
+                      <td className="pa3"><Emoji symbol="⏳" label="a single hour glass"/></td>
+                      <td className="pa3"><Emoji symbol="⏰ ⏰ ⏰ ⏰" label="multiple clocks"/></td>
                     </tr>
                   </tbody>
                 </table>
@@ -132,7 +135,7 @@ const StartupServicesPage = ({ transition }) => (
           <div className="row narrow">
             <h3 className="f3 fw7 mb1">Guaranteed, or Your Money&nbsp;Back</h3>
 
-            <p>The fee for Coffee Time is $500, and we'll buy the coffee 😉</p>
+            <p>The fee for Coffee Time is $500, and we'll buy the coffee <Emoji symbol="😉" label="winking face"/></p>
 
             <p>We guarantee you will walk away from Coffee Time with answers to your questions and new questions to answer. In fact, we're so certain you will find Coffee Time incredibly insightful and valuable we offer a money back guarantee. If after our time together you decide the conversation provided zero value we will refund you&nbsp;in&nbsp;full.</p>
 
@@ -162,7 +165,7 @@ const StartupServicesPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default StartupServicesPage

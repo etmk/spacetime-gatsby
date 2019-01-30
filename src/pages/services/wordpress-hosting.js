@@ -1,16 +1,17 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import PricingTable from '../../components/PricingTable'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const WordPressHostingPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#21759B'}}>
+  <Layout className="service-page content-page" style={{backgroundColor: '#21759B'}}>
 
     <Helmet
       title={`WordPress Hosting ⚡️ blazing fast, incredibly secure - Spacetime`}
@@ -129,7 +130,7 @@ const WordPressHostingPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default WordPressHostingPage

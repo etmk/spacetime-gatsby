@@ -1,14 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
+import Emoji from 'a11y-react-emoji'
 
 import config from '../../data/site-config'
-import PageHero from '../components/PageHero'
 
-
+import Layout from '../components/layout'
 
 const ThanksPage = ({ transition }) => (
-  <div className="bg-light-blue">
+  <Layout className="bg-light-blue">
     <Helmet
       title={`Thanks 📬 ${config.siteTitle}`}
       meta={[
@@ -38,32 +38,35 @@ const ThanksPage = ({ transition }) => (
                 to="/"
                 title="Home"
                 className="dib fw6 black dim">
-                  🏡 Home
-                </Link><br />
+                  <Emoji symbol="🏡" label="home"/> Home
+                </Link>
+                <br />
                 <Link
                   to="/portfolio/"
                   title="Portfolio"
                   className="dib fw6 black dim">
-                  💼 Portfolio
-                </Link><br />
+                  <Emoji symbol="💼" label="briefcase"/> Portfolio
+                </Link>
+                <br />
                 <Link
                   to="/services/"
                   title="Services"
                   className="dib fw6 black dim">
-                  🛠 Services
-                </Link><br />
+                  <Emoji symbol="🛠" label="tool"/> Services
+                </Link>
+                <br />
                 <Link
                   to="/team/"
                   title="Team"
                   className="dib fw6 black dim">
-                  💪 Team
+                  <Emoji symbol="💪" label="strong arm"/> Team
                 </Link>
                 <br />
                 <Link
                   to="/contact/"
                   title="Contact"
                   className="dib fw6 black dim">
-                  📪 Contact
+                  <Emoji symbol="📪" label="mailbox"/> Contact
                 </Link>
             </div>
 
@@ -74,7 +77,7 @@ const ThanksPage = ({ transition }) => (
 
     </section>
 
-  </div>
+  </Layout>
 )
 
 export default ThanksPage

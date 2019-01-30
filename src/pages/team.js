@@ -1,15 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 
 import config from '../../data/site-config'
-import MainWrapper from '../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../components/layout'
+import MainWrapper from '../components/MainWrapper/MainWrapper'
 import PageHero from '../components/PageHero'
 import TeamMembers from '../components/Team/TeamMembers'
 import TeamMantra from '../components/Team/TeamMantra'
 
 const TeamPage = ({ transition }) => (
-  <div>
+  <Layout>
     <Helmet>
       <title>{`Spacetime Team 💪 a Dallas web design agency`}</title>
       <meta name="description" content="Spacetime is a Dallas web design agency building meaningful digital experiences to delight and amaze customers" />
@@ -44,7 +45,7 @@ const TeamPage = ({ transition }) => (
 
     </MainWrapper>
 
-  </div>
+  </Layout>
 )
 
 export default TeamPage

@@ -1,15 +1,17 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import Emoji from 'a11y-react-emoji'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const StartupServicesPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#86fc9e'}}>
+  <Layout className="service-page content-page" style={{backgroundColor: '#86fc9e'}}>
 
     <Helmet
       title={`Technical SEO 🔍 search engine optimization for stellar results`}
@@ -41,7 +43,7 @@ const StartupServicesPage = ({ transition }) => (
         <section id="jumpTo" className="pv6 bg-near-white">
           <div className="row">
             <span className="dark-purple f6 fw8 o-60">TL;DR</span>
-            <h3 className="f3 f1-ns fw4 system-sans lh-title">People need to find your website. Search engines recommend your website if they like you. We make search engines like you 😉</h3>
+            <h3 className="f3 f1-ns fw4 system-sans lh-title">People need to find your website. Search engines recommend your website if they like you. We make search engines like you <Emoji symbol="😉" label="winking face"/></h3>
           </div>
         </section>
 
@@ -218,7 +220,7 @@ const StartupServicesPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default StartupServicesPage

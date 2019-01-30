@@ -1,17 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import Emoji from 'a11y-react-emoji'
 
 import config                from '../../../data/site-config'
-import MainWrapper           from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout                from '../../components/layout'
+import MainWrapper           from '../../components/MainWrapper/MainWrapper'
 import ServiceRecommendation from '../../components/Services/ServiceRecommendation'
 import ContactForm           from '../../components/ContactForm'
 import ServicePageHero       from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const StartupServicesPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#F03F47'}}>
+  <Layout className="service-page content-page" style={{backgroundColor: '#F03F47'}}>
 
     <Helmet
       title={`Startups 🚀 from startup mvp to viable business`}
@@ -110,7 +112,7 @@ const StartupServicesPage = ({ transition }) => (
             <p className="mt1">If you have a brand new startup idea but have not validated the idea or audience this could be what you need. We use a series of research, design, prototyping, and user testing to explore a concept with a goal in mind. Sometimes that goal is to create a visual concept, or build a prototype to test on potential customers, or even in preparation to raise venture capital.</p>
 
             <div className="ba b--blue mh0 mt4 mb5 pa4 br1">
-              <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight 🔦</h5>
+              <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight <Emoji symbol="" label="spotlight"/></h5>
               <p className="f6 sans-serif blue mb0">We worked with <strong>DropIn</strong> to design a concept the team could use to seek venture capital. We created visual branding and app interface flows to demonstrate the user experience and value proposition. We also developed a live app scaffold reflecting our findings in the design. The app wasn't full functioning, but provided real data and an MVP experience.</p>
             </div>
 
@@ -281,7 +283,7 @@ const StartupServicesPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default StartupServicesPage

@@ -1,15 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const WebsitesPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#1DE9B6'}}>
+  <Layout className="service-page content-page" style={{backgroundColor: '#1DE9B6'}}>
 
     <Helmet
       title={`Websites 🕸 responsive and mobile website design ${config.separator} Spacetime`}
@@ -90,7 +91,7 @@ const WebsitesPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default WebsitesPage

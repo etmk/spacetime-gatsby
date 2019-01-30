@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class PortfolioCard extends React.Component {

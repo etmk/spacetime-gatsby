@@ -1,15 +1,18 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
+import Emoji from 'a11y-react-emoji'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const CtoPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#EA5500'}}>
+  <Layout className="service-page content-page" style={{backgroundColor: '#EA5500'}}>
 
     <Helmet
       title={`CTO as a Service 💎 hire an interim Chief Technology Officer`}
@@ -61,24 +64,24 @@ const CtoPage = ({ transition }) => (
 
             <p>If you are technical or have a technical co-founder, perfect, you're probably good to go. But if you don't, you should hire a CTO, well, sort&nbsp;of&hellip;</p>
 
-            <p>You could hire a C-level executive to your team. But that brings a whole new set of challenges to your business, including a hefty salary. The median <a href="https://www1.salary.com/Chief-Technology-Officer-Salary.html" target="_blank">CTO salary in the United States is $233,705</a>. Whew, that's a lot of dough to shell out for an early stage business. Money that you probably should spend elsewhere, like on programmers, services, and infrastructure.</p>
+            <p>You could hire a C-level executive to your team. But that brings a whole new set of challenges to your business, including a hefty salary. The median <a href="https://www1.salary.com/Chief-Technology-Officer-Salary.html" target="_blank" rel="noopener noreferrer">CTO salary in the United States is $233,705</a>. Whew, that's a lot of dough to shell out for an early stage business. Money that you probably should spend elsewhere, like on programmers, services, and infrastructure.</p>
 
             <p>Let's do a simple math comparison:</p>
 
             <div className="bb bt b--black-10 mh0 mv4 ph2 pv4 nl5 nr5">
               <div className="overflow-auto flex items-center">
                 <div className="w-40 tc">
-                  <span className="f2 pa2 dib mb2">🧔</span>
+                  <span className="f2 pa2 dib mb2"><Emoji symbol="🧔" label="human"/></span>
                   <h5 className="f3 pa0 ma0">1 CTO</h5>
                   <p className="system-sans mv2 fw6 deep-purple o-70">$233,705</p>
                 </div>
                 <div className="w-10 ttu fw7 tracked dark-purple o-50">or</div>
                 <div className="w-40">
                   <ul className="list system-sans lh-copy dark-purple f5 fw5 ma0">
-                    <li className="mv2">🧑 4 Employees</li>
-                    <li className="mv2">⏳ 7,776 Overseas Dev Hours</li>
-                    <li className="mv2">📦 1 Marketable MVP</li>
-                    <li className="mv2">🍔 43,962 Big Macs</li>
+                    <li className="mv2"><Emoji symbol="🧑" label="human"/> 4 Employees</li>
+                    <li className="mv2"><Emoji symbol="⏳" label="hourglass"/> 7,776 Overseas Dev Hours</li>
+                    <li className="mv2"><Emoji symbol="📦" label="box"/> 1 Marketable MVP</li>
+                    <li className="mv2"><Emoji symbol="🍔" label="hamburger"/> 43,962 Big Macs</li>
                   </ul>
                 </div>
               </div>
@@ -99,7 +102,7 @@ const CtoPage = ({ transition }) => (
 
             <p><em>Eventually</em>, our interim CTO service will need to be replaced by a full-time CTO, because you will keep growing and win, right? But for now, what you need is a dedicated and experienced partner to help make wise choices, cultivate your team, and build your product.</p>
 
-            <p><Link to="/team/">We've got your back.</Link></p>
+            <p><Link to="/team/" rel="noopener noreferrer">We've got your back.</Link></p>
 
           </div>
         </section>
@@ -125,7 +128,7 @@ const CtoPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default CtoPage

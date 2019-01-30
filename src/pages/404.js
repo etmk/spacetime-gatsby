@@ -1,13 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 
 import config from '../../data/site-config'
-import MainWrapper from '../layouts/MainWrapper/MainWrapper'
-import PageHero from '../components/PageHero'
+
+import Layout from '../components/layout'
+import MainWrapper from '../components/MainWrapper/MainWrapper'
 
 const NotFoundPage = ({transition}) => (
-  <div>
+  <Layout>
     <Helmet
       title={`404 😵 ${config.separator} ${config.siteTitle}`}
       meta={[
@@ -29,11 +30,11 @@ const NotFoundPage = ({transition}) => (
           <p className="white measure-narrow center sans-serif">That means something went wrong (in layman's terms). If you can't find what you're looking for <Link to="/contact/" className="blue hover-blue">send&nbsp;us&nbsp;a&nbsp;message</Link> and we will help!</p>
 
         </div>
-        <img src="/bgs/404-lost.gif" className="w-100 absolute top-0 right-0 z-0 o-40" alt="Spacetime background image" />
+        <img src="/bgs/404-lost.gif" className="w-100 absolute top-0 right-0 z-0 o-40" alt="John Travolta scene from Resevoir Dogs where he is lost" />
       </section>
 
     </MainWrapper>
-  </div>
+  </Layout>
 )
 
 export default NotFoundPage
