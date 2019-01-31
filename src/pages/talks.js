@@ -1,14 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import config from '../../data/site-config'
-import MainWrapper from '../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../components/layout'
+import MainWrapper from '../components/MainWrapper/MainWrapper'
 import PageHero from '../components/PageHero'
 
-const TalksPage = ({ transition }) => (
-  <div>
+const TalksPage = () => (
+  <Layout>
     <Helmet>
       <title>{`Speaking Events 🎙 Spacetime public talks and presentations`}</title>
       <meta name="description" content="Speaking events. Slide decks from various public speaking events by the Spacetime team." />
@@ -34,7 +35,7 @@ const TalksPage = ({ transition }) => (
             </OutboundLink></p>
           </div>
           <div className="w-50-ns">
-            <iframe src="//www.slideshare.net/slideshow/embed_code/key/D1HLYVB92MFViw" width="595" height="485" frameBorder="0" marginWidth="0" marginHeight="0" scrolling="no" allowFullScreen></iframe>
+            <iframe title="Startups for Non-Technical Founders Slide Presentation" src="//www.slideshare.net/slideshow/embed_code/key/D1HLYVB92MFViw" width="595" height="485" frameBorder="0" marginWidth="0" marginHeight="0" scrolling="no" allowFullScreen></iframe>
           </div>
         </div>
       </section>
@@ -53,7 +54,7 @@ const TalksPage = ({ transition }) => (
 
     </MainWrapper>
 
-  </div>
+  </Layout>
 )
 
 export default TalksPage

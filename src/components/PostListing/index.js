@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import { Link } from 'gatsby'
 
 class PostListing extends React.Component {
   getPostList() {
@@ -38,4 +38,4 @@ class PostListing extends React.Component {
   }
 }
 
-export default PostListing;
+export default PostListing

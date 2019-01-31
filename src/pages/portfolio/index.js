@@ -1,15 +1,17 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import PageHero from '../../components/PageHero'
 import PortfolioCard from '../../components/Portfolio/PortfolioCard'
 import ClientList from '../../components/ClientList'
 
-const PortfolioPage = ({ transition }) => (
-  <div className="bg-near-white">
+const PortfolioPage = () => (
+  <Layout className="bg-near-white">
 
   <Helmet
     title={`Portfolio 💼 work in the Spacetime design portfolio`}
@@ -119,7 +121,7 @@ const PortfolioPage = ({ transition }) => (
             <Link
               to="/contact/"
               className="f6 fw5 link br1 ph3 pv3 mt4 dib white bg-dark-red dim">
-                Let's talk about your project →
+                Let&rsquo;s talk about your project →
             </Link>
           </div>
           <div className="fl-l w-50-l bt bw1 b--white-10 pt4 pa0-l bw0-l">
@@ -129,7 +131,7 @@ const PortfolioPage = ({ transition }) => (
       </section>
 
     </MainWrapper>
-  </div>
+  </Layout>
 )
 
 export default PortfolioPage

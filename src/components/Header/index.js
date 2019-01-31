@@ -1,6 +1,6 @@
 import React from 'react'
 import Headroom from 'react-headroom'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import config from '../../../data/site-config'
 import black_logo from '../../assets/images/logos/spacetime-icon-black.svg'

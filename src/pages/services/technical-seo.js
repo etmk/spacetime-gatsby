@@ -1,15 +1,17 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import Emoji from 'a11y-react-emoji'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
-const StartupServicesPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#86fc9e'}}>
+const StartupServicesPage = () => (
+  <Layout className="service-page content-page" style={{backgroundColor: '#86fc9e'}}>
 
     <Helmet
       title={`Technical SEO 🔍 search engine optimization for stellar results`}
@@ -25,7 +27,7 @@ const StartupServicesPage = ({ transition }) => (
       }}
     />
 
-    <div style={transition && transition.style}>
+    <div>
 
       <ServicePageHero
         name={`technical-seo`}
@@ -41,7 +43,7 @@ const StartupServicesPage = ({ transition }) => (
         <section id="jumpTo" className="pv6 bg-near-white">
           <div className="row">
             <span className="dark-purple f6 fw8 o-60">TL;DR</span>
-            <h3 className="f3 f1-ns fw4 system-sans lh-title">People need to find your website. Search engines recommend your website if they like you. We make search engines like you 😉</h3>
+            <h3 className="f3 f1-ns fw4 system-sans lh-title">People need to find your website. Search engines recommend your website if they like you. We make search engines like you <Emoji symbol="😉" label="winking face"/></h3>
           </div>
         </section>
 
@@ -64,7 +66,7 @@ const StartupServicesPage = ({ transition }) => (
 
             <p>Both robots and humans like fast websites, so if your website is optimized for performance and changes from a 6 second load time to less than 2 seconds&mdash;well, you just made the robots and humans happier.</p>
 
-            <p>Search engine robots will compare your 2 second website load speed to your competitor's website with a 5 second load speed when determining which to show a customer.</p>
+            <p>Search engine robots will compare your 2 second website load speed to your competitor&rsquo;s website with a 5 second load speed when determining which to show a customer.</p>
 
             <p>Which do you think the search engine considers "better" based solely on website load speed?</p>
 
@@ -104,7 +106,7 @@ const StartupServicesPage = ({ transition }) => (
 
             <h3>SEO is not a magic bullet</h3>
 
-            <p>There's not a SEO button to flip on. SEO will not magically make your business explode or multiply your web traffic. SEO will not guarantee your website appears on the first page of Google.</p>
+            <p>There&rsquo;s not a SEO button to flip on. SEO will not magically make your business explode or multiply your web traffic. SEO will not guarantee your website appears on the first page of Google.</p>
 
             <p>But if you produce good content and provide a good product/service, over time SEO will act as a force multiplier in your favor.</p>
 
@@ -218,7 +220,7 @@ const StartupServicesPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default StartupServicesPage

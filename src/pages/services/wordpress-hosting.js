@@ -1,16 +1,17 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import PricingTable from '../../components/PricingTable'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
-const WordPressHostingPage = ({ transition }) => (
-  <div className="service-page content-page" style={{backgroundColor: '#21759B'}}>
+const WordPressHostingPage = () => (
+  <Layout className="service-page content-page" style={{backgroundColor: '#21759B'}}>
 
     <Helmet
       title={`WordPress Hosting ⚡️ blazing fast, incredibly secure - Spacetime`}
@@ -26,7 +27,7 @@ const WordPressHostingPage = ({ transition }) => (
       }}
     />
 
-    <div style={transition && transition.style}>
+    <div>
       <ServicePageHero
         name={`wordpress-hosting`}
         title={`WordPress Hosting`}
@@ -41,15 +42,15 @@ const WordPressHostingPage = ({ transition }) => (
           <div className="row narrow">
             <p>We offer premium WordPress hosting without the excessive expense.</p>
 
-            <p>Let's be real, <em>you</em> are a business owner. Not a technology guru or website developer. You should use your valuable time in the most beneficial way to grow your business with skill and expertise.</p>
+            <p>Let&rsquo;s be real, <em>you</em> are a business owner. Not a technology guru or website developer. You should use your valuable time in the most beneficial way to grow your business with skill and expertise.</p>
 
-            <p>Don't waste your time with hosting plans, cloud platforms, security, plugins, updates, thingy-doodads, and what-nots.</p>
+            <p>Don&rsquo;t waste your time with hosting plans, cloud platforms, security, plugins, updates, thingy-doodads, and what-nots.</p>
 
             <p>Let us handle the boring stuff so you can focus on what matters most.</p>
 
             <p>The only decision you need to make is how involved you want <em>us</em> to be. We offer three plan tiers to choose from based on your need and desired involvement by our team.</p>
 
-            <p>Get in touch and let's discuss!</p>
+            <p>Get in touch and let&rsquo;s discuss!</p>
           </div>
         </section>
 
@@ -129,7 +130,7 @@ const WordPressHostingPage = ({ transition }) => (
 
       </MainWrapper>
     </div>
-  </div>
+  </Layout>
 )
 
 export default WordPressHostingPage

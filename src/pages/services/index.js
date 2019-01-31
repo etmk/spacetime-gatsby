@@ -1,14 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import config from '../../../data/site-config'
-import MainWrapper from '../../layouts/MainWrapper/MainWrapper'
+
+import Layout from '../../components/layout'
+import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import PageHero from '../../components/PageHero'
 import ServiceCard from '../../components/Services/ServiceCard'
 
-const ServicesPage = ({ transition }) => (
-  <div className="bg-yellow">
+const ServicesPage = () => (
+  <Layout>
     <Helmet
       title={`Services 🛠 ${config.siteTitle}`}
       meta={[
@@ -152,7 +154,7 @@ const ServicesPage = ({ transition }) => (
 
     </MainWrapper>
 
-  </div>
+  </Layout>
 )
 
 export default ServicesPage
