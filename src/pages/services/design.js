@@ -9,7 +9,7 @@ import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
-const DesignServicesPage = ({ transition }) => (
+const DesignServicesPage = () => (
   <Layout className="service-page content-page" style={{backgroundColor: '#cd96e5'}}>
 
     <Helmet
@@ -26,7 +26,7 @@ const DesignServicesPage = ({ transition }) => (
       }}
     />
 
-    <div style={transition && transition.style}>
+    <div>
 
       <ServicePageHero
         name={`design`}

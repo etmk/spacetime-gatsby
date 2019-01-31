@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 import config from '../../../data/site-config'
 
@@ -10,7 +10,7 @@ import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
-const StrategyRetainerPage = ({ transition }) => (
+const StrategyRetainerPage = () => (
   <Layout className="service-page content-page" style={{backgroundColor: '#5A62FF'}}>
 
     <Helmet
@@ -27,7 +27,7 @@ const StrategyRetainerPage = ({ transition }) => (
       }}
     />
 
-    <div style={transition && transition.style}>
+    <div>
 
       <ServicePageHero
         name={`strategy-retainer`}

@@ -10,7 +10,7 @@ import ContactForm from '../../components/ContactForm'
 import ServicePageHero from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
-const StartupServicesPage = ({ transition }) => (
+const StartupServicesPage = () => (
   <Layout className="service-page content-page" style={{backgroundColor: '#86fc9e'}}>
 
     <Helmet
@@ -27,7 +27,7 @@ const StartupServicesPage = ({ transition }) => (
       }}
     />
 
-    <div style={transition && transition.style}>
+    <div>
 
       <ServicePageHero
         name={`technical-seo`}
@@ -66,7 +66,7 @@ const StartupServicesPage = ({ transition }) => (
 
             <p>Both robots and humans like fast websites, so if your website is optimized for performance and changes from a 6 second load time to less than 2 seconds&mdash;well, you just made the robots and humans happier.</p>
 
-            <p>Search engine robots will compare your 2 second website load speed to your competitor's website with a 5 second load speed when determining which to show a customer.</p>
+            <p>Search engine robots will compare your 2 second website load speed to your competitor&rsquo;s website with a 5 second load speed when determining which to show a customer.</p>
 
             <p>Which do you think the search engine considers "better" based solely on website load speed?</p>
 
@@ -106,7 +106,7 @@ const StartupServicesPage = ({ transition }) => (
 
             <h3>SEO is not a magic bullet</h3>
 
-            <p>There's not a SEO button to flip on. SEO will not magically make your business explode or multiply your web traffic. SEO will not guarantee your website appears on the first page of Google.</p>
+            <p>There&rsquo;s not a SEO button to flip on. SEO will not magically make your business explode or multiply your web traffic. SEO will not guarantee your website appears on the first page of Google.</p>
 
             <p>But if you produce good content and provide a good product/service, over time SEO will act as a force multiplier in your favor.</p>
 

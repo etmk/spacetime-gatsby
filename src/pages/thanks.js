@@ -1,13 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 import Emoji from 'a11y-react-emoji'
 
 import config from '../../data/site-config'
 
 import Layout from '../components/layout'
 
-const ThanksPage = ({ transition }) => (
+const ThanksPage = () => (
   <Layout className="bg-light-blue">
     <Helmet
       title={`Thanks 📬 ${config.siteTitle}`}
@@ -18,19 +18,19 @@ const ThanksPage = ({ transition }) => (
       ]}
     />
 
-    <section id="PageHero" className="page-hero bg-light-blue" style={transition && transition.style}>
+    <section id="PageHero" className="page-hero bg-light-blue">
 
       <div className="page-hero__content row">
         <h1 className="page-hero__headline">Thank You!</h1>
 
         <div className="">
           <div className="w-70-ns">
-            <h2 className="f2 mt0 fw7">We've received your message and will get back to you in one hot minute! Until then&hellip;</h2>
+            <h2 className="f2 mt0 fw7">We&rsquo;ve received your message and will get back to you in one hot minute! Until then&hellip;</h2>
             <p className="page-hero__text">
               Check out the rest of our site.
             </p>
             <p className="page-hero__text">
-              Sure, it's not as exciting as talking to a real live human being, but apparently the humans are away and only the robots are tending the station.
+              Sure, it&rsquo;s not as exciting as talking to a real live human being, but apparently the humans are away and only the robots are tending the station.
             </p>
 
             <div className="lh-copy f2 mv4">

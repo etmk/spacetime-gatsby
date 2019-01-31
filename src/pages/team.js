@@ -9,7 +9,7 @@ import PageHero from '../components/PageHero'
 import TeamMembers from '../components/Team/TeamMembers'
 import TeamMantra from '../components/Team/TeamMantra'
 
-const TeamPage = ({ transition }) => (
+const TeamPage = () => (
   <Layout>
     <Helmet>
       <title>{`Spacetime Team 💪 a Dallas web design agency`}</title>

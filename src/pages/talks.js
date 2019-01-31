@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 import MainWrapper from '../components/MainWrapper/MainWrapper'
 import PageHero from '../components/PageHero'
 
-const TalksPage = ({ transition }) => (
+const TalksPage = () => (
   <Layout>
     <Helmet>
       <title>{`Speaking Events 🎙 Spacetime public talks and presentations`}</title>

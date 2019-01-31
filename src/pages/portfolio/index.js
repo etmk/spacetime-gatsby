@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 import config from '../../../data/site-config'
 
@@ -10,7 +10,7 @@ import PageHero from '../../components/PageHero'
 import PortfolioCard from '../../components/Portfolio/PortfolioCard'
 import ClientList from '../../components/ClientList'
 
-const PortfolioPage = ({ transition }) => (
+const PortfolioPage = () => (
   <Layout className="bg-near-white">
 
   <Helmet
@@ -121,7 +121,7 @@ const PortfolioPage = ({ transition }) => (
             <Link
               to="/contact/"
               className="f6 fw5 link br1 ph3 pv3 mt4 dib white bg-dark-red dim">
-                Let's talk about your project →
+                Let&rsquo;s talk about your project →
             </Link>
           </div>
           <div className="fl-l w-50-l bt bw1 b--white-10 pt4 pa0-l bw0-l">

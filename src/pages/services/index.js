@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 import config from '../../../data/site-config'
 
@@ -9,7 +9,7 @@ import MainWrapper from '../../components/MainWrapper/MainWrapper'
 import PageHero from '../../components/PageHero'
 import ServiceCard from '../../components/Services/ServiceCard'
 
-const ServicesPage = ({ transition }) => (
+const ServicesPage = () => (
   <Layout>
     <Helmet
       title={`Services 🛠 ${config.siteTitle}`}

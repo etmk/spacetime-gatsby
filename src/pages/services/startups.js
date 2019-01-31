@@ -12,7 +12,7 @@ import ContactForm           from '../../components/ContactForm'
 import ServicePageHero       from '../../components/Services/ServicePageHero'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
-const StartupServicesPage = ({ transition }) => (
+const StartupServicesPage = () => (
   <Layout className="service-page content-page" style={{backgroundColor: '#F03F47'}}>
 
     <Helmet
@@ -29,7 +29,7 @@ const StartupServicesPage = ({ transition }) => (
       }}
     />
 
-    <div style={transition && transition.style}>
+    <div>
 
       <ServicePageHero
         name={`startups`}
@@ -52,7 +52,7 @@ const StartupServicesPage = ({ transition }) => (
         <section id="table-of-content" className="pv6">
           <div className="row narrow">
 
-            <p>Whether you are bootstraping or raising venture capital, building a startup is a challenge unlike other business types. At Spacetime, we've worked with a variety of startups and developed select service categories for startups that speak to the stage of your business and goal direction.</p>
+            <p>Whether you are bootstraping or raising venture capital, building a startup is a challenge unlike other business types. At Spacetime, we&rsquo;ve worked with a variety of startups and developed select service categories for startups that speak to the stage of your business and goal direction.</p>
 
             <p>We see 4 primary types of startup needs:</p>
 
@@ -75,7 +75,7 @@ const StartupServicesPage = ({ transition }) => (
                 <a href="#startup-resuscitation" className="no-underline db bg-washed-yellow hover-bg-washed-blue pv4 ph4 ph5-l br1 ba b--black-05 relative mv2 shadow-hover hover-up">
                   <span className="numeral cool">3</span>
                   <h2 className="red no-underline f3 fw7 mt0 mb2">Startup Resuscitation ⇛</h2>
-                  <p className="f6 fw5 sans-serif black-50 measure-wide ma0">You've worked on a startup for months or years but have made little progress. It's a good idea, but needs a healthy shock to get going again.</p>
+                  <p className="f6 fw5 sans-serif black-50 measure-wide ma0">You&rsquo;ve worked on a startup for months or years but have made little progress. It&rsquo;s a good idea, but needs a healthy shock to get going again.</p>
                 </a>
               </li>
               <li>
@@ -113,7 +113,7 @@ const StartupServicesPage = ({ transition }) => (
 
             <div className="ba b--blue mh0 mt4 mb5 pa4 br1">
               <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight <Emoji symbol="" label="spotlight"/></h5>
-              <p className="f6 sans-serif blue mb0">We worked with <strong>DropIn</strong> to design a concept the team could use to seek venture capital. We created visual branding and app interface flows to demonstrate the user experience and value proposition. We also developed a live app scaffold reflecting our findings in the design. The app wasn't full functioning, but provided real data and an MVP experience.</p>
+              <p className="f6 sans-serif blue mb0">We worked with <strong>DropIn</strong> to design a concept the team could use to seek venture capital. We created visual branding and app interface flows to demonstrate the user experience and value proposition. We also developed a live app scaffold reflecting our findings in the design. The app wasn&rsquo;t full functioning, but provided real data and an MVP experience.</p>
             </div>
 
             <h3 className="f3"><small className="mr2 f5 serif">II.</small>A Big Problem Existing in Your Current Startup</h3>
@@ -142,7 +142,7 @@ const StartupServicesPage = ({ transition }) => (
             <span className="numeral db ml-auto mr-auto">2</span>
             <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Minimum Viable Product</h3>
 
-            <p>The <abbr title="Minimum Viable Product">MVP</abbr> is a common concept in the startup world. The term comes from Eric Reis' book <em>The Lean Startup</em> where Eric writes about his personal startup experience and subsequent consulting and advisory positions with startups.</p>
+            <p>The <abbr title="Minimum Viable Product">MVP</abbr> is a common concept in the startup world. The term comes from Eric Reis&rsquo; book <em>The Lean Startup</em> where Eric writes about his personal startup experience and subsequent consulting and advisory positions with startups.</p>
 
             <div className="bb bt  b--black-10 flex-ns justify-around tc mh0 mv4 ph2 pv2 nl5 nr5">
               <div>
@@ -169,7 +169,7 @@ const StartupServicesPage = ({ transition }) => (
 
             <div className="ba b--blue mh0 mt4 mb5 pa4 br1">
               <h5 className="ttu tracked f7 fw7 blue mt0">Client Spotlight</h5>
-              <p className="f6 sans-serif blue mb0">We began work with <OutboundLink className="blue hover-dark-blue b" href="https://www.steadkey.com/" target="_blank">Steadkey</OutboundLink> in January 2016. Steadkey's founder, Jerry Williams, had begun Steadkey several years earlier, based on his extensive experience in the mortgage industry, but had little success. He'd worked with 3 independent developers and 2 professional agencies, yet 4 years later still did not have the solution promissed. The first thing we did with Jerry in January 2016 was strip away all the cruft and excess features and ideas muddying up the success of Steadkey. Starting from scratch, we executed on the key value propositions customers sought. We rebuilt the application from nothing, and in less than 3 months launched the new and improved Steadkey app and gained immediate traction with new customers. Consider that for a moment, 3 months versus the previous 4 years… yeah, that's awesome.</p>
+              <p className="f6 sans-serif blue mb0">We began work with <OutboundLink className="blue hover-dark-blue b" href="https://www.steadkey.com/" target="_blank">Steadkey</OutboundLink> in January 2016. Steadkey&rsquo;s founder, Jerry Williams, had begun Steadkey several years earlier, based on his extensive experience in the mortgage industry, but had little success. He&rsquo;d worked with 3 independent developers and 2 professional agencies, yet 4 years later still did not have the solution promissed. The first thing we did with Jerry in January 2016 was strip away all the cruft and excess features and ideas muddying up the success of Steadkey. Starting from scratch, we executed on the key value propositions customers sought. We rebuilt the application from nothing, and in less than 3 months launched the new and improved Steadkey app and gained immediate traction with new customers. Consider that for a moment, 3 months versus the previous 4 years… yeah, that&rsquo;s awesome.</p>
             </div>
 
             <ServiceRecommendation
@@ -200,7 +200,7 @@ const StartupServicesPage = ({ transition }) => (
             <span className="numeral db ml-auto mr-auto">3</span>
             <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Startup Resuscitation</h3>
 
-            <p>Startup resuscitation refers to revitalizing products that have lingered for months or years without traction. Sometimes that's because the startup began as a founder's side project, or product-market fit was never acheived, or maybe the technology behind the product is inherintly broken.</p>
+            <p>Startup resuscitation refers to revitalizing products that have lingered for months or years without traction. Sometimes that&rsquo;s because the startup began as a founder&rsquo;s side project, or product-market fit was never acheived, or maybe the technology behind the product is inherintly broken.</p>
             <p>Whatever the reason, if the concept is solid and an audience exists you can succeed.</p>
             <p>At Spacetime, we seem to attract distressed startups suffering from years of neglect, poor implementation, or lamentable previous agencies. We are different than other agencies in that we do not want to drag out your project as long as possible and squeeze as much money from you as we can. In fact, we will probably try to convince you to reduce the full scope of your project if possible.</p>
             <p>We will work with you to build a project plan and find traction:</p>
@@ -247,7 +247,7 @@ const StartupServicesPage = ({ transition }) => (
             <span className="numeral db ml-auto mr-auto">4</span>
             <h3 className="f1 fw7 dark-red tracked-light tc lh-title">Choose Your Own Adventure</h3>
 
-            <p>Maybe you have a startup that doesn't clearly fit into the categories above. That's okay, we can still help! You probably have a challenge to tackle or business aspect to take on. Let's chat and figure out how we can partner together!</p>
+            <p>Maybe you have a startup that doesn&rsquo;t clearly fit into the categories above. That&rsquo;s okay, we can still help! You probably have a challenge to tackle or business aspect to take on. Let&rsquo;s chat and figure out how we can partner together!</p>
 
             <ServiceRecommendation
               forColumn={[

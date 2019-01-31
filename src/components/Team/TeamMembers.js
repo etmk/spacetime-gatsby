@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import team from '../../../data/team-data.json'
