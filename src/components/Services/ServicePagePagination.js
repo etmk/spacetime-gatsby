@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class ServicePagePagination extends React.Component {
 
@@ -9,7 +9,10 @@ class ServicePagePagination extends React.Component {
         <div className="row flex">
 
             <div className="w-50 pr2">
-              <Link
+              <AniLink
+                cover
+                direction="left"
+                bg="#efefed"
                 to={`/services/`}
                 title="Services"
                 className={`ServiceCard grow`}
@@ -25,11 +28,14 @@ class ServicePagePagination extends React.Component {
                   </h2>
                 </div>
 
-              </Link>
+              </AniLink>
             </div>
 
             <div className="w-50 pl2">
-              <Link
+              <AniLink
+                cover
+                direction="up"
+                bg={this.props.bgColor}
                 to={`/services/${this.props.name}/`}
                 title={this.props.title}
                 className={`ServiceCard grow`}
@@ -62,7 +68,7 @@ class ServicePagePagination extends React.Component {
                   <span className="arrow-decorator" />
                 </span>
 
-              </Link>
+              </AniLink>
             </div>
 
           </div>

@@ -1,7 +1,7 @@
 import React  from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'gatsby'
 import Emoji from 'a11y-react-emoji'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import config from '../../data/site-config'
 import team   from '../../data/team-data.json'
@@ -36,7 +36,7 @@ class IndexPage extends React.Component {
 
           <section className="bg-dark-purple pv5 relative">
             <div className="row">
-              <h2 className="f1 fw4 white lh-title">We&rsquo;ve worked with cool clients like <span className="bb b--white-20">Dude&nbsp;Perfect</span>, <span className="bb b--white-20">Bell&nbsp;Helicopter</span>, <span className="bb b--white-20">Samsung</span>, <span className="bb b--white-20">Watermark</span>, & <Link to="/portfolio/" className="blue dim">more→</Link></h2>
+              <h2 className="f1 fw4 white lh-title">We&rsquo;ve worked with cool clients like <span className="bb b--white-20">Dude&nbsp;Perfect</span>, <span className="bb b--white-20">Bell&nbsp;Helicopter</span>, <span className="bb b--white-20">Samsung</span>, <span className="bb b--white-20">Watermark</span>, & <AniLink cover bg="#f03f47" to="/portfolio/" className="blue dim">more→</AniLink></h2>
             </div>
           </section>
 
@@ -81,7 +81,7 @@ class IndexPage extends React.Component {
 
             </div>
             <div className="row pt5">
-              <Link to="/services/" className="black dim">All Spacetime Services <Emoji symbol="👉" label="pointing hand"/></Link>
+              <AniLink cover bg="#f03f47" to="/services/" className="black dim">All Spacetime Services <Emoji symbol="👉" label="pointing hand"/></AniLink>
             </div>
           </section>
 
@@ -94,7 +94,7 @@ class IndexPage extends React.Component {
                 <h4 className="ttu f7 fw7 tracked blue mt0">&mdash;Team</h4>
                 <h3 className="t-headline">Meet the team that makes the magic happen&nbsp;<Emoji symbol="🔮" label="crystal ball"/></h3>
                 <p className="measure">No, we&rsquo;re not superheroes and we&rsquo;re not magicians. We are simply humble purveyors of business and builders of&nbsp;technology.</p>
-                <Link to="/team/" className="black dim">Meet the whole team <Emoji symbol="👉" label="pointing hand"/></Link>
+                <AniLink cover bg="#f03f47" to="/team/" className="black dim">Meet the whole team <Emoji symbol="👉" label="pointing hand"/></AniLink>
               </div>
 
               <div className="w-60-l fr-l">

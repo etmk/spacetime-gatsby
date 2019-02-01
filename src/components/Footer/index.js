@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import config from '../../../data/site-config'
@@ -8,65 +8,79 @@ import logo from '../../assets/images/logos/spacetime-icon.svg'
 const Footer = () => (
   <footer className="site-footer bg-black white-70">
     <div className="row pv5">
-      <Link
+      <AniLink
+        cover
+        bg="#f03f47"
         to="/"
         title={config.siteTitle}
         className="dib">
         <img src={logo} alt={config.siteTitle} className="h2 dim" />
         <span className="clip">{config.siteTitle}</span>
-      </Link>
+      </AniLink>
     </div>
     <div className="row pv3 flex-ns justify-between-ns">
       <div className="mb5 w-50-ns">
         <nav className="">
           <ul className="list pa0 ma0 white">
             <li>
-              <Link
+              <AniLink
+                cover
+                bg="#f03f47"
                 to="/"
                 title="Home"
                 className="f3 fw7 white hover-red mb3 dib">
                 Home
-              </Link>
+              </AniLink>
             </li>
             <li>
-              <Link
+              <AniLink
+                cover
+                bg="#f03f47"
                 to="/portfolio/"
                 title="Portfolio"
                 className="f3 fw7 white hover-red mb3 dib">
                 Portfolio
-              </Link>
+              </AniLink>
             </li>
             <li>
-              <Link
+              <AniLink
+                cover
+                bg="#f03f47"
                 to="/services/"
                 title="Services"
                 className="f3 fw7 white hover-red mb3 dib">
                 Services
-              </Link>
+              </AniLink>
             </li>
             <li>
-              <Link
+              <AniLink
+                cover
+                bg="#f03f47"
                 to="/team/"
                 title="Team"
                 className="f3 fw7 white hover-red mb3 dib">
                 Team
-              </Link>
+              </AniLink>
             </li>
             <li>
-              <Link
+              <AniLink
+                cover
+                bg="#f03f47"
                 to="/contact/"
                 title="Contact"
                 className="f3 fw7 white hover-red mb3 dib">
                 Contact
-              </Link>
+              </AniLink>
             </li>
             <li>
-              <Link
+              <AniLink
+                cover
+                bg="#f03f47"
                 to="/talks/"
                 title="Talks"
                 className="f3 fw7 white hover-red mb3 dib">
                 Talks
-              </Link>
+              </AniLink>
             </li>
           </ul>
         </nav>

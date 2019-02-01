@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import config from '../../../data/site-config'
 
@@ -118,11 +118,13 @@ const PortfolioPage = () => (
             <h2 className="f2 sans-serif dark-red mt0 mt3-ns">Can we work with you?</h2>
             <p className="white-80 measure-narrow">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any challenge.</p>
             <p className="white-80 sans-serif measure-narrow">What can we work on together?</p>
-            <Link
+            <AniLink
+              cover
+              bg="#f03f47"
               to="/contact/"
               className="f6 fw5 link br1 ph3 pv3 mt4 dib white bg-dark-red dim">
                 Let&rsquo;s talk about your project →
-            </Link>
+            </AniLink>
           </div>
           <div className="fl-l w-50-l bt bw1 b--white-10 pt4 pa0-l bw0-l">
             <ClientList />

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import team from '../../../data/team-data.json'
 
@@ -54,7 +54,7 @@ class TeamMembers extends React.Component {
         <div className="mt4 mb5">
           <h2 className="f3 fw5 lh-copy measure black-80">We love the Dallas web design industry&hellip;</h2>
           <p className="measure black-50">But you don't have to be local to work with us. We're always looking for new talent to join the team or consult. Think you have what it takes?</p>
-          <Link to="/contact/" className="f6 link dim ba ph3 pv2 dib black">Become a Spacefriend →</Link>
+          <AniLink cover bg="#f03f47" to="/contact/" className="f6 link dim ba ph3 pv2 dib black">Become a Spacefriend →</AniLink>
         </div>
 
       </div>
