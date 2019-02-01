@@ -1,12 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class ServiceCard extends React.Component {
 
   render() {
     return (
       <div className={`${this.props.containerClass}`}>
-        <Link
+        <AniLink
+          cover
+          direction="up"
+          bg={this.props.bgColor}
           to={`/services/${this.props.name}/`}
           title={this.props.title}
           className={`ServiceCard grow`}
@@ -39,7 +42,7 @@ class ServiceCard extends React.Component {
             <span className="arrow-decorator" />
           </span>
 
-        </Link>
+        </AniLink>
       </div>
     );
   }

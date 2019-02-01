@@ -100,6 +100,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-transition-link`
   ]
 }
