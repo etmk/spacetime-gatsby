@@ -11,7 +11,7 @@ import PricingTable from '../../components/PricingTable'
 import ServicePagePagination from '../../components/Services/ServicePagePagination'
 
 const WordPressHostingPage = () => (
-  <Layout className="service-page content-page" style={{backgroundColor: '#21759B'}}>
+  <Layout className="service-page content-page" style={{backgroundColor: '#21759b'}}>
 
     <Helmet
       title={`WordPress Hosting ⚡️ blazing fast, incredibly secure - Spacetime`}
@@ -23,7 +23,7 @@ const WordPressHostingPage = () => (
         { rel: 'canonical', href: `${config.siteUrl}/services/wordpress-hosting/` }
       ]}
       bodyAttributes={{
-        class: 'light-theme'
+        class: 'dark-theme'
       }}
     />
 
@@ -34,8 +34,8 @@ const WordPressHostingPage = () => (
         description={`for people serious about their online&nbsp;business`}
         icon={``}
         iconPath={`/icons/wordpress-logo.svg`}
-        bgColor={`#21759B`}
-        textColor={`white`} />
+        bgColor={`#21759b`}
+        textColor={`black`} />
 
       <MainWrapper>
         <section className="pv4">

@@ -9,31 +9,28 @@ class TeamMembers extends React.Component {
   render() {
     return (
 
-      <div>
+      <div className="mv6">
 
-        <h3 className="t-headline black-80 mb2-m">Spacefriends</h3>
+        <h3 className="f3 black-80 mb2-m">Spacefriends</h3>
         <div className="cf">
-          <p className="f4 fl-l w-50-l">"Find a group of people who challenge and inspire you, spend a lot of time with them, and it will change your life forever."<br /><span className="green">&mdash;Amy Poehler</span></p>
+          <p className="f4 o-50 fl-l w-50-l mv3">We&rsquo;re not like other agencies. We focus on building the right team on a per-project basis. So, when you work with us you get a team of experts qualified for your project, instead of a retrofitted team lacking the expertise you need.</p>
 
-          <ul className="fr-l w-40-l custom-unordered-list mv4 mv3-l pa0 pl2-ns  black-80 f6 lh-copy">
-            <li>Industry specialists</li>
-            <li>Diverse experiences and thinking</li>
-            <li>Numerous awards &amp; nominations</li>
-            <li>Infinite potential</li>
-          </ul>
+          <div className="fr-l w-40-l custom-unordered-list mv3 pa0 pl2-ns  black-80 f6 lh-copy">
+            <p className="mt0"><span style={{marginLeft: "-.4em"}}>"</span>Find a group of people who challenge and inspire you, spend a lot of time with them, and it will change your life forever."<br /><span className="ttu fw6 f7 mt3 dib">&mdash;Amy Poehler</span></p>
+          </div>
         </div>
 
-        <ul className="list pa0 flex flex-wrap justify-evenly justify-start-l mv5 mw8">
+        <ul className="list pa0 flex flex-wrap justify-evenly justify-start-l mv6">
           {team.people.map(member => (
             <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={member.name}>
               <img src={member.avatar} className="br-100 mw4 ma2" alt={member.name} />
               <h4 className="f5 fw7 mv1">{member.name}</h4>
-              <p className="f7 black-50 mt0">{member.role}</p>
+              <p className="f7 black-60 mt0">{member.role}</p>
             </li>
           ))}
         </ul>
 
-        <ul className="list pa0 flex flex-wrap justify-between justify-start-l mv5 mw8">
+        <ul className="list pa0 flex flex-wrap justify-between justify-start-l mv6">
           {team.studios.map(studio => (
             <li className="tc w-50 w-auto-ns mr4-ns mr5-l mb4" key={studio.name}>
             <OutboundLink href={studio.url}
