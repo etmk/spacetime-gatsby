@@ -38,11 +38,11 @@ class HomeTestimonials extends React.Component {
                   {/*<img src={e.logo} className="h3 dib" alt={e.name} />*/}
 
                   <p className="f5 white-90 measure-narrow">
-                    {e.quote}&rdquo;
+                    <span style={{marginLeft: "-.4em"}}>"</span>{e.quote}&rdquo;
                   </p>
 
                   <div className="flex items-center">
-                    <img src={e.avatar} className="ba b--white bw3 br-100 h3 w3 dib" alt={e.name} />
+                    <img src={e.avatar} className="br-100 h3 w3 dib" alt={e.name} />
                     <h5 className="lh-copy mv0 ml3">
                       <span className="sans-serif ttu tracked">{e.name}</span>
                       <span className="f7 fw1 db">

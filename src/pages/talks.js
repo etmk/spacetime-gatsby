@@ -18,7 +18,7 @@ const TalksPage = () => (
     </Helmet>
 
     <PageHero>
-      <h1 className="t-headline">Speaking Events&mdash;<span className="o-40">straight from the horses mouth</span></h1>
+      <h1 className="t-headline">Speaking Events&mdash;<span className="o-40">straight from the horses&nbsp;mouth</span></h1>
     </PageHero>
 
     <MainWrapper>

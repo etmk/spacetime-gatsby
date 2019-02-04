@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
         />
 
         <PageHero>
-          <h1 className="page-hero__headline white">We&rsquo;re in the business of design&mdash;<span className="o-40">and the design of extraordinary business</span></h1>
+          <h1 className="t-headline">We&rsquo;re in the business of design&mdash;<span className="o-40">and the design of extraordinary business</span></h1>
         </PageHero>
 
         <MainWrapper>

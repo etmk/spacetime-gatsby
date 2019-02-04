@@ -4,19 +4,16 @@
   background-color: #1A191B;
   color: #fff;
   width: 100vw;
-  height: 70vh;
+  padding: 10rem 0;
   display: flex;
   justify-content: center;
 
   @media screen and (min-width: 33em) {
     height: 98vh;
+    min-height: 35rem;
+    max-height: 50rem;
+    padding: 0;
   }
-
-  // &.large-hero {
-  //   @media screen and (min-width: 33em) {
-  //     padding: 20rem 0 8rem;
-  //   }
-  // }
 
   &__content {
     width: 90%;
@@ -28,7 +25,7 @@
   }
 
   &__headline {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: normal;
     line-height: 1.36;
 

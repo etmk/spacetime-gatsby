@@ -4,7 +4,7 @@ class ServicePageHero extends React.Component {
   render() {
     return (
 
-      <section id="PageHero" className="page-hero large-hero" style={{backgroundColor: `${this.props.bgColor}`, color: `${this.props.textColor}`}}>
+      <section id="PageHero" className="page-hero" style={{backgroundColor: `${this.props.bgColor}`, color: `${this.props.textColor}`}}>
 
         <div className="page-hero__content row">
           {this.props.icon.length > 0 ? (

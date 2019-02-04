@@ -30,7 +30,7 @@ class ContactPage extends React.Component {
 
           <PageHero>
             <div className="t-headline i">Howdy!</div>
-            <h1 className="t-headline">Get in touch, tell us what you want to talk about&mdash;<span className="t-headline__alt">business, projects, jobs, movies, kids, whatever</span></h1>
+            <h1 className="t-headline">Get in touch, tell us what you want to talk about&mdash;<span className="o-40">business, projects, jobs, movies, kids, whatever</span></h1>
           </PageHero>
 
           <MainWrapper>
