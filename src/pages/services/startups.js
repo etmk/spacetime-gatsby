@@ -279,7 +279,7 @@ const StartupServicesPage = () => (
           icon={``}
           iconPath={`/icons/wordpress-logo.svg`}
           bgColor={`#21759b`}
-          cta={`The ultimate WordPress hosting`} />
+          cta={`The ultimate managed WordPress plans`} />
 
       </MainWrapper>
     </div>

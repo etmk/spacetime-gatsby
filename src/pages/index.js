@@ -73,11 +73,11 @@ class IndexPage extends React.Component {
                 containerClass={`pb3 w-100-m w-33-l pl2-l`}
                 name={`wordpress-hosting`}
                 title={`WordPress Hosting`}
-                description={`WordPress hosting for people serious about their online business`}
+                description={`for people serious about their online business`}
                 icon={``}
                 iconPath={`/icons/wordpress-logo.svg`}
                 bgColor={`#21759b`}
-                cta={`The ultimate WordPress hosting`} />
+                cta={`The ultimate managed WordPress plans`} />
 
             </div>
             <div className="row pt5">

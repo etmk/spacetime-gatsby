@@ -85,7 +85,7 @@ const ServicesPage = () => (
             icon={``}
             iconPath={`/icons/wordpress-logo.svg`}
             bgColor={`#21759b`}
-            cta={`The ultimate WordPress hosting`} />
+            cta={`The ultimate managed WordPress plans`} />
 
           <ServiceCard
             name={`design`}
