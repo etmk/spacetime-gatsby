@@ -112,12 +112,16 @@ const PortfolioPage = () => (
 
       </section>
 
-      <section className="pv5 cf bg-deep-purple white">
+      <section className="pv1 cf bg-deep-purple white">
         <div className="row">
-          <div className="fr-l w-40-l mb5">
-            <h2 className="f2 sans-serif dark-red mt0 mt3-ns">Can we work with you?</h2>
-            <p className="white-80 measure-narrow">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any challenge.</p>
-            <p className="white-80 sans-serif measure-narrow">What can we work on together?</p>
+          <div className="mv5">
+            <ClientList />
+          </div>
+          <hr className="bt-1 bb-0 br-0 bl-0 b--white-10" />
+          <div className="mv6 tc">
+            <h2 className="f2 fw5 dark-red">Can we work with you?</h2>
+            <p className="white-80 w-60-l center">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any challenge.</p>
+            <p className="white-80 sans-serif measure center">What can we work on together?</p>
             <AniLink
               cover
               bg="#f03f47"
@@ -125,9 +129,6 @@ const PortfolioPage = () => (
               className="f6 fw5 link br1 ph3 pv3 mt4 dib white bg-dark-red dim">
                 Let&rsquo;s talk about your project →
             </AniLink>
-          </div>
-          <div className="fl-l w-50-l bt bw1 b--white-10 pt4 pa0-l bw0-l">
-            <ClientList />
           </div>
         </div>
       </section>
