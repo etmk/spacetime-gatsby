@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import config from '../../../data/site-config'
 import black_logo from '../../assets/images/logos/spacetime-icon-black.svg'
-import white_logo from '../../assets/images/logos/spacetime-icon-white.svg'
+import white_logo from '../../assets/images/logos/spacetime-icon-red.svg'
 
 const Header = () => (
   <Headroom
