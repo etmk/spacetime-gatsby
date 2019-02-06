@@ -43,9 +43,9 @@ const StartupServicesPage = () => (
       <MainWrapper>
 
         <section className="pv6 bg-near-white">
-          <div className="row">
-            <span className="dark-purple f6 fw8 o-60">TL;DR</span>
-            <h3 className="f3 f1-ns fw4 system-sans lh-title">We Help Founders Develop Their Startup From Back-of-the-Napkin Idea to $1 Million</h3>
+          <div className="row tc">
+            <span className="t-small-caps red">TL;DR</span>
+            <h3 className="t-mega mw7 center">We help founders develop their startup from a back-of-the-napkin idea to $1 million&nbsp;business</h3>
           </div>
         </section>
 

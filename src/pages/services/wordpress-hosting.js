@@ -38,7 +38,15 @@ const WordPressHostingPage = () => (
         textColor={`black`} />
 
       <MainWrapper>
-        <section className="pv4">
+
+        <section className="pv6 bg-near-white">
+          <div className="row tc">
+            <span className="t-small-caps red">TL;DR</span>
+            <h2 className="t-mega mw7 center">We offer the best managed WordPress hosting plans,&nbsp;guaranteed</h2>
+          </div>
+        </section>
+
+        <section className="pv6">
           <div className="row narrow">
             <p>We offer premium WordPress hosting without the excessive expense.</p>
 
@@ -54,7 +62,7 @@ const WordPressHostingPage = () => (
           </div>
         </section>
 
-        <section className="pv5 gradient-light-blue">
+        <section className="pv6 gradient-light-blue">
           <div className="row flex justify-around">
 
             <PricingTable
@@ -111,7 +119,7 @@ const WordPressHostingPage = () => (
 
         <section className="pv5 pv6-ns bg-washed-yellow">
           <div className="row">
-            <h2 className="t-headline mt0 mb4 mw7">Because you deserve best-in-class <span style={{color: '#21759B'}}>WordPress&nbsp;hosting</span>.</h2>
+            <h3 className="t-headline mt0 mb4 mw7">Because you deserve best-in-class <span style={{color: '#21759B'}}>WordPress&nbsp;hosting</span>.</h3>
             <p>Get in touch to schedule a friendly chat.</p>
             <div className="mw6 mt5">
               <ContactForm />

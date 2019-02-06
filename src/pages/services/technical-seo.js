@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Emoji from 'a11y-react-emoji'
 
 import config from '../../../data/site-config'
 
@@ -40,14 +39,14 @@ const StartupServicesPage = () => (
 
       <MainWrapper>
 
-        <section id="jumpTo" className="pv6 bg-near-white">
-          <div className="row">
-            <span className="dark-purple f6 fw8 o-60">TL;DR</span>
-            <h3 className="f3 f1-ns fw4 system-sans lh-title">People need to find your website. Search engines recommend your website if they like you. We make search engines like you <Emoji symbol="😉" label="winking face"/></h3>
+        <section className="pv6 bg-near-white">
+          <div className="row tc">
+            <span className="t-small-caps red">TL;DR</span>
+            <h3 className="t-mega mw7 center">Search engines recommend your website if they like you. We make search engines like&nbsp;you</h3>
           </div>
         </section>
 
-        <section className="pv4">
+        <section className="pv6">
           <div className="row narrow">
 
             <p>Technical Search Engine Optimization (SEO) involves optimizing web servers, code, and content so that your website will rank better in search results.</p>
@@ -149,7 +148,7 @@ const StartupServicesPage = () => (
           </div>
         </section>
 
-        <section className="pv5">
+        <section className="pv6">
           <div className="row narrow">
 
             <h2>Does my website need Technical SEO?</h2>

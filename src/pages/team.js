@@ -27,7 +27,7 @@ const TeamPage = () => (
 
       <section className="pv6 bg-fog-white">
         <div className="row flex justify-center flex-column items-center">
-          <span className="ttu f7 fw7 tracked red mt0">&mdash;Give me the elevator pitch</span>
+          <span className="t-small-caps red">&mdash;Give me the elevator pitch</span>
           <h3 className="fw4 lh-copy mw6 tc">At Spacetime, we partner with clients to strategize &amp; execute their vision. We approach problems with a business-centric focus with a goal of sustainability and&nbsp;ROI.</h3>
         </div>
       </section>

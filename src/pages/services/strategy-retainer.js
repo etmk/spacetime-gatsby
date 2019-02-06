@@ -39,7 +39,7 @@ const StrategyRetainerPage = () => (
         textColor={`white`} />
 
       <MainWrapper>
-        <section id="table-of-content" className="pv4">
+        <section className="pv6">
           <div className="row narrow">
 
             <p>Our consulting engagement will give you access to the strategic and tactical expertise you need, when you need it.</p>

@@ -38,7 +38,8 @@ const DesignServicesPage = () => (
         textColor={`black`} />
 
       <MainWrapper>
-        <section id="table-of-content" className="pv4">
+
+        <section className="pv6">
           <div className="row narrow">
             <p>Design embodies the core spirit of your brand's personality. It's often the first thing someone will notice about your brand, and yes, people do judge a book by its cover.</p>
             <p>We specialize in thoughtful and evocative design backed by practical business goals. We don't "make pretty pictures" or "push pixels", so if that's what you are looking for then we are probably not the right fit.</p>

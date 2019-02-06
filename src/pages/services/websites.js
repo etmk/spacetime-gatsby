@@ -37,7 +37,7 @@ const WebsitesPage = () => (
         textColor={`black`} />
 
       <MainWrapper>
-        <section id="table-of-content" className="pv4">
+        <section className="pv6">
           <div className="row narrow">
             <p>Everyone needs a website. Whether you are a solo entrepreneur or run a billion dollar business, you need a proper website that promotes your business and brand. Websites are often the first encounter many of your customers will see of you business and determine whether you are capable of handling their task at&nbsp;hand.</p>
 

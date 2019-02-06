@@ -41,7 +41,7 @@ const StartupServicesPage = () => (
 
       <MainWrapper>
 
-        <section className="pv4">
+        <section className="pv6">
           <div className="row narrow">
 
             <p>STOP! Before you hire a developer or agency or contractor or designer or whatever, STOP!</p>
@@ -135,11 +135,9 @@ const StartupServicesPage = () => (
           <div className="row narrow">
             <h3 className="f3 fw7 mb1">Guaranteed, or Your Money&nbsp;Back</h3>
 
-            <p>The fee for Coffee Time is $500, and we&rsquo;ll buy the coffee <Emoji symbol="😉" label="winking face"/></p>
-
             <p>We guarantee you will walk away from Coffee Time with answers to your questions and new questions to answer. In fact, we&rsquo;re so certain you will find Coffee Time incredibly insightful and valuable we offer a money back guarantee. If after our time together you decide the conversation provided zero value we will refund you&nbsp;in&nbsp;full.</p>
 
-            <p>So, would you like a latte or cappuccino?</p>
+            <p>So, would you like a latte or cappuccino? Our treat <Emoji symbol="😉" label="winking face"/></p>
 
           </div>
         </section>
