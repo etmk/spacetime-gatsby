@@ -34,6 +34,11 @@
   max-width: $measure-narrow;
 }
 
+/* Measure is limited to ~36 characters */
+.measure-tight {
+  max-width: $measure-tight;
+}
+
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
 .indent {
   text-indent: 1em;
