@@ -20,5 +20,31 @@
 }
 
 .underline-text {
-  
+
+}
+
+.box-shadow {
+  // box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.12),
+              0 10px 30px rgba(0,0,0,0.15);
+}
+
+.bg-banded {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: #f5f7f6;
+    width: 100vw;
+    height: 75%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    z-index: 0;
+  }
+
+  &.band-centered::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
