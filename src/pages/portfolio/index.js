@@ -153,7 +153,7 @@ const PortfolioPage = () => (
           <hr className="bt-1 bb-0 br-0 bl-0 b--white-10" />
           <div className="mv6 tc">
             <h2 className="f2 fw5 dark-red">Can we work with you?</h2>
-            <p className="white-80 measure center">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any&nbsp;challenge.</p>
+            <p className="white-80 measure center">We&rsquo;ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any&nbsp;challenge.</p>
             <p className="white-80 sans-serif measure center">What can we work on together?</p>
             <AniLink
               cover

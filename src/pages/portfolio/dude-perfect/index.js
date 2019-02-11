@@ -62,7 +62,7 @@ const DudePerfectPage = () => (
         <p>Dude Pefect has <em>a lot of fans</em>. When building for the web and taking into account a wide variety of customer types and situations, you really need to plan ahead for a variety of needs and restrictions. The top being web accessibility, data speeds, interaction on mobile devices, and brand support.</p>
         <p>To ensure a solid experience across mobile and desktop devices, we developed a custom website using the Foundation by Zurb framework for responsive components. Dude Perfect is built on WordPress and <AniLink cover bg="#21759b" to="/services/wordpress-hosting/">served via our superior WordPress hosting service</AniLink>. Further, we employ heavy asset caching and CDN efforts. This ensures that, despite a media rich web experience, our visitors experience a snappy, fast to load experience every visit.</p>
         <div className="mv5">
-          <span className="tc db fw7" style={{color: `#00ffde`, fontSize: `10vw`}}>39M+</span>
+          <span className="tc db fw7" style={{color: `#00ffde`, fontSize: `10vw`}}>39M&#43;</span>
           <span className="t-small-caps tc db mv3">Subscribers</span>
         </div>
         <p>To keep content current and up-to-date, the website hooks into several social APIs to populate current stats and content. Social fans and subscribers are an important metric for a brand like Dude Perfect and for sponsorship partners that wish to work with the team. So, we use APIs and chron jobs to update follower and mobile game download counts daily&mdash;and we built a custom WordPress plugin to sync video and data from YouTube directly into the website.</p>
@@ -74,7 +74,7 @@ const DudePerfectPage = () => (
         <img src="/portfolio/dude-perfect/dude-perfect-mobile-web-graphics.jpg" className="w-25 mh2 mh4-l relative" alt="" />
       </div>
 
-      
+
 
       <div className="bg-athens-gray mv5 pt5 pt6-l pb5-l relative overflow-hidden">
         <div className="row flex flex-column flex-row-reverse-l justify-end-l">
@@ -94,7 +94,7 @@ const DudePerfectPage = () => (
 
         <hr className="mv5 mv6-ns bw4 b--dude-perfect o-10" />
         <h3>Delightfully lost</h3>
-        <p>Have you ever landed on a webpage that didn't exist? You may have seen an error message or code called a 404 error. 404 are not something a web master wants to see on their site, but they do happen. Good brands take a bad happenstance, like a 404 error, to creatively delight their visitors.</p>
+        <p>Have you ever landed on a webpage that didn&rsquo;t exist? You may have seen an error message or code called a 404 error. 404 are not something a web master wants to see on their site, but they do happen. Good brands take a bad happenstance, like a 404 error, to creatively delight their visitors.</p>
         <p>We did the same for Dude Perfect.</p>
         <OutboundLink
           href="https://dribbble.com/shots/2886901-Dude-Perfect-404-Page"
