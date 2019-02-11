@@ -54,6 +54,8 @@
  @import 'components/hover-bg';
  @import 'components/buttons';
  @import 'components/ServiceCard';
+ @import 'components/PortfolioCard';
+ @import 'components/BlockquoteComponent';
 
  // @import 'scss/box-sizing';
  @import 'scss/aspect-ratios';
@@ -107,3 +109,27 @@
  @import 'scss/styles';
 
 @import 'scss/skins';
+
+.dp-sizzle-reel {
+  // background-color: aqua;
+
+  &::before {
+    content: '';
+    background-color: #00ffde;
+    width: 50%;
+    height: 15rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &::after {
+    content: '';
+    background-color: #00ffde;
+    width: 30%;
+    height: 15rem;
+    position: absolute;
+    bottom: 0;
+    right: 60%;
+    z-index: 0;
+  }
+}

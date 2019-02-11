@@ -73,3 +73,21 @@
     opacity: 0;
   }
 }
+
+.big-circle-button {
+  display: block;
+  width: 14rem;
+  height: 14rem;
+  line-height: 14rem;
+  text-align: center;
+  border-radius: 999px;
+  border: 1px solid #000;
+  color: #000;
+
+  &:hover {
+    border-color: #00ffde;
+    background-color: #00ffde;
+    box-shadow: 0 30px 60px 0 rgba(map-get($colors, black), .1);
+    transform: scale(1.05);
+  }
+}

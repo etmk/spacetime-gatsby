@@ -137,4 +137,12 @@
   &.reverse {
     transform: rotate(180deg);
   }
+
+  &.white-arrow {
+    background-color: white;
+
+    &::before {
+      border-color: white;
+    }
+  }
 }

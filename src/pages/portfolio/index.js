@@ -1,28 +1,29 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import React            from 'react'
+import Helmet           from 'react-helmet'
+import AniLink          from 'gatsby-plugin-transition-link/AniLink'
+import Emoji            from 'a11y-react-emoji'
 
-import config from '../../../data/site-config'
+import config           from '../../../data/site-config'
 
-import Layout from '../../components/layout'
-import MainWrapper from '../../components/MainWrapper/MainWrapper'
-import PageHero from '../../components/PageHero'
-import PortfolioCard from '../../components/Portfolio/PortfolioCard'
-import ClientList from '../../components/ClientList'
+import Layout           from '../../components/layout'
+import MainWrapper      from '../../components/MainWrapper/MainWrapper'
+import PageHero         from '../../components/PageHero'
+import PortfolioCard    from '../../components/Portfolio/PortfolioCard'
+import ClientList       from '../../components/ClientList'
 
 const PortfolioPage = () => (
   <Layout className="bg-near-white">
 
-  <Helmet
-    title={`Portfolio 💼 work in the Spacetime design portfolio`}
-    meta={[
-      { name: 'description', content: 'The incredible clients in our design portfolio include Dude Perfect, Bell Helicopter, Watermark Community Church, Highland Homes, and more' },
-      { name: 'keywords', content: 'design portfolio' },
-    ]}
-    link={[
-      { rel: 'canonical', href: `${config.siteUrl}/portfolio/` }
-    ]}
-  />
+    <Helmet
+      title={`Portfolio 💼 work in the Spacetime design portfolio`}
+      meta={[
+        { name: 'description', content: 'The incredible clients in our design portfolio include Dude Perfect, Bell Helicopter, Watermark Community Church, Highland Homes, and more' },
+        { name: 'keywords', content: 'design portfolio' },
+      ]}
+      link={[
+        { rel: 'canonical', href: `${config.siteUrl}/portfolio/` }
+      ]}
+    />
 
     <PageHero>
         <h3 className="t-headline">Good looking work isn&rsquo;t good enough&mdash;<span className="o-40">good work delivers great results beyond the imagination</span></h3>
@@ -33,84 +34,116 @@ const PortfolioPage = () => (
 
     <MainWrapper>
 
-      <section className="">
-        <PortfolioCard
-          name={`dude-perfect`}
-          title={`Dude Perfect`}
-          description={`We took Dude Perfect's GO BIG dream from a vision to reality with design, development, and social and video integration.`}
-          urlLink={`http://dudeperfect.com/`}
-          bgColor={`#00FFDE`}
-          textColor={`black`}
-          logoPath={`/client-logos/dude-perfect-icon.svg`}
-          bgYAxis={`top`} />
+      <div className="row w-75-l pv5 pv6-l flex-l">
+        <div className="w-50-l">
 
-        <div className="flex-ns bt-ns bb-ns bw3-ns b--white">
-          <PortfolioCard
-            name={`keyzie`}
-            title={`Keyzie`}
-            description={`The future of real estate is personal. Keyzie changes the nature of buying and selling property by cutting out the expensive fees; keeping cash in your pocket.`}
-            urlLink={`https://www.keyzie.com/`}
-            bgColor={`#F78657`}
-            textColor={`black`}
-            logoPath={`/client-logos/keyzie-logo.svg`}
-            bgYAxis={`top`}
-            uniqueClass={`br-ns bw3 b--white`} />
+          <AniLink
+            cover direction="up" bg="#00FFDE"
+            to="/portfolio/dude-perfect/"
+            style={{backgroundColor: `#00FFDE`}}
+            className="PortfolioCard grow"
+          >
+            <img src="/client-logos/dude-perfect-icon.svg" alt="Dude Perfect logo" />
+            <h3 className="t-subheadline">
+              Dude Perfect&mdash;<span className="o-40">YouTube influencers specializing in the trick&nbsp;shot</span>
+            </h3>
+            <span>
+              Read the case study<br />
+              <span className="arrow-decorator" />
+            </span>
+          </AniLink>
 
-          <PortfolioCard
-            name={`studiohop`}
-            title={`StudioHop`}
-            description={`We rebuilt StudioHop's platform and website in a way to prepare for continued growth and scale in the years to come.`}
-            urlLink={`https://www.studiohopfitness.com/`}
-            bgColor={`#00C2F2`}
-            textColor={`black`}
-            logoPath={`/client-logos/studiohop-icon.svg`}
-            bgYAxis={`top`} />
+          <PortfolioCard bgColor={`#F78657`} urlLink={`https://www.keyzie.com/`}>
+            <img src="/client-logos/keyzie-logo.svg" alt="Keyzie logo" />
+            <h3 className="t-subheadline">
+              Keyzie&mdash;<span className="o-40">the future of real estate is&nbsp;personal</span>
+            </h3>
+            <span>
+              Visit Keyzie.com<br />
+              <span className="arrow-decorator" />
+            </span>
+          </PortfolioCard>
         </div>
 
-        <PortfolioCard
-          name={`bell`}
-          title={`Bell`}
-          description={`New brand. New logo. New vision. New mission. We partnered with Bell to tackle the future of the Bell web experience.`}
-          urlLink={`http://www.bellflight.com/`}
-          bgColor={`#000`}
-          textColor={`white`}
-          logoPath={`/client-logos/bell-logo.svg`}
-          bgYAxis={`top`} />
+        <div className="w-50-l mt5-l">
+          <PortfolioCard bgColor={`#00C2F2`} urlLink={`https://www.studiohopfitness.com/`}>
+            <img src="/client-logos/studiohop-icon.svg" alt="StudioHop logo" />
+            <h3 className="t-subheadline">
+              StudioHop&mdash;<span className="o-40">fitness classess whenever and wherever you&nbsp;like</span>
+            </h3>
+            <span>
+              Visit StudioHopFitness.com<br />
+              <span className="arrow-decorator" />
+            </span>
+          </PortfolioCard>
 
-        <div className="flex-ns bt-ns bb-ns bw3-ns b--white">
-          <PortfolioCard
-            name={`steadkey`}
-            title={`Steadkey`}
-            description={`We took Steadkey from zero to MVP, building the app, website, and onboarding the first round of users.`}
-            urlLink={`https://www.steadkey.com/`}
-            bgColor={`#F64A53`}
-            textColor={`black`}
-            logoPath={`/client-logos/steadkey-logo.svg`}
-            bgYAxis={`bottom`}
-            uniqueClass={`br-ns bw3 b--white`} />
-
-          <PortfolioCard
-            name={`vault-aviation`}
-            title={`Vault Aviation`}
-            description={`We leveled up the Vault Aviation web design and experience to reflect the elite status the brand deserves.`}
-            urlLink={`https://vaultjet.com/`}
-            bgColor={`#232825`}
-            textColor={`white`}
-            logoPath={`/client-logos/vault-aviation-logo.svg`}
-            bgYAxis={`top`} />
+          <PortfolioCard bgColor={`#f64a53`} urlLink={`https://www.steadkey.com/`}>
+            <img src="/client-logos/steadkey-logo.svg" alt="Steadkey logo" />
+            <h3 className="t-subheadline">
+              Steadkey&mdash;<span className="o-40">deliver sanity and clarity to the mortgage&nbsp;process</span>
+            </h3>
+            <span>
+              Visit Steadkey.com<br />
+              <span className="arrow-decorator" />
+            </span>
+          </PortfolioCard>
         </div>
+      </div>
 
-        <PortfolioCard
-          name={`neue-build`}
-          title={`Neue Build`}
-          description={`New build. New home. Move in ready. We launched the Neue Build startup to focus on the Texas new construction home market.`}
-          urlLink={`https://neuebuild.com/`}
-          bgColor={`#00BAFE`}
-          textColor={`black`}
-          logoPath={`/client-logos/neue-build-logo.svg`}
-          bgYAxis={`top`} />
+      <h5 className="tc f2 silver">For your eyes only <Emoji symbol="👁" label="eyes" className="f3 ml2"/></h5>
 
-      </section>
+      <div className="row w-75-l pv5 pv6-l flex-l">
+        <div className="w-50-l">
+
+          <PortfolioCard bgColor={`#000`} urlLink={`http://www.bellflight.com/`}>
+            <img src="/client-logos/bell-logo.svg" alt="Bell Helicopter logo" />
+            <h3 className="t-subheadline white">
+              Bell&mdash;<span className="o-40">the new and future&nbsp;Bell</span>
+            </h3>
+            <span className="white">
+              Visit BellFlight.com<br />
+              <span className="arrow-decorator white-arrow" />
+            </span>
+          </PortfolioCard>
+
+          <PortfolioCard bgColor={`#00BAFE`} urlLink={`https://neuebuild.com/`}>
+            <img src="/client-logos/neue-build-logo.svg" alt="Neue Build logo" />
+            <h3 className="t-subheadline">
+              Neue Build&mdash;<span className="o-40">new build, new home, move in&nbsp;ready</span>
+            </h3>
+            <span>
+              Visit NeueBuild.com<br />
+              <span className="arrow-decorator" />
+            </span>
+          </PortfolioCard>
+
+        </div>
+        <div className="w-50-l mt5-l">
+
+          <PortfolioCard bgColor={`#0761C1`} urlLink={`https://fluidity.tech/`}>
+            <img src="/client-logos/fluidity-tech-icon.svg" alt="Fluidity Tech logo" />
+            <h3 className="t-subheadline white">
+              Fluidity Tech&mdash;<span className="o-40">revolutionizing drone control</span>
+            </h3>
+            <span className="white">
+              Visit Fluidity.Tech<br />
+              <span className="arrow-decorator white-arrow" />
+            </span>
+          </PortfolioCard>
+
+          <PortfolioCard bgColor={`#232825`} urlLink={`http://www.watermark.org/`}>
+            <img src="/client-logos/watermark-community-church-icon.svg" alt="Watermark Community Church logo" />
+            <h3 className="t-subheadline white">
+              Watermark&mdash;<span className="o-40">one church, four campuses, thousands of&nbsp;locations</span>
+            </h3>
+            <span className="white">
+              Visit Watermark.org<br />
+              <span className="arrow-decorator white-arrow" />
+            </span>
+          </PortfolioCard>
+
+        </div>
+      </div>
 
       <section className="pv1 cf bg-deep-purple white">
         <div className="row">
@@ -120,7 +153,7 @@ const PortfolioPage = () => (
           <hr className="bt-1 bb-0 br-0 bl-0 b--white-10" />
           <div className="mv6 tc">
             <h2 className="f2 fw5 dark-red">Can we work with you?</h2>
-            <p className="white-80 w-60-l center">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any challenge.</p>
+            <p className="white-80 measure center">We&rsquo;ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any&nbsp;challenge.</p>
             <p className="white-80 sans-serif measure center">What can we work on together?</p>
             <AniLink
               cover

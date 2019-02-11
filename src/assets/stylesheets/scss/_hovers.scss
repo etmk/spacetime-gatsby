@@ -96,6 +96,7 @@
 .grow:hover,
 .grow:focus {
   transform: scale(1.05);
+  position: relative;
 }
 
 .grow:active {
