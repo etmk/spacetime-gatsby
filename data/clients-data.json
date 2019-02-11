@@ -104,6 +104,22 @@
       "name": "Armor Hosting",
       "url": "https://www.armor.com/",
       "logo": "/client-logos/armor-hosting-logo.png"
+    }, {
+      "name": "Fluidity Tech",
+      "url": "https://fluidity.tech/",
+      "logo": "/client-logos/fluidity-tech-icon.svg"
+    }, {
+      "name": "Highland Homes",
+      "url": "https://www.highlandhomes.com/",
+      "logo": "/client-logos/highland-homes-logo.svg"
+    }, {
+      "name": "Core Water",
+      "url": "https://hydratewithcore.com/",
+      "logo": "/client-logos/core-water-logo.png"
+    }, {
+      "name": "Vault Aviation",
+      "url": "https://vaultjet.com/",
+      "logo": "/client-logos/vault-aviation-logo.svg"
     }
   ],
   "nope": [

@@ -120,13 +120,24 @@ const PortfolioPage = () => (
         </div>
         <div className="w-50-l mt5-l">
 
-          <PortfolioCard bgColor={`#232825`} urlLink={`https://vaultjet.com/`}>
-            <img src="/client-logos/vault-aviation-logo.svg" alt="Vault Aviation logo" />
+          <PortfolioCard bgColor={`#0761C1`} urlLink={`https://fluidity.tech/`}>
+            <img src="/client-logos/fluidity-tech-icon.svg" alt="Fluidity Tech logo" />
             <h3 className="t-subheadline white">
-              Vault Aviation&mdash;<span className="o-40">private charter jets for any&nbsp;occasion</span>
+              Fluidity Tech&mdash;<span className="o-40">revolutionizing drone control</span>
             </h3>
             <span className="white">
-              Visit VaultAviation.com<br />
+              Visit Fluidity.Tech<br />
+              <span className="arrow-decorator white-arrow" />
+            </span>
+          </PortfolioCard>
+
+          <PortfolioCard bgColor={`#232825`} urlLink={`http://www.watermark.org/`}>
+            <img src="/client-logos/watermark-community-church-icon.svg" alt="Watermark Community Church logo" />
+            <h3 className="t-subheadline white">
+              Watermark&mdash;<span className="o-40">one church, four campuses, thousands of&nbsp;locations</span>
+            </h3>
+            <span className="white">
+              Visit Watermark.org<br />
               <span className="arrow-decorator white-arrow" />
             </span>
           </PortfolioCard>
@@ -142,7 +153,7 @@ const PortfolioPage = () => (
           <hr className="bt-1 bb-0 br-0 bl-0 b--white-10" />
           <div className="mv6 tc">
             <h2 className="f2 fw5 dark-red">Can we work with you?</h2>
-            <p className="white-80 w-60-l center">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any challenge.</p>
+            <p className="white-80 measure center">We’ve worked with some really cool clients and solved big and small problems. We continually improve how we work to ensure we are top-notch and ready for any&nbsp;challenge.</p>
             <p className="white-80 sans-serif measure center">What can we work on together?</p>
             <AniLink
               cover
