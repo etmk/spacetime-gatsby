@@ -1,0 +1,33 @@
+.PortfolioCard {
+  color: #000;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (min-width: $screen-small) {
+    padding: 2rem;
+    min-height: 23rem;
+  }
+  @media screen and (min-width: $screen-medium) {
+    padding: 3.125rem 3.125rem 4.5rem;
+    min-height: 34rem;
+  }
+
+  a {
+    color: #000;
+  }
+
+  > img {
+    max-height: 2.75rem;
+  }
+
+  > h3 {
+    flex-grow: 1;
+  }
+
+  &:hover .arrow-decorator {
+    width: 7rem;
+  }
+}

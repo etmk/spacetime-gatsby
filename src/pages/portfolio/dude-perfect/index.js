@@ -13,10 +13,10 @@ import Blockquote       from '../../../components/Blockquote'
 const DudePerfectPage = () => (
   <Layout>
     <Helmet
-      title={`Dude Perfect`}
+      title={`Dude Perfect • web design for the unique YouTube influencers`}
       meta={[
-        { name: 'description', content: 'Before committing thousands of dollars toward a project, sit down for a cup of coffee and strong business strategy' },
-        { name: 'keywords', content: 'dude perfect' },
+        { name: 'description', content: 'A unique web design experience for the all-star YouTube influencers group Dude Perfect' },
+        { name: 'keywords', content: 'dude perfect, youtube influencers' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/portfolio/dude-perfect/` }
@@ -40,12 +40,13 @@ const DudePerfectPage = () => (
       <div className="pv5 pv6-ns row narrow">
         <h3 className="f2">Go Big!</h3>
         <p>We worked with Dude Perfect to design and develop a web experience to show off their unique brand, both for fans and partners.</p>
-        <p></p>
+        <p>Visual and brand design pulled from the existing Dude Perfect legacy, taking into account the years of video content and assets already created. The goal in any project with existing history is to develop a future-forward path, while not forsaking the history and brand equity of the past.</p>
+        <p>Together, the Spacetime and Dude Perfect teams developed a fantastic extension of the YouTube influencers ecosystem.</p>
       </div>
 
       <Blockquote>
         <blockquote>
-          <p className="t-subheadline">Spacetime took our vision and ran with it full steam ahead. They were easy to work with, and most importantly, created a killer end-product that we are proud to share&nbsp;with&nbsp;anyone.</p>
+          <p className="f2 center">Spacetime took our vision and ran with it full steam ahead. They were easy to work with, and most importantly, created a killer end-product that we are proud to share&nbsp;with&nbsp;anyone.</p>
           <cite className="t-small-caps green">&mdash;Coby Cotton, Co-Founder</cite>
         </blockquote>
         <img src="/avatars/coby-cotton-dude-perfect.jpg" className="br-100 w3 mt3" alt="Coby Cotton of Dude Perfect" />
@@ -57,14 +58,14 @@ const DudePerfectPage = () => (
       </div>
 
       <div className="pv5 pv6-ns row narrow">
-        <h3>A focus on audience</h3>
-        <p>Dude Pefect has <em>a lot of fans</em>. When building for the web and taking into account a wide variety of customer types and situations, you really need to plan ahead for a variety of needs and restrictions. The biggest being web accessibility, data speeds, interaction on mobile devices, and brand support.</p>
+        <h3>Audience driven technology</h3>
+        <p>Dude Pefect has <em>a lot of fans</em>. When building for the web and taking into account a wide variety of customer types and situations, you really need to plan ahead for a variety of needs and restrictions. The top being web accessibility, data speeds, interaction on mobile devices, and brand support.</p>
         <p>To ensure a solid experience across mobile and desktop devices, we developed a custom website using the Foundation by Zurb framework for responsive components. Dude Perfect is built on WordPress and <AniLink cover bg="#21759b" to="/services/wordpress-hosting/">served via our superior WordPress hosting service</AniLink>. Further, we employ heavy asset caching and CDN efforts. This ensures that, despite a media rich web experience, our visitors experience a snappy, fast to load experience every visit.</p>
         <div className="mv5">
           <span className="tc db fw7" style={{color: `#00ffde`, fontSize: `10vw`}}>39M+</span>
           <span className="t-small-caps tc db mv3">Subscribers</span>
         </div>
-        <p>The memories came to him, how he felt then. "It was very pure, if I can say it right," he'd explain later. "It was pure in 1984 … I was still dreaming." During the Olympics, he was deep in negotiations with Nike for his first shoe contract. He traded pins with other athletes. Eight years later, when he was the most famous person in the world and the Dream Team was forced to stay outside the Olympic Village, he'd be disappointed when that separation kept him from swapping pins again.</p>
+        <p>To keep content current and up-to-date, the website hooks into several social APIs to populate current stats and content. Social fans and subscribers are an important metric for a brand like Dude Perfect and for sponsorship partners that wish to work with the team. So, we use APIs and chron jobs to update follower and mobile game download counts daily&mdash;and we built a custom WordPress plugin to sync video and data from YouTube directly into the website.</p>
       </div>
 
       <div className="bg-banded band-centered flex items-start justify-center mv4 mv6-l">
@@ -73,11 +74,7 @@ const DudePerfectPage = () => (
         <img src="/portfolio/dude-perfect/dude-perfect-mobile-web-graphics.jpg" className="w-25 mh2 mh4-l relative" alt="" />
       </div>
 
-      <div className="pv5 pv6-ns row narrow">
-        <h3>The subtitle for the project</h3>
-        <p>Back in the office after his vacation on a 154-foot rented yacht named Mister Terrible, he feels that relaxation slipping away. He feels pulled inward, toward his own most valuable and destructive traits. Slights roll through his mind, eating at him: worst record ever, can't build a team, absentee landlord. Jordan reads the things written about him, the fuel arriving in a packet of clips his staff prepares. He knows what people say. He needs to know, a needle for a hungry vein. There's a palpable simmering whenever you're around Jordan, as if Air Jordan is still in there, churning, trying to escape. It must be strange to be locked in combat with the ghost of your former self.</p>
-        <p>The memories came to him, how he felt then. "It was very pure, if I can say it right," he'd explain later. "It was pure in 1984 … I was still dreaming." During the Olympics, he was deep in negotiations with Nike for his first shoe contract. He traded pins with other athletes. Eight years later, when he was the most famous person in the world and the Dream Team was forced to stay outside the Olympic Village, he'd be disappointed when that separation kept him from swapping pins again.</p>
-      </div>
+      
 
       <div className="bg-athens-gray mv5 pt5 pt6-l pb5-l relative overflow-hidden">
         <div className="row flex flex-column flex-row-reverse-l justify-end-l">
@@ -93,9 +90,20 @@ const DudePerfectPage = () => (
 
       <img src="/portfolio/dude-perfect/dude-perfect-website-components@2x.jpg" className="w-100 db" alt="" />
 
-      <div className="pv5 pv6-ns row narrow">
-        <h3>The subtitle for the project</h3>
-        <p>The memories came to him, how he felt then. "It was very pure, if I can say it right," he'd explain later. "It was pure in 1984 … I was still dreaming." During the Olympics, he was deep in negotiations with Nike for his first shoe contract. He traded pins with other athletes. Eight years later, when he was the most famous person in the world and the Dream Team was forced to stay outside the Olympic Village, he'd be disappointed when that separation kept him from swapping pins again.</p>
+      <div className="row narrow">
+
+        <hr className="mv5 mv6-ns bw4 b--dude-perfect o-10" />
+        <h3>Delightfully lost</h3>
+        <p>Have you ever landed on a webpage that didn't exist? You may have seen an error message or code called a 404 error. 404 are not something a web master wants to see on their site, but they do happen. Good brands take a bad happenstance, like a 404 error, to creatively delight their visitors.</p>
+        <p>We did the same for Dude Perfect.</p>
+        <OutboundLink
+          href="https://dribbble.com/shots/2886901-Dude-Perfect-404-Page"
+          target="_blank"
+          className="button pa2 br1 bg-dude-perfect black dib grow mt3">
+            Check out the 404 page design &rarr;
+        </OutboundLink>
+
+        <hr className="mv5 mv6-ns bw4 b--dude-perfect o-10" />
       </div>
 
       <div className="dp-sizzle-reel relative">
@@ -106,9 +114,8 @@ const DudePerfectPage = () => (
       </div>
 
       <div className="pv5 pv6-ns row narrow">
-        <h3>Spacetime loves YouTube influencers</h3>
-        <p>We love working with YouTube influencers </p>
-        <p>The memories came to him, how he felt then. "It was very pure, if I can say it right," he'd explain later. "It was pure in 1984 … I was still dreaming." During the Olympics, he was deep in negotiations with Nike for his first shoe contract. He traded pins with other athletes. Eight years later, when he was the most famous person in the world and the Dream Team was forced to stay outside the Olympic Village, he'd be disappointed when that separation kept him from swapping pins again.</p>
+        <h3>To infinity and beyond</h3>
+        <p>The end result is a well-branded hub for Dude Perfect fans and partners to find the latest and greatest video, content, and merchandise. We love how the site turned out and continues to grow, and hope you do as well.</p>
       </div>
 
       <OutboundLink
