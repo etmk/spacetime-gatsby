@@ -226,6 +226,7 @@ $colors: (
   dark-green:     #137752,
   green:          #00D181,
   light-green:    #9eebcf,
+  steel-blue:     #1b1f20,
   navy:           #001b44,
   dark-blue:      #00449e,
   shock-blue:     #1572e8,
@@ -246,6 +247,7 @@ $colors: (
   linkedin:       #0077b5,
   dribbble:       #ea4c89,
   dude-perfect:   #00ffde,
+  dude-perfect-20:   rgba(#00ffde, .2),
 ) !default;
 
 // @each $key, $color in $colors {
