@@ -1,16 +1,17 @@
-import React  from 'react'
-import Helmet from 'react-helmet'
-import Emoji from 'a11y-react-emoji'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import React            from 'react'
+import Helmet           from 'react-helmet'
+import Emoji            from 'a11y-react-emoji'
+import AniLink          from 'gatsby-plugin-transition-link/AniLink'
 
-import config from '../../data/site-config'
-import team   from '../../data/team-data.json'
+import config           from '../../data/site-config'
+import team             from '../../data/team-data.json'
 
-import Layout from '../components/layout'
-import MainWrapper from '../components/MainWrapper/MainWrapper'
-import PageHero from '../components/PageHero'
+import Layout           from '../components/layout'
+import MainWrapper      from '../components/MainWrapper/MainWrapper'
+import PageHero         from '../components/PageHero'
+import HomeWelcome      from '../components/HomeFeatures/HomeWelcome'
 import HomeTestimonials from '../components/HomeFeatures/HomeTestimonials'
-import ServiceCard from '../components/Services/ServiceCard'
+import ServiceCard      from '../components/Services/ServiceCard'
 
 class IndexPage extends React.Component {
   render() {
@@ -34,11 +35,7 @@ class IndexPage extends React.Component {
 
         <MainWrapper>
 
-          <section className="bg-dark-purple pv5 relative">
-            <div className="row">
-              <h2 className="f1 fw4 white lh-title">We&rsquo;ve worked with cool clients like <span className="bb b--white-20">Dude&nbsp;Perfect</span>, <span className="bb b--white-20">Bell&nbsp;Helicopter</span>, <span className="bb b--white-20">Samsung</span>, <span className="bb b--white-20">Watermark</span>, & <AniLink cover bg="#f03f47" to="/portfolio/" className="blue dim">more→</AniLink></h2>
-            </div>
-          </section>
+          <HomeWelcome />
 
           <section className="pv6 bg-white">
             <div className="row mb5">
