@@ -1,5 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
+import config from '../data/site-config'
 
 export default function HTML(props) {
   return (
@@ -11,6 +12,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta name="google-site-verification" content={config.googleSearchConsole} />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
