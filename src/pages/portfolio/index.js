@@ -43,18 +43,20 @@ const PortfolioPage = () => (
             style={{backgroundColor: `#00FFDE`}}
             className="PortfolioCard grow"
           >
-            <img src="/client-logos/dude-perfect-icon.svg" alt="Dude Perfect logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/dude-perfect-icon.svg" alt="Dude Perfect logo" />
             <h3 className="t-subheadline">
               Dude Perfect&mdash;<span className="o-40">YouTube influencers specializing in the trick&nbsp;shot</span>
             </h3>
             <span>
-              Read the case study<br />
+              Read the Dude Perfect case study<br />
               <span className="arrow-decorator" />
             </span>
+
+            <img className="PortfolioCard__bg" src="/portfolio/dude-perfect/dude-perfect-card-bg.jpg" alt="Dude Perfect guys jumping in the air" />
           </AniLink>
 
           <PortfolioCard bgColor={`#F78657`} urlLink={`https://www.keyzie.com/`}>
-            <img src="/client-logos/keyzie-logo.svg" alt="Keyzie logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/keyzie-logo.svg" alt="Keyzie logo" />
             <h3 className="t-subheadline">
               Keyzie&mdash;<span className="o-40">the future of real estate is&nbsp;personal</span>
             </h3>
@@ -62,12 +64,14 @@ const PortfolioPage = () => (
               Visit Keyzie.com<br />
               <span className="arrow-decorator" />
             </span>
+
+            <img className="PortfolioCard__bg" src="/portfolio/keyzie/keyzie-card-bg.jpg" alt="Front door to an apartment video" />
           </PortfolioCard>
         </div>
 
         <div className="w-50-l mt5-l">
           <PortfolioCard bgColor={`#00C2F2`} urlLink={`https://www.studiohopfitness.com/`}>
-            <img src="/client-logos/studiohop-icon.svg" alt="StudioHop logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/studiohop-icon.svg" alt="StudioHop logo" />
             <h3 className="t-subheadline">
               StudioHop&mdash;<span className="o-40">fitness classess whenever and wherever you&nbsp;like</span>
             </h3>
@@ -75,10 +79,12 @@ const PortfolioPage = () => (
               Visit StudioHopFitness.com<br />
               <span className="arrow-decorator" />
             </span>
+
+            <img className="PortfolioCard__bg" src="/portfolio/studiohop/studiohop-card-bg.jpg" alt="Woman in a boxing class" />
           </PortfolioCard>
 
           <PortfolioCard bgColor={`#f64a53`} urlLink={`https://www.steadkey.com/`}>
-            <img src="/client-logos/steadkey-logo.svg" alt="Steadkey logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/steadkey-logo.svg" alt="Steadkey logo" />
             <h3 className="t-subheadline">
               Steadkey&mdash;<span className="o-40">deliver sanity and clarity to the mortgage&nbsp;process</span>
             </h3>
@@ -86,6 +92,8 @@ const PortfolioPage = () => (
               Visit Steadkey.com<br />
               <span className="arrow-decorator" />
             </span>
+
+            <img className="PortfolioCard__bg" src="/portfolio/steadkey/steadkey-card-bg.jpg" alt="A modern style home" />
           </PortfolioCard>
         </div>
       </div>
@@ -96,7 +104,7 @@ const PortfolioPage = () => (
         <div className="w-50-l">
 
           <PortfolioCard bgColor={`#000`} urlLink={`http://www.bellflight.com/`}>
-            <img src="/client-logos/bell-logo.svg" alt="Bell Helicopter logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/bell-logo.svg" alt="Bell Helicopter logo" />
             <h3 className="t-subheadline white">
               Bell&mdash;<span className="o-40">the new and future&nbsp;Bell</span>
             </h3>
@@ -104,10 +112,12 @@ const PortfolioPage = () => (
               Visit BellFlight.com<br />
               <span className="arrow-decorator white-arrow" />
             </span>
+
+            <img className="PortfolioCard__bg" src="/portfolio/bell/bell-helicopter-card-bg.jpg" alt="Bell AH-1Z Helicopter" />
           </PortfolioCard>
 
           <PortfolioCard bgColor={`#00BAFE`} urlLink={`https://neuebuild.com/`}>
-            <img src="/client-logos/neue-build-logo.svg" alt="Neue Build logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/neue-build-logo.svg" alt="Neue Build logo" />
             <h3 className="t-subheadline">
               Neue Build&mdash;<span className="o-40">new build, new home, move in&nbsp;ready</span>
             </h3>
@@ -115,13 +125,15 @@ const PortfolioPage = () => (
               Visit NeueBuild.com<br />
               <span className="arrow-decorator" />
             </span>
+
+            <img className="PortfolioCard__bg" src="/portfolio/neue-build/neue-build-card-bg.jpg" alt="Google map with various home indicators" />
           </PortfolioCard>
 
         </div>
         <div className="w-50-l mt5-l">
 
           <PortfolioCard bgColor={`#0761C1`} urlLink={`https://fluidity.tech/`}>
-            <img src="/client-logos/fluidity-tech-icon.svg" alt="Fluidity Tech logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/fluidity-tech-icon.svg" alt="Fluidity Tech logo" />
             <h3 className="t-subheadline white">
               Fluidity Tech&mdash;<span className="o-40">revolutionizing drone control</span>
             </h3>
@@ -129,10 +141,12 @@ const PortfolioPage = () => (
               Visit Fluidity.Tech<br />
               <span className="arrow-decorator white-arrow" />
             </span>
+
+            <img className="PortfolioCard__bg" src="/portfolio/fluidity-tech/fluidity-tech-card-bg.jpg" alt="Public safetly worker with a drone" />
           </PortfolioCard>
 
           <PortfolioCard bgColor={`#232825`} urlLink={`http://www.watermark.org/`}>
-            <img src="/client-logos/watermark-community-church-icon.svg" alt="Watermark Community Church logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/watermark-community-church-icon.svg" alt="Watermark Community Church logo" />
             <h3 className="t-subheadline white">
               Watermark&mdash;<span className="o-40">one church, four campuses, thousands of&nbsp;locations</span>
             </h3>
@@ -140,6 +154,8 @@ const PortfolioPage = () => (
               Visit Watermark.org<br />
               <span className="arrow-decorator white-arrow" />
             </span>
+
+            <img className="PortfolioCard__bg" src="/portfolio/watermark/watermark-card-bg.jpg" alt="Musicians on stage at Watermark" />
           </PortfolioCard>
 
         </div>
