@@ -275,7 +275,7 @@ const StartupServicesPage = () => (
         <ServicePagePagination
           name={`wordpress-hosting`}
           title={`WordPress Hosting`}
-          description={`for people serious about their online&nbsp;business`}
+          description={`blazing fast, incredibly secure`}
           icon={``}
           iconPath={`/icons/wordpress-logo.svg`}
           bgColor={`#21759b`}
