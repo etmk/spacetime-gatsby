@@ -13,10 +13,10 @@ import Blockquote       from '../../../components/Blockquote'
 const DudePerfectPage = () => (
   <Layout>
     <Helmet
-      title={`Dude Perfect • web design for the unique YouTube influencers`}
+      title={`🏀Dude Perfect Website • YouTube influencers creative website`}
       meta={[
-        { name: 'description', content: 'We worked with YouTube influencers Dude Perfect to design and develop a custom WordPress website as a unique showcase for their videos, games, merch, and partnerships. Go Big!' },
-        { name: 'keywords', content: 'dude perfect, youtube influencers, zurb foundation, wordpress' },
+        { name: 'description', content: 'The Dude Perfect website focused on the YouTube influencers unique brand. Spacetime helped automate and grow content, traffic, and site stability.' },
+        { name: 'keywords', content: 'dude perfect website, dude perfect, youtube influencers, zurb foundation, wordpress' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/portfolio/dude-perfect/` }
@@ -34,7 +34,7 @@ const DudePerfectPage = () => (
 
       <section className="pv5 pv6-ns bg-near-white tc">
         <span className="t-small-caps red">TL;DR</span>
-        <h2 className="t-mega measure-tight center">Dude Perfect needed a web experience to rival their impossible enthusiasm</h2>
+        <h2 className="t-mega measure-tight center">The Dude Perfect website needed to rival their impossible enthusiasm</h2>
       </section>
 
       <div className="pv5 pv6-ns row narrow">
