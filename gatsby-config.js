@@ -91,9 +91,16 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [
-          `/thanks`,
+          `/thanks/`,
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1211587,
+        sv: 6
+      },
     },
     `gatsby-plugin-offline`, //make sure this comes after gatsby-plugin-manifest
     `gatsby-plugin-react-helmet`,
