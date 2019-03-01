@@ -10,7 +10,7 @@ module.exports = {
   siteKeywords: "web, app, startup, design, experience design, design agency, digital agency, dallas, plano, texas",
   contactPhone: "(469) 270-1500",
   contactEmail: "hey@heyspacetime.com",
-  contactAddress: "5830 Granite Parkway<br />#100-243<br />Plano, TX 75024",
+  contactAddress: "5830 Granite Parkway #100-243<br />Plano, TX 75024",
   contactAddressMap: "https://goo.gl/maps/iM52Vb4qSXA2",
   socialLinks: [
     {

@@ -1,136 +1,67 @@
 import React from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import Emoji from 'a11y-react-emoji'
 
 import config from '../../../data/site-config'
 import logo from '../../assets/images/logos/spacetime-icon.svg'
 
 const Footer = () => (
-  <footer className="site-footer bg-black white-70">
-    <div className="row pv5">
+  <footer className="site-footer bg-black">
+    <div className="row pt6 pb5 tc">
       <AniLink
         cover
         bg="#f03f47"
         to="/"
         title={config.siteTitle}
-        className="dib">
-        <img src={logo} alt={config.siteTitle} className="h2 dim" />
-        <span className="clip">{config.siteTitle}</span>
+        className="transition">
+          <img src={logo} alt={config.siteTitle} className="" /><br />
+          <span className="white mt2 dib f3 fw6">Spacetime</span>
       </AniLink>
     </div>
-    <div className="row pv3 flex-ns justify-between-ns">
-      <div className="mb5 w-50-ns">
-        <nav className="">
-          <ul className="list pa0 ma0 white">
-            <li>
-              <AniLink
-                cover
-                bg="#f03f47"
-                to="/"
-                title="Home"
-                className="f3 fw7 white hover-red mb3 dib">
-                Home
-              </AniLink>
-            </li>
-            <li>
-              <AniLink
-                cover
-                bg="#f03f47"
-                to="/portfolio/"
-                title="Portfolio"
-                className="f3 fw7 white hover-red mb3 dib">
-                Portfolio
-              </AniLink>
-            </li>
-            <li>
-              <AniLink
-                cover
-                bg="#f03f47"
-                to="/services/"
-                title="Services"
-                className="f3 fw7 white hover-red mb3 dib">
-                Services
-              </AniLink>
-            </li>
-            <li>
-              <AniLink
-                cover
-                bg="#f03f47"
-                to="/team/"
-                title="Team"
-                className="f3 fw7 white hover-red mb3 dib">
-                Team
-              </AniLink>
-            </li>
-            <li>
-              <AniLink
-                cover
-                bg="#f03f47"
-                to="/contact/"
-                title="Contact"
-                className="f3 fw7 white hover-red mb3 dib">
-                Contact
-              </AniLink>
-            </li>
-            <li>
-              <AniLink
-                cover
-                bg="#f03f47"
-                to="/talks/"
-                title="Talks"
-                className="f3 fw7 white hover-red mb3 dib">
-                Talks
-              </AniLink>
-            </li>
-          </ul>
-        </nav>
+
+    <div className="row pv5 flex-l justify-between-l bt bb b--white-20">
+
+      <div className="w-33-l tc mb4 mb0-l">
+        <h5 className="f4 fw4 gray mt0 mb2">Give us a call <Emoji symbol="☎️" label="phone" className="ml2"/></h5>
+        <a href={`tel:${config.contactPhone}`} className="white hover-red fw5 f3">{config.contactPhone}</a>
       </div>
 
-      <div className="mb5 w-25-ns">
-        <h2 className="f3 fw7 white mt0 mb4">Get in touch</h2>
-
-        <div className="mb4">
-          <h5 className="f4 fw4 white-50 mt0 mb2">Give us a call</h5>
-          <a href={`tel:${config.contactPhone}`} className="white hover-red fw5 f3">{config.contactPhone}</a>
-        </div>
-
-        <div className="mb4">
-          <h5 className="f4 fw4 white-50 mt0 mb2">By electronic mail</h5>
-          <a href={`mailto:${config.contactEmail}`} className="white hover-red fw5 f3">{config.contactEmail}</a>
-        </div>
-
-        <div className="mb4">
-          <h5 className="f4 fw4 white-50 mt0 mb2">Socialize</h5>
-
-          {config.socialLinks.map(e => (
-            <OutboundLink
-              key={e.label}
-              href={e.url}
-              target="_blank"
-              rel="noopener"
-              className={`white fw5 f3 mr2 mb2 dib hover-red`}>
-              {e.label}
-            </OutboundLink>
-          ))}
-
-        </div>
+      <div className="w-33-l tc mb4 mb0-l">
+        <h5 className="f4 fw4 gray mt0 mb2">By electronic mail <Emoji symbol="📬" label="mail" className="ml2"/></h5>
+        <a href={`mailto:${config.contactEmail}`} className="white hover-red fw5 f3">{config.contactEmail}</a>
       </div>
 
-      <div className="mb5 w-25-ns">
-        <h2 className="f3 fw7 white mt0 mb4">Stop by the office</h2>
+      <div className="w-33-l tc mb4 mb0-l">
+        <h5 className="f4 fw4 gray mt0 mb2">Stop by the office <Emoji symbol="🗺" label="location" className="ml2"/></h5>
         <OutboundLink
           href={config.contactAddressMap}
           target="_blank"
           rel="noopener"
-          className="f4 fw4 white-50 hover-red lh-title"
+          className="white hover-red fw5 f3"
           dangerouslySetInnerHTML={{ __html: config.contactAddress }}
         />
       </div>
 
     </div>
-    <div className="row pv3">
-      <small className="f6 db lh-solid white-50">Copyright &copy; {new Date().getFullYear()}. {config.copyright}</small>
+
+    <div className="pv5 tc">
+      {config.socialLinks.map(e => (
+        <OutboundLink
+          key={e.label}
+          href={e.url}
+          target="_blank"
+          rel="noopener"
+          className={`white fw5 f3 mr2 mb2 dib hover-red`}>
+          {e.label}
+        </OutboundLink>
+      ))}
     </div>
+
+    <div className="row pv4">
+      <small className="f6 db lh-solid white-50 tc">Copyright &copy; {new Date().getFullYear()}. {config.copyright}</small>
+    </div>
+
   </footer>
 )
 
