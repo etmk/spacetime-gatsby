@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React    from 'react'
+import AniLink  from 'gatsby-plugin-transition-link/AniLink'
 
 const testimonials = [
   {
@@ -35,8 +35,6 @@ class HomeTestimonials extends React.Component {
               <li className="white mb4 dib" key={e.name}>
                 <blockquote className="pa0 ma0">
 
-                  {/*<img src={e.logo} className="h3 dib" alt={e.name} />*/}
-
                   <p className="f5 white-90 measure-narrow">
                     <span style={{marginLeft: "-.4em"}}>"</span>{e.quote}&rdquo;
                   </p>
@@ -47,10 +45,10 @@ class HomeTestimonials extends React.Component {
                       <span className="sans-serif ttu tracked">{e.name}</span>
                       <span className="f7 fw1 db">
                         {e.role},&nbsp;
-                        <Link to="/portfolio/"
+                        <AniLink cover direction="up" bg="#00FFDE" to="/portfolio/dude-perfect/"
                           className="color-inherit bb b--white-20">
                           {e.business}
-                        </Link>
+                        </AniLink>
                       </span>
                     </h5>
                   </div>
