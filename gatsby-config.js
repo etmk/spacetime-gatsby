@@ -90,9 +90,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: [
-          `/thanks/`,
-        ]
+        exclude: [`/thanks`],
       }
     },
     {
