@@ -70,18 +70,24 @@ const PortfolioPage = () => (
         </div>
 
         <div className="w-50-l mt5-l">
-          <PortfolioCard bgColor={`#00C2F2`} urlLink={`https://www.studiohopfitness.com/`}>
-            <img className="PortfolioCard__logo" src="/client-logos/studiohop-icon.svg" alt="StudioHop logo" />
+
+          <AniLink
+            cover direction="up" bg="#00C2F2"
+            to="/portfolio/studiohop/"
+            style={{backgroundColor: `#00C2F2`}}
+            className="PortfolioCard grow"
+          >
+            <img className="PortfolioCard__logo" src="/client-logos/studiohop-icon.svg" alt="Dude Perfect logo" />
             <h3 className="t-subheadline">
               StudioHop&mdash;<span className="o-40">fitness classess whenever and wherever you&nbsp;like</span>
             </h3>
             <span>
-              Visit StudioHopFitness.com<br />
+              Read the StudioHop case study<br />
               <span className="arrow-decorator" />
             </span>
 
-            <img className="PortfolioCard__bg" src="/portfolio/studiohop/studiohop-card-bg.jpg" alt="Woman in a boxing class" />
-          </PortfolioCard>
+            <img className="PortfolioCard__bg" src="/portfolio/studiohop/studiohop-card-bg.jpg" alt="StudioHop woman in a boxing class" />
+          </AniLink>
 
           <PortfolioCard bgColor={`#f64a53`} urlLink={`https://www.steadkey.com/`}>
             <img className="PortfolioCard__logo" src="/client-logos/steadkey-logo.svg" alt="Steadkey logo" />

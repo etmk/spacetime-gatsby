@@ -10,24 +10,27 @@ import MainWrapper      from '../../../components/MainWrapper/MainWrapper'
 import PageHero         from '../../../components/PageHero'
 import Blockquote       from '../../../components/Blockquote'
 
-const DudePerfectPage = () => (
+const StudioHopPage = () => (
   <Layout>
     <Helmet
-      title={`🏀Dude Perfect Website • YouTube influencers creative website`}
+      title={`️💪StudioHop Fitness Startup • YouTube influencers creative website`}
       meta={[
         { name: 'description', content: 'The Dude Perfect website focused on the YouTube influencers unique brand. Spacetime helped automate and grow content, traffic, and site stability.' },
         { name: 'keywords', content: 'dude perfect website, dude perfect, youtube influencers, zurb foundation, wordpress' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}/portfolio/dude-perfect/` }
+        { rel: 'canonical', href: `${config.siteUrl}/portfolio/studiohop/` }
       ]}
+      bodyAttributes={{
+        class: 'light-theme'
+      }}
     />
 
     <PageHero
-      bgColor="#202625"
-      bgImage="/portfolio/dude-perfect/dude-perfect-bg.jpg">
-        <img src="/client-logos/dude-perfect-icon-white.svg" className="" alt="Dude Perfect logo" />
-        <h1 className="t-headline">Dude Perfect&mdash;<span className="o-40">YouTube influencers specializing in the trick shot</span></h1>
+      bgColor="#00C2F2"
+      bgImage="/portfolio/studiohop/studiohop-bg.jpg">
+        <img src="/client-logos/studiohop-white-icon.svg" className="" alt="Dude Perfect logo" />
+        <h1 className="t-headline">StudioHop&mdash;<span className="o-40">fitness classes whenever and wherever you like</span></h1>
     </PageHero>
 
     <MainWrapper>
@@ -53,8 +56,8 @@ const DudePerfectPage = () => (
       </Blockquote>
 
       <div className="bg-banded flex items-start justify-center mv5 mv6-l">
-        <img src="/portfolio/dude-perfect/dude-perfect-youtube-web-design.jpg" className="w-40 w-30-l mh2 mh4-l br2 box-shadow relative" alt="Dude Perfect website homepage screenshot" />
-        <img src="/portfolio/dude-perfect/dude-perfect-website-design.jpg" className="w-40 w-30-l mh2 mh4-l br2 box-shadow relative" alt="Dude Perfect website case studies screenshot" />
+        <img src="/portfolio/studiohop/spacetime-studiohop-fitness-home-design.jpg" className="w-40 w-30-l mh2 mh4-l br2 box-shadow relative" alt="Dude Perfect website homepage screenshot" />
+        <img src="/portfolio/studiohop/spacetime-studiohop-website-membership-page.jpg" className="w-40 w-30-l mh2 mh4-l br2 box-shadow relative" alt="Dude Perfect website case studies screenshot" />
       </div>
 
       <div className="pv5 pv6-ns row narrow">
@@ -110,29 +113,24 @@ const DudePerfectPage = () => (
         </div>
       </div>
 
-      <img src="/portfolio/dude-perfect/dude-perfect-website-components@2x.jpg" className="w-100 db" alt="" />
+      <img src="/portfolio/studiohop/spacetime-studiohop-fitness-sitemap.jpg" className="center db" alt="" />
+
+      <img src="/portfolio/studiohop/spacetime-studiohop-website-wireframes.png" className="center db" alt="" />
 
       <div className="row narrow">
 
-        <hr className="mv5 mv6-ns bw4 b--dude-perfect o-10" />
+        <hr className="mv5 mv6-ns bw4 b--studiohop o-10" />
         <h3>Delightfully lost</h3>
         <p>Have you ever landed on a webpage that didn&rsquo;t exist? You may have seen an error message or code called a 404 error. 404 are not something a web master wants to see on their site, but they do happen. Good brands take a bad happenstance, like a 404 error, to creatively delight their visitors.</p>
         <p>We did the same for Dude Perfect.</p>
         <OutboundLink
           href="https://dribbble.com/shots/2886901-Dude-Perfect-404-Page"
           target="_blank"
-          className="button pa2 br1 bg-dude-perfect black dib grow mt3">
+          className="button pa2 br1 bg-studiohop black dib grow mt3">
             Check out the 404 page design &rarr;
         </OutboundLink>
 
-        <hr className="mv5 mv6-ns bw4 b--dude-perfect o-10" />
-      </div>
-
-      <div className="dp-sizzle-reel relative">
-        <div style={{padding: '56.25% 0 0 0', position: 'relative', margin: '0 auto', width: '95%', maxWidth: '55rem', zIndex: '1' }}>
-          <iframe src="https://player.vimeo.com/video/268852916?color=00fda6&title=0&byline=0&portrait=0" title="Dude Perfect Sizzle Reel" style={{position: 'absolute', top: '0', left: '0', width: '100%', height: '100%'}} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
-        </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
+        <hr className="mv5 mv6-ns bw4 b--studiohop o-10" />
       </div>
 
       <div className="pv5 pv6-ns row narrow">
@@ -141,10 +139,10 @@ const DudePerfectPage = () => (
       </div>
 
       <OutboundLink
-        href="https://dudeperfect.com/"
+        href="https://www.studiohopfitness.com/"
         target="_blank"
-        className="big-circle-button hover-bg-dude-perfect center mb7">
-        Visit DudePerfect.com ↗
+        className="big-circle-button hover-bg-studiohop center mb7">
+        Visit StudioHop ↗
       </OutboundLink>
 
     </MainWrapper>
@@ -152,4 +150,4 @@ const DudePerfectPage = () => (
   </Layout>
 )
 
-export default DudePerfectPage
+export default StudioHopPage
