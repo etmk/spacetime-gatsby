@@ -13,10 +13,10 @@ import Blockquote       from '../../../components/Blockquote'
 const DudePerfectPage = () => (
   <Layout>
     <Helmet
-      title={`🏀Dude Perfect Website • YouTube influencers creative website`}
+      title={`🏀Dude Perfect • Web design for YouTube creators & influencers`}
       meta={[
-        { name: 'description', content: 'The Dude Perfect website focused on the YouTube influencers unique brand. Spacetime helped automate and grow content, traffic, and site stability.' },
-        { name: 'keywords', content: 'dude perfect website, dude perfect, youtube influencers, zurb foundation, wordpress' },
+        { name: 'description', content: 'The Dude Perfect website design focused on the YouTube influencers unique brand. Spacetime helped automate and grow content, traffic, and site stability.' },
+        { name: 'keywords', content: 'dude perfect website, dude perfect, youtube influencers' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/portfolio/dude-perfect/` }

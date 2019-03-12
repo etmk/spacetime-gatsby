@@ -19,10 +19,10 @@ class IndexPage extends React.Component {
       <Layout>
 
         <Helmet
-          title={`Home 🏡 ${config.siteTitle}`}
+          title={`🏡Spacetime design agency • Plano website design`}
           meta={[
-            { name: 'description', content: 'Spacetime is a Dallas, Texas based Design Experience Agency providing web-based services to local, national, and international brands.' },
-            { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, early stage startups, website, design, Dude Perfect, Samsung, Bell Helicopter' },
+            { name: 'description', content: 'Spacetime is a Dallas, Texas based Experience Design Agency providing web services to local, national, and international brands' },
+            { name: 'keywords', content: 'design agency, plano website design' },
           ]}
           link={[
             { rel: 'canonical', href: `${config.siteUrl}/` }

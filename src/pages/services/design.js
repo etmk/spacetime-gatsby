@@ -15,8 +15,8 @@ const DesignServicesPage = () => (
     <Helmet
       title={`Design Services 🎨 ${config.siteTitle}`}
       meta={[
-        { name: 'description', content: 'Spacetime is a design driven technology agency with a brand inclusive view for web and app design that wows and produces incredible business results.' },
-        { name: 'keywords', content: 'hey spacetime, spacetime, business, agency, ux, ui, website, graphic design, website design, web design, brand design, identity design, app design, responsive web design' },
+        { name: 'description', content: 'Spacetime provides web design services that exceed the ordinary and lead to success' },
+        { name: 'keywords', content: 'design services, web design services, app design, responsive web design' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/design/` }

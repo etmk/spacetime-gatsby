@@ -14,10 +14,10 @@ const StartupServicesPage = () => (
   <Layout className="service-page content-page" style={{backgroundColor: '#86fc9e'}}>
 
     <Helmet
-      title={`🔍 Technical SEO • SEO consultant • Dallas, TX`}
+      title={`🔍 Technical SEO • Website and server optimizations • Dallas, TX`}
       meta={[
-        { name: 'description', content: 'Crush the competition and move up in the search engine rankings with unparalleled Technical SEO' },
-        { name: 'keywords', content: 'technical seo, dallas seo' },
+        { name: 'description', content: 'Technical SEO refers to performing website and server optimizations to improve the search engine ranking for the website. We guarantee better SEO rankings.' },
+        { name: 'keywords', content: 'technical seo' },
       ]}
       link={[
         { rel: 'canonical', href: `${config.siteUrl}/services/technical-seo/` }
@@ -58,7 +58,7 @@ const StartupServicesPage = () => (
 
             <p>Now, there are many factors at play to determine search result rankings&mdash;content, domain authority, user experience, site speed, engagement, etc&mdash;and all play a valuable part in the health and perceived value of a website.</p>
 
-            <p>Technical SEO optimizes everything that computers (aka robots, aka search engines) understand and find value in. That includes indicators like keywords in the text (so the robots know what a page or article is about) to speed and usability of a website on mobile.</p>
+            <p>Technical SEO optimizes everything that computers (aka robots, aka search engines) understand and find value in. That includes indicators like keywords in the text (so the robots know what a page or article is about) to speed and usability of a mobile friendly website.</p>
 
             <p>As an added benefit when optimizing for robots, <em>human users</em> receive a better experience as well.</p>
 
@@ -125,7 +125,7 @@ const StartupServicesPage = () => (
                   <li><strong>Backlink cleanup.</strong> Routinely review, approve or disavow (force remove from spammer sites) links.</li>
                 </ul>
               </li>
-              <li className="mb2"><strong>Sitemaps</strong> indicate to the search engines the content of our site and what is important (like a Table of Contents). We review often and routinely add or remove missing and incorrect links.</li>
+              <li className="mb2"><strong>XML Sitemaps</strong> indicate to the search engines the content of our site and what is important (like a Table of Contents). We review often and routinely add or remove missing and incorrect links.</li>
               <li className="mb2"><strong>Google Analytics</strong> review and assistance</li>
               <li className="mb2"><strong>Google Search Console</strong> review and monitoring</li>
               <li className="mb2">
