@@ -7,7 +7,7 @@
   "dependencies": {
     "a11y-react-emoji": "^1.0.0",
     "dotenv": "^6.2.0",
-    "gatsby": "^2.0.106",
+    "gatsby": "^2.4.2",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-favicon": "^3.1.5",
     "gatsby-plugin-google-analytics": "^2.0.12",
@@ -18,7 +18,7 @@
     "gatsby-plugin-react-helmet": "^3.0.5",
     "gatsby-plugin-robots-txt": "^1.4.0",
     "gatsby-plugin-sass": "^2.0.8",
-    "gatsby-plugin-sharp": "^2.0.19",
+    "gatsby-plugin-sharp": "^2.0.36",
     "gatsby-plugin-sitemap": "^2.0.4",
     "gatsby-plugin-transition-link": "^1.4.7",
     "gatsby-source-filesystem": "^2.0.22",
@@ -30,7 +30,8 @@
     "react-dom": "^16.7.0",
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
-    "react-transition-group": "^2.5.3"
+    "react-transition-group": "^2.5.3",
+    "typescript": "^3.4.5"
   },
   "keywords": [
     "gatsby"
@@ -48,7 +49,8 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^5.12.1",
     "eslint-plugin-react": "^7.12.4",
-    "node-sass": "^4.11.0",
+    "install-peers": "^1.0.3",
+    "node-sass": "^4.12.0",
     "prettier": "^1.16.1",
     "tachyons": "^4.11.1",
     "webpack": "^4.29.0"
