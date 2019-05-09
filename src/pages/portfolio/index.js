@@ -70,18 +70,24 @@ const PortfolioPage = () => (
         </div>
 
         <div className="w-50-l mt5-l">
-          <PortfolioCard bgColor={`#00C2F2`} urlLink={`https://www.studiohopfitness.com/`}>
-            <img className="PortfolioCard__logo" src="/client-logos/studiohop-icon.svg" alt="StudioHop logo" />
+
+          <AniLink
+            cover direction="up" bg="#00C2F2"
+            to="/portfolio/studiohop/"
+            style={{backgroundColor: `#00C2F2`}}
+            className="PortfolioCard grow"
+          >
+            <img className="PortfolioCard__logo" src="/client-logos/studiohop-icon.svg" alt="Dude Perfect logo" />
             <h3 className="t-subheadline">
               StudioHop&mdash;<span className="o-40">fitness classess whenever and wherever you&nbsp;like</span>
             </h3>
             <span>
-              Visit StudioHopFitness.com<br />
+              Read the StudioHop case study<br />
               <span className="arrow-decorator" />
             </span>
 
-            <img className="PortfolioCard__bg" src="/portfolio/studiohop/studiohop-card-bg.jpg" alt="Woman in a boxing class" />
-          </PortfolioCard>
+            <img className="PortfolioCard__bg" src="/portfolio/studiohop/studiohop-card-bg.jpg" alt="StudioHop woman in a boxing class" />
+          </AniLink>
 
           <PortfolioCard bgColor={`#f64a53`} urlLink={`https://www.steadkey.com/`}>
             <img className="PortfolioCard__logo" src="/client-logos/steadkey-logo.svg" alt="Steadkey logo" />
@@ -103,23 +109,23 @@ const PortfolioPage = () => (
       <div className="row w-75-l pv5 pv6-l flex-l">
         <div className="w-50-l">
 
-          <PortfolioCard bgColor={`#000`} urlLink={`http://www.bellflight.com/`}>
+          <PortfolioCard bgColor={`#000`} urlLink={`http://bellflight.com/`}>
             <img className="PortfolioCard__logo" src="/client-logos/bell-logo.svg" alt="Bell Helicopter logo" />
             <h3 className="t-subheadline white">
-              Bell&mdash;<span className="o-40">the new and future&nbsp;Bell</span>
+              Bell&mdash;<span className="o-40">the new and future Bell</span>
             </h3>
             <span className="white">
               Visit BellFlight.com<br />
               <span className="arrow-decorator white-arrow" />
             </span>
 
-            <img className="PortfolioCard__bg" src="/portfolio/bell/bell-helicopter-card-bg.jpg" alt="Bell AH-1Z Helicopter" />
+            <img className="PortfolioCard__bg" src="/portfolio/bell/bell-helicopter-card-bg.jpg" alt="Bell Helicopter Huey" />
           </PortfolioCard>
 
           <PortfolioCard bgColor={`#00BAFE`} urlLink={`https://neuebuild.com/`}>
             <img className="PortfolioCard__logo" src="/client-logos/neue-build-logo.svg" alt="Neue Build logo" />
             <h3 className="t-subheadline">
-              Neue Build&mdash;<span className="o-40">new build, new home, move in&nbsp;ready</span>
+              NeueBuild&mdash;<span className="o-40">new build, new home, move in&nbsp;ready</span>
             </h3>
             <span>
               Visit NeueBuild.com<br />
