@@ -109,30 +109,30 @@ const PortfolioPage = () => (
       <div className="row w-75-l pv5 pv6-l flex-l">
         <div className="w-50-l">
 
-          <PortfolioCard bgColor={`#000`} urlLink={`http://www.bellflight.com/`}>
+          <PortfolioCard bgColor={`#000`} urlLink={`http://bellflight.com/`}>
             <img className="PortfolioCard__logo" src="/client-logos/bell-logo.svg" alt="Bell Helicopter logo" />
             <h3 className="t-subheadline white">
-              Bell&mdash;<span className="o-40">the new and future&nbsp;Bell</span>
+              Bell&mdash;<span className="o-40">the new and future Bell</span>
             </h3>
             <span className="white">
               Visit BellFlight.com<br />
               <span className="arrow-decorator white-arrow" />
             </span>
 
-            <img className="PortfolioCard__bg" src="/portfolio/bell/bell-helicopter-card-bg.jpg" alt="Bell AH-1Z Helicopter" />
+            <img className="PortfolioCard__bg" src="/portfolio/bell/bell-helicopter-card-bg.jpg" alt="Bell Helicopter Huey" />
           </PortfolioCard>
 
           <PortfolioCard bgColor={`#00BAFE`} urlLink={`https://neuebuild.com/`}>
             <img className="PortfolioCard__logo" src="/client-logos/neue-build-logo.svg" alt="Neue Build logo" />
             <h3 className="t-subheadline">
-              Neue Build&mdash;<span className="o-40">new build, new home, move in&nbsp;ready</span>
+              NeueBuild&mdash;<span className="o-40">new build, new home, move in&nbsp;ready</span>
             </h3>
             <span>
               Visit NeueBuild.com<br />
               <span className="arrow-decorator" />
             </span>
 
-            <img className="PortfolioCard__bg" src="/portfolio/neue-build/neue-build-card-bg.jpg" alt="Google map with various home indicators" />
+            <img className="PortfolioCard__bg" src="/portfolio/neue-build/neue-build-card-bg.jpg" alt="Neue Build graphic" />
           </PortfolioCard>
 
         </div>
