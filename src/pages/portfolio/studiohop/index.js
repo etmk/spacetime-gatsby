@@ -103,7 +103,7 @@ const StudioHopPage = () => (
       <OutboundLink
         href="https://www.studiohopfitness.com/"
         target="_blank"
-        className="big-circle-button hover-bg-studiohop center mb7">
+        className="big-circle-button hover-bg-studiohop hover-b--studiohop center mb7">
         Visit StudioHop ↗
       </OutboundLink>
 

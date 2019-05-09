@@ -143,7 +143,7 @@ const DudePerfectPage = () => (
       <OutboundLink
         href="https://dudeperfect.com/"
         target="_blank"
-        className="big-circle-button hover-bg-dude-perfect center mb7">
+        className="big-circle-button hover-bg-dude-perfect hover-b--dude-perfect center mb7">
         Visit DudePerfect.com ↗
       </OutboundLink>
 

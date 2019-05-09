@@ -184,6 +184,10 @@
     border-color: $color;
   }
 
+  .hover-b--#{$key}:hover {
+    border-color: $color;
+  }
+
 }
 
 .color-inherit { color: inherit; }
