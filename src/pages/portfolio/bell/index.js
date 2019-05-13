@@ -8,16 +8,16 @@ import Layout           from '../../../components/layout'
 import MainWrapper      from '../../../components/MainWrapper/MainWrapper'
 import PageHero         from '../../../components/PageHero'
 
-const StudioHopPage = () => (
+const BellPage = () => (
   <Layout>
     <Helmet
-      title={`️💪StudioHop Fitness Startup • Reviving a startup`}
+      title={`🚁Bell • reviving a startup`}
       meta={[
-        { name: 'description', content: 'StudioHop was growing and finding product-market fit, but the tech stack was holding the company back. Spacetime rebuilt the startup from scratch for a sustainable, scalable future.' },
-        { name: 'keywords', content: 'studiohop, ruby on rails, startup' },
+        { name: 'description', content: 'Bell Helicopter' },
+        { name: 'keywords', content: 'bell helicopter' },
       ]}
       link={[
-        { rel: 'canonical', href: `${config.siteUrl}/portfolio/studiohop/` }
+        { rel: 'canonical', href: `${config.siteUrl}/portfolio/bell/` }
       ]}
       bodyAttributes={{
         class: 'light-theme'
@@ -25,17 +25,17 @@ const StudioHopPage = () => (
     />
 
     <PageHero
-      bgColor="#00C2F2"
-      bgImage="/portfolio/studiohop/studiohop-bg.jpg">
-        <img src="/client-logos/studiohop-white-icon.svg" className="" alt="StudioHop logo" />
-        <h1 className="t-headline">StudioHop&mdash;<span className="o-40">fitness classes whenever and wherever you like</span></h1>
+      bgColor="#000"
+      bgImage="/portfolio/bell/bell-helicopter-bg.jpg">
+        <img src="/client-logos/bell-logo.svg" className="" alt="Bell Helicopter logo" />
+        <h1 className="t-headline">Bell&mdash;<span className="o-40">the new and future Bell</span></h1>
     </PageHero>
 
     <MainWrapper>
 
       <section className="pv5 pv6-ns bg-near-white tc">
         <span className="t-small-caps red">TL;DR</span>
-        <h2 className="t-mega measure-tight center">StudioHop needed a technology overhaul to keep up with customer demand</h2>
+        <h2 className="t-mega measure-tight center">Bell needed a website design update</h2>
       </section>
 
       <div className="pv5 pv6-ns row narrow">
@@ -43,11 +43,6 @@ const StudioHopPage = () => (
         <p>StudioHop approached Spacetime to tackle a crushing issue holding their business back.</p>
         <p>StudioHop had previously attempted to build the business software by hiring overseas labor once and a local agency another time. And while they had <em>something</em>, the app was buggy and barely functional.</p>
         <p>We stepped in to replatform the struggling StudioHop app from a proprietary PHP framework to the open source Ruby on Rails framework.</p>
-      </div>
-
-      <div className="bg-banded flex items-start justify-center mv5 mv6-l">
-        <img src="/portfolio/studiohop/spacetime-studiohop-fitness-home-design.jpg" className="w-40 w-30-l mh2 mh4-l br2 box-shadow relative" alt="StudioHop website home page screenshot" />
-        <img src="/portfolio/studiohop/spacetime-studiohop-website-membership-page.jpg" className="w-40 w-30-l mh2 mh4-l br2 box-shadow relative" alt="StudioHop website membership page screenshot" />
       </div>
 
       <div className="row narrow pv5 pv6-ns">
@@ -74,37 +69,44 @@ const StudioHopPage = () => (
 
       <div className="row narrow">
 
-        <hr className="mv5 mv6-ns bw4 b--studiohop o-10" />
+        <hr className="mv5 mv6-ns bw4 b--bell o-10" />
 
-        <h3>Sitemap</h3>
+        <h3>Diverge</h3>
         <p>A sitemap helps organize the heirarchy and structure of a website or app.</p>
 
       </div>
 
-      <img src="/portfolio/studiohop/spacetime-studiohop-fitness-sitemap.jpg" className="center db" alt="" />
+      <img src="/portfolio/bell/bell-helicopter-website-design-concept-exploration.jpg" className="center db" alt="Bell Helicopter website design concept exploration by Spacetime" />
 
       <div className="row narrow">
 
-        <hr className="mv5 mv6-ns bw4 b--studiohop o-10" />
+        <hr className="mv5 mv6-ns bw4 b--bell o-10" />
         <h3>Wireframes</h3>
         <p>Wireframes were created to quickly gain insight on the new user flow and layout for the StudioHop website.</p>
         <p>Wireframes allow our team and clients to delve into the functionality and business logic of the startup, without muddying the waters with color, logos, photos, etc.</p>
 
       </div>
 
-      <img src="/portfolio/studiohop/spacetime-studiohop-website-wireframes.png" className="center db" alt="" />
+      <img src="/portfolio/bell/bell-helicopter-website-menu-design.jpg" className="center db" alt="Bell Helicopter website menu designs by Spacetime" />
+
+      <img src="/portfolio/bell/bell-helicopter-website-navigation-exploration.jpg" className="center db" alt="Bell Helicopter website menu designs by Spacetime" />
+
+      <div className="bg-banded flex items-start justify-center mv5 mv6-l">
+        <img src="/portfolio/bell/bell-helicopter-home-web-design.jpg" className="w-40 w-30-l mh2 mh4-l br2 box-shadow relative" alt="StudioHop website home page screenshot" />
+        <img src="/portfolio/bell/bell-helicopter-home-rebrand-web-design.jpg" className="w-40 w-30-l mh2 mh4-l br2 box-shadow relative" alt="StudioHop website membership page screenshot" />
+      </div>
 
       <div className="pv5 pv6-ns row narrow">
-        <h3>Without breaking a sweat</h3>
+        <h3>Above and beyond</h3>
         <p>StudioHop has continued to grow and expand their offering. The Ruby on Rails application we founded is still running the business, and continues to grow.</p>
         <small className="i o-50">Note: the StudioHop site and app design was recently updated from what you see here</small>
       </div>
 
       <OutboundLink
-        href="https://www.studiohopfitness.com/"
+        href="http://www.bellflight.com/"
         target="_blank"
-        className="big-circle-button hover-bg-studiohop hover-b--studiohop center mb7">
-        Visit StudioHop ↗
+        className="big-circle-button hover-bg-bell center mb7">
+        Visit Bell ↗
       </OutboundLink>
 
     </MainWrapper>
@@ -112,4 +114,4 @@ const StudioHopPage = () => (
   </Layout>
 )
 
-export default StudioHopPage
+export default BellPage
