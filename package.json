@@ -5,7 +5,9 @@
   "author": "Caleb Sylvest <caleb@heyspacetime.com>",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.0.0-0",
     "a11y-react-emoji": "^1.0.0",
+    "core-js": "2",
     "dotenv": "^6.2.0",
     "gatsby": "^2.4.2",
     "gatsby-image": "^2.0.29",
@@ -24,9 +26,9 @@
     "gatsby-source-filesystem": "^2.0.22",
     "gatsby-transformer-remark": "^2.2.2",
     "gatsby-transformer-sharp": "^2.1.19",
+    "graphql": "^14.3.0",
     "gsap": "^2.0.2",
     "npm": "^6.7.0",
-    "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
@@ -50,7 +52,9 @@
     "eslint-plugin-react": "^7.12.4",
     "node-sass": "^4.12.0",
     "prettier": "^1.16.1",
+    "react": "^16.8.5",
     "tachyons": "^4.11.1",
+    "typescript": "^3.4.5",
     "webpack": "^4.29.0"
   }
 }
