@@ -77,7 +77,7 @@ const PortfolioPage = () => (
             style={{backgroundColor: `#00C2F2`}}
             className="PortfolioCard grow"
           >
-            <img className="PortfolioCard__logo" src="/client-logos/studiohop-icon.svg" alt="Dude Perfect logo" />
+            <img className="PortfolioCard__logo" src="/client-logos/studiohop-icon.svg" alt="StudioHop Fitness logo" />
             <h3 className="t-subheadline">
               StudioHop&mdash;<span className="o-40">fitness classess whenever and wherever you&nbsp;like</span>
             </h3>
