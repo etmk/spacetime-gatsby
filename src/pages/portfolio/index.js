@@ -109,18 +109,23 @@ const PortfolioPage = () => (
       <div className="row w-75-l pv5 pv6-l flex-l">
         <div className="w-50-l">
 
-          <PortfolioCard bgColor={`#000`} urlLink={`http://bellflight.com/`}>
+          <AniLink
+            cover direction="up" bg="#000"
+            to="/portfolio/bell/"
+            style={{backgroundColor: `#000`}}
+            className="PortfolioCard grow"
+          >
             <img className="PortfolioCard__logo" src="/client-logos/bell-logo.svg" alt="Bell Helicopter logo" />
             <h3 className="t-subheadline white">
               Bell&mdash;<span className="o-40">the new and future Bell</span>
             </h3>
             <span className="white">
-              Visit BellFlight.com<br />
+              Read the Bell case study<br />
               <span className="arrow-decorator white-arrow" />
             </span>
 
             <img className="PortfolioCard__bg" src="/portfolio/bell/bell-helicopter-card-bg.jpg" alt="Bell Helicopter Huey" />
-          </PortfolioCard>
+          </AniLink>
 
           <PortfolioCard bgColor={`#00BAFE`} urlLink={`https://neuebuild.com/`}>
             <img className="PortfolioCard__logo" src="/client-logos/neue-build-logo.svg" alt="Neue Build logo" />
