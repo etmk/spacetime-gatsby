@@ -13,7 +13,7 @@ import Blockquote       from '../../../components/Blockquote'
 const DudePerfectPage = () => (
   <Layout>
     <Helmet
-      title={`🏀Dude Perfect • Web design for YouTube creators & influencers`}
+      title={`🏀Dude Perfect • Web Design for YouTube Influencers • Spacetime`}
       meta={[
         { name: 'description', content: 'The Dude Perfect website design focused on the YouTube influencers unique brand. Spacetime helped automate and grow content, traffic, and site stability.' },
         { name: 'keywords', content: 'dude perfect website, dude perfect, youtube influencers' },

@@ -15,7 +15,7 @@ const PortfolioPage = () => (
   <Layout className="bg-near-white">
 
     <Helmet
-      title={`Portfolio 💼 work in the Spacetime design portfolio`}
+      title={`💼Portfolio • Work in the Spacetime Design Portfolio • Spacetime`}
       meta={[
         { name: 'description', content: 'The incredible clients in our design portfolio include Dude Perfect, Bell Helicopter, Watermark Community Church, Highland Homes, and more' },
         { name: 'keywords', content: 'design portfolio' },
