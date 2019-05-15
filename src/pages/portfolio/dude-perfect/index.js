@@ -41,7 +41,7 @@ const DudePerfectPage = () => (
         <h3 className="f2">Go Big!</h3>
         <p>We worked with Dude Perfect to design and develop a web experience to show off their unique brand, both for fans and partners.</p>
         <p>Visual and brand design pulled from the existing group legacy, taking into account the years of video content and assets already created. The goal in any project with existing history is to develop a future-forward path, while not forsaking the history and brand equity of the past.</p>
-        <p>Together, the Spacetime and Dude Perfect teams developed a fantastic extension of the YouTube influencers ecosystem.</p>
+        <p>Together, the Spacetime and Dude Perfect teams developed a fantastic extension of the YouTube influencer marketing ecosystem.</p>
       </div>
 
       <Blockquote>
@@ -60,12 +60,13 @@ const DudePerfectPage = () => (
       <div className="pv5 pv6-ns row narrow">
         <h3>Audience driven technology</h3>
         <p>Dude Perfect has <em>a lot of fans</em>. When building for the web and taking into account a wide variety of customer types and situations, you really need to plan ahead for a variety of needs and restrictions. The top being web accessibility, data speeds, interaction on mobile devices, and brand support.</p>
-        <p>To ensure a solid experience across mobile and desktop devices, we developed a custom website using the Foundation by Zurb framework for responsive components. Zurb foundation integrated as a starter theme, called <OutboundLink href="https://foundationpress.olefredrik.com/" target="_blank">FoundationPress</OutboundLink>, allowed us to develop quickly, cleanly, while using a child theme so we are able to easily perform framework updates. WordPress Dude Perfect is built on WordPress and <AniLink cover bg="#21759b" to="/services/wordpress-hosting/">served via our superior WordPress hosting service</AniLink>. Further, we employ heavy asset caching and CDN efforts. This ensures that, despite a media rich web experience, our visitors experience a snappy, fast to load experience every visit.</p>
+        <p>To ensure a solid experience across mobile and desktop devices, we developed a custom website using the Foundation by Zurb responsive front end frameworks. Zurb foundation integrated as a starter theme, called <OutboundLink href="https://foundationpress.olefredrik.com/" target="_blank">FoundationPress</OutboundLink>, allowed us to develop quickly, cleanly, while using a child theme so we are able to easily perform framework updates. WordPress Dude Perfect is built on WordPress and <AniLink cover bg="#21759b" to="/services/wordpress-hosting/">served via our superior WordPress hosting service</AniLink>. Further, we employ heavy asset caching and CDN efforts. This ensures that, despite a media rich web experience, our visitors experience a snappy, fast to load experience every visit.</p>
         <div className="mv5">
-          <span className="tc db fw7" style={{color: `#00ffde`, fontSize: `10vw`}}>39M&#43;</span>
+          <span className="tc db fw7" style={{color: `#00ffde`, fontSize: `10vw`}}>42M&#43;</span>
           <span className="t-small-caps tc db mv3">Subscribers</span>
         </div>
         <p>To keep content current and up-to-date, the website hooks into several social APIs to populate current stats and content. Social fans and subscribers are an important metric for YouTube influencers and for sponsorship partners that wish to work with the team. So, we use APIs and chron jobs to update follower and mobile game download counts daily&mdash;and we built a custom WordPress plugin to sync video and data from YouTube directly into the website.</p>
+        <p>There are only a few dozen YouTube channels with more than 20 million subscribers. Dude Perfect has learned to build engaged audiences while partnering with influencers brands. With a strong target audience, Dude Perfect videos garner more than a million views within the first hours.</p>
       </div>
 
       <div className="bg-banded band-centered flex items-start justify-center mv4 mv6-l">
@@ -89,7 +90,7 @@ const DudePerfectPage = () => (
           <li>Technical SEO</li>
           <li>SEO Audit</li>
           <li>Mobile first development</li>
-          <li>Responsive web design (RWD)</li>
+          <li>Responsive design (RWD)</li>
           <li>Zurb Foundation</li>
           <li>Shopify merch</li>
           <li>Google Analytics</li>
