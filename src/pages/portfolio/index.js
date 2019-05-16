@@ -55,18 +55,24 @@ const PortfolioPage = () => (
             <img className="PortfolioCard__bg" src="/portfolio/dude-perfect/dude-perfect-card-bg.jpg" alt="Dude Perfect guys jumping in the air" />
           </AniLink>
 
-          <PortfolioCard bgColor={`#F78657`} urlLink={`https://www.keyzie.com/`}>
+          <AniLink
+            cover direction="up" bg="#F78657"
+            to="/portfolio/keyzie/"
+            style={{backgroundColor: `#F78657`}}
+            className="PortfolioCard grow"
+          >
             <img className="PortfolioCard__logo" src="/client-logos/keyzie-logo.svg" alt="Keyzie logo" />
             <h3 className="t-subheadline">
               Keyzie&mdash;<span className="o-40">the future of real estate is&nbsp;personal</span>
             </h3>
             <span>
-              Visit Keyzie.com<br />
+              Read the Keyzie case study<br />
               <span className="arrow-decorator" />
             </span>
 
             <img className="PortfolioCard__bg" src="/portfolio/keyzie/keyzie-card-bg.jpg" alt="Front door to an apartment video" />
-          </PortfolioCard>
+          </AniLink>
+
         </div>
 
         <div className="w-50-l mt5-l">
