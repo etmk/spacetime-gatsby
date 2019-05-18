@@ -8,16 +8,18 @@ const testimonials = [
     name: 'Coby Cotton',
     role: 'Co-Founder',
     business: 'Dude Perfect',
-    url: 'https://dudeperfect.com/',
-    avatar: '/avatars/coby-cotton-avatar.jpg'
+    path: '/portfolio/dude-perfect/',
+    avatar: '/avatars/coby-cotton-avatar.jpg',
+    color: '#00FFDE'
   }, {
     logo: '/client-logos/steadkey-logo.png',
     quote: 'After a couple years of little traction with my app, the Spacetime team helped rethink the product and build my business like a startup; focusing on a solid MVP that my target audience loves.',
     name: 'Jerry Williams',
     role: 'CEO & Founder',
     business: 'Steadkey',
-    url: 'https://dudeperfect.com/',
-    avatar: '/avatars/jerry-williams-avatar.jpg'
+    path: '/portfolio/steadkey/',
+    avatar: '/avatars/jerry-williams-avatar.jpg',
+    color: '#f64a53'
   }
 ];
 
@@ -45,7 +47,7 @@ class HomeTestimonials extends React.Component {
                       <span className="sans-serif ttu tracked">{e.name}</span>
                       <span className="f7 fw1 db">
                         {e.role},&nbsp;
-                        <AniLink cover direction="up" bg="#00FFDE" to="/portfolio/dude-perfect/"
+                        <AniLink cover direction="up" bg={e.color} to={e.path}
                           className="color-inherit bb b--white-20">
                           {e.business}
                         </AniLink>

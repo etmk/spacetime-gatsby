@@ -95,18 +95,23 @@ const PortfolioPage = () => (
             <img className="PortfolioCard__bg" src="/portfolio/studiohop/studiohop-card-bg.jpg" alt="StudioHop woman in a boxing class" />
           </AniLink>
 
-          <PortfolioCard bgColor={`#f64a53`} urlLink={`https://www.steadkey.com/`}>
+          <AniLink
+            cover direction="up" bg="#f64a53"
+            to="/portfolio/steadkey/"
+            style={{backgroundColor: `#f64a53`}}
+            className="PortfolioCard grow"
+          >
             <img className="PortfolioCard__logo" src="/client-logos/steadkey-logo.svg" alt="Steadkey logo" />
             <h3 className="t-subheadline">
               Steadkey&mdash;<span className="o-40">deliver sanity and clarity to the mortgage&nbsp;process</span>
             </h3>
             <span>
-              Visit Steadkey.com<br />
+              Read the Steadkey case study<br />
               <span className="arrow-decorator" />
             </span>
 
             <img className="PortfolioCard__bg" src="/portfolio/steadkey/steadkey-card-bg.jpg" alt="A modern style home" />
-          </PortfolioCard>
+          </AniLink>
         </div>
       </div>
 
